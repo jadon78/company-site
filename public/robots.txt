@@ -1,0 +1,7 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+allow: /services
+allow: /carrer
+allow: /about
+allow: /portfolio
+allow: /get-in-touch

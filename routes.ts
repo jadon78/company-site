@@ -1,0 +1,26 @@
+export const routes = {
+  public: [
+    "/",
+    "/new-verification",
+    "/about",
+    "/services",
+    "/blog",
+    "/careers",
+    "/life-at-elicit",
+    "/android-app-development-services",
+    "/web-development-services",
+    "/iot-software-development-services",
+    "/ios-app-development-services",
+    "/ui-ux-design-services",
+    "/hybrid-app-development-services",
+    "/wearable-app-development-services",
+    "/gohighlevel",
+    "/get-in-touch",
+    "/portfolio",
+    "/adminDash"
+  ],
+  auth: ["/signin", "/signup", "/reset", "/new-password", "/error"],
+  apiAuthPrefix: "/api/auth",
+  defaultLoginRedirect: "/settings",
+  defaultLogoutRedirect: "/signin",
+};
