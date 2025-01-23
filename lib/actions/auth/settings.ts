@@ -17,7 +17,7 @@ type SettingsInput = z.infer<typeof SettingsValidation> & {
 }
 
 export const settings = async (values: SettingsInput) => {
-  const user = await currentUser()
+  const user: any = await currentUser()
   // console.log({user})
 
   if (!user) {

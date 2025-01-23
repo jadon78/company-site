@@ -71,7 +71,7 @@ export const Navbar = () => {
                 </span>
               </button>
               <ul className="flex mx-auto items-center text-[white] mymenu-items">
-                {mainNavLinks.map((item, index) => (
+                {mainNavLinks.map((item: any, index: number) => (
                   <li
                     key={index}
                     className={`ml-[16px] leading-[42px]  ${item.submenu ? " " : ""}`}
@@ -84,7 +84,7 @@ export const Navbar = () => {
                     </Link>
                     {item.submenu && (
                       <ul className=" submenu-items">
-                        {item.submenu.map((subItem, subIndex) => (
+                        {item.submenu.map((subItem: any, subIndex: number) => (
                           <li key={subIndex} className="leading-[32px]">
                             <Link
                               className="nav-link  text-[#fff]"

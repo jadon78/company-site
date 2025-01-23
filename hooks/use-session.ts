@@ -7,7 +7,7 @@ export const useCurrentUser = () => {
 }
 
 export const useCurrentRole = () => {
-  const session = useSession()
+  const session: any = useSession()
 
   return session.data?.user?.role
 }

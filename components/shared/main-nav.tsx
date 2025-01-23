@@ -23,7 +23,7 @@ export const MainNav = () => {
         menuOpen ? "block" : "hidden"
       )}>
         {
-          mainNavLinks.map((link) => (
+          mainNavLinks.map((link: any) => (
             <Link
               key={link.title}
               href={link.url}

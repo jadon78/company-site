@@ -1,19 +1,9 @@
 "use client";
 
 import React, { useState } from "react";
-import CountUp from "react-countup";
-import Link from "next/link";
-import Lerandesh from "../components/assets/images/Learndesh.png";
-import ImgElicit from "../components/assets/images/img-elicit1.jpg";
-import ImgElicitProgram from "../components/assets/images/elicit-program1.jpg";
-import Learning from "../components/assets/images/learning.jpg";
-import ImgElicitActivities from "../components/assets/images/elicit-fun-activities1.jpg";
-import { Carousel } from "react-responsive-carousel";
 import Image from "next/image";
-import { packageOfServices } from "@/constants/data";
 import "../css/home.css";
 import { EnquiryCredentials } from "@/lib/actions/auth/enquiry";
-import { Card } from "@nextui-org/react";
 import { CardContent } from "@/components/ui/card";
 import BImg from '../components/assets/img/b-img.png'
 import Image1 from '../components/assets/img/img-1.png'
@@ -157,7 +147,7 @@ export default function Index() {
            
             <div className="shadow-[22px_34px_39px_0px_#00000014]">
               <CardContent className="p-6 flex gap-4 align-items-center ">
-              <Image src={BImg} className="ml-[-50px]"/>
+              <Image alt="BG" src={BImg} className="ml-[-50px]"/>
                 <div>
                 <h3 className="text-xl font-semibold mb-2">Information Technology</h3>
                 <p className="text-gray-600">
@@ -169,7 +159,7 @@ export default function Index() {
             </div>
             <div className="shadow-[22px_34px_39px_0px_#00000014]">
             <CardContent className="p-6 flex gap-4 align-items-center ">
-              <Image src={BImg} className="ml-[-50px]"/>
+              <Image alt="bg" src={BImg} className="ml-[-50px]"/>
                 <div>
                 <h3 className="text-xl font-semibold mb-2">Information Technology</h3>
                 <p className="text-gray-600">
@@ -181,7 +171,7 @@ export default function Index() {
             </div>
             <div className="shadow-[22px_34px_39px_0px_#00000014]">
             <CardContent className="p-6 flex gap-4 align-items-center ">
-              <Image src={BImg} className="ml-[-50px]"/>
+              <Image alt="bg" src={BImg} className="ml-[-50px]"/>
                 <div>
                 <h3 className="text-xl font-semibold mb-2">Information Technology</h3>
                 <p className="text-gray-600">

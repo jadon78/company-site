@@ -38,7 +38,7 @@ import { FormSuccess } from "@/components/shared/form-success"
 
 export const SettingsForm = () => {
   const { data: session, status, update } = useSession({ required: true })
-  const user = session?.user
+  const user: any = session?.user
   // console.log({user})
 
   const [error, setError] = useState<string | undefined>("")
