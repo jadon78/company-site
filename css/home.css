@@ -4009,3 +4009,85 @@ header .main-menu ul {
 /* 1024 - max-width
 991 - max-width
 767 -max-w */
+
+
+
+
+
+
+
+/* *********** nasksoft*********** */
+
+
+
+p,h1,h2,h3,h4,h5,h6,div,span,b{
+  font-family: var(--font-poppins), sans-serif;
+}
+.bg-dots-img{
+  background-image: url('../components/assets/img/bgimg.png');
+  background-position: 0;
+  background-repeat: no-repeat;
+  background-size: 440px;
+}
+.bg-circle-img{
+  position: relative;
+}
+  .bg-circle-img:after{
+    content: "";
+    width: 100%;
+    height: 100%;
+  background-image: url('../components/assets/img/bg-circule.png');
+  background-size: 700px;
+  background-repeat: no-repeat;
+  background-position: center;
+  animation: rotate-bg infinite 10s linear;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+@keyframes rotate-bg {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.service-card .square{
+  background-image: url('../components/assets/img/bg-square.png');
+  background-size: 200px;
+    background-repeat: no-repeat;
+    background-position: -16px -84px;
+  
+}
+.service-card:hover .square .text-white{
+  color: #000 !important;
+}
+.service-card .square{
+
+  position: relative;
+  z-index: 99;
+}
+  .service-card{
+  position: relative;
+}
+.service-card:hover:after{
+  height: 100%;
+}
+.service-card:after {
+    position: absolute;
+    width: 100%;
+    height: 0%;
+    border-radius: 24px;
+    left: 0;
+    content: "";
+    transition: 0.3s;
+    background: #fff;
+    top: 0;
+  }
+.serviceimg{
+  background-image: url('../components/assets/img/services-bg.png');
+  background-size: 44%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
