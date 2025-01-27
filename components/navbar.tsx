@@ -99,14 +99,40 @@ export const Navbar = () => {
                   </li>
                 ))}
                 <li className="ml-[16px]">
+                  {/* <div className="p-[10px_8px] pr-[0px]">
+                    <Link
+                      href=""
+                      className=" flex gap-2 items-center bg-[#696DF3] hover:bg-[#696DF3] text-[18px] text-[white] hover:text-[white] rounded-[50px] p-[8px_12px] text-[18px] font-[600] "
+                    >
+                      Contact us
+                      <svg width="30" height="24" viewBox="0 0 30 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.9 23.8446L12.2531 19.4989L7.47879 23.7378C7.37258 23.8515 7.22154 23.9211 7.05398 23.9211C6.73538 23.9211 6.47813 23.6682 6.47813 23.355V14.0998L0.67955 8.67984C0.448267 8.46406 0.441187 8.10675 0.65831 7.87938C0.731471 7.80281 0.823512 7.75177 0.920273 7.72392L28.7686 0.0209084C29.0754 -0.0626182 29.3916 0.111396 29.479 0.41302C29.5238 0.566152 29.4978 0.723925 29.4223 0.851535L17.811 23.6868C17.6694 23.9652 17.3248 24.0789 17.0416 23.9397C16.9873 23.9142 16.9401 23.8817 16.9 23.8446ZM11.4177 18.7193L7.62983 15.1787V22.0836L11.4177 18.7193ZM7.14366 13.1624L25.1554 2.19724L2.20413 8.54527L7.14366 13.1624ZM27.506 2.09515L8.00271 13.9652L17.1289 22.4989L27.506 2.09515Z" fill="white" />
+                      </svg>
+
+                    </Link>
+                  </div> */}
                   <div className="p-[10px_8px] pr-[0px]">
                     <Link
-                      href="/get-in-touch"
-                      className="bg-[#696DF3] hover:bg-[#696DF3] text-[18px] text-[white] hover:text-[white] rounded-[50px] p-[8px_12px] text-[18px] font-[600] montserrat"
+                      href=""
+                      className=" contactus-btn relative flex gap-2 items-center bg-[#696DF3] hover:bg-[#696DF3] text-[18px] text-white hover:text-white rounded-[50px] p-[8px_12px] font-[600] overflow-hidden"
                     >
-                     Contact us
+                      <span className="relative z-10">Contact us</span>
+                      <svg
+                        className="absolute left-2 top-1/2 -translate-y-1/2 transform transition-transform duration-300 ease-in-out hover:translate-x-[120%]"
+                        width="30"
+                        height="24"
+                        viewBox="0 0 30 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M16.9 23.8446L12.2531 19.4989L7.47879 23.7378C7.37258 23.8515 7.22154 23.9211 7.05398 23.9211C6.73538 23.9211 6.47813 23.6682 6.47813 23.355V14.0998L0.67955 8.67984C0.448267 8.46406 0.441187 8.10675 0.65831 7.87938C0.731471 7.80281 0.823512 7.75177 0.920273 7.72392L28.7686 0.0209084C29.0754 -0.0626182 29.3916 0.111396 29.479 0.41302C29.5238 0.566152 29.4978 0.723925 29.4223 0.851535L17.811 23.6868C17.6694 23.9652 17.3248 24.0789 17.0416 23.9397C16.9873 23.9142 16.9401 23.8817 16.9 23.8446ZM11.4177 18.7193L7.62983 15.1787V22.0836L11.4177 18.7193ZM7.14366 13.1624L25.1554 2.19724L2.20413 8.54527L7.14366 13.1624ZM27.506 2.09515L8.00271 13.9652L17.1289 22.4989L27.506 2.09515Z"
+                          fill="white"
+                        />
+                      </svg>
                     </Link>
                   </div>
+
                 </li>
               </ul>
             </div>

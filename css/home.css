@@ -181,3 +181,34 @@ p,h1,h2,h3,h4,h5,h6,div,span,b{
   left: 10%;
   top: -20%;
 }
+.footer-section{
+  position: relative;
+}
+    .footer-section:after{
+  background-image: url('../components/assets/img/footer-bg.png');
+      background-size: 1210px;
+        background-repeat: no-repeat;
+        background-position: 214px -250px;
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        z-index: 9;
+        left: 0;
+  }
+  .contactus-btn{
+    width: 130px;
+    transition: 0.3s;
+  }
+    .contactus-btn:hover {
+    width:160px;
+  }
+    .contactus-btn:hover svg {
+    opacity: 1;
+    left: 120px;
+  }
+    .contactus-btn svg {
+    opacity: 0;
+    transition: 0.4s;
+  }

@@ -12,6 +12,7 @@ import BGimg from "../components/assets/img/bgimg.png";
 import Painting from "../components/assets/img/painting-icon.png";
 import ServicesBg from "../components/assets/img/services-bg.png";
 import WaveImg from "../components/assets/img/waveShape's.png";
+import { Footer } from "@/components/shared/footer";
 export default function Index() {
   const [tabs, setTabs] = useState("frontend");
   const handleTabChange = (tabname: string) => {
@@ -726,7 +727,7 @@ export default function Index() {
                   Your browser does not support the video tag.
                 </video>
 
-                <div className="max-w-[1400px] mx-auto relative z-10 flex h-full flex-col items-center justify-center text-white text-center px-4">
+                <div className="max-w-7xl mx-auto relative z-10 flex h-full flex-col items-center justify-center text-white text-center px-4">
                   <div className="flex justify-between">
                     <div className="w-[45%] text-left">
                       <h4 className="text-[75px] pb-[50px] leading-[112px]">
@@ -822,7 +823,7 @@ export default function Index() {
               </div>
             </div>
           </section>
-          <section className="relative">
+          <section className="relative py-0 ">
             <video
               className="absolute top-0 left-0 w-full h-full object-cover ]"
               autoPlay
@@ -836,16 +837,16 @@ export default function Index() {
               />
               Your browser does not support the video tag.
             </video>
-            <div className="flex justify-center relative z-[9]">
+            <div className="max-w-7xl mx-auto  flex gap-12 items-center  relative z-[9] h-[400px]">
               <div className="max-w-[700px]">
-                <h4 className="text-[42.66px] font-normal leading-[62px] text-left">
+                <h4 className="text-[42.66px] font-normal leading-[62px] text-left text-[#fff]">
                   Secure the future of your company with company name{" "}
                 </h4>
               </div>
               <div>
                 <button className="text-[34px] overflow-hidden leading-[25px] text-left bg-[#D9E2FF40] w-[100px] h-[100px] transition-all hover:w-[310px] duration-1000 flex items-center gap-5 justify-end p-4 rounded-[100px] group">
                   <div className="flex items-center gap-4">
-                    <span className="whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                    <span className="whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-500 text-[#fff]">
                       Get in touch
                     </span>
                     <div>
@@ -865,10 +866,11 @@ export default function Index() {
                   </div>
                 </button>
               </div>
-            </div>
+        </div>
           </section>
         </div>
       </div>
+      <Footer/>
     </>
   );
 }
