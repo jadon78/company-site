@@ -712,14 +712,14 @@ export default function Index() {
             <div>
               <div className="relative h-screen w-full overflow-hidden">
                 <video
-                  className="absolute top-0 left-0 w-full h-full object-cover"
+                  className="absolute top-0 left-0 w-full h-full object-cover opacity-[11%] bg-[#d9e2ff]"
                   autoPlay
                   loop
                   muted
                   playsInline
                 >
                   <source
-                    src="../components/assets/img/bgVideo.mp4"
+                    src="/videos/bgVideo.mp4"
                     // src="https://youtu.be/vwSlYG7hFk0?si=Th4STFWzm5yzMFUF"
                     type="video/mp4"
                   />
@@ -784,6 +784,20 @@ export default function Index() {
               </div>
             </div>
           </section>
+          {/* <video
+                  className="top-0 left-0 w-full h-full object-cover"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                >
+                  <source
+                    src="/videos/bgVideo.mp4"
+                    // src="https://youtu.be/vwSlYG7hFk0?si=Th4STFWzm5yzMFUF"
+                    type="video/mp4"
+                  />
+                  Your browser does not support the video tag.
+                </video> */}
           <section className="px-4 relative why-choose-us">
             <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center pt-10">
               <div className="rounded-lg overflow-hidden">
@@ -810,15 +824,14 @@ export default function Index() {
           </section>
           <section className="relative">
             <video
-              className="absolute top-0 left-0 w-full h-full object-cover"
+              className="absolute top-0 left-0 w-full h-full object-cover ]"
               autoPlay
               loop
               muted
               playsInline
             >
               <source
-                src="../components/assets/img/colorwave.mp4"
-                // src="https://youtu.be/vwSlYG7hFk0?si=Th4STFWzm5yzMFUF"
+                    src="/videos/colorwave.mp4"
                 type="video/mp4"
               />
               Your browser does not support the video tag.
