@@ -89,6 +89,9 @@ export const Footer = () =>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div className="container ">
+
                     <div className=" border-t border-[#FFFFFF] mt-12">
                         <div className="container mx-auto px-6 py-4 text-center text-sm text-gray-400">
                             Copyright © 2022 works . All rights reserved.

@@ -114,7 +114,7 @@ export const Navbar = () => {
                   <div className="p-[10px_8px] pr-[0px]">
                     <Link
                       href=""
-                      className="relative flex gap-2 items-center bg-[#696DF3] hover:bg-[#696DF3] text-[18px] text-white hover:text-white rounded-[50px] p-[8px_12px] font-[600] overflow-hidden"
+                      className=" contactus-btn relative flex gap-2 items-center bg-[#696DF3] hover:bg-[#696DF3] text-[18px] text-white hover:text-white rounded-[50px] p-[8px_12px] font-[600] overflow-hidden"
                     >
                       <span className="relative z-10">Contact us</span>
                       <svg

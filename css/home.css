@@ -197,3 +197,18 @@ p,h1,h2,h3,h4,h5,h6,div,span,b{
         z-index: 9;
         left: 0;
   }
+  .contactus-btn{
+    width: 130px;
+    transition: 0.3s;
+  }
+    .contactus-btn:hover {
+    width:160px;
+  }
+    .contactus-btn:hover svg {
+    opacity: 1;
+    left: 120px;
+  }
+    .contactus-btn svg {
+    opacity: 0;
+    transition: 0.4s;
+  }
