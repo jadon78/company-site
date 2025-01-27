@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import CountUp from "react-countup";
 import Image from "next/image";
 import "../css/home.css";
@@ -8,13 +8,19 @@ import { CardContent } from "@/components/ui/card";
 import BImg from "../components/assets/img/b-img.png";
 import Image1 from "../components/assets/img/img-1.png";
 import Gloab1 from "../components/assets/img/gloab.png";
-import BGimg from "../components/assets/img/bgimg.png";
 import Painting from "../components/assets/img/painting-icon.png";
-import ServicesBg from "../components/assets/img/services-bg.png";
 import WaveImg from "../components/assets/img/waveShape's.png";
 import { Footer } from "@/components/shared/footer";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Navigation, EffectCreative } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/effect-creative";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+
 export default function Index() {
   const [tabs, setTabs] = useState("frontend");
+  const swiperRef: any = useRef(null);
   const handleTabChange = (tabname: string) => {
     setTabs(tabname);
   };
@@ -66,6 +72,12 @@ export default function Index() {
         success: "",
         error: "Unable to submit the form. Please try again.",
       });
+    }
+  };
+
+  const handleNextSlide = () => {
+    if (swiperRef.current) {
+      swiperRef.current.slideNext();
     }
   };
 
@@ -304,7 +316,7 @@ export default function Index() {
           <section className="py-16  bg-gray-50 overflow-hidden">
             <div className=" mx-auto">
               <div className="flex gap-10 flex-nowrap ">
-                <div className="max-w-[600px] shadow-[22px_34px_39px_0px_#00000014]">
+              <div className="max-w-[600px] shadow-[22px_34px_39px_0px_#00000014]">
                   <CardContent className="p-6 flex gap-4 align-items-center ">
                     <Image alt="BG" src={BImg} className="ml-[-50px]" />
                     <div>
@@ -346,6 +358,87 @@ export default function Index() {
                     </div>
                   </CardContent>
                 </div>
+              </div>
+              <div>
+                <Swiper
+                  slidesPerView={2}
+                  centeredSlides={true}
+                  spaceBetween={70}
+                  pagination={{
+                    clickable: true,
+                  }}
+                  loop={true}
+                  navigation={true}
+                  modules={[Pagination, Navigation]}
+                  className="mySwiper"
+                >
+                  <SwiperSlide>
+                  <div className="bg-[#fff]">
+                  <CardContent className="p-6 flex gap-4 align-items-center ">
+                    <Image alt="bg" src={BImg} className="ml-[-50px]" />
+                    <div>
+                      <h3 className="text-[30px] font-[400] mb-2">
+                        Information Technology
+                      </h3>
+                      <p className="text-gray-600 text-[16px]">
+                        Leverage our expertise to enhance your business
+                        operations and promote the seamless flow of information.
+                      </p>
+                    </div>
+                  </CardContent>
+                </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                  <div className="bg-[#fff] ">
+                  <CardContent className="p-6 flex gap-4 align-items-center ">
+                    <Image alt="bg" src={BImg} className="ml-[-50px]" />
+                    <div>
+                      <h3 className="text-[30px] font-[400] mb-2">
+                        Information Technology
+                      </h3>
+                      <p className="text-gray-600 text-[16px]">
+                        Leverage our expertise to enhance your business
+                        operations and promote the seamless flow of information.
+                      </p>
+                    </div>
+                  </CardContent>
+                </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                  <div className="bg-[#fff] ">
+                  <CardContent className="p-6 flex gap-4 align-items-center ">
+                    <Image alt="bg" src={BImg} className="ml-[-50px]" />
+                    <div>
+                      <h3 className="text-[30px] font-[400] mb-2">
+                        Information Technology
+                      </h3>
+                      <p className="text-gray-600 text-[16px]">
+                        Leverage our expertise to enhance your business
+                        operations and promote the seamless flow of information.
+                      </p>
+                    </div>
+                  </CardContent>
+                </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                  <div className="bg-[#fff] ">
+                  <CardContent className="p-6 flex gap-4 align-items-center ">
+                    <Image alt="bg" src={BImg} className="ml-[-50px]" />
+                    <div>
+                      <h3 className="text-[30px] font-[400] mb-2">
+                        Information Technology
+                      </h3>
+                      <p className="text-gray-600 text-[16px]">
+                        Leverage our expertise to enhance your business
+                        operations and promote the seamless flow of information.
+                      </p>
+                    </div>
+                  </CardContent>
+                </div>
+                  </SwiperSlide>
+              
+              
+                </Swiper>
               </div>
             </div>
           </section>
@@ -777,6 +870,58 @@ export default function Index() {
                             </svg>
                           </span>
                         </div>
+                        {/* <Swiper
+                          grabCursor={true}
+                          effect={"creative"}
+                          creativeEffect={{
+                            prev: {
+                              shadow: true,
+                              translate: [0, 0, -400],
+                            },
+                            next: {
+                              translate: ["-100%", 0, 0],
+                            },
+                          }}
+                          loop={true} // Enable infinite loop
+                          modules={[EffectCreative]}
+                          className="mySwiper"
+                          onSwiper={(swiper) => (swiperRef.current = swiper)} // Save Swiper instance
+                        >
+                          <SwiperSlide className="p-4 bg-gray-200 rounded-lg">
+                            Slide 1
+                          </SwiperSlide>
+                          <SwiperSlide className="p-4 bg-gray-300 rounded-lg">
+                            Slide 2
+                          </SwiperSlide>
+                          <SwiperSlide className="p-4 bg-gray-400 rounded-lg">
+                            Slide 3
+                          </SwiperSlide>
+                          <SwiperSlide className="p-4 bg-gray-500 rounded-lg">
+                            Slide 4
+                          </SwiperSlide>
+                          <SwiperSlide className="p-4 bg-gray-600 rounded-lg">
+                            Slide 5
+                          </SwiperSlide>
+                          <SwiperSlide className="p-4 bg-gray-700 rounded-lg">
+                            Slide 6
+                          </SwiperSlide>
+                          <SwiperSlide className="p-4 bg-gray-800 rounded-lg">
+                            Slide 7
+                          </SwiperSlide>
+                          <SwiperSlide className="p-4 bg-gray-900 rounded-lg">
+                            Slide 8
+                          </SwiperSlide>
+                          <SwiperSlide className="p-4 bg-gray-1000 rounded-lg">
+                            Slide 9
+                          </SwiperSlide>
+                        </Swiper> */}
+                        {/* <button
+                          onClick={handleNextSlide}
+                          className="px-4 py-2 bg-blue-500 text-white rounded-lg"
+                          style={{background: "#000"}}
+                        >
+                          Next Slide
+                        </button> */}
                       </div>
                     </div>
                   </div>
@@ -831,10 +976,7 @@ export default function Index() {
               muted
               playsInline
             >
-              <source
-                    src="/videos/colorwave.mp4"
-                type="video/mp4"
-              />
+              <source src="/videos/colorwave.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
             <div className="max-w-7xl mx-auto  flex gap-12 items-center  relative z-[9] h-[400px]">
@@ -866,11 +1008,11 @@ export default function Index() {
                   </div>
                 </button>
               </div>
-        </div>
+            </div>
           </section>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </>
   );
 }

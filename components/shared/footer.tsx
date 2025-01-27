@@ -12,7 +12,7 @@ export const Footer = () =>
                 </div>
 
             </div>
-            <footer className="bg-[#202222] text-white footer-section pt-10">
+            <footer className=" bg-[#202222] text-white footer-section pt-10">
                 <div className="relative z-[99]">
                     <div className="container mx-auto px-6 py-4 border-b border-t border-[#FFFFFF] ">
                         <nav className="flex flex-wrap justify-between items-center text-sm">
