@@ -315,7 +315,7 @@ export default function Index() {
           </section>
           <section className="py-16  bg-gray-50 overflow-hidden">
             <div className=" mx-auto">
-              <div className="flex gap-10 flex-nowrap ">
+              {/* <div className="flex gap-10 flex-nowrap ">
               <div className="max-w-[600px] shadow-[22px_34px_39px_0px_#00000014]">
                   <CardContent className="p-6 flex gap-4 align-items-center ">
                     <Image alt="BG" src={BImg} className="ml-[-50px]" />
@@ -358,7 +358,7 @@ export default function Index() {
                     </div>
                   </CardContent>
                 </div>
-              </div>
+              </div> */}
               <div>
                 <Swiper
                   slidesPerView={2}
