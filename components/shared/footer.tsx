@@ -5,6 +5,13 @@ export const Footer = () =>
 {
     return (
         <>
+            <div className="bg-[#E5E7EB] p-3">
+                <div className="bg-[#fff] flex p-1 max-w-[1000px] mx-auto rounded-[50px] overflow-hidden">
+                    <input className="bg-[#fff] border-0 px-2 outline-0" />
+                    <button className="bg-[#696DF3] text-white max-w-[250px] w-full text-center p-[10px]">Subscribe</button>
+                </div>
+
+            </div>
             <footer className="bg-[#202222] text-white footer-section pt-10">
                 <div className="relative z-[99]">
                     <div className="container mx-auto px-6 py-4 border-b border-t border-[#FFFFFF] ">
