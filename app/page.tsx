@@ -34,47 +34,6 @@ export default function Index() {
 
   const [formStatus, setFormStatus] = useState({ success: "", error: "" });
 
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
-  };
-
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setFormStatus({ success: "", error: "" });
-
-    try {
-      const payload = {
-        ...formData,
-        mobile_number: Number(formData.mobile_number),
-      };
-
-      const result = await EnquiryCredentials(payload);
-
-      if (result.success) {
-        setFormStatus({ success: "Successfully registered!", error: "" });
-        setFormData({
-          name: "",
-          email: "",
-          mobile_number: "",
-          message: "",
-        });
-      } else {
-        setFormStatus({
-          success: "",
-          error: result.error || "Something went wrong",
-        });
-      }
-    } catch (error) {
-      setFormStatus({
-        success: "",
-        error: "Unable to submit the form. Please try again.",
-      });
-    }
-  };
-
   const handleNextSlide = () => {
     if (swiperRef.current) {
       swiperRef.current.slideNext();
@@ -1012,7 +971,6 @@ export default function Index() {
           </section>
         </div>
       </div>
-      <Footer />
     </>
   );
 }
