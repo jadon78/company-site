@@ -184,18 +184,37 @@ p,h1,h2,h3,h4,h5,h6,div,span,b{
 .footer-section{
   position: relative;
 }
-    .footer-section:after{
-  background-image: url('../components/assets/img/footer-bg.png');
-      background-size: 1210px;
-        background-repeat: no-repeat;
-        background-position: 214px -250px;
-        content: "";
-        width: 100%;
+.ourtechnoloysection:after{
+  content: "";
+  background-image: url('../components/assets/img/banner3.gif');
+      width: 100%;
         height: 100%;
         position: absolute;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        background-size: cover;
+        background-position: center;
         top: 0;
-        z-index: 9;
         left: 0;
+        right: 0;
+        opacity: 70%;
+        z-index: -1;
+        bottom: 0;
+}
+    .footer-section:after{
+  background-image: url('../components/assets/img/footer-dash.png');
+            background-size: 70%;
+              background-repeat: no-repeat;
+              opacity: 14%;
+              background-position: 50% -2%;
+              content: "";
+              width: 100%;
+              height: 100%;
+              position: absolute;
+              top: 50%;
+              z-index: 9;
+              left: 50%;
+              transform: translate(-50%, -50%);
   }
   .contactus-btn{
     width: 130px;
@@ -226,19 +245,47 @@ p,h1,h2,h3,h4,h5,h6,div,span,b{
     font-weight: bold;
     color: #fff;
   }
-.swiper.swiper-initialized {
-  padding:20px 0px;
-}
+
   .swiper-slide {
     box-shadow: 22px 34px 39px 0px #00000014;
     background-color: #fff;
   }
+  .customslider  .swiper-slide {
+     height: 100% !important;
+   }
+   .customslider.swiper.swiper-initialized{
+    padding: 0 !important;
+   }
+   .swiper{
+    height: auto !important;
+   }
+   .customslider{
+    border-radius: 26px;
+   }
   .swiper-slide{
     height: 80% !important;
   }
   .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
     bottom:  0px !important;
   }  
+.swiper-pagination-bullet.swiper-pagination-bullet-active{
+  background-color: #696DF3 !important;
+}
+.firstslider-technology .swiper-pagination-bullet{
+  width: 20px;
+  height: 20px;
+}
+  .firstslider-technology{
+    padding-bottom: 60px !important;
+    background-color: #fff;
+    margin: 0 !important;
+  }
+  .customslider{
+    margin-bottom: 0px;
+  }
+  .swiper-slide-active+ .swiper-slide:nth-child(1){
+background-color: red;
+  }
   /* .swiper-slide:nth-child(1n) {
     background-color: rgb(206, 17, 17);
   }

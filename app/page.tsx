@@ -313,7 +313,7 @@ export default function Index() {
               </div>
             </div>
           </section>
-          <section className="py-16  bg-gray-50 overflow-hidden">
+          <section className="py-4 bg-[#fff] overflow-hidden">
             <div className=" mx-auto">
               {/* <div className="flex gap-10 flex-nowrap ">
               <div className="max-w-[600px] shadow-[22px_34px_39px_0px_#00000014]">
@@ -368,9 +368,9 @@ export default function Index() {
                     clickable: true,
                   }}
                   loop={true}
-                  navigation={true}
+                  navigation={false}
                   modules={[Pagination, Navigation]}
-                  className="mySwiper"
+                  className="mySwiper firstslider-technology"
                 >
                   <SwiperSlide>
                   <div className="bg-[#fff]">
@@ -442,8 +442,8 @@ export default function Index() {
               </div>
             </div>
           </section>
-          <div className="bg-gif-background2 bg-cover bg-center w-full h-full  ">
-            <div className="bg-[#E9E9E9B2] py-16">
+          <div className=" ourtechnoloysection bg-cover bg-center w-full h-full relative ">
+            <div className="bg-[#E9E9E9B2] py-16 mt-8">
               <div className="max-w-[1600px] mx-auto">
                 <div className="w-[95%] mx-auto px-8">
                   <div className="grid grid-cols-1 gap-12 md:grid-cols-2 align-items-center ">
@@ -699,7 +699,7 @@ export default function Index() {
           </div>
           <section className="services-page">
             <h2 className="text-[24px] text-center gradient-text">Services</h2>
-            <h3 className="text-[44px] text-center">
+            <h3 className="text-[44px] text-center font-[500]">
               Additional Services that will <br />
               Grow Your Business
             </h3>
@@ -804,7 +804,7 @@ export default function Index() {
           </section>
           <section>
             <div>
-              <div className="relative h-screen w-full overflow-hidden">
+              <div className="relative py-20 w-full overflow-hidden">
                 <video
                   className="absolute top-0 left-0 w-full h-full object-cover opacity-[11%] bg-[#d9e2ff]"
                   autoPlay
@@ -820,8 +820,8 @@ export default function Index() {
                   Your browser does not support the video tag.
                 </video>
 
-                <div className="max-w-7xl mx-auto relative z-10 flex h-full flex-col items-center justify-center text-white text-center px-4">
-                  <div className="flex justify-between">
+                <div className="max-w-7xl mx-auto relative z-10 flex min-h-full flex-col items-center justify-center text-white text-center px-4">
+                  <div className="flex justify-between w-full items-center">
                     <div className="w-[45%] text-left">
                       <h4 className="text-[75px] pb-[50px] leading-[112px]">
                         Technologies{" "}
@@ -833,44 +833,15 @@ export default function Index() {
                         landscapes with comprehensive and adaptable services.
                       </p>
                     </div>
-                    <div className="w-[50%]">
+                    <div className="w-[50%] overflow-hidden">
                       <div className="ani-slider-container">
                         <span className="slide-box-1"></span>
                         <span className="slide-box-2"></span>
                         <span className="slide-box-3"></span>
                         <span className="slide-box-4"></span>
                         <span className="slide-box-5"></span>
-                        <div className="bg-[#fff] border-r p-4 text-left shadow-[0px_4px_7.5px_0px_#945DFF40] rounded-[26px] z-[99] relative">
-                          <h4 className="text-[50px] leading-[100px]">
-                            Technology
-                          </h4>
-                          <p className="text-lg font-normal leading-7 text-left">
-                            we propel tech advancement through bespoke
-                            solutions, ensuring seamless integration and
-                            innovation for businesses. Our expertise drives
-                            digital transformation, providing customized
-                            strategies to navigate the evolving landscape of
-                            technology. We are committed to delivering
-                            excellence, empowering our clients to thrive in the
-                            ever-changing world of technology.
-                          </p>
-                          <span>
-                            <svg
-                              className="ml-auto"
-                              width="41"
-                              height="13"
-                              viewBox="0 0 41 13"
-                              fill="none"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <path
-                                d="M0.943579 6.64421C0.951029 7.12084 1.14728 7.57505 1.48925 7.90714C1.83123 8.23923 2.29099 8.42208 2.76763 8.41555L33.3583 8.41555V12.0742C33.3583 12.8498 34.2945 13.2381 34.8415 12.6893L40.2996 7.23115C40.6397 6.89105 40.6397 6.34115 40.2996 6.00105L34.8415 0.542942C34.2945 -0.0058918 33.3583 0.384224 33.3583 1.15799V4.81664L2.76763 4.81664C2.52689 4.81335 2.28792 4.85839 2.0649 4.94911C1.84188 5.03984 1.63932 5.17439 1.46924 5.3448C1.29915 5.51521 1.16499 5.71803 1.0747 5.94123C0.984405 6.16442 0.939819 6.40347 0.943579 6.64421Z"
-                                fill="black"
-                              />
-                            </svg>
-                          </span>
-                        </div>
-                        {/* <Swiper
+                 
+                         <Swiper
                           grabCursor={true}
                           effect={"creative"}
                           creativeEffect={{
@@ -884,44 +855,263 @@ export default function Index() {
                           }}
                           loop={true} // Enable infinite loop
                           modules={[EffectCreative]}
-                          className="mySwiper"
-                          onSwiper={(swiper) => (swiperRef.current = swiper)} // Save Swiper instance
+                          className="mySwiper customslider"
+                          onSwiper={ ( swiper ) => ( swiperRef.current = swiper ) } // Save Swiper instance
+                          
                         >
-                          <SwiperSlide className="p-4 bg-gray-200 rounded-lg">
-                            Slide 1
+                        
+                          <SwiperSlide className="p-4 bg-gray-200  bg-[#fff] border-r p-4 text-left shadow-[0px_4px_7.5px_0px_#945DFF40] rounded-[26px] z-[99] ">
+                            <div className="">
+                              <h4 className="text-[44px] leading-[100px]">
+                                Technology
+                              </h4>
+                              <p className="text-[18px] font-normal leading-7 text-left">
+                                we propel tech advancement through bespoke
+                                solutions, ensuring seamless integration and
+                                innovation for businesses. Our expertise drives
+                                digital transformation, providing customized
+                                strategies to navigate the evolving landscape of
+                                technology. We are committed to delivering
+                                excellence, empowering our clients to thrive in the
+                                ever-changing world of technology.
+                              </p>
+                              <span onClick={handleNextSlide}>
+                                <svg
+                                  className="ml-auto"
+                                  width="41"
+                                  height="13"
+                                  viewBox="0 0 41 13"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M0.943579 6.64421C0.951029 7.12084 1.14728 7.57505 1.48925 7.90714C1.83123 8.23923 2.29099 8.42208 2.76763 8.41555L33.3583 8.41555V12.0742C33.3583 12.8498 34.2945 13.2381 34.8415 12.6893L40.2996 7.23115C40.6397 6.89105 40.6397 6.34115 40.2996 6.00105L34.8415 0.542942C34.2945 -0.0058918 33.3583 0.384224 33.3583 1.15799V4.81664L2.76763 4.81664C2.52689 4.81335 2.28792 4.85839 2.0649 4.94911C1.84188 5.03984 1.63932 5.17439 1.46924 5.3448C1.29915 5.51521 1.16499 5.71803 1.0747 5.94123C0.984405 6.16442 0.939819 6.40347 0.943579 6.64421Z"
+                                    fill="black"
+                                  />
+                                </svg>
+                              </span>
+                            </div>
                           </SwiperSlide>
-                          <SwiperSlide className="p-4 bg-gray-300 rounded-lg">
-                            Slide 2
+                          <SwiperSlide className="p-4 bg-gray-200  bg-[#fff] border-r p-4 text-left shadow-[0px_4px_7.5px_0px_#945DFF40] rounded-[26px] z-[99] ">
+                            <div className="">
+                              <h4 className="text-[50px] leading-[100px]">
+                                Technology
+                              </h4>
+                              <p className="text-[18px] font-normal leading-7 text-left">
+                                we propel tech advancement through bespoke
+                                solutions, ensuring seamless integration and
+                                innovation for businesses. Our expertise drives
+                                digital transformation, providing customized
+                                strategies to navigate the evolving landscape of
+                                technology. We are committed to delivering
+                                excellence, empowering our clients to thrive in the
+                                ever-changing world of technology.
+                              </p>
+                              <span onClick={handleNextSlide}>
+                                <svg
+                                  className="ml-auto"
+                                  width="41"
+                                  height="13"
+                                  viewBox="0 0 41 13"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M0.943579 6.64421C0.951029 7.12084 1.14728 7.57505 1.48925 7.90714C1.83123 8.23923 2.29099 8.42208 2.76763 8.41555L33.3583 8.41555V12.0742C33.3583 12.8498 34.2945 13.2381 34.8415 12.6893L40.2996 7.23115C40.6397 6.89105 40.6397 6.34115 40.2996 6.00105L34.8415 0.542942C34.2945 -0.0058918 33.3583 0.384224 33.3583 1.15799V4.81664L2.76763 4.81664C2.52689 4.81335 2.28792 4.85839 2.0649 4.94911C1.84188 5.03984 1.63932 5.17439 1.46924 5.3448C1.29915 5.51521 1.16499 5.71803 1.0747 5.94123C0.984405 6.16442 0.939819 6.40347 0.943579 6.64421Z"
+                                    fill="black"
+                                  />
+                                </svg>
+                              </span>
+                            </div>
+                          </SwiperSlide>      <SwiperSlide className="p-4 bg-gray-200  bg-[#fff] border-r p-4 text-left shadow-[0px_4px_7.5px_0px_#945DFF40] rounded-[26px] z-[99] ">
+                            <div className="">
+                              <h4 className="text-[50px] leading-[100px]">
+                                Technology
+                              </h4>
+                              <p className="text-[18px] font-normal leading-7 text-left">
+                                we propel tech advancement through bespoke
+                                solutions, ensuring seamless integration and
+                                innovation for businesses. Our expertise drives
+                                digital transformation, providing customized
+                                strategies to navigate the evolving landscape of
+                                technology. We are committed to delivering
+                                excellence, empowering our clients to thrive in the
+                                ever-changing world of technology.
+                              </p>
+                              <span onClick={handleNextSlide}>
+                                <svg
+                                  className="ml-auto"
+                                  width="41"
+                                  height="13"
+                                  viewBox="0 0 41 13"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M0.943579 6.64421C0.951029 7.12084 1.14728 7.57505 1.48925 7.90714C1.83123 8.23923 2.29099 8.42208 2.76763 8.41555L33.3583 8.41555V12.0742C33.3583 12.8498 34.2945 13.2381 34.8415 12.6893L40.2996 7.23115C40.6397 6.89105 40.6397 6.34115 40.2996 6.00105L34.8415 0.542942C34.2945 -0.0058918 33.3583 0.384224 33.3583 1.15799V4.81664L2.76763 4.81664C2.52689 4.81335 2.28792 4.85839 2.0649 4.94911C1.84188 5.03984 1.63932 5.17439 1.46924 5.3448C1.29915 5.51521 1.16499 5.71803 1.0747 5.94123C0.984405 6.16442 0.939819 6.40347 0.943579 6.64421Z"
+                                    fill="black"
+                                  />
+                                </svg>
+                              </span>
+                            </div>
+                          </SwiperSlide>      <SwiperSlide className="p-4 bg-gray-200  bg-[#fff] border-r p-4 text-left shadow-[0px_4px_7.5px_0px_#945DFF40] rounded-[26px] z-[99] ">
+                            <div className="">
+                              <h4 className="text-[50px] leading-[100px]">
+                                Technology
+                              </h4>
+                              <p className="text-[18px] font-normal leading-7 text-left">
+                                we propel tech advancement through bespoke
+                                solutions, ensuring seamless integration and
+                                innovation for businesses. Our expertise drives
+                                digital transformation, providing customized
+                                strategies to navigate the evolving landscape of
+                                technology. We are committed to delivering
+                                excellence, empowering our clients to thrive in the
+                                ever-changing world of technology.
+                              </p>
+                              <span onClick={handleNextSlide}>
+                                <svg
+                                  className="ml-auto"
+                                  width="41"
+                                  height="13"
+                                  viewBox="0 0 41 13"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M0.943579 6.64421C0.951029 7.12084 1.14728 7.57505 1.48925 7.90714C1.83123 8.23923 2.29099 8.42208 2.76763 8.41555L33.3583 8.41555V12.0742C33.3583 12.8498 34.2945 13.2381 34.8415 12.6893L40.2996 7.23115C40.6397 6.89105 40.6397 6.34115 40.2996 6.00105L34.8415 0.542942C34.2945 -0.0058918 33.3583 0.384224 33.3583 1.15799V4.81664L2.76763 4.81664C2.52689 4.81335 2.28792 4.85839 2.0649 4.94911C1.84188 5.03984 1.63932 5.17439 1.46924 5.3448C1.29915 5.51521 1.16499 5.71803 1.0747 5.94123C0.984405 6.16442 0.939819 6.40347 0.943579 6.64421Z"
+                                    fill="black"
+                                  />
+                                </svg>
+                              </span>
+                            </div>
+                          </SwiperSlide>      <SwiperSlide className="p-4 bg-gray-200  bg-[#fff] border-r p-4 text-left shadow-[0px_4px_7.5px_0px_#945DFF40] rounded-[26px] z-[99] ">
+                            <div className="">
+                              <h4 className="text-[50px] leading-[100px]">
+                                Technology
+                              </h4>
+                              <p className="text-[18px] font-normal leading-7 text-left">
+                                we propel tech advancement through bespoke
+                                solutions, ensuring seamless integration and
+                                innovation for businesses. Our expertise drives
+                                digital transformation, providing customized
+                                strategies to navigate the evolving landscape of
+                                technology. We are committed to delivering
+                                excellence, empowering our clients to thrive in the
+                                ever-changing world of technology.
+                              </p>
+                              <span onClick={handleNextSlide}>
+                                <svg
+                                  className="ml-auto"
+                                  width="41"
+                                  height="13"
+                                  viewBox="0 0 41 13"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M0.943579 6.64421C0.951029 7.12084 1.14728 7.57505 1.48925 7.90714C1.83123 8.23923 2.29099 8.42208 2.76763 8.41555L33.3583 8.41555V12.0742C33.3583 12.8498 34.2945 13.2381 34.8415 12.6893L40.2996 7.23115C40.6397 6.89105 40.6397 6.34115 40.2996 6.00105L34.8415 0.542942C34.2945 -0.0058918 33.3583 0.384224 33.3583 1.15799V4.81664L2.76763 4.81664C2.52689 4.81335 2.28792 4.85839 2.0649 4.94911C1.84188 5.03984 1.63932 5.17439 1.46924 5.3448C1.29915 5.51521 1.16499 5.71803 1.0747 5.94123C0.984405 6.16442 0.939819 6.40347 0.943579 6.64421Z"
+                                    fill="black"
+                                  />
+                                </svg>
+                              </span>
+                            </div>
+                          </SwiperSlide>      <SwiperSlide className="p-4 bg-gray-200  bg-[#fff] border-r p-4 text-left shadow-[0px_4px_7.5px_0px_#945DFF40] rounded-[26px] z-[99] ">
+                            <div className="">
+                              <h4 className="text-[50px] leading-[100px]">
+                                Technology
+                              </h4>
+                              <p className="text-[18px] font-normal leading-7 text-left">
+                                we propel tech advancement through bespoke
+                                solutions, ensuring seamless integration and
+                                innovation for businesses. Our expertise drives
+                                digital transformation, providing customized
+                                strategies to navigate the evolving landscape of
+                                technology. We are committed to delivering
+                                excellence, empowering our clients to thrive in the
+                                ever-changing world of technology.
+                              </p>
+                              <span onClick={handleNextSlide}>
+                                <svg
+                                  className="ml-auto"
+                                  width="41"
+                                  height="13"
+                                  viewBox="0 0 41 13"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M0.943579 6.64421C0.951029 7.12084 1.14728 7.57505 1.48925 7.90714C1.83123 8.23923 2.29099 8.42208 2.76763 8.41555L33.3583 8.41555V12.0742C33.3583 12.8498 34.2945 13.2381 34.8415 12.6893L40.2996 7.23115C40.6397 6.89105 40.6397 6.34115 40.2996 6.00105L34.8415 0.542942C34.2945 -0.0058918 33.3583 0.384224 33.3583 1.15799V4.81664L2.76763 4.81664C2.52689 4.81335 2.28792 4.85839 2.0649 4.94911C1.84188 5.03984 1.63932 5.17439 1.46924 5.3448C1.29915 5.51521 1.16499 5.71803 1.0747 5.94123C0.984405 6.16442 0.939819 6.40347 0.943579 6.64421Z"
+                                    fill="black"
+                                  />
+                                </svg>
+                              </span>
+                            </div>
+                          </SwiperSlide>      <SwiperSlide className="p-4 bg-gray-200  bg-[#fff] border-r p-4 text-left shadow-[0px_4px_7.5px_0px_#945DFF40] rounded-[26px] z-[99] ">
+                            <div className="">
+                              <h4 className="text-[50px] leading-[100px]">
+                                Technology
+                              </h4>
+                              <p className="text-[18px] font-normal leading-7 text-left">
+                                we propel tech advancement through bespoke
+                                solutions, ensuring seamless integration and
+                                innovation for businesses. Our expertise drives
+                                digital transformation, providing customized
+                                strategies to navigate the evolving landscape of
+                                technology. We are committed to delivering
+                                excellence, empowering our clients to thrive in the
+                                ever-changing world of technology.
+                              </p>
+                              <span onClick={handleNextSlide}>
+                                <svg
+                                  className="ml-auto"
+                                  width="41"
+                                  height="13"
+                                  viewBox="0 0 41 13"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M0.943579 6.64421C0.951029 7.12084 1.14728 7.57505 1.48925 7.90714C1.83123 8.23923 2.29099 8.42208 2.76763 8.41555L33.3583 8.41555V12.0742C33.3583 12.8498 34.2945 13.2381 34.8415 12.6893L40.2996 7.23115C40.6397 6.89105 40.6397 6.34115 40.2996 6.00105L34.8415 0.542942C34.2945 -0.0058918 33.3583 0.384224 33.3583 1.15799V4.81664L2.76763 4.81664C2.52689 4.81335 2.28792 4.85839 2.0649 4.94911C1.84188 5.03984 1.63932 5.17439 1.46924 5.3448C1.29915 5.51521 1.16499 5.71803 1.0747 5.94123C0.984405 6.16442 0.939819 6.40347 0.943579 6.64421Z"
+                                    fill="black"
+                                  />
+                                </svg>
+                              </span>
+                            </div>
+                          </SwiperSlide>      <SwiperSlide className="p-4 bg-gray-200  bg-[#fff] border-r p-4 text-left shadow-[0px_4px_7.5px_0px_#945DFF40] rounded-[26px] z-[99] ">
+                            <div className="">
+                              <h4 className="text-[50px] leading-[100px]">
+                                Technology
+                              </h4>
+                              <p className="text-[18px] font-normal leading-7 text-left">
+                                we propel tech advancement through bespoke
+                                solutions, ensuring seamless integration and
+                                innovation for businesses. Our expertise drives
+                                digital transformation, providing customized
+                                strategies to navigate the evolving landscape of
+                                technology. We are committed to delivering
+                                excellence, empowering our clients to thrive in the
+                                ever-changing world of technology.
+                              </p>
+                              <span onClick={handleNextSlide}>
+                                <svg
+                                  className="ml-auto"
+                                  width="41"
+                                  height="13"
+                                  viewBox="0 0 41 13"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M0.943579 6.64421C0.951029 7.12084 1.14728 7.57505 1.48925 7.90714C1.83123 8.23923 2.29099 8.42208 2.76763 8.41555L33.3583 8.41555V12.0742C33.3583 12.8498 34.2945 13.2381 34.8415 12.6893L40.2996 7.23115C40.6397 6.89105 40.6397 6.34115 40.2996 6.00105L34.8415 0.542942C34.2945 -0.0058918 33.3583 0.384224 33.3583 1.15799V4.81664L2.76763 4.81664C2.52689 4.81335 2.28792 4.85839 2.0649 4.94911C1.84188 5.03984 1.63932 5.17439 1.46924 5.3448C1.29915 5.51521 1.16499 5.71803 1.0747 5.94123C0.984405 6.16442 0.939819 6.40347 0.943579 6.64421Z"
+                                    fill="black"
+                                  />
+                                </svg>
+                              </span>
+                            </div>
                           </SwiperSlide>
-                          <SwiperSlide className="p-4 bg-gray-400 rounded-lg">
-                            Slide 3
-                          </SwiperSlide>
-                          <SwiperSlide className="p-4 bg-gray-500 rounded-lg">
-                            Slide 4
-                          </SwiperSlide>
-                          <SwiperSlide className="p-4 bg-gray-600 rounded-lg">
-                            Slide 5
-                          </SwiperSlide>
-                          <SwiperSlide className="p-4 bg-gray-700 rounded-lg">
-                            Slide 6
-                          </SwiperSlide>
-                          <SwiperSlide className="p-4 bg-gray-800 rounded-lg">
-                            Slide 7
-                          </SwiperSlide>
-                          <SwiperSlide className="p-4 bg-gray-900 rounded-lg">
-                            Slide 8
-                          </SwiperSlide>
-                          <SwiperSlide className="p-4 bg-gray-1000 rounded-lg">
-                            Slide 9
-                          </SwiperSlide>
-                        </Swiper> */}
-                        {/* <button
-                          onClick={handleNextSlide}
-                          className="px-4 py-2 bg-blue-500 text-white rounded-lg"
-                          style={{background: "#000"}}
-                        >
-                          Next Slide
-                        </button> */}
+                 
+                        </Swiper> 
                       </div>
                     </div>
                   </div>
@@ -944,14 +1134,27 @@ export default function Index() {
                   />
                   Your browser does not support the video tag.
                 </video> */}
-          <section className="px-4 relative why-choose-us">
+          <section className="px-4 relative why-choose-us relative">
             <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center pt-10">
               <div className="rounded-lg overflow-hidden">
-                <Image
+                {/* <Image
                   src={Gloab1}
                   alt="gloab"
                   className="max-w-[450px] h-auto"
-                />
+                /> */}
+                <video
+                  className="absolute top-0 left-[-45%] w-full h-full z-[9]  object-contain aspect-[1] opacity-[40%] "
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                >
+                  <source
+                    src="/videos/globe.mp4"
+                    type="video/mp4"
+                  />
+                  Your browser does not support the video tag.
+                </video>
               </div>
               <div className="">
                 <h3 className="text-[24px] gradient-text mb-2">
@@ -981,7 +1184,7 @@ export default function Index() {
             </video>
             <div className="max-w-7xl mx-auto  flex gap-12 items-center  relative z-[9] h-[400px]">
               <div className="max-w-[700px]">
-                <h4 className="text-[42.66px] font-normal leading-[62px] text-left text-[#fff]">
+                <h4 className="text-[44px] font-normal leading-[62px] text-left text-[#fff]">
                   Secure the future of your company with company name{" "}
                 </h4>
               </div>
