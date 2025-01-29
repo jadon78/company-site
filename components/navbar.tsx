@@ -15,14 +15,14 @@ export const Navbar = () => {
   return (
     <>
       <header>
-        <nav className=" elicit-container border-gray-200  ">
+        <nav className="elicit-container border-gray-200  ">
           <div className="max-w-screen-xl flex items-center justify-between mx-auto  p-[0px_0px]">
             <div className="mt-[15px]">
               <Link
                 className="inline-block text-xl leading-[inherit] whitespace-nowrap py-[0.3125rem]"
                 href="/"
               >
-                <Image src={logo} alt="logo" className="w-[170px]" />
+                {/* <Image src={logo} alt="logo" className="w-[170px]" /> */}
               </Link>
             </div>
             <button

@@ -1,6 +1,6 @@
 export const mainNavLinks = [
   { name: "Home", path: "/" },
-  { name: "About Us", path: "/" },
+  { name: "About Us", path: "/about" },
  
   { name: "Services", path: "/" },
 ];
