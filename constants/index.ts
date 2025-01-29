@@ -2,7 +2,7 @@ export const mainNavLinks = [
   { name: "Home", path: "/" },
   { name: "About Us", path: "/" },
  
-  { name: "Services", path: "/careers" },
+  { name: "Services", path: "/" },
 ];
 export const footerLinks = [
   {
