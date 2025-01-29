@@ -12,17 +12,17 @@ export const Footer = () =>
                 </div>
 
             </div>
-            <footer className=" bg-[#202222] text-white footer-section pt-10">
+            <footer className=" bg-[#202222] text-white footer-section pt-10 overflow-hidden">
                 <div className="relative z-[99]">
                     <div className="container mx-auto px-6 py-4 border-b border-t border-[#FFFFFF] ">
-                        <nav className="flex flex-wrap justify-between items-center text-sm">
-                            <div className="space-x-6">
+                        <nav className="flex flex-wrap flex-col md:flex-row md:justify-between md:items-center text-sm gap-2">
+                            <div className="flex flex-col md:flex-row md:space-x-6 gap-2">
                                 <a href="#" className="hover:text-gray-300 text-[16px]">Home</a>
                                 <a href="#" className="hover:text-gray-300 text-[16px]">About Us</a>
                                 <a href="#" className="hover:text-gray-300 text-[16px]">Services</a>
                                 <a href="#" className="hover:text-gray-300 text-[16px]">Contact Us</a>
                             </div>
-                            <div className="space-x-6">
+                            <div className="flex flex-col md:flex-row md:space-x-6 gap-2">
                                 <a href="#" className="hover:text-gray-300 text-[16px]">Terms & Conditions</a>
                                 <a href="#" className="hover:text-gray-300 text-[16px]">Privacy Policy</a>
                             </div>
@@ -65,7 +65,7 @@ export const Footer = () =>
                                 </div>
                             </div>
 
-                            <div className=" w-[130px] ml-auto">
+                            <div className=" w-[130px] md:ml-auto">
                                 <h3 className="text-[20px] font-semibold mb-4 text-[#fff]">Follow us on</h3>
                                 <div className="space-y-2">
                                     <a href="#" className="text-[16px] flex gap-[23px] items-center hover:text-gray-300"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
