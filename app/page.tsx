@@ -18,65 +18,28 @@ import "swiper/css/effect-creative";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-export default function Index() {
-  const [tabs, setTabs] = useState("frontend");
-  const swiperRef: any = useRef(null);
-  const handleTabChange = (tabname: string) => {
-    setTabs(tabname);
+export default function Index ()
+{
+  const [ tabs, setTabs ] = useState( "frontend" );
+  const swiperRef: any = useRef( null );
+  const handleTabChange = ( tabname: string ) =>
+  {
+    setTabs( tabname );
   };
 
-  const [formData, setFormData] = useState({
+  const [ formData, setFormData ] = useState( {
     name: "",
     email: "",
     mobile_number: "",
     message: "",
-  });
+  } );
 
-  const [formStatus, setFormStatus] = useState({ success: "", error: "" });
+  const [ formStatus, setFormStatus ] = useState( { success: "", error: "" } );
 
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
-  };
-
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setFormStatus({ success: "", error: "" });
-
-    try {
-      const payload = {
-        ...formData,
-        mobile_number: Number(formData.mobile_number),
-      };
-
-      const result = await EnquiryCredentials(payload);
-
-      if (result.success) {
-        setFormStatus({ success: "Successfully registered!", error: "" });
-        setFormData({
-          name: "",
-          email: "",
-          mobile_number: "",
-          message: "",
-        });
-      } else {
-        setFormStatus({
-          success: "",
-          error: result.error || "Something went wrong",
-        });
-      }
-    } catch (error) {
-      setFormStatus({
-        success: "",
-        error: "Unable to submit the form. Please try again.",
-      });
-    }
-  };
-
-  const handleNextSlide = () => {
-    if (swiperRef.current) {
+  const handleNextSlide = () =>
+  {
+    if ( swiperRef.current )
+    {
       swiperRef.current.slideNext();
     }
   };
@@ -126,13 +89,13 @@ export default function Index() {
 
             <div className="bg-gif-background bg-cover bg-center w-full h-full flex ">
               <div className="absolute inset-0 bg-cover bg-center">
-                <div className="absolute inset-0 bg-black/60" />
+                <div className="absolute inset-0 bg-black/60" /> 
               </div>
               <div className="relative z-10 max-w-[860px] mx-auto px-4 m-auto">
-                <h1 className="text-4xl  font-[700] leading-[95px] md:text-[72px] font-bold mb-0 text-white">
+                <h1 className="text-[36px] md:text-[44px] md:text-[56px] lg:text-[72px]  font-[700] leading-[60px]  md:leading-[72px]  lg:leading-[95px] md:text-[72px] font-bold mb-0 text-white">
                   DISCOVER A WORLD OF OPPORTUNITIES
                 </h1>
-                <p className="text-[22px] mb-8 text-white text-center">
+                <p className=" text-[20px] md:text-[22px] mb-8 text-white text-center">
                   We empower a diverse IT service ecosystem where strong
                   individuals are united by a clear common purpose. To deliver
                   excellence and high level of customer satisfaction.
@@ -140,57 +103,57 @@ export default function Index() {
               </div>
               <Image
                 alt=""
-                src={WaveImg}
+                src={ WaveImg }
                 className="absolute bottom-[-55px] w-full left-0"
               />
             </div>
           </section>
-          <div className="max-w-[1100px] mx-auto text-center mt-[-130px] p-0">
-            <div className="relative  z-[99] grid grid-cols-2 md:grid-cols-4 bg-[#fff] text-[#000] rounded-[16px] p-8 shadow-[0px_4px_17px_0px_#00000040]">
+          <div className="max-w-[1100px] mx-auto text-center mt-[-130px] p-0 w-[95%] lg:w-full">
+            <div className="custom-counter relative  z-[99]  grid grid-cols-4 md:grid-cols-4 bg-[#fff] text-[#000] rounded-[16px] p-8   shadow-[0px_4px_17px_0px_#00000040]">
               <div className="border-r-[1px] border-r-[#ddd] border-solid">
-                <div className="text-[44px] font-[500] leading-[70px]">
-                  <CountUp end={500} duration={2} />+
+                <div className=" text-[16px] md:text-[36px] lg:text-[44px]   font-[500]  leading-[50px] md: leading-[70px]">
+                  <CountUp end={ 500 } duration={ 2 } />+
                 </div>
-                <div className="text-[24px] font-[500]">Projects</div>
+                <div className=" text-[12px] md:text-[16px] lg:text-[24px]  font-[500]">Projects</div>
               </div>
               <div className="border-r-[1px] border-r-[#ddd] border-solid">
-                <div className="text-[44px] font-[500] leading-[70px]">
-                  <CountUp end={40} duration={2} />+
+                <div className=" text-[16px] md:text-[36px] lg:text-[44px]  font-[500]  leading-[50px] md: leading-[70px]">
+                  <CountUp end={ 40 } duration={ 2 } />+
                 </div>
-                <div className="text-[24px] font-[500]">Our Client</div>
+                <div className=" text-[12px] md:text-[16px] lg:text-[24px]  font-[500]">Our Client</div>
               </div>
               <div className="border-r-[1px] border-r-[#ddd] border-solid">
-                <div className="text-[44px] font-[500] leading-[70px]">
-                  <CountUp end={40} duration={2} />+
+                <div className=" text-[16px] md:text-[36px] lg:text-[44px]  font-[500]  leading-[50px] md: leading-[70px]">
+                  <CountUp end={ 40 } duration={ 2 } />+
                 </div>
-                <div className="text-[24px] font-[500]">Happy Customers</div>
+                <div className=" text-[12px] md:text-[16px] lg:text-[24px]  font-[500]">Happy Customers</div>
               </div>
               <div>
-                <div className="text-[44px] font-[500] leading-[70px]">
-                  <CountUp end={5} duration={2} />
+                <div className=" text-[16px] md:text-[36px] lg:text-[44px]  font-[500]  leading-[50px] md: leading-[70px]">
+                  <CountUp end={ 5 } duration={ 2 } />
                   yr+
                 </div>
-                <div className="text-[24px] font-[500]">Years Experience</div>
+                <div className=" text-[12px] md:text-[16px] lg:text-[24px]  font-[500]">Years Experience</div>
               </div>
             </div>
           </div>
           <section className="py-20 px-4 relative bg-dots-img">
-            <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center pt-10">
-              <div className="rounded-lg overflow-hidden">
+            <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center pt-10">
+              <div className="rounded-lg overflow-hidden text-center">
                 <Image
-                  src={Image1}
+                  src={ Image1 }
                   alt="Team meeting"
-                  className="max-w-[450px] h-auto"
+                  className="max-w-[450px] h-auto mx-auto w-full"
                 />
               </div>
               <div className="">
-                <h3 className="text-[24px] gradient-text mb-2">
+                <h3 className="text-[24px]  gradient-text mb-2">
                   Our Mission & Vision
                 </h3>
-                <h2 className="text-[44px] font-bold mb-4 pb-0">
+                <h2 className="text-[24px] md:text-[36px] lg:text-[44px]  font-bold mb-4 pb-0">
                   Achieve excellence and deliver innovative IT solutions.
                 </h2>
-                <p className="text-gray-600 mb-6 text-[24px]">
+                <p className="text-gray-600 mb-6 text-[16px] lg:text-[24px] ">
                   Empower businesses with cutting-edge technology and digital
                   transformation strategies.
                 </p>
@@ -315,129 +278,104 @@ export default function Index() {
           </section>
           <section className="py-4 bg-[#fff] overflow-hidden">
             <div className=" mx-auto">
-              {/* <div className="flex gap-10 flex-nowrap ">
-              <div className="max-w-[600px] shadow-[22px_34px_39px_0px_#00000014]">
-                  <CardContent className="p-6 flex gap-4 align-items-center ">
-                    <Image alt="BG" src={BImg} className="ml-[-50px]" />
-                    <div>
-                      <h3 className="text-[24px] font-semibold mb-2">
-                        Information Technology
-                      </h3>
-                      <p className="text-gray-600 text-[16px]">
-                        Leverage our expertise to enhance your business
-                        operations and promote the seamless flow of information.
-                      </p>
-                    </div>
-                  </CardContent>
-                </div>
-                <div className="max-w-[600px] shadow-[22px_34px_39px_0px_#00000014]">
-                  <CardContent className="p-6 flex gap-4 align-items-center ">
-                    <Image alt="bg" src={BImg} className="ml-[-50px]" />
-                    <div>
-                      <h3 className="text-[30px] font-semibold mb-2">
-                        Information Technology
-                      </h3>
-                      <p className="text-gray-600 text-[16px]">
-                        Leverage our expertise to enhance your business
-                        operations and promote the seamless flow of information.
-                      </p>
-                    </div>
-                  </CardContent>
-                </div>
-                <div className="max-w-[600px] shadow-[22px_34px_39px_0px_#00000014]">
-                  <CardContent className="p-6 flex gap-4 align-items-center ">
-                    <Image alt="bg" src={BImg} className="ml-[-50px]" />
-                    <div>
-                      <h3 className="text-[30px] font-[400] mb-2">
-                        Information Technology
-                      </h3>
-                      <p className="text-gray-600 text-[16px]">
-                        Leverage our expertise to enhance your business
-                        operations and promote the seamless flow of information.
-                      </p>
-                    </div>
-                  </CardContent>
-                </div>
-              </div> */}
+
               <div>
                 <Swiper
-                  slidesPerView={2}
-                  centeredSlides={true}
-                  spaceBetween={70}
-                  pagination={{
+                  slidesPerView={ 2 }
+                  centeredSlides={ true }
+                  spaceBetween={ 70 }
+                  pagination={ {
                     clickable: true,
-                  }}
-                  loop={true}
-                  navigation={false}
-                  modules={[Pagination, Navigation]}
+                  } }
+                  loop={ true }
+                  navigation={ false }
+                  modules={ [ Pagination, Navigation ] }
                   className="mySwiper firstslider-technology"
+                  breakpoints={ {
+                    640: {
+                      slidesPerView: 1, // Show 1 slide on small screens
+                      spaceBetween: 20, // Reduce space between slides
+                    },
+                    768: {
+                      slidesPerView: 1, // 1 slide for medium screens
+                      spaceBetween: 30, // Adjust space
+                    },
+                    1024: {
+                      slidesPerView: 2, // 2 slides for large screens
+                      spaceBetween: 50, // Adjust space
+                    },
+                    1440: {
+                      slidesPerView: 2, // Keep 2 slides
+                      spaceBetween: 70, // Default spacing
+                    },
+                  } }
                 >
                   <SwiperSlide>
-                  <div className="bg-[#fff]">
-                  <CardContent className="p-6 flex gap-4 align-items-center ">
-                    <Image alt="bg" src={BImg} className="ml-[-50px]" />
-                    <div>
-                      <h3 className="text-[30px] font-[400] mb-2">
-                        Information Technology
-                      </h3>
-                      <p className="text-gray-600 text-[16px]">
-                        Leverage our expertise to enhance your business
-                        operations and promote the seamless flow of information.
-                      </p>
+                    <div className="bg-[#fff]">
+                      <CardContent className="p-6 flex gap-4 align-items-center ">
+                        <Image alt="bg" src={ BImg } className="ml-[-50px]" />
+                        <div>
+                          <h3 className="text-[30px] font-[400] mb-2">
+                            Information Technology
+                          </h3>
+                          <p className="text-gray-600 text-[16px]">
+                            Leverage our expertise to enhance your business
+                            operations and promote the seamless flow of information.
+                          </p>
+                        </div>
+                      </CardContent>
                     </div>
-                  </CardContent>
-                </div>
                   </SwiperSlide>
                   <SwiperSlide>
-                  <div className="bg-[#fff] ">
-                  <CardContent className="p-6 flex gap-4 align-items-center ">
-                    <Image alt="bg" src={BImg} className="ml-[-50px]" />
-                    <div>
-                      <h3 className="text-[30px] font-[400] mb-2">
-                        Information Technology
-                      </h3>
-                      <p className="text-gray-600 text-[16px]">
-                        Leverage our expertise to enhance your business
-                        operations and promote the seamless flow of information.
-                      </p>
+                    <div className="bg-[#fff] ">
+                      <CardContent className="p-6 flex gap-4 align-items-center ">
+                        <Image alt="bg" src={ BImg } className="ml-[-50px]" />
+                        <div>
+                          <h3 className="text-[30px] font-[400] mb-2">
+                            Information Technology
+                          </h3>
+                          <p className="text-gray-600 text-[16px]">
+                            Leverage our expertise to enhance your business
+                            operations and promote the seamless flow of information.
+                          </p>
+                        </div>
+                      </CardContent>
                     </div>
-                  </CardContent>
-                </div>
                   </SwiperSlide>
                   <SwiperSlide>
-                  <div className="bg-[#fff] ">
-                  <CardContent className="p-6 flex gap-4 align-items-center ">
-                    <Image alt="bg" src={BImg} className="ml-[-50px]" />
-                    <div>
-                      <h3 className="text-[30px] font-[400] mb-2">
-                        Information Technology
-                      </h3>
-                      <p className="text-gray-600 text-[16px]">
-                        Leverage our expertise to enhance your business
-                        operations and promote the seamless flow of information.
-                      </p>
+                    <div className="bg-[#fff] ">
+                      <CardContent className="p-6 flex gap-4 align-items-center ">
+                        <Image alt="bg" src={ BImg } className="ml-[-50px]" />
+                        <div>
+                          <h3 className="text-[30px] font-[400] mb-2">
+                            Information Technology
+                          </h3>
+                          <p className="text-gray-600 text-[16px]">
+                            Leverage our expertise to enhance your business
+                            operations and promote the seamless flow of information.
+                          </p>
+                        </div>
+                      </CardContent>
                     </div>
-                  </CardContent>
-                </div>
                   </SwiperSlide>
                   <SwiperSlide>
-                  <div className="bg-[#fff] ">
-                  <CardContent className="p-6 flex gap-4 align-items-center ">
-                    <Image alt="bg" src={BImg} className="ml-[-50px]" />
-                    <div>
-                      <h3 className="text-[30px] font-[400] mb-2">
-                        Information Technology
-                      </h3>
-                      <p className="text-gray-600 text-[16px]">
-                        Leverage our expertise to enhance your business
-                        operations and promote the seamless flow of information.
-                      </p>
+                    <div className="bg-[#fff] ">
+                      <CardContent className="p-6 flex gap-4 align-items-center ">
+                        <Image alt="bg" src={ BImg } className="ml-[-50px]" />
+                        <div>
+                          <h3 className="text-[30px] font-[400] mb-2">
+                            Information Technology
+                          </h3>
+                          <p className="text-gray-600 text-[16px]">
+                            Leverage our expertise to enhance your business
+                            operations and promote the seamless flow of information.
+                          </p>
+                        </div>
+                      </CardContent>
                     </div>
-                  </CardContent>
-                </div>
                   </SwiperSlide>
-              
-              
+
+
                 </Swiper>
               </div>
             </div>
@@ -445,13 +383,13 @@ export default function Index() {
           <div className=" ourtechnoloysection bg-cover bg-center w-full h-full relative ">
             <div className="bg-[#E9E9E9B2] py-16 mt-8">
               <div className="max-w-[1600px] mx-auto">
-                <div className="w-[95%] mx-auto px-8">
+                <div className="w-[95%] mx-auto p-2 md:px-4 lg:px-8">
                   <div className="grid grid-cols-1 gap-12 md:grid-cols-2 align-items-center ">
                     <div className="text-left">
-                      <h2 className="text-[24px] text-[#000]">
+                      <h2 className="text-[24px]  text-[#000]">
                         Technology Stack
                       </h2>
-                      <h2 className="text-[44px] font-bold text-left mb-6">
+                      <h2 className="text-[36px] lg:text-[44px]  font-bold text-left mb-6">
                         Empower Your Business with Cutting-Edge Technologies
                       </h2>
                       <p className="text-left text-gray-600 mb-8">
@@ -510,8 +448,8 @@ export default function Index() {
                       </ul>
                     </div>
 
-                    <div className="flex gap-[41px] flex-wrap ">
-                      <div className="w-[170px] h-40 bg-[#F4F2ED] hover:bg-[#8488f4] hover:text-[#fff]  rounded-[10px] text-center ">
+                    <div className="flex gap-[20px] md:gap-[41px] flex-wrap justify-center">
+                      <div className="w-[150px] md:w-[170px] h-40 bg-[#F4F2ED] hover:bg-[#8488f4] hover:text-[#fff]  rounded-[10px] text-center ">
                         <svg
                           className="mx-auto mb-2"
                           width="71"
@@ -531,7 +469,7 @@ export default function Index() {
                         </svg>
                         React
                       </div>
-                      <div className="w-[170px] h-40 bg-[#F4F2ED] hover:bg-[#8488f4] hover:text-[#fff]  rounded-[10px] text-center ">
+                      <div className="w-[150px] md:w-[170px] h-40 bg-[#F4F2ED] hover:bg-[#8488f4] hover:text-[#fff]  rounded-[10px] text-center ">
                         <svg
                           className="mx-auto mb-2"
                           width="71"
@@ -551,7 +489,7 @@ export default function Index() {
                         </svg>
                         React
                       </div>
-                      <div className="w-[170px] h-40 bg-[#F4F2ED] hover:bg-[#8488f4] hover:text-[#fff]  rounded-[10px] text-center ">
+                      <div className="w-[150px] md:w-[170px] h-40 bg-[#F4F2ED] hover:bg-[#8488f4] hover:text-[#fff]  rounded-[10px] text-center ">
                         <svg
                           className="mx-auto mb-2"
                           width="71"
@@ -571,7 +509,7 @@ export default function Index() {
                         </svg>
                         React
                       </div>
-                      <div className="w-[170px] h-40 bg-[#F4F2ED] hover:bg-[#8488f4] hover:text-[#fff]  rounded-[10px] text-center ">
+                      <div className="w-[150px] md:w-[170px] h-40 bg-[#F4F2ED] hover:bg-[#8488f4] hover:text-[#fff]  rounded-[10px] text-center ">
                         <svg
                           className="mx-auto mb-2"
                           width="71"
@@ -591,7 +529,7 @@ export default function Index() {
                         </svg>
                         React
                       </div>
-                      <div className="w-[170px] h-40 bg-[#F4F2ED] hover:bg-[#8488f4] hover:text-[#fff]  rounded-[10px] text-center ">
+                      <div className="w-[150px] md:w-[170px] h-40 bg-[#F4F2ED] hover:bg-[#8488f4] hover:text-[#fff]  rounded-[10px] text-center ">
                         <svg
                           className="mx-auto mb-2"
                           width="71"
@@ -611,7 +549,7 @@ export default function Index() {
                         </svg>
                         React
                       </div>
-                      <div className="w-[170px] h-40 bg-[#F4F2ED] hover:bg-[#8488f4] hover:text-[#fff]  rounded-[10px] text-center ">
+                      <div className="w-[150px] md:w-[170px] h-40 bg-[#F4F2ED] hover:bg-[#8488f4] hover:text-[#fff]  rounded-[10px] text-center ">
                         <svg
                           className="mx-auto mb-2"
                           width="71"
@@ -631,7 +569,7 @@ export default function Index() {
                         </svg>
                         React
                       </div>
-                      <div className="w-[170px] h-40 bg-[#F4F2ED] hover:bg-[#8488f4] hover:text-[#fff]  rounded-[10px] text-center ">
+                      <div className="w-[150px] md:w-[170px] h-40 bg-[#F4F2ED] hover:bg-[#8488f4] hover:text-[#fff]  rounded-[10px] text-center ">
                         <svg
                           className="mx-auto mb-2"
                           width="71"
@@ -651,7 +589,7 @@ export default function Index() {
                         </svg>
                         React
                       </div>
-                      <div className="w-[170px] h-40 bg-[#F4F2ED] hover:bg-[#8488f4] hover:text-[#fff]  rounded-[10px] text-center ">
+                      <div className="w-[150px] md:w-[170px] h-40 bg-[#F4F2ED] hover:bg-[#8488f4] hover:text-[#fff]  rounded-[10px] text-center ">
                         <svg
                           className="mx-auto mb-2"
                           width="71"
@@ -671,7 +609,7 @@ export default function Index() {
                         </svg>
                         React
                       </div>
-                      <div className="w-[170px] h-40 bg-[#F4F2ED] hover:bg-[#8488f4] hover:text-[#fff]  rounded-[10px] text-center ">
+                      <div className="w-[150px] md:w-[170px] h-40 bg-[#F4F2ED] hover:bg-[#8488f4] hover:text-[#fff]  rounded-[10px] text-center ">
                         <svg
                           className="mx-auto mb-2"
                           width="71"
@@ -698,27 +636,27 @@ export default function Index() {
             </div>
           </div>
           <section className="services-page">
-            <h2 className="text-[24px] text-center gradient-text">Services</h2>
-            <h3 className="text-[44px] text-center font-[500]">
+            <h2 className="text-[24px]  text-center gradient-text">Services</h2>
+            <h3 className="text-[36px] lg:text-[44px]  text-center font-[500]">
               Additional Services that will <br />
               Grow Your Business
             </h3>
             <div className="bg-circle-img mt-5 overflow-hidden py-5">
               <div className="serviceimg">
-                <div className="flex flex-col w-full gap-[58px]">
-                  <div className="flex     justify-between w-full max-w-[900px] mx-auto">
+                <div className="flex flex-col w-full gap-4 md:gap-[58px]">
+                  <div className="flex flex-col md:flex-row gap-4 justify-between w-full max-w-[900px] mx-auto items-center">
                     <div
-                      className="service-card shadow-[0px_4px_4px_0px_#00000040]  max-w-[300px] p-0  rounded-[24px] text-center text-white"
-                      style={{
+                      className="service-card shadow-[0px_4px_4px_0px_#00000040]  max-w-[300px] p-0  rounded-[24px] text-center text-white  md:mx-0 md:mr-auto"
+                      style={ {
                         background:
                           "linear-gradient(270deg, #083ca7 0%, #862ff1 100%)",
-                      }}
+                      } }
                     >
                       <div className="square p-4">
                         <div>
                           <Image
                             alt=""
-                            src={Painting}
+                            src={ Painting }
                             className="mx-auto mb-4"
                           />
                         </div>
@@ -730,17 +668,17 @@ export default function Index() {
                       </div>
                     </div>
                     <div
-                      className="service-card shadow-[0px_4px_4px_0px_#00000040]  max-w-[300px] p-0  rounded-[24px] text-center text-white"
-                      style={{
+                      className="service-card shadow-[0px_4px_4px_0px_#00000040]  max-w-[300px] p-0  rounded-[24px] text-center text-white  md:mx-0"
+                      style={ {
                         background:
                           " linear-gradient(90deg, #297679 0%, #3FA6C1 100%)",
-                      }}
+                      } }
                     >
                       <div className="square p-4">
                         <div>
                           <Image
                             alt=""
-                            src={Painting}
+                            src={ Painting }
                             className="mx-auto mb-4"
                           />
                         </div>
@@ -752,19 +690,19 @@ export default function Index() {
                       </div>
                     </div>
                   </div>
-                  <div className="flex     justify-between w-full max-w-[1000px] mx-auto">
+                  <div className="flex  flex-col md:flex-row gap-4 justify-between w-full max-w-[1000px] mx-auto items-center">
                     <div
-                      className="service-card shadow-[0px_4px_4px_0px_#00000040]  max-w-[300px] p-0  rounded-[24px] text-center text-white"
-                      style={{
+                      className="service-card shadow-[0px_4px_4px_0px_#00000040]  max-w-[300px] p-0  rounded-[24px] text-center text-white  md:mx-0"
+                      style={ {
                         background:
                           "linear-gradient(90deg, #FCB731 0%, #F67526 100%)",
-                      }}
+                      } }
                     >
                       <div className="square p-4">
                         <div>
                           <Image
                             alt=""
-                            src={Painting}
+                            src={ Painting }
                             className="mx-auto mb-4"
                           />
                         </div>
@@ -776,17 +714,17 @@ export default function Index() {
                       </div>
                     </div>
                     <div
-                      className="service-card shadow-[0px_4px_4px_0px_#00000040]  max-w-[300px] p-0  rounded-[24px] text-center text-white"
-                      style={{
+                      className="service-card shadow-[0px_4px_4px_0px_#00000040]  max-w-[300px] p-0  rounded-[24px] text-center text-white  md:mx-0"
+                      style={ {
                         background:
                           "linear-gradient(90deg, #FE6F7B 0%, #FA5B9D 100%)",
-                      }}
+                      } }
                     >
                       <div className="square p-4">
                         <div>
                           <Image
                             alt=""
-                            src={Painting}
+                            src={ Painting }
                             className="mx-auto mb-4"
                           />
                         </div>
@@ -796,13 +734,13 @@ export default function Index() {
                           Google first page marketing.
                         </p>
                       </div>
-                    </div>{" "}
+                    </div>{ " " }
                   </div>
                 </div>
               </div>
             </div>
           </section>
-          <section>
+          <section className="pt-20 pb-0">
             <div>
               <div className="relative py-20 w-full overflow-hidden">
                 <video
@@ -821,10 +759,10 @@ export default function Index() {
                 </video>
 
                 <div className="max-w-7xl mx-auto relative z-10 flex min-h-full flex-col items-center justify-center text-white text-center px-4">
-                  <div className="flex justify-between w-full items-center">
-                    <div className="w-[45%] text-left">
-                      <h4 className="text-[75px] pb-[50px] leading-[112px]">
-                        Technologies{" "}
+                  <div className="md:flex justify-between w-full items-center px-4">
+                    <div className="md:w-[45%] text-left">
+                      <h4 className="text-[44px] lg:text-[75px] pb-[50px] leading-[112px]">
+                        Technologies{ " " }
                       </h4>
                       <p className="text-[#000] text-[18px]">
                         As a versatile service provider, we cater to diverse
@@ -833,39 +771,39 @@ export default function Index() {
                         landscapes with comprehensive and adaptable services.
                       </p>
                     </div>
-                    <div className="w-[50%] overflow-hidden">
+                    <div className="md:w-[50%] overflow-hidden">
                       <div className="ani-slider-container">
                         <span className="slide-box-1"></span>
                         <span className="slide-box-2"></span>
                         <span className="slide-box-3"></span>
                         <span className="slide-box-4"></span>
                         <span className="slide-box-5"></span>
-                 
-                         <Swiper
-                          grabCursor={true}
-                          effect={"creative"}
-                          creativeEffect={{
+
+                        <Swiper
+                          grabCursor={ true }
+                          effect={ "creative" }
+                          creativeEffect={ {
                             prev: {
                               shadow: true,
-                              translate: [0, 0, -400],
+                              translate: [ 0, 0, -400 ],
                             },
                             next: {
-                              translate: ["-100%", 0, 0],
+                              translate: [ "-100%", 0, 0 ],
                             },
-                          }}
-                          loop={true} // Enable infinite loop
-                          modules={[EffectCreative]}
+                          } }
+                          loop={ true } // Enable infinite loop
+                          modules={ [ EffectCreative ] }
                           className="mySwiper customslider"
                           onSwiper={ ( swiper ) => ( swiperRef.current = swiper ) } // Save Swiper instance
-                          
+
                         >
-                        
+
                           <SwiperSlide className="p-4 bg-gray-200  bg-[#fff] border-r p-4 text-left shadow-[0px_4px_7.5px_0px_#945DFF40] rounded-[26px] z-[99] ">
                             <div className="">
-                              <h4 className="text-[44px] leading-[100px]">
+                              <h4 className="text-[24px] md:text-[36px] lg:text-[44px] leading-[50px] lg:leading-[100px]">
                                 Technology
                               </h4>
-                              <p className="text-[18px] font-normal leading-7 text-left">
+                              <p className="text-[16px] md:text-[18px] font-normal leading-7 text-left">
                                 we propel tech advancement through bespoke
                                 solutions, ensuring seamless integration and
                                 innovation for businesses. Our expertise drives
@@ -875,7 +813,7 @@ export default function Index() {
                                 excellence, empowering our clients to thrive in the
                                 ever-changing world of technology.
                               </p>
-                              <span onClick={handleNextSlide}>
+                              <span onClick={ handleNextSlide }>
                                 <svg
                                   className="ml-auto"
                                   width="41"
@@ -894,10 +832,10 @@ export default function Index() {
                           </SwiperSlide>
                           <SwiperSlide className="p-4 bg-gray-200  bg-[#fff] border-r p-4 text-left shadow-[0px_4px_7.5px_0px_#945DFF40] rounded-[26px] z-[99] ">
                             <div className="">
-                              <h4 className="text-[50px] leading-[100px]">
+                              <h4 className="text-[24px] md:text-[36px] lg:text-[44px] leading-[50px] lg:leading-[100px]">
                                 Technology
                               </h4>
-                              <p className="text-[18px] font-normal leading-7 text-left">
+                              <p className="text-[16px] md:text-[18px] font-normal leading-7 text-left">
                                 we propel tech advancement through bespoke
                                 solutions, ensuring seamless integration and
                                 innovation for businesses. Our expertise drives
@@ -907,7 +845,7 @@ export default function Index() {
                                 excellence, empowering our clients to thrive in the
                                 ever-changing world of technology.
                               </p>
-                              <span onClick={handleNextSlide}>
+                              <span onClick={ handleNextSlide }>
                                 <svg
                                   className="ml-auto"
                                   width="41"
@@ -925,10 +863,10 @@ export default function Index() {
                             </div>
                           </SwiperSlide>      <SwiperSlide className="p-4 bg-gray-200  bg-[#fff] border-r p-4 text-left shadow-[0px_4px_7.5px_0px_#945DFF40] rounded-[26px] z-[99] ">
                             <div className="">
-                              <h4 className="text-[50px] leading-[100px]">
+                              <h4 className="text-[24px] md:text-[36px] lg:text-[44px] leading-[50px] lg:leading-[100px]">
                                 Technology
                               </h4>
-                              <p className="text-[18px] font-normal leading-7 text-left">
+                              <p className="text-[16px] md:text-[18px] font-normal leading-7 text-left">
                                 we propel tech advancement through bespoke
                                 solutions, ensuring seamless integration and
                                 innovation for businesses. Our expertise drives
@@ -938,7 +876,7 @@ export default function Index() {
                                 excellence, empowering our clients to thrive in the
                                 ever-changing world of technology.
                               </p>
-                              <span onClick={handleNextSlide}>
+                              <span onClick={ handleNextSlide }>
                                 <svg
                                   className="ml-auto"
                                   width="41"
@@ -956,10 +894,10 @@ export default function Index() {
                             </div>
                           </SwiperSlide>      <SwiperSlide className="p-4 bg-gray-200  bg-[#fff] border-r p-4 text-left shadow-[0px_4px_7.5px_0px_#945DFF40] rounded-[26px] z-[99] ">
                             <div className="">
-                              <h4 className="text-[50px] leading-[100px]">
+                              <h4 className="text-[24px] md:text-[36px] lg:text-[44px] leading-[50px] lg:leading-[100px]">
                                 Technology
                               </h4>
-                              <p className="text-[18px] font-normal leading-7 text-left">
+                              <p className="text-[16px] md:text-[18px] font-normal leading-7 text-left">
                                 we propel tech advancement through bespoke
                                 solutions, ensuring seamless integration and
                                 innovation for businesses. Our expertise drives
@@ -969,7 +907,7 @@ export default function Index() {
                                 excellence, empowering our clients to thrive in the
                                 ever-changing world of technology.
                               </p>
-                              <span onClick={handleNextSlide}>
+                              <span onClick={ handleNextSlide }>
                                 <svg
                                   className="ml-auto"
                                   width="41"
@@ -987,10 +925,10 @@ export default function Index() {
                             </div>
                           </SwiperSlide>      <SwiperSlide className="p-4 bg-gray-200  bg-[#fff] border-r p-4 text-left shadow-[0px_4px_7.5px_0px_#945DFF40] rounded-[26px] z-[99] ">
                             <div className="">
-                              <h4 className="text-[50px] leading-[100px]">
+                              <h4 className="text-[24px] md:text-[36px] lg:text-[44px] leading-[50px] lg:leading-[100px]">
                                 Technology
                               </h4>
-                              <p className="text-[18px] font-normal leading-7 text-left">
+                              <p className="text-[16px] md:text-[18px] font-normal leading-7 text-left">
                                 we propel tech advancement through bespoke
                                 solutions, ensuring seamless integration and
                                 innovation for businesses. Our expertise drives
@@ -1000,7 +938,7 @@ export default function Index() {
                                 excellence, empowering our clients to thrive in the
                                 ever-changing world of technology.
                               </p>
-                              <span onClick={handleNextSlide}>
+                              <span onClick={ handleNextSlide }>
                                 <svg
                                   className="ml-auto"
                                   width="41"
@@ -1018,10 +956,10 @@ export default function Index() {
                             </div>
                           </SwiperSlide>      <SwiperSlide className="p-4 bg-gray-200  bg-[#fff] border-r p-4 text-left shadow-[0px_4px_7.5px_0px_#945DFF40] rounded-[26px] z-[99] ">
                             <div className="">
-                              <h4 className="text-[50px] leading-[100px]">
+                              <h4 className="text-[24px] md:text-[36px] lg:text-[44px] leading-[50px] lg:leading-[100px]">
                                 Technology
                               </h4>
-                              <p className="text-[18px] font-normal leading-7 text-left">
+                              <p className="text-[16px] md:text-[18px] font-normal leading-7 text-left">
                                 we propel tech advancement through bespoke
                                 solutions, ensuring seamless integration and
                                 innovation for businesses. Our expertise drives
@@ -1031,7 +969,7 @@ export default function Index() {
                                 excellence, empowering our clients to thrive in the
                                 ever-changing world of technology.
                               </p>
-                              <span onClick={handleNextSlide}>
+                              <span onClick={ handleNextSlide }>
                                 <svg
                                   className="ml-auto"
                                   width="41"
@@ -1049,10 +987,10 @@ export default function Index() {
                             </div>
                           </SwiperSlide>      <SwiperSlide className="p-4 bg-gray-200  bg-[#fff] border-r p-4 text-left shadow-[0px_4px_7.5px_0px_#945DFF40] rounded-[26px] z-[99] ">
                             <div className="">
-                              <h4 className="text-[50px] leading-[100px]">
+                              <h4 className="text-[24px] md:text-[36px] lg:text-[44px] leading-[50px] lg:leading-[100px]">
                                 Technology
                               </h4>
-                              <p className="text-[18px] font-normal leading-7 text-left">
+                              <p className="text-[16px] md:text-[18px] font-normal leading-7 text-left">
                                 we propel tech advancement through bespoke
                                 solutions, ensuring seamless integration and
                                 innovation for businesses. Our expertise drives
@@ -1062,7 +1000,7 @@ export default function Index() {
                                 excellence, empowering our clients to thrive in the
                                 ever-changing world of technology.
                               </p>
-                              <span onClick={handleNextSlide}>
+                              <span onClick={ handleNextSlide }>
                                 <svg
                                   className="ml-auto"
                                   width="41"
@@ -1080,10 +1018,10 @@ export default function Index() {
                             </div>
                           </SwiperSlide>      <SwiperSlide className="p-4 bg-gray-200  bg-[#fff] border-r p-4 text-left shadow-[0px_4px_7.5px_0px_#945DFF40] rounded-[26px] z-[99] ">
                             <div className="">
-                              <h4 className="text-[50px] leading-[100px]">
+                              <h4 className="text-[24px] md:text-[36px] lg:text-[44px] leading-[50px] lg:leading-[100px]">
                                 Technology
                               </h4>
-                              <p className="text-[18px] font-normal leading-7 text-left">
+                              <p className="text-[16px] md:text-[18px] font-normal leading-7 text-left">
                                 we propel tech advancement through bespoke
                                 solutions, ensuring seamless integration and
                                 innovation for businesses. Our expertise drives
@@ -1093,7 +1031,7 @@ export default function Index() {
                                 excellence, empowering our clients to thrive in the
                                 ever-changing world of technology.
                               </p>
-                              <span onClick={handleNextSlide}>
+                              <span onClick={ handleNextSlide }>
                                 <svg
                                   className="ml-auto"
                                   width="41"
@@ -1110,8 +1048,8 @@ export default function Index() {
                               </span>
                             </div>
                           </SwiperSlide>
-                 
-                        </Swiper> 
+
+                        </Swiper>
                       </div>
                     </div>
                   </div>
@@ -1143,7 +1081,7 @@ export default function Index() {
                   className="max-w-[450px] h-auto"
                 /> */}
                 <video
-                  className="absolute top-0 left-[-45%] w-full h-full z-[9]  object-contain aspect-[1] opacity-[40%] "
+                  className="absolute top-0 left-[-35%] w-full h-full z-[9]  object-contain aspect-[1] opacity-[10%]  md:opacity-[40%] "
                   autoPlay
                   loop
                   muted
@@ -1157,13 +1095,13 @@ export default function Index() {
                 </video>
               </div>
               <div className="">
-                <h3 className="text-[24px] gradient-text mb-2">
+                <h3 className="text-[16px] lg:text-[24px]  gradient-text mb-2">
                   Why Choose Us
                 </h3>
-                <h2 className="text-[44px] font-bold mb-4 pb-0">
+                <h2 className="text-[36px] lg:text-[44px]  font-bold mb-4 pb-0">
                   We prioritize our clients’ satisfaction above all else.
                 </h2>
-                <p className="text-gray-600 mb-6 text-[24px]">
+                <p className="text-gray-600 mb-6 text-[16px] lg:text-[24px] ">
                   Engitech is the partner of choice for many of the world’s
                   leading enterprises, SMEs and technology challengers. We help
                   businesses custom software development.
@@ -1182,25 +1120,24 @@ export default function Index() {
               <source src="/videos/colorwave.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
-            <div className="max-w-7xl mx-auto  flex gap-12 items-center  relative z-[9] h-[400px]">
+            <div className="max-w-7xl mx-auto  flex flex-col md:flex-row gap-12 md:items-center  relative z-[9] md:h-[400px] p-4">
               <div className="max-w-[700px]">
-                <h4 className="text-[44px] font-normal leading-[62px] text-left text-[#fff]">
-                  Secure the future of your company with company name{" "}
+                <h4 className="text-[24px] md:text-[36px] lg:text-[44px]  font-normal leading-[40px] md:leading-[62px] text-left text-[#fff]">
+                  Secure the future of your company with company name{ " " }
                 </h4>
               </div>
               <div>
-                <button className="text-[34px] overflow-hidden leading-[25px] text-left bg-[#D9E2FF40] w-[100px] h-[100px] transition-all hover:w-[310px] duration-1000 flex items-center gap-5 justify-end p-4 rounded-[100px] group">
+                <button className="text-[16px] md:text-[34px] overflow-hidden leading-[25px] text-left bg-[#D9E2FF40] w-[60px] h-[60px] md:w-[100px] md:h-[100px] transition-all hover:w-[180px] md:hover:w-[310px] duration-1000 flex items-center gap-5 justify-end p-4 rounded-[100px] group">
                   <div className="flex items-center gap-4">
                     <span className="whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-500 text-[#fff]">
                       Get in touch
                     </span>
                     <div>
                       <svg
-                        width="41"
-                        height="14"
                         viewBox="0 0 41 14"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
+                        className="w-[24px] w-[24px] md:w-[41px] md:h-[41px]"
                       >
                         <path
                           d="M0.813208 7.028C0.820658 7.50463 1.01691 7.95884 1.35888 8.29093C1.70086 8.62302 2.16062 8.80587 2.63726 8.79934L33.228 8.79934V12.458C33.228 13.2336 34.1641 13.6219 34.7111 13.073L40.1692 7.61493C40.5093 7.27484 40.5093 6.72494 40.1692 6.38484L34.7111 0.926731C34.1641 0.377897 33.228 0.768013 33.228 1.54178V5.20043L2.63726 5.20043C2.39652 5.19714 2.15755 5.24218 1.93453 5.3329C1.7115 5.42362 1.50895 5.55818 1.33886 5.72859C1.16878 5.899 1.03462 6.10182 0.944325 6.32501C0.854034 6.54821 0.809448 6.78726 0.813208 7.028Z"
@@ -1215,7 +1152,6 @@ export default function Index() {
           </section>
         </div>
       </div>
-      <Footer />
     </>
   );
 }

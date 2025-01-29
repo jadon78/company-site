@@ -31,19 +31,21 @@ export default async function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const session = await auth();
-console.log(session, "session");
+  console.log("----<<", children)
+
+  // const session = await auth();
+// console.log(session, "session");
 
   return (
-    <SessionProvider session={session}>
+    // <SessionProvider session={null}>
       <html suppressHydrationWarning lang="en">
         <body className={`${inter.className} ${montserrat.variable} ${poppins.variable}`}>
           <Navbar />
           <main className="flex h-full flex-col">{children}</main>
           <Toaster />
-          {/* <Footer /> */}
+          <Footer />
         </body>
       </html>
-    </SessionProvider>
+    // </SessionProvider>
   );
 }
