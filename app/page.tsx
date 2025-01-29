@@ -442,7 +442,7 @@ export default function Index() {
               </div>
             </div>
           </section>
-          <div className="bg-gif-background2 bg-cover bg-center w-full h-full  ">
+          <div className=" ourtechnoloysection bg-cover bg-center w-full h-full relative ">
             <div className="bg-[#E9E9E9B2] py-16 mt-8">
               <div className="max-w-[1600px] mx-auto">
                 <div className="w-[95%] mx-auto px-8">
@@ -699,7 +699,7 @@ export default function Index() {
           </div>
           <section className="services-page">
             <h2 className="text-[24px] text-center gradient-text">Services</h2>
-            <h3 className="text-[44px] text-center">
+            <h3 className="text-[44px] text-center font-[500]">
               Additional Services that will <br />
               Grow Your Business
             </h3>
@@ -1143,7 +1143,7 @@ export default function Index() {
                   className="max-w-[450px] h-auto"
                 /> */}
                 <video
-                  className="absolute top-0 left-[-50%] w-full h-full z-[9]  object-contain aspect-[1] opacity-[11%] bg-[#d9e2ff]"
+                  className="absolute top-0 left-[-45%] w-full h-full z-[9]  object-contain aspect-[1] opacity-[40%] "
                   autoPlay
                   loop
                   muted
