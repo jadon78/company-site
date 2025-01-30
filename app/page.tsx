@@ -39,10 +39,49 @@ export default function Index ()
 
   const [ formStatus, setFormStatus ] = useState( { success: "", error: "" } );
 
-  const handleNextSlide = () =>
-  {
-    if ( swiperRef.current )
-    {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setFormStatus({ success: "", error: "" });
+
+    try {
+      const payload = {
+        ...formData,
+        mobile_number: Number(formData.mobile_number),
+      };
+
+      const result = await EnquiryCredentials(payload);
+
+      if (result.success) {
+        setFormStatus({ success: "Successfully registered!", error: "" });
+        setFormData({
+          name: "",
+          email: "",
+          mobile_number: "",
+          message: "",
+        });
+      } else {
+        setFormStatus({
+          success: "",
+          error: result.error || "Something went wrong",
+        });
+      }
+    } catch (error) {
+      setFormStatus({
+        success: "",
+        error: "Unable to submit the form. Please try again.",
+      });
+    }
+  };
+
+  const handleNextSlide = () => {
+    if (swiperRef.current) {
       swiperRef.current.slidePrev();
     }
   };
@@ -307,12 +346,14 @@ export default function Index ()
               <div>
                 <Swiper
                   centeredSlides={ true }
-                  pagination={ {
-                    clickable: true,
-                  } }
-                  loop={ true }
+              
                   navigation={ false }
                   modules={ [ Pagination, Navigation ] }
+                  loop={true}
+                  spaceBetween={70}
+                  slidesPerView={3}
+                  pagination={{ clickable: true }}
+                  modules={[Pagination, Navigation]}
                   className="mySwiper firstslider-technology"
                   breakpoints={ {
                     640: {
@@ -428,6 +469,68 @@ export default function Index ()
                         </div>
                       </CardContent>
                     </div>
+                  <div className="bg-[#fff] ">
+                  <CardContent className="p-6 flex gap-4 align-items-center ">
+                    <Image alt="bg" src={BImg} className="ml-[-50px]" />
+                    <div>
+                      <h3 className="text-[30px] font-[400] mb-2">
+                        Information Technology
+                      </h3>
+                      <p className="text-gray-600 text-[16px]">
+                        Leverage our expertise to enhance your business
+                        operations and promote the seamless flow of information.
+                      </p>
+                    </div>
+                  </CardContent>
+                </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                  <div className="bg-[#fff] ">
+                  <CardContent className="p-6 flex gap-4 align-items-center ">
+                    <Image alt="bg" src={BImg} className="ml-[-50px]" />
+                    <div>
+                      <h3 className="text-[30px] font-[400] mb-2">
+                        Information Technology
+                      </h3>
+                      <p className="text-gray-600 text-[16px]">
+                        Leverage our expertise to enhance your business
+                        operations and promote the seamless flow of information.
+                      </p>
+                    </div>
+                  </CardContent>
+                </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                  <div className="bg-[#fff] ">
+                  <CardContent className="p-6 flex gap-4 align-items-center ">
+                    <Image alt="bg" src={BImg} className="ml-[-50px]" />
+                    <div>
+                      <h3 className="text-[30px] font-[400] mb-2">
+                        Information Technology
+                      </h3>
+                      <p className="text-gray-600 text-[16px]">
+                        Leverage our expertise to enhance your business
+                        operations and promote the seamless flow of information.
+                      </p>
+                    </div>
+                  </CardContent>
+                </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                  <div className="bg-[#fff] ">
+                  <CardContent className="p-6 flex gap-4 align-items-center ">
+                    <Image alt="bg" src={BImg} className="ml-[-50px]" />
+                    <div>
+                      <h3 className="text-[30px] font-[400] mb-2">
+                        Information Technology
+                      </h3>
+                      <p className="text-gray-600 text-[16px]">
+                        Leverage our expertise to enhance your business
+                        operations and promote the seamless flow of information.
+                      </p>
+                    </div>
+                  </CardContent>
+                  </div>
                   </SwiperSlide>
                 </Swiper>
               </div>
@@ -852,7 +955,6 @@ export default function Index ()
                           modules={ [ EffectCreative ] }
                           className="mySwiper customslider"
                           onSwiper={ ( swiper ) => ( swiperRef.current = swiper ) } // Save Swiper instance
-
                         >
 
                           <SwiperSlide className="p-4 bg-gray-200  bg-[#fff] border-r p-4 text-left shadow-[0px_4px_7.5px_0px_#945DFF40] rounded-[26px] z-[99] ">

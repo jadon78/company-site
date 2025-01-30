@@ -261,7 +261,7 @@ const AboutPage = () =>
                 </button>
 
               </div>
-              <div className="aboutimg-box relative text-center h-[100%] flex items-center justify-center">
+              <div className="aboutimg-box relative text-center h-[100%] flex items-center justify-center overflow-hidden">
                 <div className="relative z-[99]">
                   <Image
                     src={ aboutimg }
