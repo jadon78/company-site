@@ -250,6 +250,17 @@ p,h1,h2,h3,h4,h5,h6,div,span,b{
     box-shadow: 22px 34px 39px 0px #00000014;
     background-color: #fff;
   }
+  .swiper-container {
+    width: 100%;
+    height: auto;
+  }
+  
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
   .customslider  .swiper-slide {
      height: 100% !important;
    }
