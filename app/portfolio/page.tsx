@@ -8,8 +8,6 @@ import { Carousel } from "react-responsive-carousel";
 import bak from "../../components/assets/images/shape1-min.png";
 import office1 from "../../components/assets/images/testimonial1.png";
 import office2 from "../../components/assets/images/testimonial2.png";
-import "../../css/Portfolio.css";
-import "../../css/Service.css"; //only for slider
 
 const Portfolio = () => {
   return (

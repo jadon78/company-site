@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import CountUp from "react-countup";
 import Image from "next/image";
 import "../css/home.css";
@@ -17,6 +17,9 @@ import "swiper/css";
 import "swiper/css/effect-creative";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 
 export default function Index ()
 {
@@ -40,9 +43,17 @@ export default function Index ()
   {
     if ( swiperRef.current )
     {
-      swiperRef.current.slideNext();
+      swiperRef.current.slidePrev();
     }
   };
+  useEffect( () =>
+  {
+    AOS.init( {
+      duration: 800, // Animation duration in ms
+      once: true,    // Whether animation should happen only once
+      easing: "ease-in-out",
+    } );
+  }, [] );
 
   return (
     <>
@@ -108,8 +119,8 @@ export default function Index ()
               />
             </div>
           </section>
-          <div className="max-w-[1100px] mx-auto text-center mt-[-130px] p-0 w-[95%] lg:w-full">
-            <div className="custom-counter relative  z-[99]  grid grid-cols-4 md:grid-cols-4 bg-[#fff] text-[#000] rounded-[16px] p-8   shadow-[0px_4px_17px_0px_#00000040]">
+          <div className=" max-w-[1100px] mx-auto text-center mt-[-130px] p-0 w-[95%] lg:w-full">
+            <div data-aos="fade-up" className="custom-counter relative  z-[99]  grid grid-cols-4 md:grid-cols-4 bg-[#fff] text-[#000] rounded-[16px] p-8   shadow-[0px_4px_17px_0px_#00000040]">
               <div className="border-r-[1px] border-r-[#ddd] border-solid">
                 <div className=" text-[16px] md:text-[36px] lg:text-[44px]   font-[500]  leading-[50px] md: leading-[70px]">
                   <CountUp end={ 500 } duration={ 2 } />+
@@ -137,16 +148,30 @@ export default function Index ()
               </div>
             </div>
           </div>
-          <section className="py-20 px-4 relative bg-dots-img">
+          <section className="py-20 px-4 relative overflow-hidden ">
+            <video className="absolute w-full object-cover z-[-1] h-full top-0 rotate-[105deg] mix-blend-difference opacity-[12%] grayscale-[1] left-[-40%]"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                >
+                  <source
+                    src="/videos/dots.webm"
+                    // src="https://youtu.be/vwSlYG7hFk0?si=Th4STFWzm5yzMFUF"
+                    type="video/mp4"
+                  />
+                  Your browser does not support the video tag.
+                </video>
             <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center pt-10">
-              <div className="rounded-lg overflow-hidden text-center">
+              <div data-aos="fade-right" className="rounded-lg overflow-hidden text-center">
+                
                 <Image
                   src={ Image1 }
                   alt="Team meeting"
                   className="max-w-[450px] h-auto mx-auto w-full"
                 />
               </div>
-              <div className="">
+              <div data-aos="fade-left"  className="">
                 <h3 className="text-[24px]  gradient-text mb-2">
                   Our Mission & Vision
                 </h3>
@@ -277,13 +302,11 @@ export default function Index ()
             </div>
           </section>
           <section className="py-4 bg-[#fff] overflow-hidden">
-            <div className=" mx-auto">
+            <div className=" mx-auto" data-aos="fade-up">
 
               <div>
                 <Swiper
-                  slidesPerView={ 2 }
                   centeredSlides={ true }
-                  spaceBetween={ 70 }
                   pagination={ {
                     clickable: true,
                   } }
@@ -293,20 +316,20 @@ export default function Index ()
                   className="mySwiper firstslider-technology"
                   breakpoints={ {
                     640: {
-                      slidesPerView: 1, // Show 1 slide on small screens
-                      spaceBetween: 20, // Reduce space between slides
+                      slidesPerView: 1, 
+                      spaceBetween: 20, 
                     },
                     768: {
-                      slidesPerView: 1, // 1 slide for medium screens
-                      spaceBetween: 30, // Adjust space
+                      slidesPerView: 2, 
+                      spaceBetween: 30, 
                     },
                     1024: {
-                      slidesPerView: 2, // 2 slides for large screens
-                      spaceBetween: 50, // Adjust space
+                      slidesPerView: 3, 
+                      spaceBetween: 50, 
                     },
                     1440: {
-                      slidesPerView: 2, // Keep 2 slides
-                      spaceBetween: 70, // Default spacing
+                      slidesPerView: 3,
+                      spaceBetween: 70, 
                     },
                   } }
                 >
@@ -374,8 +397,38 @@ export default function Index ()
                       </CardContent>
                     </div>
                   </SwiperSlide>
-
-
+                  <SwiperSlide>
+                    <div className="bg-[#fff] ">
+                      <CardContent className="p-6 flex gap-4 align-items-center ">
+                        <Image alt="bg" src={ BImg } className="ml-[-50px]" />
+                        <div>
+                          <h3 className="text-[30px] font-[400] mb-2">
+                            Information Technology
+                          </h3>
+                          <p className="text-gray-600 text-[16px]">
+                            Leverage our expertise to enhance your business
+                            operations and promote the seamless flow of information.
+                          </p>
+                        </div>
+                      </CardContent>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="bg-[#fff] ">
+                      <CardContent className="p-6 flex gap-4 align-items-center ">
+                        <Image alt="bg" src={ BImg } className="ml-[-50px]" />
+                        <div>
+                          <h3 className="text-[30px] font-[400] mb-2">
+                            Information Technology
+                          </h3>
+                          <p className="text-gray-600 text-[16px]">
+                            Leverage our expertise to enhance your business
+                            operations and promote the seamless flow of information.
+                          </p>
+                        </div>
+                      </CardContent>
+                    </div>
+                  </SwiperSlide>
                 </Swiper>
               </div>
             </div>
@@ -385,11 +438,11 @@ export default function Index ()
               <div className="max-w-[1600px] mx-auto">
                 <div className="w-[95%] mx-auto p-2 md:px-4 lg:px-8">
                   <div className="grid grid-cols-1 gap-12 md:grid-cols-2 align-items-center ">
-                    <div className="text-left">
-                      <h2 className="text-[24px]  text-[#000]">
+                    <div data-aos="fade-right" className="text-left">
+                      <h2 className="text-[16px] md:text-[24px]  text-[#000]">
                         Technology Stack
                       </h2>
-                      <h2 className="text-[36px] lg:text-[44px]  font-bold text-left mb-6">
+                      <h2 className="text-[24px] md:text-[36px] lg:text-[44px]  font-bold text-left mb-6">
                         Empower Your Business with Cutting-Edge Technologies
                       </h2>
                       <p className="text-left text-gray-600 mb-8">
@@ -448,7 +501,7 @@ export default function Index ()
                       </ul>
                     </div>
 
-                    <div className="flex gap-[20px] md:gap-[41px] flex-wrap justify-center">
+                    <div data-aos="fade-left" className="flex gap-[20px] md:gap-[41px] flex-wrap justify-center">
                       <div className="w-[150px] md:w-[170px] h-40 bg-[#F4F2ED] hover:bg-[#8488f4] hover:text-[#fff]  rounded-[10px] text-center ">
                         <svg
                           className="mx-auto mb-2"
@@ -638,7 +691,7 @@ export default function Index ()
           <section className="services-page">
             <h2 className="text-[24px]  text-center gradient-text">Services</h2>
             <h3 className="text-[36px] lg:text-[44px]  text-center font-[500]">
-              Additional Services that will <br />
+              Additional Services that will 
               Grow Your Business
             </h3>
             <div className="bg-circle-img mt-5 overflow-hidden py-5">
@@ -646,7 +699,7 @@ export default function Index ()
                 <div className="flex flex-col w-full gap-4 md:gap-[58px]">
                   <div className="flex flex-col md:flex-row gap-4 justify-between w-full max-w-[900px] mx-auto items-center">
                     <div
-                      className="service-card shadow-[0px_4px_4px_0px_#00000040]  max-w-[300px] p-0  rounded-[24px] text-center text-white  md:mx-0 md:mr-auto"
+                      data-aos="fade-up-right"  className="service-card shadow-[0px_4px_4px_0px_#00000040]  max-w-[300px] p-0  rounded-[24px] text-center text-white  md:mx-0 md:mr-auto"
                       style={ {
                         background:
                           "linear-gradient(270deg, #083ca7 0%, #862ff1 100%)",
@@ -660,14 +713,15 @@ export default function Index ()
                             className="mx-auto mb-4"
                           />
                         </div>
-                        <h5 className="text-white">Web design</h5>
+                        <h5 className="text-white text-[24px] font-semibold">Web design</h5>
                         <p className="text-center text-white pt-0">
                           Lorem ipsum dolor sit amet, contop ctetur adipisic.
                           Google first page marketing.
                         </p>
+                        <a href="#" className="relative">Read More</a>
                       </div>
                     </div>
-                    <div
+                    <div data-aos="fade-up-left"
                       className="service-card shadow-[0px_4px_4px_0px_#00000040]  max-w-[300px] p-0  rounded-[24px] text-center text-white  md:mx-0"
                       style={ {
                         background:
@@ -682,16 +736,17 @@ export default function Index ()
                             className="mx-auto mb-4"
                           />
                         </div>
-                        <h5 className="text-white">Web design</h5>
+                        <h5 className="text-white text-[24px] font-semibold">Web design</h5>
                         <p className="text-center text-white pt-0">
                           Lorem ipsum dolor sit amet, contop ctetur adipisic.
                           Google first page marketing.
                         </p>
+                        <a href="#" className="relative">Read More</a>
                       </div>
                     </div>
                   </div>
                   <div className="flex  flex-col md:flex-row gap-4 justify-between w-full max-w-[1000px] mx-auto items-center">
-                    <div
+                    <div data-aos="fade-up-right"
                       className="service-card shadow-[0px_4px_4px_0px_#00000040]  max-w-[300px] p-0  rounded-[24px] text-center text-white  md:mx-0"
                       style={ {
                         background:
@@ -706,14 +761,15 @@ export default function Index ()
                             className="mx-auto mb-4"
                           />
                         </div>
-                        <h5 className="text-white">Web design</h5>
+                        <h5 className="text-white text-[24px] font-semibold">Web design</h5>
                         <p className="text-center text-white pt-0">
                           Lorem ipsum dolor sit amet, contop ctetur adipisic.
                           Google first page marketing.
                         </p>
+                        <a href="#" className="relative">Read More</a>
                       </div>
                     </div>
-                    <div
+                    <div data-aos="fade-up-left"
                       className="service-card shadow-[0px_4px_4px_0px_#00000040]  max-w-[300px] p-0  rounded-[24px] text-center text-white  md:mx-0"
                       style={ {
                         background:
@@ -728,11 +784,12 @@ export default function Index ()
                             className="mx-auto mb-4"
                           />
                         </div>
-                        <h5 className="text-white">Web design</h5>
+                        <h5 className="text-white text-[24px] font-semibold">Web design</h5>
                         <p className="text-center text-white pt-0">
                           Lorem ipsum dolor sit amet, contop ctetur adipisic.
                           Google first page marketing.
                         </p>
+                        <a href="#" className="relative">Read More</a>
                       </div>
                     </div>{ " " }
                   </div>
@@ -760,7 +817,7 @@ export default function Index ()
 
                 <div className="max-w-7xl mx-auto relative z-10 flex min-h-full flex-col items-center justify-center text-white text-center px-4">
                   <div className="md:flex justify-between w-full items-center px-4">
-                    <div className="md:w-[45%] text-left">
+                    <div data-aos="fade-right" className="md:w-[45%] text-left">
                       <h4 className="text-[44px] lg:text-[75px] pb-[50px] leading-[112px]">
                         Technologies{ " " }
                       </h4>
@@ -771,7 +828,7 @@ export default function Index ()
                         landscapes with comprehensive and adaptable services.
                       </p>
                     </div>
-                    <div className="md:w-[50%] overflow-hidden">
+                    <div data-aos="fade-left"  className="md:w-[50%] overflow-hidden">
                       <div className="ani-slider-container">
                         <span className="slide-box-1"></span>
                         <span className="slide-box-2"></span>
@@ -788,7 +845,7 @@ export default function Index ()
                               translate: [ 0, 0, -400 ],
                             },
                             next: {
-                              translate: [ "-100%", 0, 0 ],
+                              translate: [ "100%", 0, 0 ],
                             },
                           } }
                           loop={ true } // Enable infinite loop
@@ -1094,7 +1151,7 @@ export default function Index ()
                   Your browser does not support the video tag.
                 </video>
               </div>
-              <div className="">
+              <div data-aos="zoom-in" className="">
                 <h3 className="text-[16px] lg:text-[24px]  gradient-text mb-2">
                   Why Choose Us
                 </h3>
@@ -1109,7 +1166,8 @@ export default function Index ()
               </div>
             </div>
           </section>
-          <section className="relative py-0 ">
+          <section data-aos="fade-up"
+            data-aos-duration="3000" className="relative py-0 ">
             <video
               className="absolute top-0 left-0 w-full h-full object-cover ]"
               autoPlay
