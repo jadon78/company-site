@@ -88,7 +88,7 @@ export default function Index ()
       <div className="mt-[90px]">
         <div>
           <section className="relative h-[700px] flex items-center justify-center text-center text-white p-0 overflow-hidden">
-            <svg className="absolute bottom-[-100px] w-full left-0 z-[99] "
+            <svg className="absolute bottom-[0] md:bottom-[-100px] w-full left-0 z-[99] "
               version="1"
               xmlns="http://www.w3.org/2000/svg"
               xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -361,7 +361,6 @@ export default function Index ()
               <div>
                 <Swiper
                   centeredSlides={ true }
-              
                   navigation={ false }
                   modules={ [ Pagination, Navigation ] }
                   loop={true}
@@ -371,7 +370,7 @@ export default function Index ()
                   breakpoints={ {
                     640: {
                       slidesPerView: 1, 
-                      spaceBetween: 20, 
+                      spaceBetween: 40, 
                     },
                     768: {
                       slidesPerView: 2, 
@@ -390,12 +389,12 @@ export default function Index ()
                   <SwiperSlide>
                     <div className="bg-[#fff]">
                       <CardContent className="p-6 flex gap-4 align-items-center ">
-                        <Image alt="bg" src={ BImg } className="ml-[-50px]" />
+                        <Image alt="bg" src={ BImg } className="ml-[0px] md:ml-[-50px]" />
                         <div>
                           <h3 className="text-[30px] font-[400] mb-2">
                             Information Technology
                           </h3>
-                          <p className="text-gray-600 text-[16px]">
+                          <p className="text-gray-600 text-[16px] font-[400]">
                             Leverage our expertise to enhance your business
                             operations and promote the seamless flow of information.
                           </p>
@@ -744,7 +743,7 @@ export default function Index ()
                 </video>
 
                 <div className="max-w-7xl mx-auto relative z-10 flex min-h-full flex-col items-center justify-center text-white text-center px-4">
-                  <div className="md:flex justify-between w-full items-center px-4">
+                  <div className="md:flex justify-between w-full items-center md:px-4">
                     <div data-aos="fade-right" className="md:w-[45%] text-left">
                       <h4 className="text-[44px] lg:text-[75px] pb-[50px] leading-[112px]">
                         Technologies{ " " }

@@ -25,6 +25,9 @@ b {
 .bg-circle-img {
   position: relative;
 }
+button{
+  outline: none;
+}
 
 .bg-circle-img:after {
   content: "";
@@ -477,7 +480,6 @@ position: absolute;
   background-repeat: no-repeat;
   background-size: 80%;
   background-position: left top;
-
 }
 
 .marketing-section {
@@ -485,7 +487,6 @@ position: absolute;
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: left top;
-
 }
 
 .marketingimag {
@@ -502,24 +503,38 @@ position: absolute;
   }
 }
 
-.haxagon:hover svg,.haxagon:hover path{
+.hexagon:hover svg,.hexagon:hover path{
   fill: #fff;
 }
-.haxagon:hover {
+.hexagon:hover {
   background-image: url('data:image/svg+xml,<svg width="146" height="191" viewBox="0 0 146 191" fill="none" xmlns="http://www.w3.org/2000/svg"><g filter="url(%23filter0_d_812_4091)"><path fill-rule="evenodd" clip-rule="evenodd" d="M73 0L107.494 22.875L142 45.75V91.5V137.25L107.494 160.125L73 183L38.4935 160.125L4 137.25V91.5V45.75L38.4935 22.875L73 0Z" fill="%238285EE"/></g><defs><filter id="filter0_d_812_4091" x="0" y="0" width="146" height="191" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/><feOffset dy="4"/><feGaussianBlur stdDeviation="2"/><feComposite in2="hardAlpha" operator="out"/><feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/><feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_812_4091"/><feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_812_4091" result="shape"/></filter></defs></svg>');
 }
-  .haxagon {
-  width: 160px;
+.hexagon svg{
+  width: 40px;
+}
+  .hexagon {
+  width: 90px;
   background-position: center;
   background-repeat: no-repeat;
   align-items: center;
   justify-content: center;
   display: flex;
   position: absolute;
-  height: 200px;
+  height: 120px;
+  background-size: 90px;
   background-image: url('data:image/svg+xml,<svg width="158" height="203" viewBox="0 0 158 203" fill="none" xmlns="http://www.w3.org/2000/svg"><g filter="url(%23filter0_d_812_4186)"><path fill-rule="evenodd" clip-rule="evenodd" d="M79 6L113.494 28.875L148 51.75V97.5V143.25L113.494 166.125L79 189L44.4935 166.125L10 143.25V97.5V51.75L44.4935 28.875L79 6Z" fill="white"/></g><defs><filter id="filter0_d_812_4186" x="0" y="0" width="158" height="203" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/><feOffset dy="4"/><feGaussianBlur stdDeviation="5"/><feComposite in2="hardAlpha" operator="out"/><feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.17 0"/><feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_812_4186"/><feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_812_4186" result="shape"/></filter></defs></svg>');
 }
-.markeing-section:after{
+.markeing-section{
+  width: 600px;
+  height: 600px;
+}
+.markeing-section.box .hexagon{
+  animation: reverse-rotate-bg infinite 40s linear;
+}
+  .markeing-section.box{
+  animation: right-rotate-bg infinite 40s linear;
+}
+.markeing-section.box:after{
   content: "";
   width: 600px;
   height: 600px;
@@ -529,31 +544,31 @@ position: absolute;
   display: block;
 
 }
-    .haxagon:nth-child(1) {
-      top: -100px;
+    .hexagon:nth-child(1) {
+      top: -45px;
       left: 50%;
-      transform: translateX(-50%);
+      /* transform: translateX(-50%); */
     }
-.haxagon:nth-child(2){
-  bottom: -100px;
+.hexagon:nth-child(2){
+  bottom: -45px;
     left: 50%;
-    transform: translateX(-50%);
+    /* transform: translateX(-50%); */
 }
-.haxagon:nth-child(3) {
-  top: 80px;
-  left:-60px
+.hexagon:nth-child(3) {
+  top: 15%;
+  left:-0px
 }
-.haxagon:nth-child(4) {
- right: -60px; 
-  top: 80px;
+.hexagon:nth-child(4) {
+ right: -0px; 
+  top: 15%;
 }
-.haxagon:nth-child(5) {
-  bottom: 40px;
-  left: -60px
+.hexagon:nth-child(5) {
+  bottom: 15%;
+  left: -0px
 }
-.haxagon:nth-child(6) {
-  bottom: 40px;
-  right: -60px;
+.hexagon:nth-child(6) {
+  bottom: 15%;
+  right: -0px;
 }
 .client-testimonial .swiper-button-next:after,
 .client-testimonial .swiper-button-prev:after {
@@ -580,3 +595,123 @@ position: absolute;
   padding: 60px 0px !important;
 }
 
+@media (max-width:1024px) {
+  .markeing-section{
+    width: 600px;
+    height: 600px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width:768px) {
+  
+    .hexagon svg{
+      width: 30px !important;
+    }
+      .hexagon {
+        width: 80px;
+        height: 100px;
+        background-size: 80px;
+      }
+    .markeing-section {
+        width: 500px;
+        height: 500px;
+        margin: 0 auto;
+      }
+  .markeing-section:after {
+      width: 500px;
+      height: 500px;
+    }
+  
+    .hexagon:nth-child(1) {
+      top: -40px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  
+    .hexagon:nth-child(2) {
+      bottom: -40px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .marketing-section {
+      background-size: cover;
+      /* background-position: left top; */
+    
+    }
+}
+
+@media (max-width:520px) {
+  .hexagon svg {
+    width: 24px !important;
+  }
+  .hexagon:nth-child(3) {
+    left: -20px;
+    top:60px;
+}
+.hexagon:nth-child(4) {
+  right: -20px;
+  top:60px;
+
+}
+.hexagon:nth-child(5) {
+  left: -20px;
+  bottom:60px;
+}
+.hexagon:nth-child(6) {
+  right: -20px;
+  bottom:60px;
+}
+
+  .hexagon {
+    width:55px;
+    height: 80px;
+    background-size: 50px;
+  }
+
+  .markeing-section {
+    width: 320px;
+    height: 320px;
+    margin: 0 auto;
+  }
+
+  .markeing-section:after {
+    width: 320px;
+    height: 320px;
+  }
+
+  .hexagon:nth-child(1) {
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .hexagon:nth-child(2) {
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+}
+
+
+
+@keyframes reverse-rotate-bg {
+from {
+  transform: rotate(0deg);
+}
+
+to {
+  transform: rotate(-360deg);
+}
+}
+
+@keyframes right-rotate-bg {
+from {
+  transform: rotate(0deg);
+}
+
+to {
+  transform: rotate(360deg);
+}
+}
