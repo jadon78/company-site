@@ -509,14 +509,15 @@ position: absolute;
   background-image: url('data:image/svg+xml,<svg width="146" height="191" viewBox="0 0 146 191" fill="none" xmlns="http://www.w3.org/2000/svg"><g filter="url(%23filter0_d_812_4091)"><path fill-rule="evenodd" clip-rule="evenodd" d="M73 0L107.494 22.875L142 45.75V91.5V137.25L107.494 160.125L73 183L38.4935 160.125L4 137.25V91.5V45.75L38.4935 22.875L73 0Z" fill="%238285EE"/></g><defs><filter id="filter0_d_812_4091" x="0" y="0" width="146" height="191" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/><feOffset dy="4"/><feGaussianBlur stdDeviation="2"/><feComposite in2="hardAlpha" operator="out"/><feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/><feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_812_4091"/><feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_812_4091" result="shape"/></filter></defs></svg>');
 }
   .haxagon {
-  width: 160px;
+  width: 110px;
   background-position: center;
   background-repeat: no-repeat;
   align-items: center;
   justify-content: center;
   display: flex;
   position: absolute;
-  height: 200px;
+  height: 150px;
+  background-size: 110px;
   background-image: url('data:image/svg+xml,<svg width="158" height="203" viewBox="0 0 158 203" fill="none" xmlns="http://www.w3.org/2000/svg"><g filter="url(%23filter0_d_812_4186)"><path fill-rule="evenodd" clip-rule="evenodd" d="M79 6L113.494 28.875L148 51.75V97.5V143.25L113.494 166.125L79 189L44.4935 166.125L10 143.25V97.5V51.75L44.4935 28.875L79 6Z" fill="white"/></g><defs><filter id="filter0_d_812_4186" x="0" y="0" width="158" height="203" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/><feOffset dy="4"/><feGaussianBlur stdDeviation="5"/><feComposite in2="hardAlpha" operator="out"/><feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.17 0"/><feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_812_4186"/><feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_812_4186" result="shape"/></filter></defs></svg>');
 }
 .markeing-section:after{
@@ -530,30 +531,30 @@ position: absolute;
 
 }
     .haxagon:nth-child(1) {
-      top: -100px;
+      top: -70px;
       left: 50%;
       transform: translateX(-50%);
     }
 .haxagon:nth-child(2){
-  bottom: -100px;
+  bottom: -70px;
     left: 50%;
     transform: translateX(-50%);
 }
 .haxagon:nth-child(3) {
   top: 80px;
-  left:-60px
+  left:-10px
 }
 .haxagon:nth-child(4) {
- right: -60px; 
+ right: -10px; 
   top: 80px;
 }
 .haxagon:nth-child(5) {
-  bottom: 40px;
-  left: -60px
+  bottom: 70px;
+  left: -10px
 }
 .haxagon:nth-child(6) {
-  bottom: 40px;
-  right: -60px;
+  bottom: 70px;
+  right: -10px;
 }
 .client-testimonial .swiper-button-next:after,
 .client-testimonial .swiper-button-prev:after {
@@ -580,3 +581,78 @@ position: absolute;
   padding: 60px 0px !important;
 }
 
+@media (max-width:1024px) {
+  .markeing-section{
+    width: 600px;
+    height: 600px;
+    margin: 0 auto;
+  }
+  
+}
+@media (max-width:768px) {
+    .haxagon svg{
+      width: 30px !important;
+    }
+      .haxagon {
+        width: 80px;
+        height: 100px;
+        background-size: 80px;
+      }
+    .markeing-section {
+        width: 500px;
+        height: 500px;
+        margin: 0 auto;
+      }
+  .markeing-section:after {
+      width: 500px;
+      height: 500px;
+    }
+  
+    .haxagon:nth-child(1) {
+      top: -40px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  
+    .haxagon:nth-child(2) {
+      bottom: -40px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  
+}
+@media (max-width:520px) {
+  .haxagon svg {
+    width: 24px !important;
+  }
+
+  .haxagon {
+    width: 50px;
+    height: 80px;
+    background-size: 60px;
+  }
+
+  .markeing-section {
+    width: 320px;
+    height: 320px;
+    margin: 0 auto;
+  }
+
+  .markeing-section:after {
+    width: 320px;
+    height: 320px;
+  }
+
+  .haxagon:nth-child(1) {
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .haxagon:nth-child(2) {
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+}

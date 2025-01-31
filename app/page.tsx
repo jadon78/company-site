@@ -372,14 +372,12 @@ export default function Index ()
               <div>
                 <Swiper
                   centeredSlides={ true }
-              
                   navigation={ false }
                   modules={ [ Pagination, Navigation ] }
                   loop={true}
                   spaceBetween={70}
                   slidesPerView={3}
                   pagination={{ clickable: true }}
-                  modules={[Pagination, Navigation]}
                   className="mySwiper firstslider-technology"
                   breakpoints={ {
                     640: {
@@ -548,7 +546,7 @@ export default function Index ()
               </div>
             </div>
           </section>
-          <div className=" ourtechnoloysection bg-cover bg-center w-full h-full relative ">
+          <div className=" ourtechnoloysection bg-cover bg-center w-full h-full relative overflow-hidden ">
             <div className="bg-[#E9E9E9B2] py-16 mt-8">
               <div className="max-w-[1600px] mx-auto">
                 <div className="w-[95%] mx-auto p-2 md:px-4 lg:px-8">

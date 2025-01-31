@@ -150,7 +150,7 @@ const AboutPage = () =>
           </section>
 
           <section className="py-20 px-4 relative bg-[#fff]">
-            <div className="max-w-[1400px] mx-auto grid md:grid-cols-2 gap-12 items-center pt-10">
+            <div className="max-w-[1400px] px-[16px] mx-auto grid md:grid-cols-2 gap-12 items-center pt-10">
               <div className="">
                 <h3 className="text-[24px] gradient-text mb-2">
                   About Us
@@ -200,7 +200,7 @@ const AboutPage = () =>
               </div>
             </div>
           </section>
-          <div className="max-w-[1400px] mx-auto text-center p-0  mt-10">
+          <div className="max-w-[1400px] px-[16px] mx-auto text-center p-0  mt-10">
             <div className="our-projects-section relative projects-card  z-[99] bg-[#3A3FD4] mt-10 text-[#fff] rounded-[16px] p-8 shadow-[0px_4px_17px_0px_#00000040] overflow-hidden">
               <div className="flex items-center justify-between p-8">
                 <div className="">
@@ -265,7 +265,7 @@ const AboutPage = () =>
             <h3 className="text-[44px] text-center">
               Additional Services that will <br />Grow Your Business
             </h3>
-            <div className="max-w-[1400px] mx-auto mt-10">
+            <div className="max-w-[1400px] px-[16px] mx-auto mt-10">
               <div className="grid  grid-cols-4 md:grid-cols-4 gap-[50px] p-6 justify-center">
                 { cards.map( ( card, index ) => (
                   <div
@@ -306,7 +306,7 @@ const AboutPage = () =>
           </section>
           <div>
             <div className="marketing-section h-[540px]">
-              <div className=" max-w-[1400px] mx-auto grid grid-cols-2 items-center h-[100%]">
+              <div className=" max-w-[1400px] px-[16px] mx-auto grid grid-cols-2 items-center h-[100%]">
                 <div>
                   <h4 className="text-[56px] font-medium text-[#fff] leading-[80px]">Important Features for Digital Marketing</h4>
                   <button className="mt-[30px] text-[34px] overflow-hidden leading-[25px] text-left bg-[#D9E2FF40] w-[100px] h-[100px] transition-all hover:w-[310px] duration-1000 flex items-center gap-5 justify-end p-4 rounded-[100px] group">
@@ -338,7 +338,7 @@ const AboutPage = () =>
             </div>
           </div>
           <section>
-            <div className="max-w-[1400px] mx-auto py-[140px]">
+            <div className="max-w-[1400px] px-[16px] mx-auto py-[140px]">
               <div className="lg:flex gap-[100px] items-center  ">
                 <div>
                   <h4 className="text-[24px] gradient-text">Increase</h4>
@@ -365,7 +365,7 @@ const AboutPage = () =>
                     </div>
                   </button>
                 </div>
-                <div className="markeing-section relative w-[600px] h-[600px]">
+                <div className="markeing-section relative w-[100%] h-[100%]">
                   <div>
                     <div className="absolute -translate-x-2/4 -translate-y-2/4 max-w-[400px] w-full text-center left-2/4 top-2/4">
                       <h4 className="text-[34px] text-[#8285EE] leading-[50px]">Increase</h4>
@@ -454,7 +454,7 @@ const AboutPage = () =>
             </div>
           </section>
           <section className="bg-[#050B20] rounded-[16px] ">
-            <div className="max-w-[1400px] mx-auto">
+            <div className="max-w-[1400px] px-[16px] mx-auto">
               <h4 className="text-[40px] font-bold text-[#fff] ">What our customers say</h4>
               <div className="">
                 <Swiper
