@@ -98,43 +98,68 @@ export default function Index ()
     <>
       <div className="mt-[90px]">
         <div>
-          <section className="relative h-[700px] flex items-center justify-center text-center text-white p-0">
-            <svg
-              className="absolute bottom-[-30px] left-0 w-full z-[9]"
+          <section className="relative h-[700px] flex items-center justify-center text-center text-white p-0 overflow-hidden">
+            <svg className="absolute bottom-[-100px] w-full left-0 z-[99] "
+              version="1"
               xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 1440 320"
+              xmlnsXlink="http://www.w3.org/1999/xlink"
+              viewBox="0 0 1600 900"
+              preserveAspectRatio="xMidYMax slice"
+            // className="w-full h-full"
             >
-              <path
-                fill="#ffff"
-                fill-opacity="0.6"
-                d="M0,160L48,165.3C96,171,192,181,288,176C384,171,480,149,576,144C672,139,768,149,864,144C960,139,1056,117,1152,101.3C1248,85,1344,75,1392,69.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-              >
-                <animate
-                  attributeName="d"
-                  dur="4s"
-                  repeatCount="indefinite"
-                  values=" 
-        M0,160L48,165.3C96,171,192,181,288,176C384,171,480,149,576,144C672,139,768,149,864,144C960,139,1056,117,1152,101.3C1248,85,1344,75,1392,69.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;
-        M0,128L48,138.7C96,149,192,171,288,165.3C384,160,480,128,576,128C672,128,768,160,864,165.3C960,171,1056,149,1152,133.3C1248,117,1344,107,1392,101.3L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;
-        M0,160L48,165.3C96,171,192,181,288,176C384,171,480,149,576,144C672,139,768,149,864,144C960,139,1056,117,1152,101.3C1248,85,1344,75,1392,69.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+              <defs>
+                <linearGradient id="bg">
+                  <stop offset="0%" stopColor="rgba(255, 255, 255, 0.8)" />
+                  <stop offset="50%" stopColor="rgba(255, 255, 255, 1)" />
+                  <stop offset="100%" stopColor="rgba(255, 255, 255, 0.6)" />
+                </linearGradient>
+                <path
+                  id="wave"
+                  fill="url(#bg)"
+                  d="M-363.852,502.589c0,0,236.988-41.997,505.475,0s371.981,38.998,575.971,0s293.985-39.278,505.474,5.859s493.475,48.368,716.963-4.995v560.106H-363.852V502.589z"
                 />
-              </path>
-
-              <path
-                fill="#fff"
-                fill-opacity="0.5"
-                d="M0,192L60,200C120,208,240,224,360,208C480,192,600,160,720,144C840,128,960,128,1080,133.3C1200,139,1320,149,1380,154.7L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
-              >
-                <animate
-                  attributeName="d"
-                  dur="8s"
-                  repeatCount="indefinite"
-                  values="
-        M0,192L60,200C120,208,240,224,360,208C480,192,600,160,720,144C840,128,960,128,1080,133.3C1200,139,1320,149,1380,154.7L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z;
-        M0,160L60,170.7C120,181,240,203,360,202.7C480,203,600,181,720,170.7C840,160,960,160,1080,181.3C1200,203,1320,245,1380,266.7L1440,288L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z;
-        M0,192L60,200C120,208,240,224,360,208C480,192,600,160,720,144C840,128,960,128,1080,133.3C1200,139,1320,149,1380,154.7L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
-                />
-              </path>
+              </defs>
+              <g>
+                <use xlinkHref="#wave" opacity="0.8">
+                  <animateTransform
+                    attributeName="transform"
+                    attributeType="XML"
+                    type="translate"
+                    dur="4s"
+                    calcMode="spline"
+                    values="270 230; -334 180; 270 230"
+                    keyTimes="0; .5; 1"
+                    keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+                    repeatCount="indefinite"
+                  />
+                </use>
+                <use xlinkHref="#wave" opacity="0.7">
+                  <animateTransform
+                    attributeName="transform"
+                    attributeType="XML"
+                    type="translate"
+                    dur="8s"
+                    calcMode="spline"
+                    values="-270 230;243 220;-270 230"
+                    keyTimes="0; .6; 1"
+                    keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+                    repeatCount="indefinite"
+                  />
+                </use>
+                <use xlinkHref="#wave" opacity="0.9">
+                  <animateTransform
+                    attributeName="transform"
+                    attributeType="XML"
+                    type="translate"
+                    dur="6s"
+                    calcMode="spline"
+                    values="0 230;-140 200;0 230"
+                    keyTimes="0; .4; 1"
+                    keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+                    repeatCount="indefinite"
+                  />
+                </use>
+              </g>
             </svg>
 
             <div className="bg-gif-background bg-cover bg-center w-full h-full flex ">
@@ -151,11 +176,11 @@ export default function Index ()
                   excellence and high level of customer satisfaction.
                 </p>
               </div>
-              <Image
+              {/* <Image
                 alt=""
                 src={ WaveImg }
                 className="absolute bottom-[-55px] w-full left-0"
-              />
+              /> */}
             </div>
           </section>
           <div className=" max-w-[1100px] mx-auto text-center mt-[-130px] p-0 w-[95%] lg:w-full">
@@ -188,14 +213,15 @@ export default function Index ()
             </div>
           </div>
           <section className="py-20 px-4 relative overflow-hidden ">
-            <video className="absolute w-full object-cover z-[-1] h-full top-0 rotate-[105deg] mix-blend-difference opacity-[12%] grayscale-[1] left-[-40%]"
+            <video className="absolute w-full object-cover z-[-1] h-full top-0 rotate-[70deg]  opacity-[8%] grayscale-[1] left-[-40%]"
                   autoPlay
                   loop
                   muted
                   playsInline
                 >
                   <source
-                    src="/videos/dots.webm"
+                src="/videos/dotswave.mp4"
+                    // src="/videos/dots.webm"
                     // src="https://youtu.be/vwSlYG7hFk0?si=Th4STFWzm5yzMFUF"
                     type="video/mp4"
                   />
@@ -469,20 +495,6 @@ export default function Index ()
                         </div>
                       </CardContent>
                     </div>
-                  <div className="bg-[#fff] ">
-                  <CardContent className="p-6 flex gap-4 align-items-center ">
-                    <Image alt="bg" src={BImg} className="ml-[-50px]" />
-                    <div>
-                      <h3 className="text-[30px] font-[400] mb-2">
-                        Information Technology
-                      </h3>
-                      <p className="text-gray-600 text-[16px]">
-                        Leverage our expertise to enhance your business
-                        operations and promote the seamless flow of information.
-                      </p>
-                    </div>
-                  </CardContent>
-                </div>
                   </SwiperSlide>
                   <SwiperSlide>
                   <div className="bg-[#fff] ">
