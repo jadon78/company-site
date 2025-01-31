@@ -244,7 +244,7 @@ const AboutPage = () => {
             </div>
           </section>
 
-          <section className="py-20 px-4 relative bg-[#fff]">
+          <section className="py-20 px-4 relative bg-[#fff] overflow-hidden">
             <div className="max-w-[1400px] px-[16px] mx-auto grid md:grid-cols-2 gap-12 items-center pt-10">
               <div data-aos="fade-right" className="">
                 <h3 className="text-[16px] md:text-[24px] gradient-text mb-2">
@@ -258,7 +258,7 @@ const AboutPage = () => {
                   From seamless software development to robust IT infrastructure, our expertise ensures innovative,
                   scalable, and reliable outcomes for your business. Let’s transform challenges into opportunities with technology
                 </p>
-                <ul className="about-us-point flex  md:flex-row flex-col md:gap-8 gap-4">
+                <ul className="about-us-point flex  lg:flex-row flex-col md:gap-8 gap-4">
                   <li className="relative flex items-center text-[16px] md:text-[24px] gap-2">Marketing Strategy</li>
                   <li className="relative flex items-center text-[16px] md:text-[24px] gap-2">Technology Process</li>
                 </ul>
@@ -295,7 +295,7 @@ const AboutPage = () => {
               </div>
             </div>
           </section>
-          <div className="max-w-[1400px] px-[16px] mx-auto text-center p-0  mt-10">
+          <div className="max-w-[1400px] px-[16px] mx-auto text-center p-0  mt-10 overflow-hidden">
             <div data-aos="flip-left" className="our-projects-section relative projects-card  z-[99] bg-[#3A3FD4] mt-10 text-[#fff] rounded-[16px] p-8 shadow-[0px_4px_17px_0px_#00000040] overflow-hidden">
               <div className="flex items-center  flex-col md:flex-row justify-between lg:p-8">
                 <div className="">
@@ -413,11 +413,11 @@ const AboutPage = () => {
               </div>
             </div>
           </section>
-          <div>
-            <div className="marketing-section min-h-[540px] ">
-              <div className=" max-w-[1400px] px-[16px] mx-auto grid grid-cols-1 lg:grid-cols-2 items-center h-[100%]">
+          <div className="overflow-hidden">
+            <div className="marketing-section min-h-[540px] px-4">
+              <div className=" max-w-[1400px] px-[16px] mx-auto grid grid-cols-1 md:grid-cols-2 items-center h-[100%]">
                 <div data-aos="fade-right" className="pt-10 md:pt-0">
-                  <h4 className="text-[24px]  md:text-[30px] lg:text-[56px] font-medium text-[#fff] md:leading-[80px]">Important Features for Digital Marketing</h4>
+                  <h4 className="text-[24px]  lg:text-[30px] lg:text-[56px] font-medium text-[#fff] lg:leading-[80px]">Important Features for Digital Marketing</h4>
                   <button className="mt-[30px] text-[16px] lg:text-[34px] overflow-hidden leading-[25px] text-left bg-[#D9E2FF40] w-[60px] h-[60px] lg:w-[100px] lg:h-[100px] transition-all hover:w-[180px] lg:hover:w-[310px] duration-1000 flex items-center gap-5 justify-end p-4 rounded-[100px] group">
                     <div className="flex items-center gap-4">
                       <span className="whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-500 text-[#fff]">
@@ -447,9 +447,9 @@ const AboutPage = () => {
               </div>
             </div>
           </div>
-          <section>
+          <section className="px-4 overflow-hidden">
             <div className="max-w-[1400px] px-[16px] mx-auto py-[60px] py-[100px] lg:py-[140px]">
-              <div className="lg:flex gap-[100px] items-center justify-between overflow-hidden py-12 pr-10">
+              <div className="lg:flex gap-[60px] items-center justify-between overflow-hidden py-12 pr-10">
                 <div data-aos="fade-right" className="markeing-section-first max-w-[510px]">
                   <h4 className="text-[16px] md:text-[24px] gradient-text">Increase</h4>
                   <h5 className="text-[30px] md:text-[44px]">We are Specialized in Smart Development, and Smart SEO</h5>
@@ -501,7 +501,7 @@ const AboutPage = () => {
               </div>
             </div>
           </section>
-          <section className="bg-[#050B20] rounded-[16px] ">
+          <section className="px-4 bg-[#050B20] rounded-[16px] overflow-hidden">
             <div data-aos="zoom-in" className="max-w-[1400px] px-[16px] mx-auto">
               <h4 className="text-[40px] font-bold text-[#fff] leading-[60px] pt-[40px] ">What our customers say</h4>
               <div className="">
