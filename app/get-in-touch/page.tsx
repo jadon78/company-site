@@ -6,7 +6,6 @@ import { IoMdCall } from "react-icons/io";
 import { ImLocation } from "react-icons/im";
 import { FiMail } from "react-icons/fi";
 import Image from "next/image";
-import "../../css/GetInTouch.css";
 import fileIcon from "../../components/assets/svg/file-icon.svg";
 import skype from "../../components/assets/svg/skype.svg";
 import messanger from "../../components/assets/svg/messanger.svg";

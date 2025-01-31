@@ -4,10 +4,11 @@ import CountUp from "react-countup";
 import Image from "next/image";
 import "../../css/home.css";
 import { EnquiryCredentials } from "@/lib/actions/auth/enquiry";
-import BImg from "../../components/assets/img/b-img.png";
 import { CardContent } from "@/components/ui/card";
-import Image1 from "../../components/assets/img/img-1.png";
+import aboutimg from "../../components/assets/img/aboutimag.png";
+import Shape from "../../components/assets/img/shape1.png";
 import Gloab1 from "../../components/assets/img/gloab.png";
+import Marketing from "../../components/assets/img/marketing-strg-mckp.png";
 import Painting from "../../components/assets/img/painting-icon.png";
 import WaveImg from "../../components/assets/img/waveShape's.png";
 import { Footer } from "@/components/shared/footer";
@@ -18,53 +19,57 @@ import "swiper/css/effect-creative";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-const AboutPage = () => {
-  const [tabs, setTabs] = useState("frontend");
-    const swiperRef: any = useRef(null);
-    const handleTabChange = (tabname: string) => {
-      setTabs(tabname);
-    };
-  
-    const [formData, setFormData] = useState({
-      name: "",
-      email: "",
-      mobile_number: "",
-      message: "",
-    });
-  
-    const [formStatus, setFormStatus] = useState({ success: "", error: "" });
-  
-    const handleNextSlide = () => {
-      if (swiperRef.current) {
-        swiperRef.current.slideNext();
-      }
-    };
+const AboutPage = () =>
+{
+  const [ tabs, setTabs ] = useState( "frontend" );
+  const swiperRef: any = useRef( null );
+  const handleTabChange = ( tabname: string ) =>
+  {
+    setTabs( tabname );
+  };
 
-    const cards = [
-      {
-        title: "Card 1",
-        content: "This is the content of Card 1."
-      },
-      {
-        title: "Card 2",
-        content: "This is the content of Card 2."
-      },
-      {
-        title: "Card 3",
-        content: "This is the content of Card 3."
-      },
-      {
-        title: "Card 4",
-        content: "This is the content of Card 4."
-      }
-    ];
+  const [ formData, setFormData ] = useState( {
+    name: "",
+    email: "",
+    mobile_number: "",
+    message: "",
+  } );
+
+  const [ formStatus, setFormStatus ] = useState( { success: "", error: "" } );
+
+  const handleNextSlide = () =>
+  {
+    if ( swiperRef.current )
+    {
+      swiperRef.current.slideNext();
+    }
+  };
+
+  const cards = [
+    {
+      title: "Research",
+      content: "Welcome fat who window. Removing welcomed civility or hastened."
+    },
+    {
+      title: "Data Collection",
+      content: "Welcome fat who window. Removing welcomed civility or hastened."
+    },
+    {
+      title: "Targeting",
+      content: "Welcome fat who window. Removing welcomed civility or hastened."
+    },
+    {
+      title: "Result",
+      content: "Welcome fat who window. Removing welcomed civility or hastened."
+    }
+  ];
 
   return (
     <>
       <div className="mt-[90px]">
         <div>
           <section className="relative h-[700px] flex items-center justify-center text-center text-white p-0">
-            <svg
+            {/* <svg
               className="absolute bottom-[-30px] left-0 w-full z-[9]"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 1440 320"
@@ -100,11 +105,108 @@ const AboutPage = () => {
         M0,192L60,200C120,208,240,224,360,208C480,192,600,160,720,144C840,128,960,128,1080,133.3C1200,139,1320,149,1380,154.7L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
                 />
               </path>
-            </svg>
+            </svg> */}
+            {/* <svg
+              className="absolute bottom-0 left-0 w-full z-[9]"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 1440 100"
+              preserveAspectRatio="none"
+            >
+              <path fill="#ffffff" fillOpacity="0.8" d="M0,50 C320,80 480,20 720,50 C960,80 1120,20 1440,50 L1440,100 L0,100 Z">
+                <animate
+                  attributeName="d"
+                  dur="4s"
+                  repeatCount="indefinite"
+                  values="
+            M0,50 C320,80 480,20 720,50 C960,80 1120,20 1440,50 L1440,100 L0,100 Z;
+            M0,50 C320,20 480,80 720,50 C960,20 1120,80 1440,50 L1440,100 L0,100 Z;
+            M0,50 C320,80 480,20 720,50 C960,80 1120,20 1440,50 L1440,100 L0,100 Z"
+                />
+              </path>
+              <path
+                fill="#ffffff"
+                fillOpacity="0.5"
+                d="M0,70 C320,100 480,40 720,70 C960,100 1120,40 1440,70 L1440,100 L0,100 Z"
+              >
+                <animate
+                  attributeName="d"
+                  dur="6s"
+                  repeatCount="indefinite"
+                  values="
+            M0,70 C320,100 480,40 720,70 C960,100 1120,40 1440,70 L1440,100 L0,100 Z;
+            M0,70 C320,40 480,100 720,70 C960,40 1120,100 1440,70 L1440,100 L0,100 Z;
+            M0,70 C320,100 480,40 720,70 C960,100 1120,40 1440,70 L1440,100 L0,100 Z"
+                />
+              </path>
+            </svg> */}
+            {/* <svg
+              className="absolute bottom-0 left-0 w-full z-[9]"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 1440 100"
+              preserveAspectRatio="none"
+            >
+              <path fill="#ffffff" fillOpacity="0.6">
+                <animate
+                  attributeName="d"
+                  dur="6s"
+                  repeatCount="indefinite"
+                  values="
+        M0,40 C288,80 576,0 864,40 C1152,80 1440,0 1440,40 L1440,100 L0,100 Z;
+        M0,40 C288,20 576,80 864,40 C1152,20 1440,80 1440,40 L1440,100 L0,100 Z;
+        M0,40 C288,80 576,0 864,40 C1152,80 1440,0 1440,40 L1440,100 L0,100 Z"
+                />
+              </path>
+              <path
+                fill="#ffffff"
+                fillOpacity="0.5"
+                d="M0,60 C288,100 576,20 864,60 C1152,100 1440,20 1440,60 L1440,100 L0,100 Z"
+              >
+                <animate
+                  attributeName="d"
+                  dur="12s"
+                  repeatCount="indefinite"
+                  values="
+            M0,60 C288,100 576,20 864,60 C1152,100 1440,20 1440,60 L1440,100 L0,100 Z;
+            M0,60 C288,20 576,100 864,60 C1152,20 1440,100 1440,60 L1440,100 L0,100 Z;
+            M0,60 C288,100 576,20 864,60 C1152,100 1440,20 1440,60 L1440,100 L0,100 Z"
+                />
+              </path>
+            </svg> */}
+            <svg
+              className="absolute bottom-0 left-0 w-full z-[9]"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 1440 100"
+              preserveAspectRatio="none"
+            >
+              <path fill="#ffffff" fillOpacity="0.6">
+                <animate
+                  attributeName="d"
+                  dur="3s"
+                  repeatCount="indefinite"
+                  values="
+              M0,40 C288,80 576,0 864,40 C1152,80 1440,0 1440,40 L1440,100 L0,100 Z;
+              M0,40 C288,20 576,80 864,40 C1152,20 1440,80 1440,40 L1440,100 L0,100 Z;
+              M0,40 C288,80 576,0 864,40 C1152,80 1440,0 1440,40 L1440,100 L0,100 Z"
+                />
+              </path>
 
-            <div className="bg-gif-background bg-cover bg-center w-full h-full flex ">
+              <path fill="#ffffff" fillOpacity="0.1">
+                <animate
+                  attributeName="d"
+                  dur="3s"
+                  begin="3s"
+                  repeatCount="indefinite"
+                  values="
+              M0,60 C288,100 576,20 864,60 C1152,100 1440,20 1440,60 L1440,100 L0,100 Z;
+              M0,60 C288,40 576,80 864,60 C1152,40 1440,80 1440,60 L1440,100 L0,100 Z;
+              M0,60 C288,100 576,20 864,60 C1152,100 1440,20 1440,60 L1440,100 L0,100 Z"
+                />
+              </path>
+            </svg>
+           
+            <div className="bg-about-background bg-cover bg-center w-full h-full flex ">
               <div className="absolute inset-0 bg-cover bg-center">
-                <div className="absolute inset-0 bg-black/60" />
+                <div className="absolute inset-0 bg-black/20" />
               </div>
               <div className="relative z-10 max-w-[860px] mx-auto px-4 m-auto">
                 <h1 className="text-4xl  font-[700] leading-[95px] md:text-[72px] font-bold mb-0 text-white">
@@ -113,14 +215,14 @@ const AboutPage = () => {
               </div>
               <Image
                 alt=""
-                src={WaveImg}
-                className="absolute bottom-[-55px] w-full left-0"
+                src={ WaveImg }
+                className="absolute bottom-[-60px] w-full left-0"
               />
             </div>
           </section>
-          
-          <section className="py-20 px-4 relative bg-dots-img">
-            <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center pt-10">
+
+          <section className="py-20 px-4 relative">
+            <div className="max-w-[1400px] mx-auto grid md:grid-cols-2 gap-12 items-center pt-10">
               <div className="">
                 <h3 className="text-[24px] gradient-text mb-2">
                   About Us
@@ -129,385 +231,25 @@ const AboutPage = () => {
                   Empowering Businesses with Advanced IT Solutions
                 </h2>
                 <p className="text-gray-600 mb-6 text-[24px]">
-                  In the digital era, we help businesses thrive by delivering tailored IT services and solutions. 
-                  From seamless software development to robust IT infrastructure, our expertise ensures innovative, 
+                  In the digital era, we help businesses thrive by delivering tailored IT services and solutions.
+                  From seamless software development to robust IT infrastructure, our expertise ensures innovative,
                   scalable, and reliable outcomes for your business. Let’s transform challenges into opportunities with technology
                 </p>
-                <div className="space-y-3">
-                  
-                </div>
-              </div>
-              <div className="rounded-lg overflow-hidden">
-                <Image
-                  src={Image1}
-                  alt="Team meeting"
-                  className="max-w-[450px] h-auto"
-                />
-              </div>
-            </div>
-          </section>
-          <div className="max-w-[1100px] mx-auto text-center mt-[-130px] p-0">
-            <div className="relative  z-[99] grid grid-cols-2 md:grid-cols-4 bg-[#fff] text-[#000] rounded-[16px] p-8 shadow-[0px_4px_17px_0px_#00000040]">
-              <div className="border-r-[1px] border-r-[#ddd] border-solid">
-                <div className="text-[44px] font-[500] leading-[70px]">
-                  <CountUp end={500} duration={2} />+
-                </div>
-                <div className="text-[24px] font-[500]">Projects</div>
-              </div>
-              <div className="border-r-[1px] border-r-[#ddd] border-solid">
-                <div className="text-[44px] font-[500] leading-[70px]">
-                  <CountUp end={40} duration={2} />+
-                </div>
-                <div className="text-[24px] font-[500]">Our Client</div>
-              </div>
-              <div className="border-r-[1px] border-r-[#ddd] border-solid">
-                <div className="text-[44px] font-[500] leading-[70px]">
-                  <CountUp end={40} duration={2} />+
-                </div>
-                <div className="text-[24px] font-[500]">Happy Customers</div>
-              </div>
-              <div>
-                <div className="text-[44px] font-[500] leading-[70px]">
-                  <CountUp end={5} duration={2} />
-                  yr+
-                </div>
-                <div className="text-[24px] font-[500]">Years Experience</div>
-              </div>
-            </div>
-          </div>
-          <section className="services-page">
-            <h2 className="text-[24px] text-center gradient-text">Our Standards</h2>
-            <h3 className="text-[44px] text-center">
-              Additional Services that will <br />Grow Your Business
-            </h3>
-            <div className="flex flex-row gap-4 p-6">
-              {cards.map((card, index) => (
-                <div
-                  key={index}
-                  className="bg-white shadow-lg rounded-2xl p-6 w-64 hover:scale-105 transform transition duration-300"
-                >
-                  <h2 className="text-xl font-bold mb-2">{card.title}</h2>
-                  <p className="text-gray-600">{card.content}</p>
-                </div>
-              ))}
-            </div>
-          </section>
-          <div className="bg-gif-background2 bg-cover bg-center w-full h-full  ">
-            <div className="bg-[#E9E9E9B2] py-16">
-              <div className="max-w-[1600px] mx-auto">
-                <div className="w-[95%] mx-auto px-8">
-                  <div className="grid grid-cols-1 gap-12 md:grid-cols-2 align-items-center ">
-                    <div className="text-left">
-                      <h2 className="text-[44px] font-bold text-left mb-6">
-                        Important Features for <br /> Digital Marketing
-                      </h2>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <section className="services-page">
-            <h2 className="text-[24px] text-center gradient-text">Services</h2>
-            <h3 className="text-[44px] text-center">
-              Additional Services that will <br />
-              Grow Your Business
-            </h3>
-            <div className="bg-circle-img mt-5 overflow-hidden py-5">
-              <div className="serviceimg">
-                <div className="flex flex-col w-full gap-[58px]">
-                  <div className="flex     justify-between w-full max-w-[900px] mx-auto">
-                    <div
-                      className="service-card shadow-[0px_4px_4px_0px_#00000040]  max-w-[300px] p-0  rounded-[24px] text-center text-white"
-                      style={{
-                        background:
-                          "linear-gradient(270deg, #083ca7 0%, #862ff1 100%)",
-                      }}
-                    >
-                      <div className="square p-4">
-                        <div>
-                          <Image
-                            alt=""
-                            src={Painting}
-                            className="mx-auto mb-4"
-                          />
-                        </div>
-                        <h5 className="text-white">Web design</h5>
-                        <p className="text-center text-white pt-0">
-                          Lorem ipsum dolor sit amet, contop ctetur adipisic.
-                          Google first page marketing.
-                        </p>
-                      </div>
-                    </div>
-                    <div
-                      className="service-card shadow-[0px_4px_4px_0px_#00000040]  max-w-[300px] p-0  rounded-[24px] text-center text-white"
-                      style={{
-                        background:
-                          " linear-gradient(90deg, #297679 0%, #3FA6C1 100%)",
-                      }}
-                    >
-                      <div className="square p-4">
-                        <div>
-                          <Image
-                            alt=""
-                            src={Painting}
-                            className="mx-auto mb-4"
-                          />
-                        </div>
-                        <h5 className="text-white">Web design</h5>
-                        <p className="text-center text-white pt-0">
-                          Lorem ipsum dolor sit amet, contop ctetur adipisic.
-                          Google first page marketing.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="flex     justify-between w-full max-w-[1000px] mx-auto">
-                    <div
-                      className="service-card shadow-[0px_4px_4px_0px_#00000040]  max-w-[300px] p-0  rounded-[24px] text-center text-white"
-                      style={{
-                        background:
-                          "linear-gradient(90deg, #FCB731 0%, #F67526 100%)",
-                      }}
-                    >
-                      <div className="square p-4">
-                        <div>
-                          <Image
-                            alt=""
-                            src={Painting}
-                            className="mx-auto mb-4"
-                          />
-                        </div>
-                        <h5 className="text-white">Web design</h5>
-                        <p className="text-center text-white pt-0">
-                          Lorem ipsum dolor sit amet, contop ctetur adipisic.
-                          Google first page marketing.
-                        </p>
-                      </div>
-                    </div>
-                    <div
-                      className="service-card shadow-[0px_4px_4px_0px_#00000040]  max-w-[300px] p-0  rounded-[24px] text-center text-white"
-                      style={{
-                        background:
-                          "linear-gradient(90deg, #FE6F7B 0%, #FA5B9D 100%)",
-                      }}
-                    >
-                      <div className="square p-4">
-                        <div>
-                          <Image
-                            alt=""
-                            src={Painting}
-                            className="mx-auto mb-4"
-                          />
-                        </div>
-                        <h5 className="text-white">Web design</h5>
-                        <p className="text-center text-white pt-0">
-                          Lorem ipsum dolor sit amet, contop ctetur adipisic.
-                          Google first page marketing.
-                        </p>
-                      </div>
-                    </div>{" "}
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          <section>
-            <div>
-              <div className="relative h-screen w-full overflow-hidden">
-                <video
-                  className="absolute top-0 left-0 w-full h-full object-cover opacity-[11%] bg-[#d9e2ff]"
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
-                >
-                  <source
-                    src="/videos/bgVideo.mp4"
-                    // src="https://youtu.be/vwSlYG7hFk0?si=Th4STFWzm5yzMFUF"
-                    type="video/mp4"
-                  />
-                  Your browser does not support the video tag.
-                </video>
-
-                <div className="max-w-7xl mx-auto relative z-10 flex h-full flex-col items-center justify-center text-white text-center px-4">
-                  <div className="flex justify-between">
-                    <div className="w-[45%] text-left">
-                      <h4 className="text-[75px] pb-[50px] leading-[112px]">
-                        Technologies{" "}
-                      </h4>
-                      <p className="text-[#000] text-[18px]">
-                        As a versatile service provider, we cater to diverse
-                        industries, offering tailored solutions to meet specific
-                        needs. We ensure success across varied business
-                        landscapes with comprehensive and adaptable services.
-                      </p>
-                    </div>
-                    <div className="w-[50%]">
-                      <div className="ani-slider-container">
-                        <span className="slide-box-1"></span>
-                        <span className="slide-box-2"></span>
-                        <span className="slide-box-3"></span>
-                        <span className="slide-box-4"></span>
-                        <span className="slide-box-5"></span>
-                        <div className="bg-[#fff] border-r p-4 text-left shadow-[0px_4px_7.5px_0px_#945DFF40] rounded-[26px] z-[99] relative">
-                          <h4 className="text-[50px] leading-[100px]">
-                            Technology
-                          </h4>
-                          <p className="text-lg font-normal leading-7 text-left">
-                            we propel tech advancement through bespoke
-                            solutions, ensuring seamless integration and
-                            innovation for businesses. Our expertise drives
-                            digital transformation, providing customized
-                            strategies to navigate the evolving landscape of
-                            technology. We are committed to delivering
-                            excellence, empowering our clients to thrive in the
-                            ever-changing world of technology.
-                          </p>
-                          <span>
-                            <svg
-                              className="ml-auto"
-                              width="41"
-                              height="13"
-                              viewBox="0 0 41 13"
-                              fill="none"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <path
-                                d="M0.943579 6.64421C0.951029 7.12084 1.14728 7.57505 1.48925 7.90714C1.83123 8.23923 2.29099 8.42208 2.76763 8.41555L33.3583 8.41555V12.0742C33.3583 12.8498 34.2945 13.2381 34.8415 12.6893L40.2996 7.23115C40.6397 6.89105 40.6397 6.34115 40.2996 6.00105L34.8415 0.542942C34.2945 -0.0058918 33.3583 0.384224 33.3583 1.15799V4.81664L2.76763 4.81664C2.52689 4.81335 2.28792 4.85839 2.0649 4.94911C1.84188 5.03984 1.63932 5.17439 1.46924 5.3448C1.29915 5.51521 1.16499 5.71803 1.0747 5.94123C0.984405 6.16442 0.939819 6.40347 0.943579 6.64421Z"
-                                fill="black"
-                              />
-                            </svg>
-                          </span>
-                        </div>
-                        {/* <Swiper
-                          grabCursor={true}
-                          effect={"creative"}
-                          creativeEffect={{
-                            prev: {
-                              shadow: true,
-                              translate: [0, 0, -400],
-                            },
-                            next: {
-                              translate: ["-100%", 0, 0],
-                            },
-                          }}
-                          loop={true} // Enable infinite loop
-                          modules={[EffectCreative]}
-                          className="mySwiper"
-                          onSwiper={(swiper) => (swiperRef.current = swiper)} // Save Swiper instance
-                        >
-                          <SwiperSlide className="p-4 bg-gray-200 rounded-lg">
-                            Slide 1
-                          </SwiperSlide>
-                          <SwiperSlide className="p-4 bg-gray-300 rounded-lg">
-                            Slide 2
-                          </SwiperSlide>
-                          <SwiperSlide className="p-4 bg-gray-400 rounded-lg">
-                            Slide 3
-                          </SwiperSlide>
-                          <SwiperSlide className="p-4 bg-gray-500 rounded-lg">
-                            Slide 4
-                          </SwiperSlide>
-                          <SwiperSlide className="p-4 bg-gray-600 rounded-lg">
-                            Slide 5
-                          </SwiperSlide>
-                          <SwiperSlide className="p-4 bg-gray-700 rounded-lg">
-                            Slide 6
-                          </SwiperSlide>
-                          <SwiperSlide className="p-4 bg-gray-800 rounded-lg">
-                            Slide 7
-                          </SwiperSlide>
-                          <SwiperSlide className="p-4 bg-gray-900 rounded-lg">
-                            Slide 8
-                          </SwiperSlide>
-                          <SwiperSlide className="p-4 bg-gray-1000 rounded-lg">
-                            Slide 9
-                          </SwiperSlide>
-                        </Swiper> */}
-                        {/* <button
-                          onClick={handleNextSlide}
-                          className="px-4 py-2 bg-blue-500 text-white rounded-lg"
-                          style={{background: "#000"}}
-                        >
-                          Next Slide
-                        </button> */}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="absolute top-0 left-0 w-full h-full bg-[rgb(165_176_212_/_51%)]"></div>
-              </div>
-            </div>
-          </section>
-          {/* <video
-                  className="top-0 left-0 w-full h-full object-cover"
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
-                >
-                  <source
-                    src="/videos/bgVideo.mp4"
-                    // src="https://youtu.be/vwSlYG7hFk0?si=Th4STFWzm5yzMFUF"
-                    type="video/mp4"
-                  />
-                  Your browser does not support the video tag.
-                </video> */}
-          <section className="px-4 relative why-choose-us">
-            <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center pt-10">
-              <div className="rounded-lg overflow-hidden">
-                <Image
-                  src={Gloab1}
-                  alt="gloab"
-                  className="max-w-[450px] h-auto"
-                />
-              </div>
-              <div className="">
-                <h3 className="text-[24px] gradient-text mb-2">
-                  Why Choose Us
-                </h3>
-                <h2 className="text-[44px] font-bold mb-4 pb-0">
-                  We prioritize our clients’ satisfaction above all else.
-                </h2>
-                <p className="text-gray-600 mb-6 text-[24px]">
-                  Engitech is the partner of choice for many of the world’s
-                  leading enterprises, SMEs and technology challengers. We help
-                  businesses custom software development.
-                </p>
-              </div>
-            </div>
-          </section>
-          <section className="relative py-0 ">
-            <video
-              className="absolute top-0 left-0 w-full h-full object-cover ]"
-              autoPlay
-              loop
-              muted
-              playsInline
-            >
-              <source src="/videos/colorwave.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-            <div className="max-w-7xl mx-auto  flex gap-12 items-center  relative z-[9] h-[400px]">
-              <div className="max-w-[700px]">
-                <h4 className="text-[42.66px] font-normal leading-[62px] text-left text-[#fff]">
-                  Secure the future of your company with company name{" "}
-                </h4>
-              </div>
-              <div>
-                <button className="text-[34px] overflow-hidden leading-[25px] text-left bg-[#D9E2FF40] w-[100px] h-[100px] transition-all hover:w-[310px] duration-1000 flex items-center gap-5 justify-end p-4 rounded-[100px] group">
+                <ul className="about-us-point flex gap-8">
+                  <li className="relative flex items-center text-[24px] gap-2">Marketing Strategy</li>
+                  <li className="relative flex items-center text-[24px] gap-2">Technology Process</li>
+                </ul>
+                <button className=" mt-4 text-[16px] md:text-[34px] overflow-hidden leading-[25px] text-left bg-[#8285EE] w-[60px] h-[60px] md:w-[100px] md:h-[100px] transition-all hover:w-[180px] md:hover:w-[310px] duration-1000 flex items-center gap-5 justify-end p-4 rounded-[100px] group">
                   <div className="flex items-center gap-4">
                     <span className="whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-500 text-[#fff]">
                       Get in touch
                     </span>
                     <div>
                       <svg
-                        width="41"
-                        height="14"
                         viewBox="0 0 41 14"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
+                        className="w-[24px] w-[24px] md:w-[41px] md:h-[41px]"
                       >
                         <path
                           d="M0.813208 7.028C0.820658 7.50463 1.01691 7.95884 1.35888 8.29093C1.70086 8.62302 2.16062 8.80587 2.63726 8.79934L33.228 8.79934V12.458C33.228 13.2336 34.1641 13.6219 34.7111 13.073L40.1692 7.61493C40.5093 7.27484 40.5093 6.72494 40.1692 6.38484L34.7111 0.926731C34.1641 0.377897 33.228 0.768013 33.228 1.54178V5.20043L2.63726 5.20043C2.39652 5.19714 2.15755 5.24218 1.93453 5.3329C1.7115 5.42362 1.50895 5.55818 1.33886 5.72859C1.16878 5.899 1.03462 6.10182 0.944325 6.32501C0.854034 6.54821 0.809448 6.78726 0.813208 7.028Z"
@@ -517,8 +259,402 @@ const AboutPage = () => {
                     </div>
                   </div>
                 </button>
+
+              </div>
+              <div className="aboutimg-box relative text-center h-[100%] flex items-center justify-center overflow-hidden">
+                <div className="relative z-[99]">
+                  <Image
+                    src={ aboutimg }
+                    alt="Team meeting"
+                    className="max-w-[450px] h-auto mx-auto"
+                  />
+                </div>
               </div>
             </div>
+          </section>
+          <div className="max-w-[1400px] mx-auto text-center p-0  mt-10">
+            <div className="our-projects-section relative projects-card  z-[99] bg-[#3A3FD4] mt-10 text-[#fff] rounded-[16px] p-8 shadow-[0px_4px_17px_0px_#00000040] overflow-hidden">
+              <div className="flex items-center justify-between p-8">
+                <div className="">
+                  <h4 className="text-[38px] font-bold text-left text-[#fff] leading-[60px] max-w-[300px]">Let’s Start Your Project with
+                    qutiiz</h4>
+                </div>
+                <div className="flex gap-10">
+                  <div className="flex flex-col gap-2 text-[#fff] items-center justify-center">
+                    <svg width="58" height="63" viewBox="0 0 58 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_800_3579)">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M42.6394 36.3091C45.869 36.3091 48.7947 37.6165 50.9169 39.7185C53.0391 41.8308 54.3423 44.7327 54.3423 47.9575C54.3423 50.3057 53.6366 52.5 52.4364 54.3303L57.4998 59.8213L54.0075 63L49.1244 57.6526C47.2701 58.8831 45.0397 59.6008 42.6445 59.6008C39.4149 59.6008 36.4892 58.2935 34.3722 56.1914C32.25 54.0791 30.9468 51.1772 30.9468 47.9575C30.9468 44.7429 32.2603 41.8308 34.3722 39.7185C36.4841 37.6062 39.4046 36.3091 42.6394 36.3091ZM3.47701 20.9487V45.0916C3.47701 45.23 3.52852 45.3582 3.61608 45.4453C3.70365 45.5325 3.82727 45.5889 3.97149 45.5889H25.8783C27.3875 45.7427 27.4339 48.342 25.8783 48.5676H11.8575V54.1047C11.8575 54.2483 11.9091 54.3713 12.0018 54.4585C12.0893 54.5457 12.213 54.5969 12.3572 54.5969H25.8835C26.9755 54.72 27.3309 57.1912 25.8835 57.5757H12.3726C11.4146 57.5757 10.5286 57.186 9.9105 56.5503C9.27178 55.9146 8.88031 55.0532 8.88031 54.0996V48.5625H3.98695C3.02888 48.5625 2.14292 48.1729 1.52481 47.5371C0.886098 46.9014 0.494629 46.04 0.494629 45.0864V3.47607C0.49978 2.52246 0.891249 1.64062 1.52996 1.02539C2.16868 0.389648 3.03403 0 3.9921 0H40.7284C41.6865 0 42.5724 0.389648 43.1905 1.02026C43.8293 1.65601 44.2156 2.52246 44.2156 3.47095V9.00806H49.1089C50.067 9.00806 50.953 9.39771 51.5711 10.0283C52.2098 10.6641 52.6013 11.5305 52.6013 12.479V31.4641C52.4982 32.551 49.8146 32.5664 49.588 31.4641V12.4893C49.588 12.3457 49.5365 12.2227 49.4489 12.1355C49.3613 12.0483 49.2377 11.9919 49.0935 11.9919H44.2001V31.4692C43.9374 32.4536 41.7071 32.6023 41.2074 31.4692V20.9487H3.47701ZM3.47701 18.2058H41.2074V3.47607C41.2074 3.33252 41.1559 3.20947 41.0632 3.12231C40.9757 3.03516 40.852 2.97876 40.7078 2.97876H3.97149C3.82727 2.97876 3.70365 3.03003 3.61608 3.12231C3.52852 3.20947 3.47701 3.33252 3.47701 3.47607V18.2058ZM20.5677 11.0435H22.999C23.1277 11.0435 23.2153 11.1306 23.2153 11.2588V16.6216C23.2153 16.7498 23.1277 16.8369 22.999 16.8369H20.5677C20.439 16.8369 20.3514 16.7498 20.3514 16.6216V11.2588C20.3514 11.1768 20.439 11.0435 20.5677 11.0435ZM32.5488 11.0435H34.98C35.1088 11.0435 35.1963 11.1306 35.1963 11.2588V16.6216C35.1963 16.7498 35.1088 16.8369 34.98 16.8369H32.5488C32.42 16.8369 32.3324 16.7498 32.3324 16.6216V11.2588C32.3324 11.1768 32.42 11.0435 32.5488 11.0435ZM26.5582 6.5061H28.9895C29.1234 6.5061 29.2058 6.59326 29.2058 6.72144V16.6626C29.2058 16.7908 29.1182 16.8779 28.9895 16.8779H26.5582C26.4295 16.8779 26.3419 16.7908 26.3419 16.6626V6.72144C26.3419 6.59326 26.4295 6.5061 26.5582 6.5061ZM8.59186 8.14673H11.0231C11.1519 8.14673 11.2394 8.23389 11.2394 8.36206V16.6626C11.2394 16.7908 11.1519 16.8779 11.0231 16.8779H8.59186C8.46309 16.8779 8.37552 16.7908 8.37552 16.6626V8.36719C8.33432 8.23389 8.46309 8.14673 8.59186 8.14673ZM14.5772 6.5061H17.0085C17.1372 6.5061 17.2248 6.59326 17.2248 6.72144V16.6626C17.2248 16.7908 17.1372 16.8779 17.0085 16.8779H14.5772C14.4485 16.8779 14.3609 16.7908 14.3609 16.6626V6.72144C14.3609 6.59326 14.4485 6.5061 14.5772 6.5061ZM22.489 34.4429L29.2625 34.5608C29.2625 36.9807 28.0675 39.2007 26.0741 40.5491L22.489 34.4429ZM22.1182 32.3818L22.0409 24.5273V24.0095L22.5611 24.0505C23.1999 24.0916 23.8386 24.2095 24.4361 24.3684C25.0336 24.5273 25.5899 24.7632 26.1513 25.04C28.9019 26.4705 30.8129 29.3262 30.9726 32.5767L31.0138 33.0945H30.4935L22.6436 32.8586H22.2057L22.1182 32.3818ZM22.9938 24.999L23.0711 31.905L29.9681 32.105C29.69 29.4082 28.016 27.0652 25.7032 25.8398C25.2242 25.5989 24.7091 25.3989 24.1888 25.24C23.751 25.158 23.3904 25.0811 22.9938 24.999ZM20.2175 33.7405L24.0858 40.4055C22.8908 41.0823 21.5773 41.436 20.2175 41.436C15.9525 41.436 12.486 37.9856 12.486 33.7354C12.486 29.6082 15.7568 26.1987 19.8981 26.0398L20.2175 33.7405ZM48.8617 41.759C47.2701 40.1748 45.0706 39.1904 42.6394 39.1904C40.2133 39.1904 38.0087 40.1748 36.4171 41.759C34.8255 43.3433 33.8365 45.5325 33.8365 47.9524C33.8365 50.3672 34.8255 52.5615 36.4171 54.1458C38.0087 55.73 40.2082 56.7144 42.6394 56.7144C45.0655 56.7144 47.2701 55.73 48.8617 54.1458C50.4533 52.5615 51.4423 50.3672 51.4423 47.9524C51.4423 45.5376 50.4533 43.3433 48.8617 41.759Z" fill="white" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_800_3579">
+                          <rect width="57" height="63" fill="white" transform="translate(0.5)" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+
+                    <h4 className="text-[#fff] text-[54px] leading-[80px] font-semibold">6400</h4>
+                    <p className="text-[#fff] text-[21px] p-0  text-center">Projects Completed</p>
+                  </div>
+                  <span className="w-[1px]  bg-[#fff]"></span>
+                  <div className="flex flex-col gap-2 text-[#fff] items-center justify-center">
+                    <svg width="58" height="63" viewBox="0 0 58 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_800_3579)">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M42.6394 36.3091C45.869 36.3091 48.7947 37.6165 50.9169 39.7185C53.0391 41.8308 54.3423 44.7327 54.3423 47.9575C54.3423 50.3057 53.6366 52.5 52.4364 54.3303L57.4998 59.8213L54.0075 63L49.1244 57.6526C47.2701 58.8831 45.0397 59.6008 42.6445 59.6008C39.4149 59.6008 36.4892 58.2935 34.3722 56.1914C32.25 54.0791 30.9468 51.1772 30.9468 47.9575C30.9468 44.7429 32.2603 41.8308 34.3722 39.7185C36.4841 37.6062 39.4046 36.3091 42.6394 36.3091ZM3.47701 20.9487V45.0916C3.47701 45.23 3.52852 45.3582 3.61608 45.4453C3.70365 45.5325 3.82727 45.5889 3.97149 45.5889H25.8783C27.3875 45.7427 27.4339 48.342 25.8783 48.5676H11.8575V54.1047C11.8575 54.2483 11.9091 54.3713 12.0018 54.4585C12.0893 54.5457 12.213 54.5969 12.3572 54.5969H25.8835C26.9755 54.72 27.3309 57.1912 25.8835 57.5757H12.3726C11.4146 57.5757 10.5286 57.186 9.9105 56.5503C9.27178 55.9146 8.88031 55.0532 8.88031 54.0996V48.5625H3.98695C3.02888 48.5625 2.14292 48.1729 1.52481 47.5371C0.886098 46.9014 0.494629 46.04 0.494629 45.0864V3.47607C0.49978 2.52246 0.891249 1.64062 1.52996 1.02539C2.16868 0.389648 3.03403 0 3.9921 0H40.7284C41.6865 0 42.5724 0.389648 43.1905 1.02026C43.8293 1.65601 44.2156 2.52246 44.2156 3.47095V9.00806H49.1089C50.067 9.00806 50.953 9.39771 51.5711 10.0283C52.2098 10.6641 52.6013 11.5305 52.6013 12.479V31.4641C52.4982 32.551 49.8146 32.5664 49.588 31.4641V12.4893C49.588 12.3457 49.5365 12.2227 49.4489 12.1355C49.3613 12.0483 49.2377 11.9919 49.0935 11.9919H44.2001V31.4692C43.9374 32.4536 41.7071 32.6023 41.2074 31.4692V20.9487H3.47701ZM3.47701 18.2058H41.2074V3.47607C41.2074 3.33252 41.1559 3.20947 41.0632 3.12231C40.9757 3.03516 40.852 2.97876 40.7078 2.97876H3.97149C3.82727 2.97876 3.70365 3.03003 3.61608 3.12231C3.52852 3.20947 3.47701 3.33252 3.47701 3.47607V18.2058ZM20.5677 11.0435H22.999C23.1277 11.0435 23.2153 11.1306 23.2153 11.2588V16.6216C23.2153 16.7498 23.1277 16.8369 22.999 16.8369H20.5677C20.439 16.8369 20.3514 16.7498 20.3514 16.6216V11.2588C20.3514 11.1768 20.439 11.0435 20.5677 11.0435ZM32.5488 11.0435H34.98C35.1088 11.0435 35.1963 11.1306 35.1963 11.2588V16.6216C35.1963 16.7498 35.1088 16.8369 34.98 16.8369H32.5488C32.42 16.8369 32.3324 16.7498 32.3324 16.6216V11.2588C32.3324 11.1768 32.42 11.0435 32.5488 11.0435ZM26.5582 6.5061H28.9895C29.1234 6.5061 29.2058 6.59326 29.2058 6.72144V16.6626C29.2058 16.7908 29.1182 16.8779 28.9895 16.8779H26.5582C26.4295 16.8779 26.3419 16.7908 26.3419 16.6626V6.72144C26.3419 6.59326 26.4295 6.5061 26.5582 6.5061ZM8.59186 8.14673H11.0231C11.1519 8.14673 11.2394 8.23389 11.2394 8.36206V16.6626C11.2394 16.7908 11.1519 16.8779 11.0231 16.8779H8.59186C8.46309 16.8779 8.37552 16.7908 8.37552 16.6626V8.36719C8.33432 8.23389 8.46309 8.14673 8.59186 8.14673ZM14.5772 6.5061H17.0085C17.1372 6.5061 17.2248 6.59326 17.2248 6.72144V16.6626C17.2248 16.7908 17.1372 16.8779 17.0085 16.8779H14.5772C14.4485 16.8779 14.3609 16.7908 14.3609 16.6626V6.72144C14.3609 6.59326 14.4485 6.5061 14.5772 6.5061ZM22.489 34.4429L29.2625 34.5608C29.2625 36.9807 28.0675 39.2007 26.0741 40.5491L22.489 34.4429ZM22.1182 32.3818L22.0409 24.5273V24.0095L22.5611 24.0505C23.1999 24.0916 23.8386 24.2095 24.4361 24.3684C25.0336 24.5273 25.5899 24.7632 26.1513 25.04C28.9019 26.4705 30.8129 29.3262 30.9726 32.5767L31.0138 33.0945H30.4935L22.6436 32.8586H22.2057L22.1182 32.3818ZM22.9938 24.999L23.0711 31.905L29.9681 32.105C29.69 29.4082 28.016 27.0652 25.7032 25.8398C25.2242 25.5989 24.7091 25.3989 24.1888 25.24C23.751 25.158 23.3904 25.0811 22.9938 24.999ZM20.2175 33.7405L24.0858 40.4055C22.8908 41.0823 21.5773 41.436 20.2175 41.436C15.9525 41.436 12.486 37.9856 12.486 33.7354C12.486 29.6082 15.7568 26.1987 19.8981 26.0398L20.2175 33.7405ZM48.8617 41.759C47.2701 40.1748 45.0706 39.1904 42.6394 39.1904C40.2133 39.1904 38.0087 40.1748 36.4171 41.759C34.8255 43.3433 33.8365 45.5325 33.8365 47.9524C33.8365 50.3672 34.8255 52.5615 36.4171 54.1458C38.0087 55.73 40.2082 56.7144 42.6394 56.7144C45.0655 56.7144 47.2701 55.73 48.8617 54.1458C50.4533 52.5615 51.4423 50.3672 51.4423 47.9524C51.4423 45.5376 50.4533 43.3433 48.8617 41.759Z" fill="white" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_800_3579">
+                          <rect width="57" height="63" fill="white" transform="translate(0.5)" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+
+                    <h4 className="text-[#fff] text-[54px] leading-[80px] font-semibold">6400</h4>
+                    <p className="text-[#fff] text-[21px] p-0  text-center">Projects Completed</p>
+                  </div>
+                  <span className="w-[1px]  bg-[#fff]"></span>
+                  <div className="flex flex-col gap-2 text-[#fff] items-center justify-center">
+                    <svg width="58" height="63" viewBox="0 0 58 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_800_3579)">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M42.6394 36.3091C45.869 36.3091 48.7947 37.6165 50.9169 39.7185C53.0391 41.8308 54.3423 44.7327 54.3423 47.9575C54.3423 50.3057 53.6366 52.5 52.4364 54.3303L57.4998 59.8213L54.0075 63L49.1244 57.6526C47.2701 58.8831 45.0397 59.6008 42.6445 59.6008C39.4149 59.6008 36.4892 58.2935 34.3722 56.1914C32.25 54.0791 30.9468 51.1772 30.9468 47.9575C30.9468 44.7429 32.2603 41.8308 34.3722 39.7185C36.4841 37.6062 39.4046 36.3091 42.6394 36.3091ZM3.47701 20.9487V45.0916C3.47701 45.23 3.52852 45.3582 3.61608 45.4453C3.70365 45.5325 3.82727 45.5889 3.97149 45.5889H25.8783C27.3875 45.7427 27.4339 48.342 25.8783 48.5676H11.8575V54.1047C11.8575 54.2483 11.9091 54.3713 12.0018 54.4585C12.0893 54.5457 12.213 54.5969 12.3572 54.5969H25.8835C26.9755 54.72 27.3309 57.1912 25.8835 57.5757H12.3726C11.4146 57.5757 10.5286 57.186 9.9105 56.5503C9.27178 55.9146 8.88031 55.0532 8.88031 54.0996V48.5625H3.98695C3.02888 48.5625 2.14292 48.1729 1.52481 47.5371C0.886098 46.9014 0.494629 46.04 0.494629 45.0864V3.47607C0.49978 2.52246 0.891249 1.64062 1.52996 1.02539C2.16868 0.389648 3.03403 0 3.9921 0H40.7284C41.6865 0 42.5724 0.389648 43.1905 1.02026C43.8293 1.65601 44.2156 2.52246 44.2156 3.47095V9.00806H49.1089C50.067 9.00806 50.953 9.39771 51.5711 10.0283C52.2098 10.6641 52.6013 11.5305 52.6013 12.479V31.4641C52.4982 32.551 49.8146 32.5664 49.588 31.4641V12.4893C49.588 12.3457 49.5365 12.2227 49.4489 12.1355C49.3613 12.0483 49.2377 11.9919 49.0935 11.9919H44.2001V31.4692C43.9374 32.4536 41.7071 32.6023 41.2074 31.4692V20.9487H3.47701ZM3.47701 18.2058H41.2074V3.47607C41.2074 3.33252 41.1559 3.20947 41.0632 3.12231C40.9757 3.03516 40.852 2.97876 40.7078 2.97876H3.97149C3.82727 2.97876 3.70365 3.03003 3.61608 3.12231C3.52852 3.20947 3.47701 3.33252 3.47701 3.47607V18.2058ZM20.5677 11.0435H22.999C23.1277 11.0435 23.2153 11.1306 23.2153 11.2588V16.6216C23.2153 16.7498 23.1277 16.8369 22.999 16.8369H20.5677C20.439 16.8369 20.3514 16.7498 20.3514 16.6216V11.2588C20.3514 11.1768 20.439 11.0435 20.5677 11.0435ZM32.5488 11.0435H34.98C35.1088 11.0435 35.1963 11.1306 35.1963 11.2588V16.6216C35.1963 16.7498 35.1088 16.8369 34.98 16.8369H32.5488C32.42 16.8369 32.3324 16.7498 32.3324 16.6216V11.2588C32.3324 11.1768 32.42 11.0435 32.5488 11.0435ZM26.5582 6.5061H28.9895C29.1234 6.5061 29.2058 6.59326 29.2058 6.72144V16.6626C29.2058 16.7908 29.1182 16.8779 28.9895 16.8779H26.5582C26.4295 16.8779 26.3419 16.7908 26.3419 16.6626V6.72144C26.3419 6.59326 26.4295 6.5061 26.5582 6.5061ZM8.59186 8.14673H11.0231C11.1519 8.14673 11.2394 8.23389 11.2394 8.36206V16.6626C11.2394 16.7908 11.1519 16.8779 11.0231 16.8779H8.59186C8.46309 16.8779 8.37552 16.7908 8.37552 16.6626V8.36719C8.33432 8.23389 8.46309 8.14673 8.59186 8.14673ZM14.5772 6.5061H17.0085C17.1372 6.5061 17.2248 6.59326 17.2248 6.72144V16.6626C17.2248 16.7908 17.1372 16.8779 17.0085 16.8779H14.5772C14.4485 16.8779 14.3609 16.7908 14.3609 16.6626V6.72144C14.3609 6.59326 14.4485 6.5061 14.5772 6.5061ZM22.489 34.4429L29.2625 34.5608C29.2625 36.9807 28.0675 39.2007 26.0741 40.5491L22.489 34.4429ZM22.1182 32.3818L22.0409 24.5273V24.0095L22.5611 24.0505C23.1999 24.0916 23.8386 24.2095 24.4361 24.3684C25.0336 24.5273 25.5899 24.7632 26.1513 25.04C28.9019 26.4705 30.8129 29.3262 30.9726 32.5767L31.0138 33.0945H30.4935L22.6436 32.8586H22.2057L22.1182 32.3818ZM22.9938 24.999L23.0711 31.905L29.9681 32.105C29.69 29.4082 28.016 27.0652 25.7032 25.8398C25.2242 25.5989 24.7091 25.3989 24.1888 25.24C23.751 25.158 23.3904 25.0811 22.9938 24.999ZM20.2175 33.7405L24.0858 40.4055C22.8908 41.0823 21.5773 41.436 20.2175 41.436C15.9525 41.436 12.486 37.9856 12.486 33.7354C12.486 29.6082 15.7568 26.1987 19.8981 26.0398L20.2175 33.7405ZM48.8617 41.759C47.2701 40.1748 45.0706 39.1904 42.6394 39.1904C40.2133 39.1904 38.0087 40.1748 36.4171 41.759C34.8255 43.3433 33.8365 45.5325 33.8365 47.9524C33.8365 50.3672 34.8255 52.5615 36.4171 54.1458C38.0087 55.73 40.2082 56.7144 42.6394 56.7144C45.0655 56.7144 47.2701 55.73 48.8617 54.1458C50.4533 52.5615 51.4423 50.3672 51.4423 47.9524C51.4423 45.5376 50.4533 43.3433 48.8617 41.759Z" fill="white" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_800_3579">
+                          <rect width="57" height="63" fill="white" transform="translate(0.5)" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+
+                    <h4 className="text-[#fff] text-[54px] leading-[80px] font-semibold">6400</h4>
+                    <p className="text-[#fff] text-[21px] p-0  text-center">Projects Completed</p>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <section className="standards-page relative pb-[140px]">
+            <h2 className="text-[24px] text-center gradient-text">Our Standards</h2>
+            <h3 className="text-[44px] text-center">
+              Additional Services that will <br />Grow Your Business
+            </h3>
+            <div className="max-w-[1400px] mx-auto mt-10">
+              <div className="grid  grid-cols-4 md:grid-cols-4 gap-[50px] p-6 justify-center">
+                { cards.map( ( card, index ) => (
+                  <div
+                    key={ index }
+                    className="our-standards-card relative overflow-hidden bg-white shadow-lg rounded-2xl p-6  hover:scale-105 transform transition duration-300 text-center"
+                  >
+                    <div className="shap-design">
+                      <span className="shap-3">
+                        <span className="shap-2">
+                          <span className="shap-1"></span>
+
+                        </span>
+                      </span>
+                    </div>
+
+                    <div className="relative">
+                      <Image src={ Shape } alt="" className="max-w-[138px] h-[150px] w-full mx-auto" />
+                      <span className="absolute -translate-x-2/4 -translate-y-2/4 w-full left-2/4 top-2/4 flex items-center justify-center">
+                        <svg width="53" height="56" viewBox="0 0 53 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0_1242_2002)">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M27.7834 12.6146L30.5383 17.3405C29.8357 17.753 29.0495 18.0053 28.2367 18.0793C27.4238 18.1533 26.6045 18.0472 25.8381 17.7685C25.0716 17.4898 24.3771 17.0456 23.8048 16.4679C23.2324 15.8902 22.7966 15.1936 22.5287 14.4282C22.2608 13.6629 22.1676 12.8481 22.2557 12.0427C22.3439 11.2372 22.6113 10.4613 23.0386 9.77093C23.4658 9.0806 24.0423 8.49311 24.7263 8.05094C25.4103 7.60878 26.1847 7.32298 26.9936 7.21421L27.7879 12.6146H27.7834ZM38.8627 30.6797C40.8686 30.6808 42.8369 31.2197 44.5596 32.2395C46.2824 33.2592 47.6956 34.722 48.65 36.4731C49.6043 38.2243 50.0643 40.1988 49.9814 42.188C49.8985 44.1772 49.2757 46.1072 48.1789 47.7741L53 52.9831L49.6758 56L45.0291 50.9278C43.5828 51.8815 41.9318 52.4861 40.208 52.6933C38.4841 52.9005 36.7354 52.7045 35.1016 52.121C33.4677 51.5374 31.9941 50.5826 30.7985 49.3327C29.6029 48.0828 28.7186 46.5727 28.2162 44.9229C27.7137 43.2732 27.6072 41.5296 27.905 39.8317C28.2029 38.1338 28.8969 36.5286 29.9315 35.1445C30.9661 33.7604 32.3126 32.6357 33.8634 31.8604C35.4142 31.0852 37.1263 30.6808 38.8627 30.6797ZM34.6706 42.7611C34.6123 42.701 34.56 42.6354 34.5145 42.5651C34.4708 42.4951 34.4325 42.422 34.3997 42.3464C34.2848 42.0727 34.2598 41.7701 34.3282 41.4815C34.3967 41.1929 34.5552 40.9332 34.7811 40.7393C35.007 40.5453 35.2889 40.4271 35.5864 40.4015C35.884 40.3758 36.1822 40.444 36.4384 40.5964C36.5177 40.6429 36.5916 40.6979 36.6588 40.7604C37.0445 41.1296 37.1684 41.2162 37.5771 41.5853L37.949 41.918L40.9748 38.6914C42.2558 37.3835 44.2991 39.2975 43.0226 40.6374L39.2759 44.6615L39.0831 44.8574C38.8292 45.1241 38.4806 45.2823 38.1113 45.2985C37.7419 45.3146 37.3807 45.1875 37.1042 44.944L36.8011 44.6615L36.0802 44.0371C35.5201 43.5541 35.1941 43.2897 34.6706 42.7656V42.7611ZM38.8719 32.9857C40.6238 32.9857 42.3365 33.5014 43.7931 34.4676C45.2497 35.4337 46.3849 36.807 47.0552 38.4136C47.7254 40.0202 47.9005 41.788 47.5584 43.4934C47.2163 45.1988 46.3723 46.7652 45.1331 47.9945C43.894 49.2238 42.3154 50.0607 40.597 50.3994C38.8786 50.7381 37.0976 50.5633 35.4793 49.8972C33.8609 49.2312 32.478 48.1037 31.5053 46.6574C30.5326 45.2111 30.0139 43.511 30.0148 41.7722C30.0161 39.4414 30.9497 37.2066 32.6106 35.5589C34.2715 33.9113 36.5236 32.9857 38.8719 32.9857ZM16.3091 11.5664H18.8712C18.937 11.5664 19 11.5924 19.0465 11.6385C19.093 11.6847 19.1191 11.7472 19.1191 11.8125V16.8255C19.1191 16.8908 19.093 16.9534 19.0465 16.9996C19 17.0457 18.937 17.0716 18.8712 17.0716H16.3091C16.2434 17.0716 16.1803 17.0457 16.1338 16.9996C16.0873 16.9534 16.0612 16.8908 16.0612 16.8255V11.8125C16.0612 11.7472 16.0873 11.6847 16.1338 11.6385C16.1803 11.5924 16.2434 11.5664 16.3091 11.5664ZM40.4055 7.64259H44.5837C45.3693 7.64619 46.1216 7.95752 46.6771 8.50885C47.2326 9.06018 47.5463 9.80691 47.5499 10.5866V25.8809C47.4626 26.7923 45.1807 26.8151 44.9878 25.8809V10.5866C44.9886 10.5319 44.9785 10.4775 44.958 10.4266C44.9375 10.3758 44.907 10.3295 44.8684 10.2904C44.8292 10.2502 44.782 10.2186 44.7299 10.1974C44.6777 10.1762 44.6217 10.166 44.5654 10.1673H40.4055V25.8809C40.1851 26.7149 38.2842 26.8425 37.8572 25.8809V2.94403C37.8584 2.88883 37.8484 2.83396 37.8275 2.78276C37.8067 2.73157 37.7755 2.68514 37.736 2.64631C37.6964 2.60749 37.6493 2.57708 37.5975 2.55697C37.5457 2.53685 37.4903 2.52744 37.4347 2.52931H2.95237C2.8972 2.52853 2.84243 2.5386 2.79121 2.55893C2.73998 2.57927 2.69332 2.60947 2.65392 2.6478C2.61383 2.68605 2.58213 2.73211 2.5608 2.78308C2.53946 2.83405 2.52896 2.88884 2.52995 2.94403V42.8386C2.52933 42.8938 2.53984 42.9486 2.56085 42.9997C2.58186 43.0509 2.61295 43.0973 2.6523 43.1364C2.69165 43.1754 2.73846 43.2063 2.78999 43.2272C2.84152 43.248 2.89673 43.2584 2.95237 43.2578H23.2056C24.4912 43.3854 24.528 45.5866 23.2056 45.7826H9.64222V50.4766C9.64088 50.5325 9.6512 50.5881 9.67253 50.6398C9.69387 50.6916 9.72576 50.7384 9.7662 50.7774C9.8056 50.8157 9.85226 50.8459 9.90348 50.8662C9.95471 50.8866 10.0095 50.8966 10.0646 50.8958H23.2056C24.1239 51.0007 24.4361 53.097 23.2056 53.4251H10.1014C9.71176 53.4272 9.32569 53.3517 8.96605 53.2029C8.6064 53.0542 8.28049 52.8353 8.00764 52.5593C7.72979 52.2871 7.50919 51.9628 7.35864 51.6052C7.2081 51.2477 7.1306 50.8641 7.13066 50.4766V45.7826H2.96614C2.18059 45.779 1.42825 45.4676 0.872778 44.9163C0.317305 44.365 0.00363983 43.6183 1.69445e-05 42.8386V2.94403C-0.00130883 2.55743 0.0751766 2.17447 0.224985 1.81761C0.374793 1.46075 0.594906 1.13719 0.872407 0.865902C1.14665 0.591698 1.47283 0.374031 1.83215 0.225427C2.19148 0.0768234 2.57687 0.000217092 2.96614 1.68182e-05H37.4577C37.8472 -0.00129907 38.233 0.0746161 38.5926 0.223307C38.9521 0.371998 39.2781 0.59047 39.5514 0.865902C39.8244 1.1396 40.0403 1.46402 40.1868 1.8206C40.3334 2.17718 40.4077 2.55893 40.4055 2.94403V7.64259ZM6.88731 25.7077C6.60198 25.6896 6.33431 25.5643 6.1387 25.3573C5.94309 25.1504 5.83422 24.8772 5.83422 24.5934C5.83422 24.3097 5.94309 24.0365 6.1387 23.8296C6.33431 23.6226 6.60198 23.4973 6.88731 23.4792H27.1359C27.4213 23.4973 27.6889 23.6226 27.8846 23.8296C28.0802 24.0365 28.189 24.3097 28.189 24.5934C28.189 24.8772 28.0802 25.1504 27.8846 25.3573C27.6889 25.5643 27.4213 25.6896 27.1359 25.7077H6.88731ZM6.88731 31.5228C6.58896 31.5228 6.30283 31.4052 6.09187 31.1958C5.8809 30.9864 5.76238 30.7024 5.76238 30.4063C5.76238 30.1101 5.8809 29.8261 6.09187 29.6168C6.30283 29.4074 6.58896 29.2897 6.88731 29.2897H23.8025C24.1008 29.2897 24.387 29.4074 24.5979 29.6168C24.8089 29.8261 24.9274 30.1101 24.9274 30.4063C24.9274 30.7024 24.8089 30.9864 24.5979 31.1958C24.387 31.4052 24.1008 31.5228 23.8025 31.5228H6.88731ZM7.01587 37.9531C6.71752 37.9531 6.43139 37.8355 6.22043 37.6261C6.00947 37.4167 5.89095 37.1327 5.89095 36.8366C5.89095 36.5405 6.00947 36.2565 6.22043 36.0471C6.43139 35.8377 6.71752 35.7201 7.01587 35.7201H19.6655C19.9639 35.7201 20.25 35.8377 20.461 36.0471C20.6719 36.2565 20.7905 36.5405 20.7905 36.8366C20.7905 37.1327 20.6719 37.4167 20.461 37.6261C20.25 37.8355 19.9639 37.9531 19.6655 37.9531H7.01587ZM7.13525 8.49025H9.70191C9.76767 8.49025 9.83074 8.51618 9.87724 8.56233C9.92373 8.60848 9.94986 8.67108 9.94986 8.73634V16.8119C9.94868 16.8768 9.92218 16.9387 9.87593 16.9846C9.82969 17.0305 9.7673 17.0568 9.70191 17.058H7.1628C7.09704 17.058 7.03398 17.032 6.98748 16.9859C6.94098 16.9397 6.91486 16.8771 6.91486 16.8119V8.73634C6.91486 8.67108 6.94098 8.60848 6.98748 8.56233C7.03398 8.51618 7.09704 8.49025 7.1628 8.49025H7.13525ZM11.7268 6.76304H14.2889C14.3546 6.76304 14.4177 6.78897 14.4642 6.83512C14.5107 6.88127 14.5368 6.94386 14.5368 7.00913V16.8119C14.5368 16.8771 14.5107 16.9397 14.4642 16.9859C14.4177 17.032 14.3546 17.058 14.2889 17.058H11.736C11.6702 17.058 11.6071 17.032 11.5606 16.9859C11.5141 16.9397 11.488 16.8771 11.488 16.8119V7.00913C11.488 6.94386 11.5141 6.88127 11.5606 6.83512C11.6071 6.78897 11.6702 6.76304 11.736 6.76304H11.7268ZM28.9266 12.847H34.0554C34.0524 13.683 33.8412 14.5054 33.4407 15.2408C33.0401 15.9763 32.4627 16.6021 31.7596 17.0625L28.9266 12.847ZM28.3527 11.849L28.0451 6.02931L28.6466 6.00197C30.1406 5.98381 31.5855 6.53111 32.6874 7.53259C33.7894 8.53406 34.4657 9.91452 34.5788 11.3932L34.6064 11.7578L28.3711 12.2136V11.8399L28.3527 11.849ZM28.8119 6.74025L29.0598 11.4343L33.7845 11.0879C33.6094 9.89576 33.0133 8.80414 32.1025 8.0078C31.1917 7.21147 30.0254 6.76223 28.8119 6.74025Z" fill="#4154F1" />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0_1242_2002">
+                              <rect width="53" height="56" fill="white" />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                      </span>
+
+                    </div>
+                    <h2 className="text-[28px] text-center font-medium pb-0">{ card.title }</h2>
+                    <p className="text-[16px] text-center text-gray-600">{ card.content }</p>
+                  </div>
+                ) ) }
+              </div>
+            </div>
+          </section>
+          <div>
+            <div className="marketing-section h-[540px]">
+              <div className=" max-w-[1400px] mx-auto grid grid-cols-2 items-center h-[100%]">
+                <div>
+                  <h4 className="text-[56px] font-medium text-[#fff] leading-[80px]">Important Features for Digital Marketing</h4>
+                  <button className="mt-[30px] text-[34px] overflow-hidden leading-[25px] text-left bg-[#D9E2FF40] w-[100px] h-[100px] transition-all hover:w-[310px] duration-1000 flex items-center gap-5 justify-end p-4 rounded-[100px] group">
+                    <div className="flex items-center gap-4">
+                      <span className="whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-500 text-[#fff]">
+                        Get in touch
+                      </span>
+                      <div>
+                        <svg
+                          width="41"
+                          height="14"
+                          viewBox="0 0 41 14"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M0.813208 7.028C0.820658 7.50463 1.01691 7.95884 1.35888 8.29093C1.70086 8.62302 2.16062 8.80587 2.63726 8.79934L33.228 8.79934V12.458C33.228 13.2336 34.1641 13.6219 34.7111 13.073L40.1692 7.61493C40.5093 7.27484 40.5093 6.72494 40.1692 6.38484L34.7111 0.926731C34.1641 0.377897 33.228 0.768013 33.228 1.54178V5.20043L2.63726 5.20043C2.39652 5.19714 2.15755 5.24218 1.93453 5.3329C1.7115 5.42362 1.50895 5.55818 1.33886 5.72859C1.16878 5.899 1.03462 6.10182 0.944325 6.32501C0.854034 6.54821 0.809448 6.78726 0.813208 7.028Z"
+                            fill="white"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </button>
+                </div>
+                <div>
+                  <Image className="marketingimag" src={ Marketing } alt="Marketing" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <section>
+            <div className="max-w-[1400px] mx-auto py-[140px]">
+              <div className="lg:flex gap-[100px] items-center  ">
+                <div>
+                  <h4 className="text-[24px] gradient-text">Increase</h4>
+                  <h5 className="text-[44px]">We are Specialized in Smart Development, and Smart SEO</h5>
+                  <p className="text-[16px]">In the digital era, we help businesses thrive by delivering tailored IT services and solutions. From seamless software development to robust IT infrastructure, our expertise ensures innovative, scalable, and reliable outcomes for your business. Let’s transform challenges into opportunities with technology</p>
+                  <button className=" mt-4 text-[16px] md:text-[34px] overflow-hidden leading-[25px] text-left bg-[#8285EE] w-[60px] h-[60px] md:w-[100px] md:h-[100px] transition-all hover:w-[180px] md:hover:w-[310px] duration-1000 flex items-center gap-5 justify-end p-4 rounded-[100px] group">
+                    <div className="flex items-center gap-4">
+                      <span className="whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-500 text-[#fff]">
+                        Get in touch
+                      </span>
+                      <div>
+                        <svg
+                          viewBox="0 0 41 14"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="w-[24px] w-[24px] md:w-[41px] md:h-[41px]"
+                        >
+                          <path
+                            d="M0.813208 7.028C0.820658 7.50463 1.01691 7.95884 1.35888 8.29093C1.70086 8.62302 2.16062 8.80587 2.63726 8.79934L33.228 8.79934V12.458C33.228 13.2336 34.1641 13.6219 34.7111 13.073L40.1692 7.61493C40.5093 7.27484 40.5093 6.72494 40.1692 6.38484L34.7111 0.926731C34.1641 0.377897 33.228 0.768013 33.228 1.54178V5.20043L2.63726 5.20043C2.39652 5.19714 2.15755 5.24218 1.93453 5.3329C1.7115 5.42362 1.50895 5.55818 1.33886 5.72859C1.16878 5.899 1.03462 6.10182 0.944325 6.32501C0.854034 6.54821 0.809448 6.78726 0.813208 7.028Z"
+                            fill="white"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </button>
+                </div>
+                <div className="markeing-section relative w-[600px] h-[600px]">
+                  <div>
+                    <div className="absolute -translate-x-2/4 -translate-y-2/4 max-w-[400px] w-full text-center left-2/4 top-2/4">
+                      <h4 className="text-[34px] text-[#8285EE] leading-[50px]">Increase</h4>
+                      <h5 className="text-[24px] font-medium pb-0">Marketing Solutions</h5>
+                      <p className="text-[16px] text-center">Vestibulum porttitor felis a est eleifend, sagittis ante feugiat, maecenas elementum sem vitae porttitor scelerisque.
+                      </p>
+                    </div>
+                    <div>
+                      <span className="haxagon">
+                        <svg width="67" height="72" viewBox="0 0 67 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0_1242_329)">
+                            <path d="M14.47 18.6914H1.91994C1.58044 25.5996 2.01946 32.1973 4.72381 37.0137C7.27596 41.5605 11.9413 44.5664 20.0602 44.7949C19.1353 43.6582 18.2514 42.3164 17.4729 40.6992C12.5969 40.043 9.76959 38.0215 8.14815 34.9863C6.52671 31.957 6.18135 27.9961 6.18135 23.3965C6.18135 22.8926 6.5911 22.4824 7.0945 22.4824H14.47V18.6914ZM33.2951 19.6113L35.5663 25.1484L41.5369 25.5996L36.9653 29.4785L38.3819 35.291L33.2951 32.1387L28.2083 35.291L29.6249 29.4785L25.0533 25.5996L31.0239 25.1484L33.2951 19.6113ZM1.05362 16.8633H14.4642V13.4414H12.6261C11.514 13.4414 10.5071 12.9844 9.77544 12.252L9.76959 12.2461C9.03789 11.5137 8.58131 10.5059 8.58131 9.39258V7.11328C7.86718 6.97266 7.22328 6.62109 6.72573 6.12305C6.07598 5.47266 5.67209 4.57617 5.67209 3.58594V1.98047C5.67209 1.43555 5.89452 0.9375 6.25159 0.580078C6.62036 0.222656 7.11792 0 7.6623 0H58.9279C59.4723 0 59.9698 0.222656 60.3269 0.580078C60.684 0.9375 60.9064 1.43555 60.9064 1.98047V3.5918C60.9064 4.58203 60.5025 5.47852 59.8528 6.12891C59.3552 6.62695 58.7113 6.97852 57.9972 7.11914V9.39844C57.9972 10.5059 57.5406 11.5195 56.8089 12.252L56.8031 12.2578C56.0714 12.9902 55.0645 13.4473 53.9524 13.4473H52.1143V16.8691H65.9405C66.4439 16.8691 66.8536 17.2793 66.8536 17.7832V17.7949C67.2751 25.2949 66.8536 32.5488 63.8039 37.9219C60.7132 43.3711 55.0177 46.8398 44.9671 46.623C44.013 47.4844 43.0472 48.2168 42.1398 48.9141C38.9672 51.3398 36.579 53.168 38.4345 58.7695H41.2091C42.3155 58.7695 43.3223 59.2207 44.054 59.9531C44.7857 60.6855 45.2364 61.6934 45.2364 62.8008V64.4238H45.6344C46.7232 64.4238 47.7183 64.8691 48.4383 65.5898C49.1583 66.3105 49.6032 67.3008 49.6032 68.3965V71.0918C49.6032 71.5957 49.1934 72.0059 48.69 72.0059H17.8943C17.3909 72.0059 16.9812 71.5957 16.9812 71.0918V68.3965C16.9812 67.3066 17.4261 66.3164 18.1461 65.5957L18.1519 65.5898C18.8719 64.8691 19.8611 64.4238 20.9499 64.4238H21.348V62.8008C21.348 61.6934 21.7987 60.6855 22.5304 59.959L22.5362 59.9531C23.2679 59.2266 24.2747 58.7695 25.3752 58.7695H28.4952C30.1517 53.4844 27.9801 51.7734 24.9772 49.4062C23.9586 48.6035 22.8465 47.7305 21.7284 46.6289C11.7949 46.793 6.17549 43.3301 3.13163 37.9102C0.117044 32.5312 -0.280999 25.2891 0.140458 17.7949V17.7832C0.140458 17.2734 0.550208 16.8633 1.05362 16.8633ZM30.3976 58.7637H36.5263C34.5829 52.3945 37.3692 50.2676 41.0394 47.4609C45.0666 44.3848 50.2997 40.3887 50.2997 27.2402V13.4648H16.2905V26.8828C16.5129 31.9863 17.3675 35.7656 18.5441 38.6602C19.709 41.5195 21.2075 43.5176 22.7411 45.0703C23.8591 46.207 25.0299 47.127 26.1011 47.9707C29.5956 50.7188 32.1419 52.7285 30.3976 58.7637ZM37.7965 60.5918H25.3752C24.7664 60.5918 24.2162 60.8379 23.8182 61.2363L23.8123 61.2422C23.4143 61.6406 23.1684 62.1914 23.1684 62.8008V64.4238H43.4101V62.8008C43.4101 62.1973 43.1642 61.6465 42.7603 61.2422C42.3623 60.8437 41.812 60.5918 41.2033 60.5918H37.7965ZM44.3291 66.2461H20.9499C20.3587 66.2461 19.8202 66.4863 19.4338 66.873L19.428 66.8789C19.0416 67.2656 18.8017 67.8047 18.8017 68.3965V70.1777H47.7768V68.3965C47.7768 67.8047 47.5368 67.2715 47.1447 66.8789V66.873C46.7583 66.4863 46.2198 66.2461 45.6286 66.2461H44.3291ZM52.126 22.4824H60.1747C60.6781 22.4824 61.0879 22.8926 61.0879 23.3965C61.0879 28.0078 60.6723 31.9805 58.9747 35.0098C57.283 38.0215 54.3972 40.0312 49.5271 40.6934C48.7193 42.3281 47.7827 43.6641 46.7876 44.8008C54.9416 44.584 59.642 41.5781 62.2293 37.0254C64.9629 32.209 65.4195 25.6055 65.0859 18.6973H52.126V22.4824ZM59.2557 24.3105H52.126V27.2402C52.126 32.1094 51.447 35.8066 50.3817 38.7012C53.9407 37.998 56.1065 36.3984 57.3884 34.1133C58.7816 31.6172 59.203 28.248 59.2557 24.3105ZM14.47 24.3105H8.00766C8.05449 28.2539 8.41156 31.6289 9.74617 34.125C10.9696 36.4102 13.071 38.0098 16.6124 38.707C15.4827 35.7129 14.6807 31.9043 14.4642 26.918V26.877H14.4583V24.3105H14.47ZM58.9279 1.82812H7.6623C7.62133 1.82812 7.58035 1.8457 7.55108 1.875C7.52181 1.9043 7.50425 1.93945 7.50425 1.98633V3.59766C7.50425 4.08398 7.70328 4.52344 8.02522 4.8457C8.34717 5.16797 8.78619 5.36719 9.27203 5.36719H57.3182C57.804 5.36719 58.243 5.16797 58.565 4.8457C58.8869 4.52344 59.0859 4.08398 59.0859 3.59766V1.98047C59.0859 1.93945 59.0684 1.89844 59.0391 1.86914C59.0098 1.8457 58.9689 1.82812 58.9279 1.82812ZM56.1767 7.18945H10.4193V9.4043C10.4193 10.0137 10.6652 10.5703 11.0691 10.9687C11.473 11.3672 12.0232 11.6191 12.632 11.6191H53.9641C54.5728 11.6191 55.1289 11.373 55.527 10.9687C55.925 10.5645 56.1767 10.0137 56.1767 9.4043V7.18945Z" fill="#8285EE" />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0_1242_329">
+                              <rect width="67" height="72" fill="white" />
+                            </clipPath>
+                          </defs>
+                        </svg>
+
+                      </span>
+                      <span className="haxagon">
+                        <svg width="67" height="72" viewBox="0 0 67 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0_1242_329)">
+                            <path d="M14.47 18.6914H1.91994C1.58044 25.5996 2.01946 32.1973 4.72381 37.0137C7.27596 41.5605 11.9413 44.5664 20.0602 44.7949C19.1353 43.6582 18.2514 42.3164 17.4729 40.6992C12.5969 40.043 9.76959 38.0215 8.14815 34.9863C6.52671 31.957 6.18135 27.9961 6.18135 23.3965C6.18135 22.8926 6.5911 22.4824 7.0945 22.4824H14.47V18.6914ZM33.2951 19.6113L35.5663 25.1484L41.5369 25.5996L36.9653 29.4785L38.3819 35.291L33.2951 32.1387L28.2083 35.291L29.6249 29.4785L25.0533 25.5996L31.0239 25.1484L33.2951 19.6113ZM1.05362 16.8633H14.4642V13.4414H12.6261C11.514 13.4414 10.5071 12.9844 9.77544 12.252L9.76959 12.2461C9.03789 11.5137 8.58131 10.5059 8.58131 9.39258V7.11328C7.86718 6.97266 7.22328 6.62109 6.72573 6.12305C6.07598 5.47266 5.67209 4.57617 5.67209 3.58594V1.98047C5.67209 1.43555 5.89452 0.9375 6.25159 0.580078C6.62036 0.222656 7.11792 0 7.6623 0H58.9279C59.4723 0 59.9698 0.222656 60.3269 0.580078C60.684 0.9375 60.9064 1.43555 60.9064 1.98047V3.5918C60.9064 4.58203 60.5025 5.47852 59.8528 6.12891C59.3552 6.62695 58.7113 6.97852 57.9972 7.11914V9.39844C57.9972 10.5059 57.5406 11.5195 56.8089 12.252L56.8031 12.2578C56.0714 12.9902 55.0645 13.4473 53.9524 13.4473H52.1143V16.8691H65.9405C66.4439 16.8691 66.8536 17.2793 66.8536 17.7832V17.7949C67.2751 25.2949 66.8536 32.5488 63.8039 37.9219C60.7132 43.3711 55.0177 46.8398 44.9671 46.623C44.013 47.4844 43.0472 48.2168 42.1398 48.9141C38.9672 51.3398 36.579 53.168 38.4345 58.7695H41.2091C42.3155 58.7695 43.3223 59.2207 44.054 59.9531C44.7857 60.6855 45.2364 61.6934 45.2364 62.8008V64.4238H45.6344C46.7232 64.4238 47.7183 64.8691 48.4383 65.5898C49.1583 66.3105 49.6032 67.3008 49.6032 68.3965V71.0918C49.6032 71.5957 49.1934 72.0059 48.69 72.0059H17.8943C17.3909 72.0059 16.9812 71.5957 16.9812 71.0918V68.3965C16.9812 67.3066 17.4261 66.3164 18.1461 65.5957L18.1519 65.5898C18.8719 64.8691 19.8611 64.4238 20.9499 64.4238H21.348V62.8008C21.348 61.6934 21.7987 60.6855 22.5304 59.959L22.5362 59.9531C23.2679 59.2266 24.2747 58.7695 25.3752 58.7695H28.4952C30.1517 53.4844 27.9801 51.7734 24.9772 49.4062C23.9586 48.6035 22.8465 47.7305 21.7284 46.6289C11.7949 46.793 6.17549 43.3301 3.13163 37.9102C0.117044 32.5312 -0.280999 25.2891 0.140458 17.7949V17.7832C0.140458 17.2734 0.550208 16.8633 1.05362 16.8633ZM30.3976 58.7637H36.5263C34.5829 52.3945 37.3692 50.2676 41.0394 47.4609C45.0666 44.3848 50.2997 40.3887 50.2997 27.2402V13.4648H16.2905V26.8828C16.5129 31.9863 17.3675 35.7656 18.5441 38.6602C19.709 41.5195 21.2075 43.5176 22.7411 45.0703C23.8591 46.207 25.0299 47.127 26.1011 47.9707C29.5956 50.7188 32.1419 52.7285 30.3976 58.7637ZM37.7965 60.5918H25.3752C24.7664 60.5918 24.2162 60.8379 23.8182 61.2363L23.8123 61.2422C23.4143 61.6406 23.1684 62.1914 23.1684 62.8008V64.4238H43.4101V62.8008C43.4101 62.1973 43.1642 61.6465 42.7603 61.2422C42.3623 60.8437 41.812 60.5918 41.2033 60.5918H37.7965ZM44.3291 66.2461H20.9499C20.3587 66.2461 19.8202 66.4863 19.4338 66.873L19.428 66.8789C19.0416 67.2656 18.8017 67.8047 18.8017 68.3965V70.1777H47.7768V68.3965C47.7768 67.8047 47.5368 67.2715 47.1447 66.8789V66.873C46.7583 66.4863 46.2198 66.2461 45.6286 66.2461H44.3291ZM52.126 22.4824H60.1747C60.6781 22.4824 61.0879 22.8926 61.0879 23.3965C61.0879 28.0078 60.6723 31.9805 58.9747 35.0098C57.283 38.0215 54.3972 40.0312 49.5271 40.6934C48.7193 42.3281 47.7827 43.6641 46.7876 44.8008C54.9416 44.584 59.642 41.5781 62.2293 37.0254C64.9629 32.209 65.4195 25.6055 65.0859 18.6973H52.126V22.4824ZM59.2557 24.3105H52.126V27.2402C52.126 32.1094 51.447 35.8066 50.3817 38.7012C53.9407 37.998 56.1065 36.3984 57.3884 34.1133C58.7816 31.6172 59.203 28.248 59.2557 24.3105ZM14.47 24.3105H8.00766C8.05449 28.2539 8.41156 31.6289 9.74617 34.125C10.9696 36.4102 13.071 38.0098 16.6124 38.707C15.4827 35.7129 14.6807 31.9043 14.4642 26.918V26.877H14.4583V24.3105H14.47ZM58.9279 1.82812H7.6623C7.62133 1.82812 7.58035 1.8457 7.55108 1.875C7.52181 1.9043 7.50425 1.93945 7.50425 1.98633V3.59766C7.50425 4.08398 7.70328 4.52344 8.02522 4.8457C8.34717 5.16797 8.78619 5.36719 9.27203 5.36719H57.3182C57.804 5.36719 58.243 5.16797 58.565 4.8457C58.8869 4.52344 59.0859 4.08398 59.0859 3.59766V1.98047C59.0859 1.93945 59.0684 1.89844 59.0391 1.86914C59.0098 1.8457 58.9689 1.82812 58.9279 1.82812ZM56.1767 7.18945H10.4193V9.4043C10.4193 10.0137 10.6652 10.5703 11.0691 10.9687C11.473 11.3672 12.0232 11.6191 12.632 11.6191H53.9641C54.5728 11.6191 55.1289 11.373 55.527 10.9687C55.925 10.5645 56.1767 10.0137 56.1767 9.4043V7.18945Z" fill="#8285EE" />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0_1242_329">
+                              <rect width="67" height="72" fill="white" />
+                            </clipPath>
+                          </defs>
+                        </svg>
+
+                      </span>
+                      <span className="haxagon">
+                        <svg width="67" height="72" viewBox="0 0 67 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0_1242_329)">
+                            <path d="M14.47 18.6914H1.91994C1.58044 25.5996 2.01946 32.1973 4.72381 37.0137C7.27596 41.5605 11.9413 44.5664 20.0602 44.7949C19.1353 43.6582 18.2514 42.3164 17.4729 40.6992C12.5969 40.043 9.76959 38.0215 8.14815 34.9863C6.52671 31.957 6.18135 27.9961 6.18135 23.3965C6.18135 22.8926 6.5911 22.4824 7.0945 22.4824H14.47V18.6914ZM33.2951 19.6113L35.5663 25.1484L41.5369 25.5996L36.9653 29.4785L38.3819 35.291L33.2951 32.1387L28.2083 35.291L29.6249 29.4785L25.0533 25.5996L31.0239 25.1484L33.2951 19.6113ZM1.05362 16.8633H14.4642V13.4414H12.6261C11.514 13.4414 10.5071 12.9844 9.77544 12.252L9.76959 12.2461C9.03789 11.5137 8.58131 10.5059 8.58131 9.39258V7.11328C7.86718 6.97266 7.22328 6.62109 6.72573 6.12305C6.07598 5.47266 5.67209 4.57617 5.67209 3.58594V1.98047C5.67209 1.43555 5.89452 0.9375 6.25159 0.580078C6.62036 0.222656 7.11792 0 7.6623 0H58.9279C59.4723 0 59.9698 0.222656 60.3269 0.580078C60.684 0.9375 60.9064 1.43555 60.9064 1.98047V3.5918C60.9064 4.58203 60.5025 5.47852 59.8528 6.12891C59.3552 6.62695 58.7113 6.97852 57.9972 7.11914V9.39844C57.9972 10.5059 57.5406 11.5195 56.8089 12.252L56.8031 12.2578C56.0714 12.9902 55.0645 13.4473 53.9524 13.4473H52.1143V16.8691H65.9405C66.4439 16.8691 66.8536 17.2793 66.8536 17.7832V17.7949C67.2751 25.2949 66.8536 32.5488 63.8039 37.9219C60.7132 43.3711 55.0177 46.8398 44.9671 46.623C44.013 47.4844 43.0472 48.2168 42.1398 48.9141C38.9672 51.3398 36.579 53.168 38.4345 58.7695H41.2091C42.3155 58.7695 43.3223 59.2207 44.054 59.9531C44.7857 60.6855 45.2364 61.6934 45.2364 62.8008V64.4238H45.6344C46.7232 64.4238 47.7183 64.8691 48.4383 65.5898C49.1583 66.3105 49.6032 67.3008 49.6032 68.3965V71.0918C49.6032 71.5957 49.1934 72.0059 48.69 72.0059H17.8943C17.3909 72.0059 16.9812 71.5957 16.9812 71.0918V68.3965C16.9812 67.3066 17.4261 66.3164 18.1461 65.5957L18.1519 65.5898C18.8719 64.8691 19.8611 64.4238 20.9499 64.4238H21.348V62.8008C21.348 61.6934 21.7987 60.6855 22.5304 59.959L22.5362 59.9531C23.2679 59.2266 24.2747 58.7695 25.3752 58.7695H28.4952C30.1517 53.4844 27.9801 51.7734 24.9772 49.4062C23.9586 48.6035 22.8465 47.7305 21.7284 46.6289C11.7949 46.793 6.17549 43.3301 3.13163 37.9102C0.117044 32.5312 -0.280999 25.2891 0.140458 17.7949V17.7832C0.140458 17.2734 0.550208 16.8633 1.05362 16.8633ZM30.3976 58.7637H36.5263C34.5829 52.3945 37.3692 50.2676 41.0394 47.4609C45.0666 44.3848 50.2997 40.3887 50.2997 27.2402V13.4648H16.2905V26.8828C16.5129 31.9863 17.3675 35.7656 18.5441 38.6602C19.709 41.5195 21.2075 43.5176 22.7411 45.0703C23.8591 46.207 25.0299 47.127 26.1011 47.9707C29.5956 50.7188 32.1419 52.7285 30.3976 58.7637ZM37.7965 60.5918H25.3752C24.7664 60.5918 24.2162 60.8379 23.8182 61.2363L23.8123 61.2422C23.4143 61.6406 23.1684 62.1914 23.1684 62.8008V64.4238H43.4101V62.8008C43.4101 62.1973 43.1642 61.6465 42.7603 61.2422C42.3623 60.8437 41.812 60.5918 41.2033 60.5918H37.7965ZM44.3291 66.2461H20.9499C20.3587 66.2461 19.8202 66.4863 19.4338 66.873L19.428 66.8789C19.0416 67.2656 18.8017 67.8047 18.8017 68.3965V70.1777H47.7768V68.3965C47.7768 67.8047 47.5368 67.2715 47.1447 66.8789V66.873C46.7583 66.4863 46.2198 66.2461 45.6286 66.2461H44.3291ZM52.126 22.4824H60.1747C60.6781 22.4824 61.0879 22.8926 61.0879 23.3965C61.0879 28.0078 60.6723 31.9805 58.9747 35.0098C57.283 38.0215 54.3972 40.0312 49.5271 40.6934C48.7193 42.3281 47.7827 43.6641 46.7876 44.8008C54.9416 44.584 59.642 41.5781 62.2293 37.0254C64.9629 32.209 65.4195 25.6055 65.0859 18.6973H52.126V22.4824ZM59.2557 24.3105H52.126V27.2402C52.126 32.1094 51.447 35.8066 50.3817 38.7012C53.9407 37.998 56.1065 36.3984 57.3884 34.1133C58.7816 31.6172 59.203 28.248 59.2557 24.3105ZM14.47 24.3105H8.00766C8.05449 28.2539 8.41156 31.6289 9.74617 34.125C10.9696 36.4102 13.071 38.0098 16.6124 38.707C15.4827 35.7129 14.6807 31.9043 14.4642 26.918V26.877H14.4583V24.3105H14.47ZM58.9279 1.82812H7.6623C7.62133 1.82812 7.58035 1.8457 7.55108 1.875C7.52181 1.9043 7.50425 1.93945 7.50425 1.98633V3.59766C7.50425 4.08398 7.70328 4.52344 8.02522 4.8457C8.34717 5.16797 8.78619 5.36719 9.27203 5.36719H57.3182C57.804 5.36719 58.243 5.16797 58.565 4.8457C58.8869 4.52344 59.0859 4.08398 59.0859 3.59766V1.98047C59.0859 1.93945 59.0684 1.89844 59.0391 1.86914C59.0098 1.8457 58.9689 1.82812 58.9279 1.82812ZM56.1767 7.18945H10.4193V9.4043C10.4193 10.0137 10.6652 10.5703 11.0691 10.9687C11.473 11.3672 12.0232 11.6191 12.632 11.6191H53.9641C54.5728 11.6191 55.1289 11.373 55.527 10.9687C55.925 10.5645 56.1767 10.0137 56.1767 9.4043V7.18945Z" fill="#8285EE" />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0_1242_329">
+                              <rect width="67" height="72" fill="white" />
+                            </clipPath>
+                          </defs>
+                        </svg>
+
+                      </span>
+                      <span className="haxagon">
+                        <svg width="67" height="72" viewBox="0 0 67 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0_1242_329)">
+                            <path d="M14.47 18.6914H1.91994C1.58044 25.5996 2.01946 32.1973 4.72381 37.0137C7.27596 41.5605 11.9413 44.5664 20.0602 44.7949C19.1353 43.6582 18.2514 42.3164 17.4729 40.6992C12.5969 40.043 9.76959 38.0215 8.14815 34.9863C6.52671 31.957 6.18135 27.9961 6.18135 23.3965C6.18135 22.8926 6.5911 22.4824 7.0945 22.4824H14.47V18.6914ZM33.2951 19.6113L35.5663 25.1484L41.5369 25.5996L36.9653 29.4785L38.3819 35.291L33.2951 32.1387L28.2083 35.291L29.6249 29.4785L25.0533 25.5996L31.0239 25.1484L33.2951 19.6113ZM1.05362 16.8633H14.4642V13.4414H12.6261C11.514 13.4414 10.5071 12.9844 9.77544 12.252L9.76959 12.2461C9.03789 11.5137 8.58131 10.5059 8.58131 9.39258V7.11328C7.86718 6.97266 7.22328 6.62109 6.72573 6.12305C6.07598 5.47266 5.67209 4.57617 5.67209 3.58594V1.98047C5.67209 1.43555 5.89452 0.9375 6.25159 0.580078C6.62036 0.222656 7.11792 0 7.6623 0H58.9279C59.4723 0 59.9698 0.222656 60.3269 0.580078C60.684 0.9375 60.9064 1.43555 60.9064 1.98047V3.5918C60.9064 4.58203 60.5025 5.47852 59.8528 6.12891C59.3552 6.62695 58.7113 6.97852 57.9972 7.11914V9.39844C57.9972 10.5059 57.5406 11.5195 56.8089 12.252L56.8031 12.2578C56.0714 12.9902 55.0645 13.4473 53.9524 13.4473H52.1143V16.8691H65.9405C66.4439 16.8691 66.8536 17.2793 66.8536 17.7832V17.7949C67.2751 25.2949 66.8536 32.5488 63.8039 37.9219C60.7132 43.3711 55.0177 46.8398 44.9671 46.623C44.013 47.4844 43.0472 48.2168 42.1398 48.9141C38.9672 51.3398 36.579 53.168 38.4345 58.7695H41.2091C42.3155 58.7695 43.3223 59.2207 44.054 59.9531C44.7857 60.6855 45.2364 61.6934 45.2364 62.8008V64.4238H45.6344C46.7232 64.4238 47.7183 64.8691 48.4383 65.5898C49.1583 66.3105 49.6032 67.3008 49.6032 68.3965V71.0918C49.6032 71.5957 49.1934 72.0059 48.69 72.0059H17.8943C17.3909 72.0059 16.9812 71.5957 16.9812 71.0918V68.3965C16.9812 67.3066 17.4261 66.3164 18.1461 65.5957L18.1519 65.5898C18.8719 64.8691 19.8611 64.4238 20.9499 64.4238H21.348V62.8008C21.348 61.6934 21.7987 60.6855 22.5304 59.959L22.5362 59.9531C23.2679 59.2266 24.2747 58.7695 25.3752 58.7695H28.4952C30.1517 53.4844 27.9801 51.7734 24.9772 49.4062C23.9586 48.6035 22.8465 47.7305 21.7284 46.6289C11.7949 46.793 6.17549 43.3301 3.13163 37.9102C0.117044 32.5312 -0.280999 25.2891 0.140458 17.7949V17.7832C0.140458 17.2734 0.550208 16.8633 1.05362 16.8633ZM30.3976 58.7637H36.5263C34.5829 52.3945 37.3692 50.2676 41.0394 47.4609C45.0666 44.3848 50.2997 40.3887 50.2997 27.2402V13.4648H16.2905V26.8828C16.5129 31.9863 17.3675 35.7656 18.5441 38.6602C19.709 41.5195 21.2075 43.5176 22.7411 45.0703C23.8591 46.207 25.0299 47.127 26.1011 47.9707C29.5956 50.7188 32.1419 52.7285 30.3976 58.7637ZM37.7965 60.5918H25.3752C24.7664 60.5918 24.2162 60.8379 23.8182 61.2363L23.8123 61.2422C23.4143 61.6406 23.1684 62.1914 23.1684 62.8008V64.4238H43.4101V62.8008C43.4101 62.1973 43.1642 61.6465 42.7603 61.2422C42.3623 60.8437 41.812 60.5918 41.2033 60.5918H37.7965ZM44.3291 66.2461H20.9499C20.3587 66.2461 19.8202 66.4863 19.4338 66.873L19.428 66.8789C19.0416 67.2656 18.8017 67.8047 18.8017 68.3965V70.1777H47.7768V68.3965C47.7768 67.8047 47.5368 67.2715 47.1447 66.8789V66.873C46.7583 66.4863 46.2198 66.2461 45.6286 66.2461H44.3291ZM52.126 22.4824H60.1747C60.6781 22.4824 61.0879 22.8926 61.0879 23.3965C61.0879 28.0078 60.6723 31.9805 58.9747 35.0098C57.283 38.0215 54.3972 40.0312 49.5271 40.6934C48.7193 42.3281 47.7827 43.6641 46.7876 44.8008C54.9416 44.584 59.642 41.5781 62.2293 37.0254C64.9629 32.209 65.4195 25.6055 65.0859 18.6973H52.126V22.4824ZM59.2557 24.3105H52.126V27.2402C52.126 32.1094 51.447 35.8066 50.3817 38.7012C53.9407 37.998 56.1065 36.3984 57.3884 34.1133C58.7816 31.6172 59.203 28.248 59.2557 24.3105ZM14.47 24.3105H8.00766C8.05449 28.2539 8.41156 31.6289 9.74617 34.125C10.9696 36.4102 13.071 38.0098 16.6124 38.707C15.4827 35.7129 14.6807 31.9043 14.4642 26.918V26.877H14.4583V24.3105H14.47ZM58.9279 1.82812H7.6623C7.62133 1.82812 7.58035 1.8457 7.55108 1.875C7.52181 1.9043 7.50425 1.93945 7.50425 1.98633V3.59766C7.50425 4.08398 7.70328 4.52344 8.02522 4.8457C8.34717 5.16797 8.78619 5.36719 9.27203 5.36719H57.3182C57.804 5.36719 58.243 5.16797 58.565 4.8457C58.8869 4.52344 59.0859 4.08398 59.0859 3.59766V1.98047C59.0859 1.93945 59.0684 1.89844 59.0391 1.86914C59.0098 1.8457 58.9689 1.82812 58.9279 1.82812ZM56.1767 7.18945H10.4193V9.4043C10.4193 10.0137 10.6652 10.5703 11.0691 10.9687C11.473 11.3672 12.0232 11.6191 12.632 11.6191H53.9641C54.5728 11.6191 55.1289 11.373 55.527 10.9687C55.925 10.5645 56.1767 10.0137 56.1767 9.4043V7.18945Z" fill="#8285EE" />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0_1242_329">
+                              <rect width="67" height="72" fill="white" />
+                            </clipPath>
+                          </defs>
+                        </svg>
+
+                      </span>
+
+
+                      <span className="haxagon">
+                        <svg width="67" height="72" viewBox="0 0 67 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0_1242_329)">
+                            <path d="M14.47 18.6914H1.91994C1.58044 25.5996 2.01946 32.1973 4.72381 37.0137C7.27596 41.5605 11.9413 44.5664 20.0602 44.7949C19.1353 43.6582 18.2514 42.3164 17.4729 40.6992C12.5969 40.043 9.76959 38.0215 8.14815 34.9863C6.52671 31.957 6.18135 27.9961 6.18135 23.3965C6.18135 22.8926 6.5911 22.4824 7.0945 22.4824H14.47V18.6914ZM33.2951 19.6113L35.5663 25.1484L41.5369 25.5996L36.9653 29.4785L38.3819 35.291L33.2951 32.1387L28.2083 35.291L29.6249 29.4785L25.0533 25.5996L31.0239 25.1484L33.2951 19.6113ZM1.05362 16.8633H14.4642V13.4414H12.6261C11.514 13.4414 10.5071 12.9844 9.77544 12.252L9.76959 12.2461C9.03789 11.5137 8.58131 10.5059 8.58131 9.39258V7.11328C7.86718 6.97266 7.22328 6.62109 6.72573 6.12305C6.07598 5.47266 5.67209 4.57617 5.67209 3.58594V1.98047C5.67209 1.43555 5.89452 0.9375 6.25159 0.580078C6.62036 0.222656 7.11792 0 7.6623 0H58.9279C59.4723 0 59.9698 0.222656 60.3269 0.580078C60.684 0.9375 60.9064 1.43555 60.9064 1.98047V3.5918C60.9064 4.58203 60.5025 5.47852 59.8528 6.12891C59.3552 6.62695 58.7113 6.97852 57.9972 7.11914V9.39844C57.9972 10.5059 57.5406 11.5195 56.8089 12.252L56.8031 12.2578C56.0714 12.9902 55.0645 13.4473 53.9524 13.4473H52.1143V16.8691H65.9405C66.4439 16.8691 66.8536 17.2793 66.8536 17.7832V17.7949C67.2751 25.2949 66.8536 32.5488 63.8039 37.9219C60.7132 43.3711 55.0177 46.8398 44.9671 46.623C44.013 47.4844 43.0472 48.2168 42.1398 48.9141C38.9672 51.3398 36.579 53.168 38.4345 58.7695H41.2091C42.3155 58.7695 43.3223 59.2207 44.054 59.9531C44.7857 60.6855 45.2364 61.6934 45.2364 62.8008V64.4238H45.6344C46.7232 64.4238 47.7183 64.8691 48.4383 65.5898C49.1583 66.3105 49.6032 67.3008 49.6032 68.3965V71.0918C49.6032 71.5957 49.1934 72.0059 48.69 72.0059H17.8943C17.3909 72.0059 16.9812 71.5957 16.9812 71.0918V68.3965C16.9812 67.3066 17.4261 66.3164 18.1461 65.5957L18.1519 65.5898C18.8719 64.8691 19.8611 64.4238 20.9499 64.4238H21.348V62.8008C21.348 61.6934 21.7987 60.6855 22.5304 59.959L22.5362 59.9531C23.2679 59.2266 24.2747 58.7695 25.3752 58.7695H28.4952C30.1517 53.4844 27.9801 51.7734 24.9772 49.4062C23.9586 48.6035 22.8465 47.7305 21.7284 46.6289C11.7949 46.793 6.17549 43.3301 3.13163 37.9102C0.117044 32.5312 -0.280999 25.2891 0.140458 17.7949V17.7832C0.140458 17.2734 0.550208 16.8633 1.05362 16.8633ZM30.3976 58.7637H36.5263C34.5829 52.3945 37.3692 50.2676 41.0394 47.4609C45.0666 44.3848 50.2997 40.3887 50.2997 27.2402V13.4648H16.2905V26.8828C16.5129 31.9863 17.3675 35.7656 18.5441 38.6602C19.709 41.5195 21.2075 43.5176 22.7411 45.0703C23.8591 46.207 25.0299 47.127 26.1011 47.9707C29.5956 50.7188 32.1419 52.7285 30.3976 58.7637ZM37.7965 60.5918H25.3752C24.7664 60.5918 24.2162 60.8379 23.8182 61.2363L23.8123 61.2422C23.4143 61.6406 23.1684 62.1914 23.1684 62.8008V64.4238H43.4101V62.8008C43.4101 62.1973 43.1642 61.6465 42.7603 61.2422C42.3623 60.8437 41.812 60.5918 41.2033 60.5918H37.7965ZM44.3291 66.2461H20.9499C20.3587 66.2461 19.8202 66.4863 19.4338 66.873L19.428 66.8789C19.0416 67.2656 18.8017 67.8047 18.8017 68.3965V70.1777H47.7768V68.3965C47.7768 67.8047 47.5368 67.2715 47.1447 66.8789V66.873C46.7583 66.4863 46.2198 66.2461 45.6286 66.2461H44.3291ZM52.126 22.4824H60.1747C60.6781 22.4824 61.0879 22.8926 61.0879 23.3965C61.0879 28.0078 60.6723 31.9805 58.9747 35.0098C57.283 38.0215 54.3972 40.0312 49.5271 40.6934C48.7193 42.3281 47.7827 43.6641 46.7876 44.8008C54.9416 44.584 59.642 41.5781 62.2293 37.0254C64.9629 32.209 65.4195 25.6055 65.0859 18.6973H52.126V22.4824ZM59.2557 24.3105H52.126V27.2402C52.126 32.1094 51.447 35.8066 50.3817 38.7012C53.9407 37.998 56.1065 36.3984 57.3884 34.1133C58.7816 31.6172 59.203 28.248 59.2557 24.3105ZM14.47 24.3105H8.00766C8.05449 28.2539 8.41156 31.6289 9.74617 34.125C10.9696 36.4102 13.071 38.0098 16.6124 38.707C15.4827 35.7129 14.6807 31.9043 14.4642 26.918V26.877H14.4583V24.3105H14.47ZM58.9279 1.82812H7.6623C7.62133 1.82812 7.58035 1.8457 7.55108 1.875C7.52181 1.9043 7.50425 1.93945 7.50425 1.98633V3.59766C7.50425 4.08398 7.70328 4.52344 8.02522 4.8457C8.34717 5.16797 8.78619 5.36719 9.27203 5.36719H57.3182C57.804 5.36719 58.243 5.16797 58.565 4.8457C58.8869 4.52344 59.0859 4.08398 59.0859 3.59766V1.98047C59.0859 1.93945 59.0684 1.89844 59.0391 1.86914C59.0098 1.8457 58.9689 1.82812 58.9279 1.82812ZM56.1767 7.18945H10.4193V9.4043C10.4193 10.0137 10.6652 10.5703 11.0691 10.9687C11.473 11.3672 12.0232 11.6191 12.632 11.6191H53.9641C54.5728 11.6191 55.1289 11.373 55.527 10.9687C55.925 10.5645 56.1767 10.0137 56.1767 9.4043V7.18945Z" fill="#8285EE" />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0_1242_329">
+                              <rect width="67" height="72" fill="white" />
+                            </clipPath>
+                          </defs>
+                        </svg>
+
+                      </span>
+
+                      <span className="haxagon">
+                        <svg width="67" height="72" viewBox="0 0 67 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0_1242_329)">
+                            <path d="M14.47 18.6914H1.91994C1.58044 25.5996 2.01946 32.1973 4.72381 37.0137C7.27596 41.5605 11.9413 44.5664 20.0602 44.7949C19.1353 43.6582 18.2514 42.3164 17.4729 40.6992C12.5969 40.043 9.76959 38.0215 8.14815 34.9863C6.52671 31.957 6.18135 27.9961 6.18135 23.3965C6.18135 22.8926 6.5911 22.4824 7.0945 22.4824H14.47V18.6914ZM33.2951 19.6113L35.5663 25.1484L41.5369 25.5996L36.9653 29.4785L38.3819 35.291L33.2951 32.1387L28.2083 35.291L29.6249 29.4785L25.0533 25.5996L31.0239 25.1484L33.2951 19.6113ZM1.05362 16.8633H14.4642V13.4414H12.6261C11.514 13.4414 10.5071 12.9844 9.77544 12.252L9.76959 12.2461C9.03789 11.5137 8.58131 10.5059 8.58131 9.39258V7.11328C7.86718 6.97266 7.22328 6.62109 6.72573 6.12305C6.07598 5.47266 5.67209 4.57617 5.67209 3.58594V1.98047C5.67209 1.43555 5.89452 0.9375 6.25159 0.580078C6.62036 0.222656 7.11792 0 7.6623 0H58.9279C59.4723 0 59.9698 0.222656 60.3269 0.580078C60.684 0.9375 60.9064 1.43555 60.9064 1.98047V3.5918C60.9064 4.58203 60.5025 5.47852 59.8528 6.12891C59.3552 6.62695 58.7113 6.97852 57.9972 7.11914V9.39844C57.9972 10.5059 57.5406 11.5195 56.8089 12.252L56.8031 12.2578C56.0714 12.9902 55.0645 13.4473 53.9524 13.4473H52.1143V16.8691H65.9405C66.4439 16.8691 66.8536 17.2793 66.8536 17.7832V17.7949C67.2751 25.2949 66.8536 32.5488 63.8039 37.9219C60.7132 43.3711 55.0177 46.8398 44.9671 46.623C44.013 47.4844 43.0472 48.2168 42.1398 48.9141C38.9672 51.3398 36.579 53.168 38.4345 58.7695H41.2091C42.3155 58.7695 43.3223 59.2207 44.054 59.9531C44.7857 60.6855 45.2364 61.6934 45.2364 62.8008V64.4238H45.6344C46.7232 64.4238 47.7183 64.8691 48.4383 65.5898C49.1583 66.3105 49.6032 67.3008 49.6032 68.3965V71.0918C49.6032 71.5957 49.1934 72.0059 48.69 72.0059H17.8943C17.3909 72.0059 16.9812 71.5957 16.9812 71.0918V68.3965C16.9812 67.3066 17.4261 66.3164 18.1461 65.5957L18.1519 65.5898C18.8719 64.8691 19.8611 64.4238 20.9499 64.4238H21.348V62.8008C21.348 61.6934 21.7987 60.6855 22.5304 59.959L22.5362 59.9531C23.2679 59.2266 24.2747 58.7695 25.3752 58.7695H28.4952C30.1517 53.4844 27.9801 51.7734 24.9772 49.4062C23.9586 48.6035 22.8465 47.7305 21.7284 46.6289C11.7949 46.793 6.17549 43.3301 3.13163 37.9102C0.117044 32.5312 -0.280999 25.2891 0.140458 17.7949V17.7832C0.140458 17.2734 0.550208 16.8633 1.05362 16.8633ZM30.3976 58.7637H36.5263C34.5829 52.3945 37.3692 50.2676 41.0394 47.4609C45.0666 44.3848 50.2997 40.3887 50.2997 27.2402V13.4648H16.2905V26.8828C16.5129 31.9863 17.3675 35.7656 18.5441 38.6602C19.709 41.5195 21.2075 43.5176 22.7411 45.0703C23.8591 46.207 25.0299 47.127 26.1011 47.9707C29.5956 50.7188 32.1419 52.7285 30.3976 58.7637ZM37.7965 60.5918H25.3752C24.7664 60.5918 24.2162 60.8379 23.8182 61.2363L23.8123 61.2422C23.4143 61.6406 23.1684 62.1914 23.1684 62.8008V64.4238H43.4101V62.8008C43.4101 62.1973 43.1642 61.6465 42.7603 61.2422C42.3623 60.8437 41.812 60.5918 41.2033 60.5918H37.7965ZM44.3291 66.2461H20.9499C20.3587 66.2461 19.8202 66.4863 19.4338 66.873L19.428 66.8789C19.0416 67.2656 18.8017 67.8047 18.8017 68.3965V70.1777H47.7768V68.3965C47.7768 67.8047 47.5368 67.2715 47.1447 66.8789V66.873C46.7583 66.4863 46.2198 66.2461 45.6286 66.2461H44.3291ZM52.126 22.4824H60.1747C60.6781 22.4824 61.0879 22.8926 61.0879 23.3965C61.0879 28.0078 60.6723 31.9805 58.9747 35.0098C57.283 38.0215 54.3972 40.0312 49.5271 40.6934C48.7193 42.3281 47.7827 43.6641 46.7876 44.8008C54.9416 44.584 59.642 41.5781 62.2293 37.0254C64.9629 32.209 65.4195 25.6055 65.0859 18.6973H52.126V22.4824ZM59.2557 24.3105H52.126V27.2402C52.126 32.1094 51.447 35.8066 50.3817 38.7012C53.9407 37.998 56.1065 36.3984 57.3884 34.1133C58.7816 31.6172 59.203 28.248 59.2557 24.3105ZM14.47 24.3105H8.00766C8.05449 28.2539 8.41156 31.6289 9.74617 34.125C10.9696 36.4102 13.071 38.0098 16.6124 38.707C15.4827 35.7129 14.6807 31.9043 14.4642 26.918V26.877H14.4583V24.3105H14.47ZM58.9279 1.82812H7.6623C7.62133 1.82812 7.58035 1.8457 7.55108 1.875C7.52181 1.9043 7.50425 1.93945 7.50425 1.98633V3.59766C7.50425 4.08398 7.70328 4.52344 8.02522 4.8457C8.34717 5.16797 8.78619 5.36719 9.27203 5.36719H57.3182C57.804 5.36719 58.243 5.16797 58.565 4.8457C58.8869 4.52344 59.0859 4.08398 59.0859 3.59766V1.98047C59.0859 1.93945 59.0684 1.89844 59.0391 1.86914C59.0098 1.8457 58.9689 1.82812 58.9279 1.82812ZM56.1767 7.18945H10.4193V9.4043C10.4193 10.0137 10.6652 10.5703 11.0691 10.9687C11.473 11.3672 12.0232 11.6191 12.632 11.6191H53.9641C54.5728 11.6191 55.1289 11.373 55.527 10.9687C55.925 10.5645 56.1767 10.0137 56.1767 9.4043V7.18945Z" fill="#8285EE" />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0_1242_329">
+                              <rect width="67" height="72" fill="white" />
+                            </clipPath>
+                          </defs>
+                        </svg>
+
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section className="bg-[#050B20] rounded-[16px] ">
+            <div className="max-w-[1400px] mx-auto">
+              <h4 className="text-[40px] font-bold text-[#fff] ">What our customers say</h4>
+              <div className="">
+                <Swiper
+                  slidesPerView={ 3 }
+                  centeredSlides={ true }
+                  spaceBetween={ 30 }
+                  pagination={ {
+                    clickable: true,
+                  } }
+                  loop={ true }
+                  navigation={ true }
+                  modules={ [ Pagination, Navigation ] }
+                  className="mySwiper client-testimonial"
+                >
+                  <SwiperSlide className="rounded-[16px] bg-[#fff] p-[40px]">
+                    <div className="">
+                      <div className="flex">
+                        <h6 className="text-[20px] text-[#050B20] ">Great Work</h6>
+                        <span className="ml-auto">
+                          <svg width="37" height="27" viewBox="0 0 37 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.1 26.6398C6.76667 26.6398 4.66667 25.7065 2.8 23.8398C0.933334 21.9065 0 19.0731 0 15.3398C0 11.0731 1.13333 7.6065 3.4 4.93984C5.73333 2.20651 9.03333 0.839844 13.3 0.839844C14.8333 0.839844 16.0333 0.939842 16.9 1.13984V5.73984C15.9667 5.6065 14.7667 5.53984 13.3 5.53984C11.0333 5.53984 9.2 6.3065 7.8 7.83984C6.46667 9.17317 5.7 10.9398 5.5 13.1398C6.36667 12.0731 7.76667 11.5398 9.7 11.5398C11.7 11.5398 13.4 12.2398 14.8 13.6398C16.2 14.9731 16.9 16.7398 16.9 18.9398C16.9 21.2065 16.1667 23.0731 14.7 24.5398C13.2333 25.9398 11.3667 26.6398 9.1 26.6398ZM29 26.6398C26.6667 26.6398 24.5667 25.7065 22.7 23.8398C20.8333 21.9065 19.9 19.0731 19.9 15.3398C19.9 11.0731 21.0333 7.6065 23.3 4.93984C25.6333 2.20651 28.9333 0.839844 33.2 0.839844C34.7333 0.839844 35.9333 0.939842 36.8 1.13984V5.73984C35.8667 5.6065 34.6667 5.53984 33.2 5.53984C30.9333 5.53984 29.1 6.3065 27.7 7.83984C26.3667 9.17317 25.6 10.9398 25.4 13.1398C26.2667 12.0731 27.6667 11.5398 29.6 11.5398C31.6 11.5398 33.3 12.2398 34.7 13.6398C36.1 14.9731 36.8 16.7398 36.8 18.9398C36.8 21.2065 36.0667 23.0731 34.6 24.5398C33.1333 25.9398 31.2667 26.6398 29 26.6398Z" fill="#050B20" />
+                          </svg>
+                        </span>
+                      </div>
+                      <p className="text-[16px] font-[400]">“Amazing design, easy to customize and a design quality superlative account on its cloud platform for the optimized performance. And we didn’t on our original designs.”</p>
+                      <div className="flex items-center gap-2 mt-[40px]">
+                        <div><span><img src="" alt="" className="w-[60px] h-[60px] rounded-[50%]" /></span></div>
+                        <div>
+                          <p className="text-[16px] text-[#050B20] mb-0 pb-0">Leslie Alexander</p>
+                          <span className="text-[14px] text-[#050B20]">Facebook</span>
+                        </div>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide className="rounded-[16px] bg-[#fff] p-[40px]">
+                    <div className="">
+                      <div className="flex">
+                        <h6 className="text-[20px] text-[#050B20] ">Great Work</h6>
+                        <span className="ml-auto">
+                          <svg width="37" height="27" viewBox="0 0 37 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.1 26.6398C6.76667 26.6398 4.66667 25.7065 2.8 23.8398C0.933334 21.9065 0 19.0731 0 15.3398C0 11.0731 1.13333 7.6065 3.4 4.93984C5.73333 2.20651 9.03333 0.839844 13.3 0.839844C14.8333 0.839844 16.0333 0.939842 16.9 1.13984V5.73984C15.9667 5.6065 14.7667 5.53984 13.3 5.53984C11.0333 5.53984 9.2 6.3065 7.8 7.83984C6.46667 9.17317 5.7 10.9398 5.5 13.1398C6.36667 12.0731 7.76667 11.5398 9.7 11.5398C11.7 11.5398 13.4 12.2398 14.8 13.6398C16.2 14.9731 16.9 16.7398 16.9 18.9398C16.9 21.2065 16.1667 23.0731 14.7 24.5398C13.2333 25.9398 11.3667 26.6398 9.1 26.6398ZM29 26.6398C26.6667 26.6398 24.5667 25.7065 22.7 23.8398C20.8333 21.9065 19.9 19.0731 19.9 15.3398C19.9 11.0731 21.0333 7.6065 23.3 4.93984C25.6333 2.20651 28.9333 0.839844 33.2 0.839844C34.7333 0.839844 35.9333 0.939842 36.8 1.13984V5.73984C35.8667 5.6065 34.6667 5.53984 33.2 5.53984C30.9333 5.53984 29.1 6.3065 27.7 7.83984C26.3667 9.17317 25.6 10.9398 25.4 13.1398C26.2667 12.0731 27.6667 11.5398 29.6 11.5398C31.6 11.5398 33.3 12.2398 34.7 13.6398C36.1 14.9731 36.8 16.7398 36.8 18.9398C36.8 21.2065 36.0667 23.0731 34.6 24.5398C33.1333 25.9398 31.2667 26.6398 29 26.6398Z" fill="#050B20" />
+                          </svg>
+                        </span>
+                      </div>
+                      <p className="text-[16px] font-[400]">“Amazing design, easy to customize and a design quality superlative account on its cloud platform for the optimized performance. And we didn’t on our original designs.”</p>
+                      <div className="flex items-center gap-2 mt-[40px]">
+                        <div><span><img src="" alt="" className="w-[60px] h-[60px] rounded-[50%]" /></span></div>
+                        <div>
+                          <p className="text-[16px] text-[#050B20] mb-0 pb-0">Leslie Alexander</p>
+                          <span className="text-[14px] text-[#050B20]">Facebook</span>
+                        </div>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide className="rounded-[16px] bg-[#fff] p-[40px]">
+                    <div className="">
+                      <div className="flex">
+                        <h6 className="text-[20px] text-[#050B20] ">Great Work</h6>
+                        <span className="ml-auto">
+                          <svg width="37" height="27" viewBox="0 0 37 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.1 26.6398C6.76667 26.6398 4.66667 25.7065 2.8 23.8398C0.933334 21.9065 0 19.0731 0 15.3398C0 11.0731 1.13333 7.6065 3.4 4.93984C5.73333 2.20651 9.03333 0.839844 13.3 0.839844C14.8333 0.839844 16.0333 0.939842 16.9 1.13984V5.73984C15.9667 5.6065 14.7667 5.53984 13.3 5.53984C11.0333 5.53984 9.2 6.3065 7.8 7.83984C6.46667 9.17317 5.7 10.9398 5.5 13.1398C6.36667 12.0731 7.76667 11.5398 9.7 11.5398C11.7 11.5398 13.4 12.2398 14.8 13.6398C16.2 14.9731 16.9 16.7398 16.9 18.9398C16.9 21.2065 16.1667 23.0731 14.7 24.5398C13.2333 25.9398 11.3667 26.6398 9.1 26.6398ZM29 26.6398C26.6667 26.6398 24.5667 25.7065 22.7 23.8398C20.8333 21.9065 19.9 19.0731 19.9 15.3398C19.9 11.0731 21.0333 7.6065 23.3 4.93984C25.6333 2.20651 28.9333 0.839844 33.2 0.839844C34.7333 0.839844 35.9333 0.939842 36.8 1.13984V5.73984C35.8667 5.6065 34.6667 5.53984 33.2 5.53984C30.9333 5.53984 29.1 6.3065 27.7 7.83984C26.3667 9.17317 25.6 10.9398 25.4 13.1398C26.2667 12.0731 27.6667 11.5398 29.6 11.5398C31.6 11.5398 33.3 12.2398 34.7 13.6398C36.1 14.9731 36.8 16.7398 36.8 18.9398C36.8 21.2065 36.0667 23.0731 34.6 24.5398C33.1333 25.9398 31.2667 26.6398 29 26.6398Z" fill="#050B20" />
+                          </svg>
+                        </span>
+                      </div>
+                      <p className="text-[16px] font-[400]">“Amazing design, easy to customize and a design quality superlative account on its cloud platform for the optimized performance. And we didn’t on our original designs.”</p>
+                      <div className="flex items-center gap-2 mt-[40px]">
+                        <div><span><img src="" alt="" className="w-[60px] h-[60px] rounded-[50%]" /></span></div>
+                        <div>
+                          <p className="text-[16px] text-[#050B20] mb-0 pb-0">Leslie Alexander</p>
+                          <span className="text-[14px] text-[#050B20]">Facebook</span>
+                        </div>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide className="rounded-[16px] bg-[#fff] p-[40px]">
+                    <div className="">
+                      <div className="flex">
+                        <h6 className="text-[20px] text-[#050B20] ">Great Work</h6>
+                        <span className="ml-auto">
+                          <svg width="37" height="27" viewBox="0 0 37 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.1 26.6398C6.76667 26.6398 4.66667 25.7065 2.8 23.8398C0.933334 21.9065 0 19.0731 0 15.3398C0 11.0731 1.13333 7.6065 3.4 4.93984C5.73333 2.20651 9.03333 0.839844 13.3 0.839844C14.8333 0.839844 16.0333 0.939842 16.9 1.13984V5.73984C15.9667 5.6065 14.7667 5.53984 13.3 5.53984C11.0333 5.53984 9.2 6.3065 7.8 7.83984C6.46667 9.17317 5.7 10.9398 5.5 13.1398C6.36667 12.0731 7.76667 11.5398 9.7 11.5398C11.7 11.5398 13.4 12.2398 14.8 13.6398C16.2 14.9731 16.9 16.7398 16.9 18.9398C16.9 21.2065 16.1667 23.0731 14.7 24.5398C13.2333 25.9398 11.3667 26.6398 9.1 26.6398ZM29 26.6398C26.6667 26.6398 24.5667 25.7065 22.7 23.8398C20.8333 21.9065 19.9 19.0731 19.9 15.3398C19.9 11.0731 21.0333 7.6065 23.3 4.93984C25.6333 2.20651 28.9333 0.839844 33.2 0.839844C34.7333 0.839844 35.9333 0.939842 36.8 1.13984V5.73984C35.8667 5.6065 34.6667 5.53984 33.2 5.53984C30.9333 5.53984 29.1 6.3065 27.7 7.83984C26.3667 9.17317 25.6 10.9398 25.4 13.1398C26.2667 12.0731 27.6667 11.5398 29.6 11.5398C31.6 11.5398 33.3 12.2398 34.7 13.6398C36.1 14.9731 36.8 16.7398 36.8 18.9398C36.8 21.2065 36.0667 23.0731 34.6 24.5398C33.1333 25.9398 31.2667 26.6398 29 26.6398Z" fill="#050B20" />
+                          </svg>
+                        </span>
+                      </div>
+                      <p className="text-[16px] font-[400]">“Amazing design, easy to customize and a design quality superlative account on its cloud platform for the optimized performance. And we didn’t on our original designs.”</p>
+                      <div className="flex items-center gap-2 mt-[40px]">
+                        <div><span><img src="" alt="" className="w-[60px] h-[60px] rounded-[50%]" /></span></div>
+                        <div>
+                          <p className="text-[16px] text-[#050B20] mb-0 pb-0">Leslie Alexander</p>
+                          <span className="text-[14px] text-[#050B20]">Facebook</span>
+                        </div>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide className="rounded-[16px] bg-[#fff] p-[40px]">
+                    <div className="">
+                      <div className="flex">
+                        <h6 className="text-[20px] text-[#050B20] ">Great Work</h6>
+                        <span className="ml-auto">
+                          <svg width="37" height="27" viewBox="0 0 37 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.1 26.6398C6.76667 26.6398 4.66667 25.7065 2.8 23.8398C0.933334 21.9065 0 19.0731 0 15.3398C0 11.0731 1.13333 7.6065 3.4 4.93984C5.73333 2.20651 9.03333 0.839844 13.3 0.839844C14.8333 0.839844 16.0333 0.939842 16.9 1.13984V5.73984C15.9667 5.6065 14.7667 5.53984 13.3 5.53984C11.0333 5.53984 9.2 6.3065 7.8 7.83984C6.46667 9.17317 5.7 10.9398 5.5 13.1398C6.36667 12.0731 7.76667 11.5398 9.7 11.5398C11.7 11.5398 13.4 12.2398 14.8 13.6398C16.2 14.9731 16.9 16.7398 16.9 18.9398C16.9 21.2065 16.1667 23.0731 14.7 24.5398C13.2333 25.9398 11.3667 26.6398 9.1 26.6398ZM29 26.6398C26.6667 26.6398 24.5667 25.7065 22.7 23.8398C20.8333 21.9065 19.9 19.0731 19.9 15.3398C19.9 11.0731 21.0333 7.6065 23.3 4.93984C25.6333 2.20651 28.9333 0.839844 33.2 0.839844C34.7333 0.839844 35.9333 0.939842 36.8 1.13984V5.73984C35.8667 5.6065 34.6667 5.53984 33.2 5.53984C30.9333 5.53984 29.1 6.3065 27.7 7.83984C26.3667 9.17317 25.6 10.9398 25.4 13.1398C26.2667 12.0731 27.6667 11.5398 29.6 11.5398C31.6 11.5398 33.3 12.2398 34.7 13.6398C36.1 14.9731 36.8 16.7398 36.8 18.9398C36.8 21.2065 36.0667 23.0731 34.6 24.5398C33.1333 25.9398 31.2667 26.6398 29 26.6398Z" fill="#050B20" />
+                          </svg>
+                        </span>
+                      </div>
+                      <p className="text-[16px] font-[400]">“Amazing design, easy to customize and a design quality superlative account on its cloud platform for the optimized performance. And we didn’t on our original designs.”</p>
+                      <div className="flex items-center gap-2 mt-[40px]">
+                        <div><span><img src="" alt="" className="w-[60px] h-[60px] rounded-[50%]" /></span></div>
+                        <div>
+                          <p className="text-[16px] text-[#050B20] mb-0 pb-0">Leslie Alexander</p>
+                          <span className="text-[14px] text-[#050B20]">Facebook</span>
+                        </div>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+
+                </Swiper>
+
+              </div>
+            </div>
+
           </section>
         </div>
       </div>

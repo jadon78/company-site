@@ -7,7 +7,6 @@ import Image from "next/image";
 import icon from "../../components/assets/images/icon.png";
 import phone from "../../components/assets/images/phone icon.png";
 import rocket from "../../components/assets/images/rocket-launcher.jpg";
-import "../../css/Service.css";
 import Link from "next/link";
 import { service } from "@/constants/data";
 import { Carousel } from "react-responsive-carousel";

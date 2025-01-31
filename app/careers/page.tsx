@@ -17,7 +17,6 @@ import culture from "../../components/assets/images/culture.png";
 import activity from "../../components/assets/images/activity.png";
 import Man2 from "../../components/assets/images/man-2.png";
 import Man1 from "../../components/assets/images/man-1.png";
-import "../../css/careers.css";
 import { AiOutlineDown } from "react-icons/ai";
 
 const Careers = () => {
