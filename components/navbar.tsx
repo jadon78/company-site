@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import logo from "../components/assets/logo/logo.png";
+import logo from "../components/assets/img/logo.png";
 import { mainNavLinks } from "@/constants";
 import "../css/navbar.css";
 import { useState } from "react";
@@ -22,7 +22,7 @@ export const Navbar = () => {
                 className="inline-block text-xl leading-[inherit] whitespace-nowrap py-[0.3125rem]"
                 href="/"
               >
-                {/* <Image src={logo} alt="logo" className="w-[170px]" /> */}
+                <Image src={logo} alt="logo" className="w-[100px]" />
               </Link>
             </div>
             <button
