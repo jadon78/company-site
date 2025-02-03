@@ -722,6 +722,8 @@ to {
   transform: rotate(360deg);
 }
 }
-.mobile-header .mymenu-items li a {
-color: #fff !important;
+@media (max-width:768px) {
+  .mobile-header .mymenu-items li a {
+    color: #fff !important;
+  }
 }
