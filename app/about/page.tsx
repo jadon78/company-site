@@ -243,7 +243,6 @@ const AboutPage = () => {
               /> */}
             </div>
           </section>
-
           <section className="py-20 px-4 relative bg-[#fff] overflow-hidden">
             <div className="max-w-[1400px] px-[16px] mx-auto grid md:grid-cols-2 gap-12 items-center pt-10">
               <div data-aos="fade-right" className="">
