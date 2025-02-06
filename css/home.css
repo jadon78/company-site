@@ -902,6 +902,8 @@ animation: right-rotate-bg infinite 30s linear;
   z-index: 0;
   opacity: 10%;
 }
+.bisiness-domainsname:hover p,
+.bisiness-domainsname:hover h5,
 .bisiness-domains:hover h5,
 .bisiness-domains:hover p{
   color: #fff;
@@ -912,8 +914,11 @@ position: relative;
 .bisiness-domains:hover:after{
   clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
 }
-.bisiness-domains:hover:before{
+.bisiness-domainsname:hover:after{
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);}
+  .bisiness-domains:hover:before{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);}
+    .bisiness-domainsname:after,
     .bisiness-domains::before{
     content: "";
     width: 100%;
@@ -925,7 +930,7 @@ position: relative;
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     transition: 0.6s;
     z-index: 0;
-    border-radius: 8px;
+    border-radius: 16px;
   }
     .bisiness-domains:nth-child(odd):after{
       left: 0;
@@ -960,4 +965,96 @@ position: relative;
     top: 0;
   background-image: url('../components/assets/img/circle.png');
   background-repeat: no-repeat;
+}
+.text-border-bg{
+  -webkit-text-stroke: 1px #D0CECE;
+}
+.workprocess{
+  position: relative;
+  overflow: hidden;
+}
+
+.workprocess:after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 200%;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background: repeating-linear-gradient(
+    to right,
+    transparent 0,
+    transparent 4px,
+    #0000007d 4px,
+    #0000007d 12px
+  );
+  animation: moveDash 52s linear infinite;
+}
+@keyframes moveDash {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+.bisiness-domainsname:nth-child(1):before,
+.bisiness-domainsname:nth-child(2):before,
+.bisiness-domainsname:nth-child(3):before{
+  bottom: -20px;
+  transform: rotate(270deg) translateX(-50%) ;
+  animation: updoundash 2s linear infinite;
+
+
+}
+.bisiness-domainsname:nth-child(4):before,
+.bisiness-domainsname:nth-child(5):before,
+.bisiness-domainsname:nth-child(6):before{
+  top: -18px;
+  transform: rotate(90deg) translateX(-50%) ;
+  animation: reupdoundash 2s linear infinite;
+
+
+}
+  .bisiness-domainsname:before{
+   content: "";
+  position: absolute;
+  height: 3px;
+  width: 40px;
+  left: 50%;
+  transform: translateY(-50%);
+  background: repeating-linear-gradient(
+    to right,
+    transparent 0,
+    transparent 4px,
+    #0000007d 4px,
+    #0000007d 12px
+  );
+}
+.bisiness-domainsname{
+  border: 1px solid #FC658C;
+}
+/* animation: moveDash 52s linear infinite; */
+@keyframes updoundash {
+  0% {
+    transform: rotate(270deg) translateX(-50%);
+  }
+  100% {
+    transform: rotate(270deg) translateX(0%);
+  }
+}
+@keyframes reupdoundash {
+  0% {
+    transform: rotate(90deg) translateX(-50%);
+  }
+  100% {
+    transform: rotate(90deg) translateX(0%);
+  }
+}
+.card-box{
+  background-image: url('../components/assets/img/Rectanglecurve.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  text-align: center;
 }
