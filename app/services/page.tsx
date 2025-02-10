@@ -1,6 +1,7 @@
-"use client";
+'use client';
 
 import React, { useState, useEffect } from "react";
+import { useRouter } from 'next/navigation';
 import Image from "next/image";
 import FAQ from '../../components/assets/img/faq.png'
 import Mobileapp from '../../components/assets/img/mobile-app.png'
@@ -9,7 +10,10 @@ import '../../css/home.css'
 import AOS from "aos";
 import "aos/dist/aos.css";
 import WaveCanvas from "../waveflow/page";
-const Services = () => {
+
+function Services() {
+  const router = useRouter();
+
   useEffect(() => {
     AOS.init({
       duration: 800, // Animation duration in ms
@@ -70,6 +74,7 @@ const Services = () => {
   const services = [
     {
       title: "Digital Marketing",
+      name: "digital-marketing",
       description: "Mauris ultrices ligula eget volutpat aliquet nullam",
       icon: <svg width="41" height="37" viewBox="0 0 41 37" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g clip-path="url(#clip0_1360_1710)">
@@ -84,6 +89,7 @@ const Services = () => {
     },
     {
       title: "Web Development",
+      name: "web-development",
       description: "Sed ut perspiciatis unde omnis iste natus error sit",
       icon: <svg width="41" height="37" viewBox="0 0 41 37" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g clip-path="url(#clip0_1360_1710)">
@@ -98,6 +104,7 @@ const Services = () => {
     },
     {
       title: "Graphic Design",
+      name: "graphic-design",
       description: "Neque porro quisquam est qui dolorem ipsum quia dolor",
       icon: <svg width="41" height="37" viewBox="0 0 41 37" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g clip-path="url(#clip0_1360_1710)">
@@ -112,6 +119,7 @@ const Services = () => {
     },
     {
       title: "Graphic Design",
+      name: "graphic-design",
       description: "Neque porro quisquam est qui dolorem ipsum quia dolor",
       icon: <svg width="41" height="37" viewBox="0 0 41 37" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g clip-path="url(#clip0_1360_1710)">
@@ -126,6 +134,7 @@ const Services = () => {
     },
     {
       title: "Graphic Design",
+      name: "graphic-design",
       description: "Neque porro quisquam est qui dolorem ipsum quia dolor",
       icon: <svg width="41" height="37" viewBox="0 0 41 37" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g clip-path="url(#clip0_1360_1710)">
@@ -140,6 +149,7 @@ const Services = () => {
     },
     {
       title: "Mobile App Development",
+      name: "mobile-app-development",
       description: "Neque porro quisquam est qui dolorem ipsum quia dolor",
       icon: <svg width="41" height="37" viewBox="0 0 41 37" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g clip-path="url(#clip0_1360_1710)">
@@ -154,6 +164,7 @@ const Services = () => {
     },
     {
       title: " IT Consultancy",
+      name: "it-consultancy",
       description: "Neque porro quisquam est qui dolorem ipsum quia dolor",
       icon: <svg width="41" height="37" viewBox="0 0 41 37" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g clip-path="url(#clip0_1360_1710)">
@@ -168,6 +179,7 @@ const Services = () => {
     },
     {
       title: "DevOps",
+      name: "devOps",
       description: "Neque porro quisquam est qui dolorem ipsum quia dolor",
       icon: <svg width="41" height="37" viewBox="0 0 41 37" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g clip-path="url(#clip0_1360_1710)">
@@ -182,6 +194,7 @@ const Services = () => {
     },
     {
       title: "CRMS",
+      name: "crms",
       description: "Neque porro quisquam est qui dolorem ipsum quia dolor",
       icon: <svg width="41" height="37" viewBox="0 0 41 37" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g clip-path="url(#clip0_1360_1710)">
@@ -196,6 +209,7 @@ const Services = () => {
     },
     {
       title: "Content Management",
+      name: "content-management",
       description: "Neque porro quisquam est qui dolorem ipsum quia dolor",
       icon: <svg width="41" height="37" viewBox="0 0 41 37" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g clip-path="url(#clip0_1360_1710)">
@@ -210,6 +224,7 @@ const Services = () => {
     },
     {
       title: "Saas",
+      name: "saas",
       description: "Neque porro quisquam est qui dolorem ipsum quia dolor",
       icon: <svg width="41" height="37" viewBox="0 0 41 37" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g clip-path="url(#clip0_1360_1710)">
@@ -224,6 +239,7 @@ const Services = () => {
     },
     {
       title: "Data Science & Analytics",
+      name: "data-science-&-analytics",
       description: "Neque porro quisquam est qui dolorem ipsum quia dolor",
       icon: <svg width="41" height="37" viewBox="0 0 41 37" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g clip-path="url(#clip0_1360_1710)">
@@ -237,6 +253,11 @@ const Services = () => {
       </svg>
     },
   ];
+
+  const redirectServiceInfo = (slug: any) => {
+    console.log("--->>>", slug)
+    router.push(`/services/${slug}`)
+  }
   return (
     <>
       <div className="mt-[90px]">
@@ -313,7 +334,7 @@ const Services = () => {
             <div className="max-w-[1400px] mx-auto py-[60px]">
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 z-[999] relative">
                 {services.map((service, index) => (
-                  <div key={index} className="rounded-[20px] bg-[#fff] p-[20px] services-card relative">
+                  <div key={index} onClick={() => redirectServiceInfo(service.name)} className="rounded-[20px] bg-[#fff] p-[20px] services-card relative">
                     <div className="bg-color-card"></div>
                     <div className="relative z-[999]">
                       <div className="relative w-[100px]">
