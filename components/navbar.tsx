@@ -77,7 +77,7 @@ export const Navbar = () => {
                     className={`ml-[16px] leading-[42px]  ${item.submenu ? " " : ""}`}
                   >
                     <Link
-                      className="web-menu p-[10px_4px] xl:p-[10px_8px] text-[15px] xl:text-[18px] montserrat text-[#000] hover:text-[#696DF3]"
+                      className="web-menu p-[10px_4px] xl:p-[10px_8px] text-[15px] xl:text-[18px] montserrat text-[#000] hover:text-[#1E96D3]"
                       href={item.path}
                     >
                       {item.name}
@@ -102,7 +102,7 @@ export const Navbar = () => {
                   {/* <div className="p-[10px_8px] pr-[0px]">
                     <Link
                       href=""
-                      className=" flex gap-2 items-center bg-[#696DF3] hover:bg-[#696DF3] text-[18px] text-[white] hover:text-[white] rounded-[50px] p-[8px_12px] text-[18px] font-[600] "
+                      className=" flex gap-2 items-center bg-[#1E96D3] hover:bg-[#1E96D3] text-[18px] text-[white] hover:text-[white] rounded-[50px] p-[8px_12px] text-[18px] font-[600] "
                     >
                       Contact us
                       <svg width="30" height="24" viewBox="0 0 30 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -114,7 +114,7 @@ export const Navbar = () => {
                   <div className="p-[10px_8px] pr-[0px]">
                     <Link
                       href="/contactus"
-                      className=" contactus-btn relative flex gap-2 items-center bg-[#696DF3] hover:bg-[#696DF3] text-[18px] text-white hover:text-white rounded-[50px] p-[8px_12px] font-[600] overflow-hidden"
+                      className=" contactus-btn relative flex gap-2 items-center bg-[#1E96D3] hover:bg-[#1E96D3] text-[18px] text-white hover:text-white rounded-[50px] p-[8px_12px] font-[600] overflow-hidden"
                     >
                       <span className="relative z-10">Contact us</span>
                       <svg
