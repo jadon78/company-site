@@ -187,18 +187,18 @@ button {
   position: absolute;
   box-shadow: 0px 4px 7.5px 0px #945DFF40;
   width: 96%;
-  background: #F1EBFF;
+  background: #bdd5e1;
   height: 100%;
   left: 2%;
   top: -4%;
 }
 
-.slide-box-4 {
+.slide-box-4 {      
   border-radius: 26px;
   position: absolute;
   box-shadow: 0px 4px 7.5px 0px #945DFF40;
   width: 92%;
-  background: #E3D4FF;
+  background: #a1cadf;
   height: 100%;
   left: 4%;
   top: -8%;
@@ -209,7 +209,7 @@ button {
   position: absolute;
   box-shadow: 0px 4px 7.5px 0px #945DFF40;
   width: 88%;
-  background: #CEB4FF;
+  background: #73bce1;
   height: 100%;
   left: 6%;
   top: -12%;
@@ -220,7 +220,7 @@ button {
   position: absolute;
   box-shadow: 0px 4px 7.5px 0px #945DFF40;
   width: 84%;
-  background: #B893FF;
+  background: #3aa5db;
   height: 100%;
   left: 8%;
   top: -16%;
@@ -231,7 +231,7 @@ button {
   position: absolute;
   box-shadow: 0px 4px 7.5px 0px #945DFF40;
   width: 80%;
-  background: #9F6EFF;
+  background: #1E96D3;
   height: 100%;
   left: 10%;
   top: -20%;
@@ -401,7 +401,7 @@ button {
 }
 
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
-  background-color: #696DF3 !important;
+  background-color: #1E96D3 !important;
 }
 
 .firstslider-technology .swiper-pagination-bullet {
@@ -932,6 +932,9 @@ position: relative;
     z-index: 0;
     border-radius: 16px;
   }
+  .bisiness-domains::before{
+    border-radius: 8px;
+  }
     .bisiness-domains:nth-child(odd):after{
       left: 0;
       top: 0;
@@ -1053,8 +1056,8 @@ position: relative;
   }
 }
 .card-box{
-  background-image: url('../components/assets/img/Rectanglecurve.png');
+  /* background-image: url('../components/assets/img/Rectanglecurve.png');
   background-repeat: no-repeat;
   background-size: 100%;
-  text-align: center;
+  text-align: center; */
 }

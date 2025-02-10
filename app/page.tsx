@@ -564,7 +564,7 @@ export default function Index ()
                           >
                             <path
                               d="M7.00004 16.4199L0.790039 10.2099L3.62004 7.37988L7.00004 10.7699L16.88 0.879883L19.71 3.70988L7.00004 16.4199Z"
-                              fill="#696DF3"
+                              fill="#1E96D3"
                             />
                           </svg>
                           End-to-End Application Development
@@ -579,7 +579,7 @@ export default function Index ()
                           >
                             <path
                               d="M7.00004 16.4199L0.790039 10.2099L3.62004 7.37988L7.00004 10.7699L16.88 0.879883L19.71 3.70988L7.00004 16.4199Z"
-                              fill="#696DF3"
+                              fill="#1E96D3"
                             />
                           </svg>
                           Customized Web Solutions
@@ -594,7 +594,7 @@ export default function Index ()
                           >
                             <path
                               d="M7.00004 16.4199L0.790039 10.2099L3.62004 7.37988L7.00004 10.7699L16.88 0.879883L19.71 3.70988L7.00004 16.4199Z"
-                              fill="#696DF3"
+                              fill="#1E96D3"
                             />
                           </svg>
                           Cross-Platform Mobile Apps
@@ -604,7 +604,7 @@ export default function Index ()
 
                     <div data-aos="fade-left" className="flex gap-[20px] md:gap-[41px] flex-wrap justify-center">
                       {techStacksData.map((tech, index) => (
-                      <div className="flex flex-col justify-between py-4 items-center w-[150px] md:w-[170px] h-40 bg-[#F4F2ED] hover:bg-[#8488f4] hover:text-[#fff]  rounded-[10px] text-center ">
+                      <div className="flex flex-col justify-between py-4 items-center w-[150px] md:w-[170px] h-40 bg-[#F4F2ED] hover:bg-[#1E96D3] hover:text-[#fff]  rounded-[10px] text-center ">
                         <Image alt={tech.name} src={tech.icon} className="mx-auto"/>
                         {tech.name}
                       </div>

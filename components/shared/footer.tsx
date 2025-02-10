@@ -7,7 +7,7 @@ export const Footer = () =>
             <div className="bg-[#E5E7EB] p-3">
                 <div className="bg-[#fff] flex p-1 max-w-[1000px] mx-auto rounded-[50px] overflow-hidden">
                     <input className="bg-[#fff] border-0 px-2 outline-0 w-full" />
-                    <button className="bg-[#696DF3] text-white max-w-[250px] rounded-[50px] w-full text-center p-[10px]">Subscribe</button>
+                    <button className="bg-[#1E96D3] text-white max-w-[250px] rounded-[50px] w-full text-center p-[10px]">Subscribe</button>
                 </div>
 
             </div>

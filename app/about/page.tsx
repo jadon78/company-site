@@ -622,7 +622,7 @@ const AboutPage = () => {
                   <h6 className="text-[24px] lg:text-[64px] font-bold">My Portfolio</h6>
                 </div>
                 <div>
-                  <button className="bg-[#696DF3] rounded-[10px] p-3 flex items-center gap-2 text-[#fff]"><svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <button className="bg-[#1E96D3] rounded-[10px] p-3 flex items-center gap-2 text-[#fff]"><svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M16.6665 0.166992C7.83353 0.166992 0.666504 7.33402 0.666504 16.167C0.666504 25 7.83353 32.167 16.6665 32.167C25.4821 32.167 32.6665 25 32.6665 16.167C32.6665 7.33402 25.4821 0.166992 16.6665 0.166992ZM27.2348 7.54226C29.1437 9.86764 30.2891 12.8351 30.3238 16.0455C29.8726 15.9588 25.3606 15.039 20.814 15.6117C20.7099 15.3861 20.6231 15.1431 20.519 14.9002C20.2413 14.2408 19.929 13.564 19.6166 12.9219C24.6491 10.8742 26.9398 7.92404 27.2348 7.54226ZM16.6665 2.52708C20.1372 2.52708 23.3129 3.8286 25.7251 5.96309C25.4821 6.31016 23.417 9.06938 18.558 10.8915C16.3194 6.7787 13.8379 3.41211 13.4561 2.8915C14.4799 2.64855 15.5559 2.52708 16.6665 2.52708ZM10.8531 3.81124C11.2175 4.29714 13.647 7.68109 15.9203 11.7071C9.53418 13.4078 3.89427 13.3731 3.28689 13.3731C4.17192 9.13879 7.03526 5.61601 10.8531 3.81124ZM2.99188 16.1844C2.99188 16.0455 2.99188 15.9067 2.99188 15.7679C3.5819 15.7852 10.211 15.872 17.0309 13.8243C17.4301 14.5878 17.7945 15.3687 18.1416 16.1496C17.968 16.2017 17.7771 16.2538 17.6036 16.3058C10.558 18.5791 6.80967 24.7917 6.4973 25.3123C4.3281 22.9002 2.99188 19.6898 2.99188 16.1844ZM16.6665 29.8416C13.5081 29.8416 10.5928 28.7657 8.28472 26.9609C8.52767 26.4577 11.3042 21.1128 19.0092 18.423C19.0439 18.4056 19.0613 18.4056 19.096 18.3883C21.0222 23.3687 21.8032 27.5509 22.0114 28.7483C20.3628 29.4598 18.558 29.8416 16.6665 29.8416ZM24.2847 27.4989C24.1459 26.6659 23.417 22.6746 21.6296 17.7635C25.916 17.0867 29.6643 18.1974 30.1329 18.3536C29.5429 22.154 27.3563 25.4338 24.2847 27.4989Z" fill="white" />
                   </svg>
                     Visit My Dribbble</button>
@@ -631,7 +631,7 @@ const AboutPage = () => {
               <div>
                 <div className="mt-[40px] grid grid-cols-1 md:grid-cols-3 gap-8">
                   <div data-aos="zoom-in" className="rounded-[16px] overflow-hidden shadow-[0_0_32px_#00000075]">
-                    <div className="bg-[#696DF3]"> <Image src={Portfolio} alt="" /></div>
+                    <div className="bg-[#1E96D3]"> <Image src={Portfolio} alt="" /></div>
                     <div className="mt-4 px-4 py-4">
                       <h4 className="text-[32px] font-bold leading-[140%]">Ahuse</h4>
                       <p className="text-[16px] font-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
@@ -642,7 +642,7 @@ const AboutPage = () => {
                     </div>
                   </div>
                   <div data-aos="zoom-in" className="rounded-[16px] overflow-hidden shadow-[0_0_32px_#00000075]">
-                    <div className="bg-[#696DF3]"> <Image src={Portfolio} alt="" /></div>
+                    <div className="bg-[#1E96D3]"> <Image src={Portfolio} alt="" /></div>
                     <div className="mt-4 px-4 py-4">
                       <h4 className="text-[32px] font-bold leading-[140%]">Ahuse</h4>
                       <p className="text-[16px] font-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
@@ -653,7 +653,7 @@ const AboutPage = () => {
                     </div>
                   </div>
                   <div data-aos="zoom-in" className="rounded-[16px] overflow-hidden shadow-[0_0_32px_#00000075]">
-                    <div className="bg-[#696DF3]"> <Image src={Portfolio} alt="" /></div>
+                    <div className="bg-[#1E96D3]"> <Image src={Portfolio} alt="" /></div>
                     <div className="mt-4 px-4 py-4">
                       <h4 className="text-[32px] font-bold leading-[140%]">Ahuse</h4>
                       <p className="text-[16px] font-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
