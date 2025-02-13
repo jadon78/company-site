@@ -391,7 +391,7 @@ export default function Index ()
                       <CardContent className="p-6 flex gap-4 align-items-center ">
                         <Image alt="bg" src={ BImg } className="max-w-[80px] md:max-w-[100%] ml-[0px] md:ml-[-50px] " />
                         <div>
-                          <h3 className="text-[20px] md:text-[30px] font-[400] mb-2">
+                          <h3 className="text-[16px] md:text-[30px] font-[400] mb-2">
                             Information Technology
                           </h3>
                           <p className="text-gray-600 text-[14px] md:text-[16px] font-[400]">
