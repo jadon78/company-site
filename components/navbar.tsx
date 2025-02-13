@@ -58,15 +58,6 @@ export const Navbar = () => {
             >
               <button className="  closeicon">
                 <span className="closeicon" onClick={() => setIsOpen(!isOpen)}>
-                  {/* <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill="#fff"
-                    width="24px"
-                    height="24px"
-                  >
-                    <path d="M 4.7070312 3.2929688 L 3.2929688 4.7070312 L 10.585938 12 L 3.2929688 19.292969 L 4.7070312 20.707031 L 12 13.414062 L 19.292969 20.707031 L 20.707031 19.292969 L 13.414062 12 L 20.707031 4.7070312 L 19.292969 3.2929688 L 12 10.585938 L 4.7070312 3.2929688 z" />
-                  </svg> */}
                   <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 1024 1024"><path fill="#fff" d="M195.2 195.2a64 64 0 0 1 90.496 0L512 421.504 738.304 195.2a64 64 0 0 1 90.496 90.496L602.496 512 828.8 738.304a64 64 0 0 1-90.496 90.496L512 602.496 285.696 828.8a64 64 0 0 1-90.496-90.496L421.504 512 195.2 285.696a64 64 0 0 1 0-90.496z"/></svg>
                 </span>
               </button>
@@ -75,6 +66,7 @@ export const Navbar = () => {
                   <li
                     key={index}
                     className={`ml-[16px] leading-[42px]  ${item.submenu ? " " : ""}`}
+                    onClick={() => setIsOpen(!isOpen)}
                   >
                     <Link
                       className="web-menu p-[10px_4px] xl:p-[10px_8px] text-[15px] xl:text-[18px] montserrat text-[#000] hover:text-[#1E96D3]"
@@ -98,7 +90,7 @@ export const Navbar = () => {
                     )}
                   </li>
                 ))}
-                <li className="ml-[16px]">
+                <li className="ml-[16px]" onClick={() => setIsOpen(!isOpen)}>
                   {/* <div className="p-[10px_8px] pr-[0px]">
                     <Link
                       href=""

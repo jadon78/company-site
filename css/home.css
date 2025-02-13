@@ -423,6 +423,11 @@ button {
   .custom-counter {
     padding: 10px !important;
   }
+  .firstslider-technology .swiper-pagination-bullet {
+    width: 14px;
+    height: 14px;
+  }
+  
 }
 
 .bg-about-background {
@@ -522,7 +527,7 @@ position: absolute;
 }
 
 .hexagon:hover {
-  background-image: url('data:image/svg+xml,<svg width="146" height="191" viewBox="0 0 146 191" fill="none" xmlns="http://www.w3.org/2000/svg"><g filter="url(%23filter0_d_812_4091)"><path fill-rule="evenodd" clip-rule="evenodd" d="M73 0L107.494 22.875L142 45.75V91.5V137.25L107.494 160.125L73 183L38.4935 160.125L4 137.25V91.5V45.75L38.4935 22.875L73 0Z" fill="%238285EE"/></g><defs><filter id="filter0_d_812_4091" x="0" y="0" width="146" height="191" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/><feOffset dy="4"/><feGaussianBlur stdDeviation="2"/><feComposite in2="hardAlpha" operator="out"/><feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/><feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_812_4091"/><feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_812_4091" result="shape"/></filter></defs></svg>');
+  background-image: url('data:image/svg+xml,<svg width="146" height="191" viewBox="0 0 146 191" fill="none" xmlns="http://www.w3.org/2000/svg"><g filter="url(%23filter0_d_812_4091)"><path fill-rule="evenodd" clip-rule="evenodd" d="M73 0L107.494 22.875L142 45.75V91.5V137.25L107.494 160.125L73 183L38.4935 160.125L4 137.25V91.5V45.75L38.4935 22.875L73 0Z" fill="%231e96d3"/></g><defs><filter id="filter0_d_812_4091" x="0" y="0" width="146" height="191" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/><feOffset dy="4"/><feGaussianBlur stdDeviation="2"/><feComposite in2="hardAlpha" operator="out"/><feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/><feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_812_4091"/><feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_812_4091" result="shape"/></filter></defs></svg>');
 }
 
 .hexagon svg {
@@ -644,7 +649,14 @@ position: absolute;
   }
 }
 
-@media (max-width:768px) {
+@media (max-width:620px) {
+  .markeing-section.box,
+  .markeing-section.box:after {
+    width: 300px;
+    height: 300px;
+  }
+}
+  @media (max-width:768px) {
 
   .hexagon svg {
     width: 30px !important;
@@ -693,23 +705,27 @@ position: absolute;
 
   .hexagon:nth-child(3) {
     left: -20px;
-    top: 60px;
+    top: 15%;
+    /* top: 60px; */
   }
 
   .hexagon:nth-child(4) {
     right: -20px;
-    top: 60px;
+    top: 15%;
+    /* top: 60px; */
 
   }
 
   .hexagon:nth-child(5) {
     left: -20px;
-    bottom: 60px;
+    bottom: 15%;
+    /* bottom: 60px; */
   }
 
   .hexagon:nth-child(6) {
     right: -20px;
-    bottom: 60px;
+    bottom: 15%;
+    /* bottom: 60px; */
   }
 
   .hexagon {
@@ -1025,7 +1041,7 @@ position: relative;
   position: absolute;
   height: 3px;
   width: 40px;
-  left: 50%;
+  left: calc(50% - 30px);
   transform: translateY(-50%);
   background: repeating-linear-gradient(
     to right,
@@ -1055,9 +1071,102 @@ position: relative;
     transform: rotate(90deg) translateX(0%);
   }
 }
-.card-box{
-  /* background-image: url('../components/assets/img/Rectanglecurve.png');
-  background-repeat: no-repeat;
-  background-size: 100%;
-  text-align: center; */
+
+
+  .technology-use:after{
+  content: "";
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(53% 100%, 64% 100%, 100% 70%, 100% 100%, 0 100%, 0 70%, 41% 99%);
+  /* clip-path: polygon(50% 90%, 100% 80%, 100% 100%, 0 100%, 0 80%); */
+  background: #1E96D3;
+  z-index: 0;
+  position: absolute;
+  bottom: 24px;
+  z-index: 9;
+}
+.our-technology{
+   /* background-image: url('../components/assets/img/curvecard.png');
+   background-repeat: no-repeat;
+   background-size: 100%;
+   text-align: center;  */
+}
+@media (max-width:991px) {
+}
+@media (max-width:1024px) {
+  .scrolldown-btn {
+    display: none;
+  }
+  .workprocess:after,
+  .bisiness-domainsname:before{
+  content: none;
+  }
+  .workflow-section{
+    background-image: none !important;
+  }
+
+}
+
+.bisiness-domainsname:nth-child(1) .scrolldown-btn,
+.bisiness-domainsname:nth-child(2) .scrolldown-btn,
+.bisiness-domainsname:nth-child(3) .scrolldown-btn{
+  bottom: -50px;
+  transform: translateX(-50%) rotate(180deg);
+
+}
+.bisiness-domainsname:nth-child(4) .scrolldown-btn,
+.bisiness-domainsname:nth-child(5) .scrolldown-btn,
+.bisiness-domainsname:nth-child(6) .scrolldown-btn{
+  top: -50px;
+  transform: translateX(-50%) rotate(0deg);
+}
+
+.scrolldown-btn {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: calc(50% - 10px);
+  text-align: center;
+}
+
+.scrolldown-btn svg path{
+  fill: #0000007d ;
+}
+  .scrolldown-btn svg {
+  width: 20px;
+  height: 40px;
+  fill: #0000007d ;
+}
+
+.first-path {
+  animation: scrollanim 1s ease-in-out infinite;
+  animation-delay: 0.8s;
+  fill: #FFFFFF;
+}
+
+.second-path {
+  animation: scrollanim2 1s ease-in-out infinite;
+  fill: #FFFFFF;
+}
+
+@keyframes scrollanim {
+  0% {
+      transform: translateY(-40px);
+      opacity: 0;
+  }
+  60% {
+      transform: translateY(0);
+      opacity: 0.8;
+  }
+}
+
+@keyframes scrollanim2 {
+  0% {
+      transform: translateY(-40px);
+      opacity: 0;
+  }
+  60% {
+      transform: translateY(0);
+      opacity: 0.6;
+  }
 }

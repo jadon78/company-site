@@ -237,7 +237,7 @@ export default function Index ()
                   transformation strategies.
                 </p>
                 <div className="space-y-3">
-                  <div className="flex items-center gap-2 text-[20px]">
+                  <div className="flex items-center gap-2 text-[14px] md:text-[20px]">
                     <svg
                       width="20"
                       height="20"
@@ -275,7 +275,7 @@ export default function Index ()
 
                     <span>Requirement Analysis</span>
                   </div>
-                  <div className="flex items-center gap-2 text-[20px]">
+                  <div className="flex items-center gap-2 text-[14px] md:text-[20px]">
                     <svg
                       width="20"
                       height="20"
@@ -313,7 +313,7 @@ export default function Index ()
 
                     <span>Solution Design</span>
                   </div>
-                  <div className="flex items-center gap-2 text-[20px]">
+                  <div className="flex items-center gap-2 text-[14px] md:text-[20px]">
                     <svg
                       width="20"
                       height="20"
@@ -391,10 +391,10 @@ export default function Index ()
                       <CardContent className="p-6 flex gap-4 align-items-center ">
                         <Image alt="bg" src={ BImg } className="ml-[0px] md:ml-[-50px]" />
                         <div>
-                          <h3 className="text-[30px] font-[400] mb-2">
+                          <h3 className="text-[20px] md:text-[30px] font-[400] mb-2">
                             Information Technology
                           </h3>
-                          <p className="text-gray-600 text-[16px] font-[400]">
+                          <p className="text-gray-600 text-[14px] md:text-[16px] font-[400]">
                             Leverage our expertise to enhance your business
                             operations and promote the seamless flow of information.
                           </p>
@@ -745,7 +745,7 @@ export default function Index ()
                 <div className="max-w-7xl mx-auto relative z-10 flex min-h-full flex-col items-center justify-center text-white text-center px-4">
                   <div className="md:flex justify-between w-full items-center md:px-4">
                     <div data-aos="fade-right" className="md:w-[45%] text-left">
-                      <h4 className="text-[44px] lg:text-[75px] pb-[50px] leading-[112px]">
+                      <h4 className="text-[44px] lg:text-[75px] pb-[50px] lg:leading-[112px] leading-[62px]">
                         Technologies{ " " }
                       </h4>
                       <p className="text-[#000] text-[18px]">
