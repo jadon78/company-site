@@ -164,7 +164,7 @@ const AboutPage = () => {
     <>
       <div className="mt-[90px]">
         <div>
-          <section className="relative h-[700px] flex items-center justify-center text-center text-white p-0 overflow-hidden">
+          <section className="relative h-[500px] md:h-[700px] flex items-center justify-center text-center text-white p-0 overflow-hidden">
 
           <svg className="absolute bottom-[0] md:bottom-[-100px] w-full left-0 "
             version="1"
@@ -219,7 +219,7 @@ const AboutPage = () => {
             </div>
           </section>
           <section className="py-20 px-4 relative bg-[#fff] overflow-hidden">
-            <div className="max-w-[1400px] px-[16px] mx-auto grid md:grid-cols-2 gap-12 items-center pt-10">
+            <div className="max-w-[1400px] md:px-[16px] mx-auto grid md:grid-cols-2 gap-12 items-center pt-10">
               <div data-aos="fade-right" className="">
                 <h3 className="text-[16px] md:text-[24px] gradient-text mb-2">
                   About Us
@@ -227,7 +227,7 @@ const AboutPage = () => {
                 <h2 className="text-[30px] md:text-[44px] font-bold mb-4 pb-0">
                   Empowering Businesses with Advanced IT Solutions
                 </h2>
-                <p className="text-gray-600 mb-6 text-[16px] md:text-[24px]">
+                <p className="text-gray-600 sm:mb-6 text-[16px] md:text-[24px]">
                   In the digital era, we help businesses thrive by delivering tailored IT services and solutions.
                   From seamless software development to robust IT infrastructure, our expertise ensures innovative,
                   scalable, and reliable outcomes for your business. Let’s transform challenges into opportunities with technology
@@ -271,9 +271,9 @@ const AboutPage = () => {
           </section>
           <div className="max-w-[1400px] px-[16px] mx-auto text-center p-0  mt-10 overflow-hidden">
             <div data-aos="flip-left" className="our-projects-section relative projects-card  z-[99] bg-[#3A3FD4] mt-10 text-[#fff] rounded-[16px] p-8 shadow-[0px_4px_17px_0px_#00000040] overflow-hidden">
-              <div className="flex items-center  flex-col md:flex-row justify-between lg:p-8">
+              <div className="flex items-center  flex-col md:flex-row justify-between lg:p-8 gap-4">
                 <div className="">
-                  <h4 className=" text-[20px] lg:text-[38px] font-bold text-left text-[#fff] leading-[40px] md:leading-[60px] max-w-[300px]">Let’s Start Your Project with
+                  <h4 className=" text-[20px] lg:text-[38px] font-bold text-left text-[#fff] leading-[28px] md:leading-[60px] max-w-[300px]">Let’s Start Your Project with
                     qutiiz</h4>
                 </div>
                 <div className="flex flex-col md:flex-row md:gap-10 gap-4">
@@ -292,7 +292,7 @@ const AboutPage = () => {
                     <h4 className="text-[#fff] text-[20px] lg:text-[54px] md:leading-[80px] font-semibold">6400</h4>
                     <p className="text-[#fff] text-[16px] lg:text-[21px] p-0  text-center">Projects Completed</p>
                   </div>
-                  <span className="w-[1px]  bg-[#fff]"></span>
+                  <span className="h-[1px] md:h-[auto] w-[100%] md:w-[1px]  bg-[#fff]"></span>
                   <div className="flex flex-col gap-2 text-[#fff] items-center justify-center">
                     <svg width="58" height="63" viewBox="0 0 58 63" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g clip-path="url(#clip0_800_3579)">
@@ -308,7 +308,7 @@ const AboutPage = () => {
                     <h4 className="text-[#fff] text-[20px] lg:text-[54px] md:leading-[80px] font-semibold">6400</h4>
                     <p className="text-[#fff] text-[16px] lg:text-[21px] p-0  text-center">Projects Completed</p>
                   </div>
-                  <span className="w-[1px]  bg-[#fff]"></span>
+                  <span className="h-[1px] md:h-[auto] w-[100%] md:w-[1px]  bg-[#fff]"></span>
                   <div className="flex flex-col gap-2 text-[#fff] items-center justify-center">
                     <svg width="58" height="63" viewBox="0 0 58 63" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g clip-path="url(#clip0_800_3579)">
@@ -423,7 +423,7 @@ const AboutPage = () => {
           </div>
           <section className="lg:px-4 overflow-hidden py-2">
             <div className="max-w-[1400px] px-[16px] mx-auto lg:py-[20px] md:py-[60px] lg:py-[0px]">
-              <div className="lg:flex gap-[60px] items-center justify-between overflow-hidden py-12 lg:pr-10">
+              <div className="flex-col flex lg:flex-row flex gap-[60px] items-center justify-between overflow-hidden py-12 lg:pr-10">
                 <div data-aos="fade-right" className="markeing-section-first max-w-[510px]">
                   <h4 className="text-[16px] md:text-[24px] gradient-text">Increase</h4>
                   <h5 className="text-[30px] md:text-[44px]">We are Specialized in Smart Development, and Smart SEO</h5>
@@ -476,7 +476,7 @@ const AboutPage = () => {
             </div>
           </section>
           <section className="px-4 bg-[#050B20] rounded-[16px] overflow-hidden">
-            <div data-aos="zoom-in" className="max-w-[1400px] px-[16px] mx-auto">
+            <div data-aos="zoom-in" className="max-w-[1400px] sm:px-[16px] mx-auto">
               <h4 className="text-[30px] md:text-[40px] font-bold text-[#fff] leading-[60px] pt-[40px] ">What our customers say</h4>
               <div className="">
                 <Swiper

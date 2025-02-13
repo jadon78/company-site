@@ -87,8 +87,8 @@ export default function Index ()
     <>
       <div className="mt-[90px]">
         <div>
-          <section className="relative h-[700px] flex items-center justify-center text-center text-white p-0 overflow-hidden">
-            <svg className="absolute bottom-[0] md:bottom-[-100px] w-full left-0 z-[99] "
+          <section className="relative h-[500px] md:h-[700px] flex items-center justify-center text-center text-white p-0 overflow-hidden">
+            <svg className="absolute bottom-[0] md:bottom-[-100px] w-full left-0 z-[1] "
               version="1"
               xmlns="http://www.w3.org/2000/svg"
               xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -156,10 +156,10 @@ export default function Index ()
                 <div className="absolute inset-0 bg-black/60" /> 
               </div>
               <div className="relative z-10 max-w-[860px] mx-auto px-4 m-auto">
-                <h1 className="text-[36px] md:text-[44px] md:text-[56px] lg:text-[72px]  font-[700] leading-[60px]  md:leading-[72px]  lg:leading-[95px] md:text-[72px] font-bold mb-0 text-white">
+                <h1 className="text-[36px] md:text-[44px] md:text-[56px] lg:text-[72px]  font-[700] leading-[40px]  md:leading-[72px]  lg:leading-[95px] md:text-[72px] font-bold mb-0 text-white">
                   DISCOVER A WORLD OF OPPORTUNITIES
                 </h1>
-                <p className=" text-[20px] md:text-[22px] mb-8 text-white text-center">
+                <p className=" text-[16px] md:text-[22px] mb-8 text-white text-center">
                   We empower a diverse IT service ecosystem where strong
                   individuals are united by a clear common purpose. To deliver
                   excellence and high level of customer satisfaction.
@@ -172,8 +172,8 @@ export default function Index ()
               /> */}
             </div>
           </section>
-          <div className=" max-w-[1100px] mx-auto text-center mt-[-130px] p-0 w-[95%] lg:w-full">
-            <div data-aos="fade-up" className="custom-counter relative  z-[99]  grid grid-cols-4 md:grid-cols-4 bg-[#fff] text-[#000] rounded-[16px] p-8   shadow-[0px_4px_17px_0px_#00000040]">
+          <div className=" max-w-[1100px] mx-auto text-center mt-[-80px] md:mt-[-130px] p-0 w-[95%] lg:w-full">
+            <div data-aos="fade-up" className="custom-counter relative  z-[8]  grid grid-cols-4 md:grid-cols-4 bg-[#fff] text-[#000] rounded-[16px] md:p-8   shadow-[0px_4px_17px_0px_#00000040]">
               <div className="border-r-[1px] border-r-[#ddd] border-solid">
                 <div className=" text-[16px] md:text-[36px] lg:text-[44px]   font-[500]  leading-[50px] md: leading-[70px]">
                   <CountUp end={ 500 } duration={ 2 } />+
@@ -202,7 +202,7 @@ export default function Index ()
             </div>
           </div>
           <section className="py-20 px-4 relative overflow-hidden ">
-            <video className="absolute w-full object-cover z-[-1] h-full top-0 rotate-[70deg]  opacity-[8%] grayscale-[1] left-[-40%]"
+            <video className="absolute w-full object-cover z-[-1] h-full top-0 sm:rotate-[70deg]  opacity-[8%] grayscale-[1] left-[0] sm:left-[-40%]"
                   autoPlay
                   loop
                   muted
@@ -222,7 +222,7 @@ export default function Index ()
                 <Image
                   src={ Image1 }
                   alt="Team meeting"
-                  className="max-w-[450px] h-auto mx-auto w-full"
+                  className="max-w-[450px] h-auto mx-auto w-full rounded-[50%] border-[5px] md:border-[0px] border-solid border-[#1e96d3]"
                 />
               </div>
               <div data-aos="fade-left"  className="">
@@ -232,7 +232,7 @@ export default function Index ()
                 <h2 className="text-[24px] md:text-[36px] lg:text-[44px]  font-bold mb-4 pb-0">
                   Achieve excellence and deliver innovative IT solutions.
                 </h2>
-                <p className="text-gray-600 mb-6 text-[16px] lg:text-[24px] ">
+                <p className="text-gray-600 sm:mb-6 text-[16px] lg:text-[24px] ">
                   Empower businesses with cutting-edge technology and digital
                   transformation strategies.
                 </p>
@@ -356,7 +356,7 @@ export default function Index ()
             </div>
           </section>
           <section className="py-4 bg-[#fff] overflow-hidden">
-            <div className=" mx-auto" data-aos="fade-up">
+            <div className=" mx-auto px-2" data-aos="fade-up">
 
               <div>
                 <Swiper
@@ -389,7 +389,7 @@ export default function Index ()
                   <SwiperSlide>
                     <div className="bg-[#fff]">
                       <CardContent className="p-6 flex gap-4 align-items-center ">
-                        <Image alt="bg" src={ BImg } className="ml-[0px] md:ml-[-50px]" />
+                        <Image alt="bg" src={ BImg } className="max-w-[80px] md:max-w-[100%] ml-[0px] md:ml-[-50px] " />
                         <div>
                           <h3 className="text-[20px] md:text-[30px] font-[400] mb-2">
                             Information Technology
@@ -405,12 +405,12 @@ export default function Index ()
                   <SwiperSlide>
                     <div className="bg-[#fff] ">
                       <CardContent className="p-6 flex gap-4 align-items-center ">
-                        <Image alt="bg" src={ BImg } className="ml-[-50px]" />
+                        <Image alt="bg" src={ BImg } className="max-w-[80px] md:max-w-[100%] ml-[0px] md:ml-[-50px]" />
                         <div>
-                          <h3 className="text-[30px] font-[400] mb-2">
+                          <h3 className="text-[16px] md:text-[30px]  font-[400] md:mb-2">
                             Information Technology
                           </h3>
-                          <p className="text-gray-600 text-[16px]">
+                          <p className="text-gray-600 text-[14px] md:text-[16px] font-[400]">
                             Leverage our expertise to enhance your business
                             operations and promote the seamless flow of information.
                           </p>
@@ -421,12 +421,12 @@ export default function Index ()
                   <SwiperSlide>
                     <div className="bg-[#fff] ">
                       <CardContent className="p-6 flex gap-4 align-items-center ">
-                        <Image alt="bg" src={ BImg } className="ml-[-50px]" />
+                        <Image alt="bg" src={ BImg } className="max-w-[80px] md:max-w-[100%] ml-[0px] md:ml-[-50px]" />
                         <div>
-                          <h3 className="text-[30px] font-[400] mb-2">
+                          <h3 className="text-[16px] md:text-[30px]  font-[400] md:mb-2">
                             Information Technology
                           </h3>
-                          <p className="text-gray-600 text-[16px]">
+                          <p className="text-gray-600 text-[14px] md:text-[16px] font-[400]">
                             Leverage our expertise to enhance your business
                             operations and promote the seamless flow of information.
                           </p>
@@ -437,12 +437,12 @@ export default function Index ()
                   <SwiperSlide>
                     <div className="bg-[#fff] ">
                       <CardContent className="p-6 flex gap-4 align-items-center ">
-                        <Image alt="bg" src={ BImg } className="ml-[-50px]" />
+                        <Image alt="bg" src={ BImg } className="max-w-[80px] md:max-w-[100%] ml-[0px] md:ml-[-50px]" />
                         <div>
-                          <h3 className="text-[30px] font-[400] mb-2">
+                          <h3 className="text-[16px] md:text-[30px]  font-[400] md:mb-2">
                             Information Technology
                           </h3>
-                          <p className="text-gray-600 text-[16px]">
+                          <p className="text-gray-600 text-[14px] md:text-[16px] font-[400]">
                             Leverage our expertise to enhance your business
                             operations and promote the seamless flow of information.
                           </p>
@@ -453,12 +453,12 @@ export default function Index ()
                   <SwiperSlide>
                     <div className="bg-[#fff] ">
                       <CardContent className="p-6 flex gap-4 align-items-center ">
-                        <Image alt="bg" src={ BImg } className="ml-[-50px]" />
+                        <Image alt="bg" src={ BImg } className="max-w-[80px] md:max-w-[100%] ml-[0px] md:ml-[-50px]" />
                         <div>
-                          <h3 className="text-[30px] font-[400] mb-2">
+                          <h3 className="text-[16px] md:text-[30px]  font-[400] md:mb-2">
                             Information Technology
                           </h3>
-                          <p className="text-gray-600 text-[16px]">
+                          <p className="text-gray-600 text-[14px] md:text-[16px] font-[400]">
                             Leverage our expertise to enhance your business
                             operations and promote the seamless flow of information.
                           </p>
@@ -469,12 +469,12 @@ export default function Index ()
                   <SwiperSlide>
                     <div className="bg-[#fff] ">
                       <CardContent className="p-6 flex gap-4 align-items-center ">
-                        <Image alt="bg" src={ BImg } className="ml-[-50px]" />
+                        <Image alt="bg" src={ BImg } className="max-w-[80px] md:max-w-[100%] ml-[0px] md:ml-[-50px]" />
                         <div>
-                          <h3 className="text-[30px] font-[400] mb-2">
+                          <h3 className="text-[16px] md:text-[30px]  font-[400] md:mb-2">
                             Information Technology
                           </h3>
-                          <p className="text-gray-600 text-[16px]">
+                          <p className="text-gray-600 text-[14px] md:text-[16px] font-[400]">
                             Leverage our expertise to enhance your business
                             operations and promote the seamless flow of information.
                           </p>
@@ -485,12 +485,12 @@ export default function Index ()
                   <SwiperSlide>
                   <div className="bg-[#fff] ">
                   <CardContent className="p-6 flex gap-4 align-items-center ">
-                    <Image alt="bg" src={BImg} className="ml-[-50px]" />
+                    <Image alt="bg" src={BImg} className="max-w-[80px] md:max-w-[100%] ml-[0px] md:ml-[-50px]" />
                     <div>
-                      <h3 className="text-[30px] font-[400] mb-2">
+                      <h3 className="text-[16px] md:text-[30px]  font-[400] md:mb-2">
                         Information Technology
                       </h3>
-                      <p className="text-gray-600 text-[16px]">
+                      <p className="text-gray-600 text-[14px] md:text-[16px] font-[400]">
                         Leverage our expertise to enhance your business
                         operations and promote the seamless flow of information.
                       </p>
@@ -501,12 +501,12 @@ export default function Index ()
                   <SwiperSlide>
                   <div className="bg-[#fff] ">
                   <CardContent className="p-6 flex gap-4 align-items-center ">
-                    <Image alt="bg" src={BImg} className="ml-[-50px]" />
+                    <Image alt="bg" src={BImg} className="max-w-[80px] md:max-w-[100%] ml-[0px] md:ml-[-50px]" />
                     <div>
-                      <h3 className="text-[30px] font-[400] mb-2">
+                      <h3 className="text-[16px] md:text-[30px]  font-[400] md:mb-2">
                         Information Technology
                       </h3>
-                      <p className="text-gray-600 text-[16px]">
+                      <p className="text-gray-600 text-[14px] md:text-[16px] font-[400]">
                         Leverage our expertise to enhance your business
                         operations and promote the seamless flow of information.
                       </p>
@@ -517,12 +517,12 @@ export default function Index ()
                   <SwiperSlide>
                   <div className="bg-[#fff] ">
                   <CardContent className="p-6 flex gap-4 align-items-center ">
-                    <Image alt="bg" src={BImg} className="ml-[-50px]" />
+                    <Image alt="bg" src={BImg} className="max-w-[80px] md:max-w-[100%] ml-[0px] md:ml-[-50px]" />
                     <div>
-                      <h3 className="text-[30px] font-[400] mb-2">
+                      <h3 className="text-[16px] md:text-[30px]  font-[400] md:mb-2">
                         Information Technology
                       </h3>
-                      <p className="text-gray-600 text-[16px]">
+                      <p className="text-gray-600 text-[14px] md:text-[16px] font-[400]">
                         Leverage our expertise to enhance your business
                         operations and promote the seamless flow of information.
                       </p>
@@ -543,10 +543,10 @@ export default function Index ()
                       <h2 className="text-[16px] md:text-[24px]  text-[#000]">
                         Technology Stack
                       </h2>
-                      <h2 className="text-[24px] md:text-[36px] lg:text-[44px]  font-bold text-left mb-6">
+                      <h2 className="text-[24px] md:text-[36px] lg:text-[44px]  font-bold text-left md:mb-6">
                         Empower Your Business with Cutting-Edge Technologies
                       </h2>
-                      <p className="text-left text-gray-600 mb-8">
+                      <p className="text-left text-gray-600 sm:mb-8">
                         Leverage our expertise in the latest technologies to
                         build innovative, scalable, and efficient solutions
                         tailored to your business needs. Stay ahead in the
@@ -615,7 +615,7 @@ export default function Index ()
               </div>
             </div>
           </div>
-          <section className="services-page">
+          <section className="services-page px-2">
             <h2 className="text-[24px]  text-center gradient-text">Services</h2>
             <h3 className="text-[36px] lg:text-[44px]  text-center font-[500]">
               Additional Services that will 
@@ -726,7 +726,7 @@ export default function Index ()
           </section>
           <section className="pt-20 pb-0">
             <div>
-              <div className="relative py-20 w-full overflow-hidden">
+              <div className="relative sm:py-20 w-full overflow-hidden">
                 <video
                   className="absolute top-0 left-0 w-full h-full object-cover opacity-[11%] bg-[#d9e2ff]"
                   autoPlay
@@ -786,7 +786,7 @@ export default function Index ()
                               <h4 className="text-[24px] md:text-[36px] lg:text-[44px] leading-[50px] lg:leading-[100px]">
                                 Technology
                               </h4>
-                              <p className="text-[16px] md:text-[18px] font-normal leading-7 text-left">
+                              <p className="text-[16px] md:text-[18px] font-normal md:leading-7 text-left">
                                 we propel tech advancement through bespoke
                                 solutions, ensuring seamless integration and
                                 innovation for businesses. Our expertise drives
@@ -818,7 +818,7 @@ export default function Index ()
                               <h4 className="text-[24px] md:text-[36px] lg:text-[44px] leading-[50px] lg:leading-[100px]">
                                 Technology
                               </h4>
-                              <p className="text-[16px] md:text-[18px] font-normal leading-7 text-left">
+                              <p className="text-[16px] md:text-[18px] font-normal md:leading-7 text-left">
                                 we propel tech advancement through bespoke
                                 solutions, ensuring seamless integration and
                                 innovation for businesses. Our expertise drives
@@ -849,7 +849,7 @@ export default function Index ()
                               <h4 className="text-[24px] md:text-[36px] lg:text-[44px] leading-[50px] lg:leading-[100px]">
                                 Technology
                               </h4>
-                              <p className="text-[16px] md:text-[18px] font-normal leading-7 text-left">
+                              <p className="text-[16px] md:text-[18px] font-normal md:leading-7 text-left">
                                 we propel tech advancement through bespoke
                                 solutions, ensuring seamless integration and
                                 innovation for businesses. Our expertise drives
@@ -880,7 +880,7 @@ export default function Index ()
                               <h4 className="text-[24px] md:text-[36px] lg:text-[44px] leading-[50px] lg:leading-[100px]">
                                 Technology
                               </h4>
-                              <p className="text-[16px] md:text-[18px] font-normal leading-7 text-left">
+                              <p className="text-[16px] md:text-[18px] font-normal md:leading-7 text-left">
                                 we propel tech advancement through bespoke
                                 solutions, ensuring seamless integration and
                                 innovation for businesses. Our expertise drives
@@ -911,7 +911,7 @@ export default function Index ()
                               <h4 className="text-[24px] md:text-[36px] lg:text-[44px] leading-[50px] lg:leading-[100px]">
                                 Technology
                               </h4>
-                              <p className="text-[16px] md:text-[18px] font-normal leading-7 text-left">
+                              <p className="text-[16px] md:text-[18px] font-normal md:leading-7 text-left">
                                 we propel tech advancement through bespoke
                                 solutions, ensuring seamless integration and
                                 innovation for businesses. Our expertise drives
@@ -942,7 +942,7 @@ export default function Index ()
                               <h4 className="text-[24px] md:text-[36px] lg:text-[44px] leading-[50px] lg:leading-[100px]">
                                 Technology
                               </h4>
-                              <p className="text-[16px] md:text-[18px] font-normal leading-7 text-left">
+                              <p className="text-[16px] md:text-[18px] font-normal md:leading-7 text-left">
                                 we propel tech advancement through bespoke
                                 solutions, ensuring seamless integration and
                                 innovation for businesses. Our expertise drives
@@ -973,7 +973,7 @@ export default function Index ()
                               <h4 className="text-[24px] md:text-[36px] lg:text-[44px] leading-[50px] lg:leading-[100px]">
                                 Technology
                               </h4>
-                              <p className="text-[16px] md:text-[18px] font-normal leading-7 text-left">
+                              <p className="text-[16px] md:text-[18px] font-normal md:leading-7 text-left">
                                 we propel tech advancement through bespoke
                                 solutions, ensuring seamless integration and
                                 innovation for businesses. Our expertise drives
@@ -1004,7 +1004,7 @@ export default function Index ()
                               <h4 className="text-[24px] md:text-[36px] lg:text-[44px] leading-[50px] lg:leading-[100px]">
                                 Technology
                               </h4>
-                              <p className="text-[16px] md:text-[18px] font-normal leading-7 text-left">
+                              <p className="text-[16px] md:text-[18px] font-normal md:leading-7 text-left">
                                 we propel tech advancement through bespoke
                                 solutions, ensuring seamless integration and
                                 innovation for businesses. Our expertise drives
@@ -1081,10 +1081,10 @@ export default function Index ()
                 <h3 className="text-[16px] lg:text-[24px]  gradient-text mb-2">
                   Why Choose Us
                 </h3>
-                <h2 className="text-[36px] lg:text-[44px]  font-bold mb-4 pb-0">
+                <h2 className="text-[30px] lg:text-[44px]  font-bold mb-4 pb-0">
                   We prioritize our clients’ satisfaction above all else.
                 </h2>
-                <p className="text-gray-600 mb-6 text-[16px] lg:text-[24px] ">
+                <p className="text-gray-600 sm:mb-6 text-[16px] lg:text-[24px] ">
                   Engitech is the partner of choice for many of the world’s
                   leading enterprises, SMEs and technology challengers. We help
                   businesses custom software development.

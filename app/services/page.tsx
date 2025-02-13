@@ -260,7 +260,7 @@ function Services() {
   return (
     <>
       <div className="mt-[90px]">
-        <section className="relative h-[700px] flex items-center justify-center text-center text-white p-0 overflow-hidden">
+        <section className="relative h-[500px] md:h-[700px] flex items-center justify-center text-center text-white p-0 overflow-hidden">
 
           <svg className="absolute bottom-[0] md:bottom-[-100px] w-full left-0 "
             version="1"
@@ -341,8 +341,8 @@ function Services() {
             Your browser does not support the video tag.
           </video>
           <div>
-            <h4 className="text-center m-0 p-0 gradient-text text-[24px]">SERVICES</h4>
-            <h5 className="text-center m-0 p-0 text-[44px]">Perfect IT Solutions</h5>
+            <h4 className="text-center m-0 p-0 gradient-text text-[16px] md:text-[24px]">SERVICES</h4>
+            <h5 className="text-center m-0 p-0 text-[30px] md:text-[44px]">Perfect IT Solutions</h5>
           </div>
           <div>
             <div className="max-w-[1400px] mx-auto py-[60px]">
@@ -523,8 +523,8 @@ function Services() {
         <section>
           <div className="max-w-[1400px] mx-auto">
             <div>
-              <h4 className="text-center m-0 p-0 gradient-text text-[24px]">Work Process</h4>
-              <h5 className="text-center m-0 p-0 text-[44px]">Workflow Journey</h5>
+              <h4 className="text-center m-0 p-0 gradient-text text-[16px] md:text-[24px]">Work Process</h4>
+              <h5 className="text-center m-0 p-0 text-[24px] md:text-[44px]">Workflow Journey</h5>
             </div>
             <div className="mt-[40px] workflow-section">
               <div className="grid grid-cols-1  lg:grid-cols-4">
@@ -651,7 +651,9 @@ function Services() {
                         onClick={() => toggleAccordion(index)}
                       >
                         <div className="flex gap-4">
-                          <span className="w-[24px] h-[24px] lg:w-[40px] lg:h-[40px] rounded-[50%] bg-[#131313] text-[#fff] flex items-center justify-center text-[14px] lg:text-[18px]">{index + 1}</span><span className="font-medium text-[16px] lg:text-[24px]">{item.title}</span>
+                          <div>
+                            <span className="w-[24px] h-[24px] lg:w-[40px] lg:h-[40px] rounded-[50%] bg-[#131313] text-[#fff] flex items-center justify-center text-[14px] lg:text-[18px]">{index + 1}</span>
+                          </div>                          <span className="font-medium text-[16px] lg:text-[24px]">{item.title}</span>
                         </div>
                         <span className={`transition-[0.4s] w-[14px] ${openIndex === index ? "rotate-90" : "rotate-0"}`}><svg className="w-[10px]" width="14" height="28" viewBox="0 0 16 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M15.1846 14L2.02668 0.875L0.184571 2.7125L11.5004 14L0.184571 25.2875L2.02668 27.125L15.1846 14Z" fill="#0C0807" />
