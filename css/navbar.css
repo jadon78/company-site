@@ -3965,6 +3965,11 @@ header .main-menu ul {
   }
 }
 
+@media (max-width: 991px) {
+  section {
+    padding: 20px 0px !important;
+  }
+}
 @media (max-width: 768px) {
   .show-only-mobile {
     display: block;

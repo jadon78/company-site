@@ -35,10 +35,14 @@ const WaveCanvas: React.FC = () => {
         return gradient;
       };
 
-      const gradient1 = createGradient("rgba(255, 255, 255, 0.8)", "rgba(255, 255, 255, 0)"); // Light white gradient
-      const gradient2 = createGradient("rgba(240, 248, 255, 0.8)", "rgba(240, 248, 255, 0)"); // Light blue gradient
-      const gradient3 = createGradient("rgba(255, 240, 245, 0.8)", "rgba(255, 240, 245, 0)"); // Light pink gradient
-
+      // const gradient1 = createGradient("rgba(255, 255, 255, 0.8)", "rgba(255, 255, 255, 0)"); 
+      // const gradient2 = createGradient("rgba(240, 248, 255, 0.8)", "rgba(240, 248, 255, 0)"); 
+      // const gradient3 = createGradient("rgba(255, 240, 245, 0.8)", "rgba(255, 240, 245, 0)"); 
+      
+      const gradient1 = createGradient("rgba(255, 255, 255, 1)", "rgba(255, 255, 255, 0.6)"); // Light white gradient
+      const gradient2 = createGradient("rgba(255, 255, 255, 1)", "rgba(255, 255, 255, 0.6)"); // Light blue gradient
+      const gradient3 = createGradient("rgba(255, 255, 255, 1)", "rgba(255, 255, 255, 0.6)"); // Light pink gradient
+      
       const drawSingleWave = (waveSpeed: number, waveFactor: number, gradient: CanvasGradient) => {
         ctx.beginPath();
         ctx.moveTo(0, canvas.height / 2);
@@ -73,7 +77,7 @@ const WaveCanvas: React.FC = () => {
     };
   }, []);
 
-  return <canvas ref={canvasRef} className="absolute bottom-0 left-0 w-full h-[280px]"></canvas>;
+  return <canvas ref={canvasRef} className="absolute bottom-0 left-0 w-full h-[280px] z-[99]"></canvas>;
 };
 
 export default WaveCanvas;
