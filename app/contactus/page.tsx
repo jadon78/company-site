@@ -11,7 +11,7 @@ import "aos/dist/aos.css";
 const ContactUs = () => {
     return (<>
         <div className="mt-[90px]">
-            <section className="relative h-[700px] flex items-center justify-center text-center text-white p-0 overflow-hidden ">
+            <section className="relative h-[500px] md:h-[700px] flex items-center justify-center text-center text-white p-0 overflow-hidden ">
 
                 <svg className="absolute bottom-[0] md:bottom-[-100px] w-full left-0 z-[99] "
                     version="1"
@@ -88,9 +88,9 @@ const ContactUs = () => {
                 </div>
             </section>
             <div>
-                <div className="mx-auto max-w-[1200px] p-4 md:p-6 lg:p-8 my-6">
+                <div className="mx-auto max-w-[1200px] p-2 md:p-6 lg:p-8 my-6">
                     <div className="rounded-xl overflow-hidden shadow-[1px_4px_17px_2px_#00000038] flex flex-col md:flex-row p-2">
-                        <div className="bg-[#1E96D3] text-white md:w-[45%] relative p-[40px] rounded-[16px] flex flex-col justify-between min-h-[600px] ">
+                        <div className="bg-[#1E96D3] text-white md:w-[45%] relative p-[10px] md:p-[40px] rounded-[16px] flex flex-col justify-between min-h-[600px] ">
                             <Image src={Square} alt="" className="absolute top-[-130px] left-[-50px] w-[280px]" />
                             <Image src={Contact} alt="" className="absolute right-[-0px] bottom-[-0px] w-[280px] opacity-[30%] w-[40%]" />
                             <div className="space-y-0">
@@ -216,7 +216,7 @@ const ContactUs = () => {
                                     <textarea id="message" placeholder="Write your message.." className="h-auto border-0 border-solid border-b rounded-[0px] w-full max-w-full border-color-[#8D8D8D]" />
                                 </div>
                                 <div className="text-right">
-                                    <Button type="submit" className="ml-auto bg-[#6C63FF] hover:bg-[#5B54FF] text-white px-8">
+                                    <Button type="submit" className="ml-auto bg-[#1E96D3] hover:bg-[#5B54FF] text-white px-8">
                                         Send Message
                                     </Button>
                                 </div>
