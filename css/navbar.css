@@ -3958,7 +3958,12 @@ header .main-menu ul {
 }
 
 /* Hide the button on desktop */
-@media (min-width: 769px) {
+@media (max-width: 767px) {
+  .no-scroll-body{
+    overflow: hidden;
+  }
+}
+  @media (min-width: 769px) {
   .show-only-mobile {
     display: none;
     /* Hide the button on larger screens */

@@ -259,7 +259,7 @@ const AboutPage = () => {
 
               </div>
               <div data-aos="fade-left" className="aboutimg-box relative text-center h-[100%] flex items-center justify-center overflow-hidden">
-                <div className="relative z-[99]">
+                <div className="relative z-[99] w-[70%] md:w-[50%]">
                   <Image
                     src={aboutimg}
                     alt="Team meeting"

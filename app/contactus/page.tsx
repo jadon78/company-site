@@ -12,8 +12,7 @@ const ContactUs = () => {
     return (<>
         <div className="mt-[90px]">
             <section className="relative h-[500px] md:h-[700px] flex items-center justify-center text-center text-white p-0 overflow-hidden ">
-
-                <svg className="absolute bottom-[0] md:bottom-[-100px] w-full left-0 z-[99] "
+                <svg className="absolute bottom-[0] md:bottom-[-100px] w-full left-0 z-[1] "
                     version="1"
                     xmlns="http://www.w3.org/2000/svg"
                     xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -84,22 +83,20 @@ const ContactUs = () => {
                             Contact Us
                         </h1>
                     </div>
-
                 </div>
             </section>
             <div>
                 <div className="mx-auto max-w-[1200px] p-2 md:p-6 lg:p-8 my-6">
                     <div className="rounded-xl overflow-hidden shadow-[1px_4px_17px_2px_#00000038] flex flex-col md:flex-row p-2">
-                        <div className="bg-[#1E96D3] text-white md:w-[45%] relative p-[10px] md:p-[40px] rounded-[16px] flex flex-col justify-between min-h-[600px] ">
+                        <div className="bg-[#1E96D3] text-white md:w-[45%] relative p-[10px] md:p-[40px] rounded-[16px] flex flex-col justify-between md:min-h-[600px] ">
                             <Image src={Square} alt="" className="absolute top-[-130px] left-[-50px] w-[280px]" />
                             <Image src={Contact} alt="" className="absolute right-[-0px] bottom-[-0px] w-[280px] opacity-[30%] w-[40%]" />
                             <div className="space-y-0">
                                 <h2 className="text-[28px] font-bold p-0 my-[0] text-white">Contact Information</h2>
                                 <p className="text-white/80 text-[18px]  p-0 mt-[0]">Say something to start a live chat!</p>
                             </div>
-
-                            <div className="space-y-[50px]">
-                                <div className="flex items-center space-x-4">
+                            <div className="md:space-y-[50px] space-y-[20px] mt-[10px]">
+                                <div className="flex items-center md:space-x-4">
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M20.0002 10.999H22.0002C22.0002 5.869 18.1272 2 12.9902 2V4C17.0522 4 20.0002 6.943 20.0002 10.999Z" fill="white" />
                                         <path d="M12.9998 7.99999C15.1028 7.99999 15.9998 8.89699 15.9998 11H17.9998C17.9998 7.77499 16.2248 5.99999 12.9998 5.99999V7.99999ZM16.4218 13.443C16.2296 13.2683 15.9771 13.1752 15.7176 13.1832C15.4581 13.1912 15.2118 13.2998 15.0308 13.486L12.6378 15.947C12.0618 15.837 10.9038 15.476 9.71179 14.287C8.51979 13.094 8.15879 11.933 8.05179 11.361L10.5108 8.96699C10.6972 8.78612 10.8059 8.53982 10.814 8.2802C10.822 8.02059 10.7287 7.76804 10.5538 7.57599L6.85879 3.51299C6.68384 3.32035 6.44067 3.2035 6.18095 3.18725C5.92122 3.17101 5.66539 3.25665 5.46779 3.42599L3.29779 5.28699C3.1249 5.46051 3.02171 5.69145 3.00779 5.93599C2.99279 6.18599 2.70679 12.108 7.29879 16.702C11.3048 20.707 16.3228 21 17.7048 21C17.9068 21 18.0308 20.994 18.0638 20.992C18.3083 20.9783 18.5391 20.8747 18.7118 20.701L20.5718 18.53C20.7413 18.3325 20.8271 18.0768 20.811 17.817C20.795 17.5573 20.6783 17.3141 20.4858 17.139L16.4218 13.443Z" fill="white" />
@@ -107,7 +104,7 @@ const ContactUs = () => {
 
                                     <span className="text-[16px]">+1012 3456 789</span>
                                 </div>
-                                <div className="flex items-center space-x-4">
+                                <div className="flex items-center md:space-x-4">
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M22 4H2V20H22V4ZM20 8L12 13L4 8V6L12 11L20 6V8Z" fill="white" />
                                     </svg>
@@ -126,7 +123,6 @@ const ContactUs = () => {
                                     </span>
                                 </div>
                             </div>
-
                             <div className="flex space-x-[10px] pt-12">
                                 <a href="#" className="p-2 w-[30px] h-[30px] bg-white flex items-center justify-center rounded-full hover:bg-white/20 transition-colors">
                                     <svg width="15" height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">

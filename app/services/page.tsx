@@ -326,7 +326,7 @@ function Services() {
         </section>
         <section className="bg-[#F2F2F2] service-section overflow-hidden px-4 relative ">
 
-          <video className="absolute w-full object-cover z-[99] h-full top-0 rotate-[70deg]  opacity-[15%] grayscale-[1] right-[-40%]"
+          <video className="absolute w-full object-cover z-[0] h-full top-0 rotate-[70deg]  opacity-[15%] grayscale-[1] right-[-40%]"
             autoPlay
             loop
             muted
@@ -346,7 +346,7 @@ function Services() {
           </div>
           <div>
             <div className="max-w-[1400px] mx-auto py-[60px]">
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 z-[999] relative">
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 z-[9] relative">
                 {services.map((service, index) => (
                   <div key={index} onClick={() => redirectServiceInfo(service.name)} className="rounded-[20px] bg-[#fff] p-[20px] services-card relative">
                     <div className="bg-color-card"></div>

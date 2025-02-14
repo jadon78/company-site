@@ -5,13 +5,21 @@ import Image from "next/image";
 import logo from "../components/assets/img/logo.png";
 import { mainNavLinks } from "@/constants";
 import "../css/navbar.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const handleMenu = () => {
     setIsOpen(!isOpen);
+   
   };
+  useEffect(()=>{
+    if (isOpen) {
+      document.body.classList.add("no-scroll-body");
+    } else {
+      document.body.classList.remove("no-scroll-body");
+    }
+  },[isOpen])
   return (
     <>
       <header>
