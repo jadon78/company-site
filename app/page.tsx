@@ -616,12 +616,12 @@ export default function Index ()
             </div>
           </div>
           <section className="services-page px-2">
-            <h2 className="text-[24px]  text-center gradient-text">Services</h2>
-            <h3 className="text-[36px] lg:text-[44px]  text-center font-[500]">
+            <h2 className="text-[16px] sm:text-[24px]  text-center gradient-text">Services</h2>
+            <h3 className="text-[24px] sm:text-[36px] lg:text-[44px]  text-center font-[500]">
               Additional Services that will 
               Grow Your Business
             </h3>
-            <div className="bg-circle-img mt-5 overflow-hidden py-5">
+            <div className="bg-circle-img sm:mt-5 overflow-hidden py-5">
               <div className="serviceimg">
                 <div className="flex flex-col w-full gap-4 md:gap-[58px]">
                   <div className="flex flex-col md:flex-row gap-4 justify-between w-full max-w-[900px] mx-auto items-center">
@@ -663,7 +663,7 @@ export default function Index ()
                             className="mx-auto mb-4"
                           />
                         </div>
-                        <h5 className="text-white text-[24px] font-semibold">Web design</h5>
+                        <h5 className="text-white text-[20px] sm:text-[24px] font-semibold">Web design</h5>
                         <p className="text-center text-white pt-0">
                           Lorem ipsum dolor sit amet, contop ctetur adipisic.
                           Google first page marketing.
@@ -688,7 +688,7 @@ export default function Index ()
                             className="mx-auto mb-4"
                           />
                         </div>
-                        <h5 className="text-white text-[24px] font-semibold">Web design</h5>
+                        <h5 className="text-white text-[20px] sm:text-[24px] font-semibold">Web design</h5>
                         <p className="text-center text-white pt-0">
                           Lorem ipsum dolor sit amet, contop ctetur adipisic.
                           Google first page marketing.
@@ -711,7 +711,7 @@ export default function Index ()
                             className="mx-auto mb-4"
                           />
                         </div>
-                        <h5 className="text-white text-[24px] font-semibold">Web design</h5>
+                        <h5 className="text-white text-[20px] sm:text-[24px] font-semibold">Web design</h5>
                         <p className="text-center text-white pt-0">
                           Lorem ipsum dolor sit amet, contop ctetur adipisic.
                           Google first page marketing.
@@ -745,7 +745,7 @@ export default function Index ()
                 <div className="max-w-7xl mx-auto relative z-10 flex min-h-full flex-col items-center justify-center text-white text-center px-4">
                   <div className="md:flex justify-between w-full items-center md:px-4">
                     <div data-aos="fade-right" className="md:w-[45%] text-left">
-                      <h4 className="text-[44px] lg:text-[75px] pb-[50px] lg:leading-[112px] leading-[62px]">
+                      <h4 className="text-[24px] sm:text-[44px] lg:text-[75px] sm:pb-[50px] lg:leading-[112px] leading-[62px]">
                         Technologies{ " " }
                       </h4>
                       <p className="text-[#000] text-[18px]">
@@ -783,7 +783,7 @@ export default function Index ()
 
                           <SwiperSlide className="p-4 bg-gray-200  bg-[#fff] border-r p-4 text-left shadow-[0px_4px_7.5px_0px_#945DFF40] rounded-[26px] z-[99] ">
                             <div className="">
-                              <h4 className="text-[24px] md:text-[36px] lg:text-[44px] leading-[50px] lg:leading-[100px]">
+                              <h4 className="text-[20px] sm:text-[24px] md:text-[36px] lg:text-[44px] leading-[50px] lg:leading-[100px]">
                                 Technology
                               </h4>
                               <p className="text-[16px] md:text-[18px] font-normal md:leading-7 text-left">
@@ -815,7 +815,7 @@ export default function Index ()
                           </SwiperSlide>
                           <SwiperSlide className="p-4 bg-gray-200  bg-[#fff] border-r p-4 text-left shadow-[0px_4px_7.5px_0px_#945DFF40] rounded-[26px] z-[99] ">
                             <div className="">
-                              <h4 className="text-[24px] md:text-[36px] lg:text-[44px] leading-[50px] lg:leading-[100px]">
+                              <h4 className="text-[20px] sm:text-[24px] md:text-[36px] lg:text-[44px] leading-[50px] lg:leading-[100px]">
                                 Technology
                               </h4>
                               <p className="text-[16px] md:text-[18px] font-normal md:leading-7 text-left">
@@ -846,7 +846,7 @@ export default function Index ()
                             </div>
                           </SwiperSlide>      <SwiperSlide className="p-4 bg-gray-200  bg-[#fff] border-r p-4 text-left shadow-[0px_4px_7.5px_0px_#945DFF40] rounded-[26px] z-[99] ">
                             <div className="">
-                              <h4 className="text-[24px] md:text-[36px] lg:text-[44px] leading-[50px] lg:leading-[100px]">
+                              <h4 className="text-[20px] sm:text-[24px] md:text-[36px] lg:text-[44px] leading-[50px] lg:leading-[100px]">
                                 Technology
                               </h4>
                               <p className="text-[16px] md:text-[18px] font-normal md:leading-7 text-left">
@@ -877,7 +877,7 @@ export default function Index ()
                             </div>
                           </SwiperSlide>      <SwiperSlide className="p-4 bg-gray-200  bg-[#fff] border-r p-4 text-left shadow-[0px_4px_7.5px_0px_#945DFF40] rounded-[26px] z-[99] ">
                             <div className="">
-                              <h4 className="text-[24px] md:text-[36px] lg:text-[44px] leading-[50px] lg:leading-[100px]">
+                              <h4 className="text-[20px] sm:text-[24px] md:text-[36px] lg:text-[44px] leading-[50px] lg:leading-[100px]">
                                 Technology
                               </h4>
                               <p className="text-[16px] md:text-[18px] font-normal md:leading-7 text-left">
@@ -908,7 +908,7 @@ export default function Index ()
                             </div>
                           </SwiperSlide>      <SwiperSlide className="p-4 bg-gray-200  bg-[#fff] border-r p-4 text-left shadow-[0px_4px_7.5px_0px_#945DFF40] rounded-[26px] z-[99] ">
                             <div className="">
-                              <h4 className="text-[24px] md:text-[36px] lg:text-[44px] leading-[50px] lg:leading-[100px]">
+                              <h4 className="text-[20px] sm:text-[24px] md:text-[36px] lg:text-[44px] leading-[50px] lg:leading-[100px]">
                                 Technology
                               </h4>
                               <p className="text-[16px] md:text-[18px] font-normal md:leading-7 text-left">
@@ -939,7 +939,7 @@ export default function Index ()
                             </div>
                           </SwiperSlide>      <SwiperSlide className="p-4 bg-gray-200  bg-[#fff] border-r p-4 text-left shadow-[0px_4px_7.5px_0px_#945DFF40] rounded-[26px] z-[99] ">
                             <div className="">
-                              <h4 className="text-[24px] md:text-[36px] lg:text-[44px] leading-[50px] lg:leading-[100px]">
+                              <h4 className="text-[20px] sm:text-[24px] md:text-[36px] lg:text-[44px] leading-[50px] lg:leading-[100px]">
                                 Technology
                               </h4>
                               <p className="text-[16px] md:text-[18px] font-normal md:leading-7 text-left">
@@ -970,7 +970,7 @@ export default function Index ()
                             </div>
                           </SwiperSlide>      <SwiperSlide className="p-4 bg-gray-200  bg-[#fff] border-r p-4 text-left shadow-[0px_4px_7.5px_0px_#945DFF40] rounded-[26px] z-[99] ">
                             <div className="">
-                              <h4 className="text-[24px] md:text-[36px] lg:text-[44px] leading-[50px] lg:leading-[100px]">
+                              <h4 className="text-[20px] sm:text-[24px] md:text-[36px] lg:text-[44px] leading-[50px] lg:leading-[100px]">
                                 Technology
                               </h4>
                               <p className="text-[16px] md:text-[18px] font-normal md:leading-7 text-left">
@@ -1001,7 +1001,7 @@ export default function Index ()
                             </div>
                           </SwiperSlide>      <SwiperSlide className="p-4 bg-gray-200  bg-[#fff] border-r p-4 text-left shadow-[0px_4px_7.5px_0px_#945DFF40] rounded-[26px] z-[99] ">
                             <div className="">
-                              <h4 className="text-[24px] md:text-[36px] lg:text-[44px] leading-[50px] lg:leading-[100px]">
+                              <h4 className="text-[20px] sm:text-[24px] md:text-[36px] lg:text-[44px] leading-[50px] lg:leading-[100px]">
                                 Technology
                               </h4>
                               <p className="text-[16px] md:text-[18px] font-normal md:leading-7 text-left">
