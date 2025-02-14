@@ -380,7 +380,7 @@ const AboutPage = () => {
                       </span>
 
                     </div>
-                    <h2 className="text-[28px] text-center font-medium pb-0">{card.title}</h2>
+                    <h2 className="text-[20px] sm:text-[28px] text-center font-medium pb-0">{card.title}</h2>
                     <p className="text-[16px] text-center text-gray-600">{card.content}</p>
                   </div>
                 ))}
