@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from "react";
 import { useRouter } from 'next/navigation';
 import Image from "next/image";
-import FAQ from '../../components/assets/img/faq.png'
+import FAQ from '../../components/assets/image/faq.webp'
 
 import '../../css/home.css'
 import AOS from "aos";
@@ -260,7 +260,7 @@ function Services() {
   return (
     <>
       <div className="mt-[90px]">
-        <section className="relative h-[500px] md:h-[700px] flex items-center justify-center text-center text-white p-0 overflow-hidden">
+        <section className="relative h-[400px] sm:h-[500px] md:h-[700px] flex items-center justify-center text-center text-white p-0 overflow-hidden">
 
           <svg className="absolute bottom-[0] md:bottom-[-100px] w-full left-0 "
             version="1"
@@ -324,7 +324,7 @@ function Services() {
 
           </div>
         </section>
-        <section className="bg-[#F2F2F2] service-section overflow-hidden px-4 relative ">
+        <section className="bg-[#F2F2F2] service-section overflow-hidden sm:px-4 relative ">
 
           <video className="absolute w-full object-cover z-[0] h-full top-0 rotate-[70deg]  opacity-[15%] grayscale-[1] right-[-40%]"
             autoPlay
@@ -344,8 +344,8 @@ function Services() {
             <h4 className="text-center m-0 p-0 gradient-text text-[16px] md:text-[24px]">SERVICES</h4>
             <h5 className="text-center m-0 p-0 text-[30px] md:text-[44px]">Perfect IT Solutions</h5>
           </div>
-          <div>
-            <div className="max-w-[1400px] mx-auto py-[60px]">
+          <div className="px-2">
+            <div className="max-w-[1400px] mx-auto py-[30px] sm:py-[60px]">
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 z-[9] relative">
                 {services.map((service, index) => (
                   <div key={index} onClick={() => redirectServiceInfo(service.name)} className="rounded-[20px] bg-[#fff] p-[20px] services-card relative">
@@ -380,7 +380,7 @@ function Services() {
           </div>
         </section>
         <section className="bg-[#A6D1E7] business-section relative px-2">
-          <div className="relative z-[99] max-w-[1400px] mx-auto">
+          <div className="relative z-[99] max-w-[1400px] mx-auto px-2">
             <div className="grid grid-cols-1 md:grid-cols-2">
               <div className="max-w-[500px]">
                 <h4 className="text-[16px] md:text-[24px] gradient-text ">Business Domains</h4>

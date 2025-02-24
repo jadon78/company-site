@@ -2,19 +2,18 @@
 import React, { useEffect } from 'react'
 import { useParams } from 'next/navigation';
 import Image from "next/image";
-import Mobileapp from '../../../components/assets/img/mobile-app.png'
+import Mobileapp from '../../../components/assets/image/mobile-app.webp'
 import WaveCanvas from '@/app/waveflow/page';
 import '../../../css/home.css';
 import Rectanglecurve1 from '../../../components/assets/img/curvecard.png';
 import Thumb from '../../../components/assets/img/thumb.png';
 import AOS from "aos";
 import "aos/dist/aos.css";
-
 const ServiceInformation = () => {
   useEffect(() => {
     AOS.init({
-      duration: 800, // Animation duration in ms
-      once: true,    // Whether animation should happen only once
+      duration: 800,
+      once: true,   
       easing: "ease-in-out",
     });
   }, []);
@@ -52,8 +51,8 @@ const ServiceInformation = () => {
     },
   ];
   return (
-    <div className="mt-[90px]">
-      <section className="relative h-[500px] md:h-[700px] flex items-center justify-center text-center text-white p-0 overflow-hidden">
+    <div className="mt-[90px]"> 
+      <section className="relative h-[400px] sm:h-[500px] md:h-[700px] flex items-center justify-center text-center text-white p-0 overflow-hidden">
         <svg className="absolute bottom-[0] md:bottom-[-100px] w-full left-0 "
           version="1"
           xmlns="http://www.w3.org/2000/svg"
@@ -94,7 +93,7 @@ const ServiceInformation = () => {
             <div className="absolute inset-0 bg-black/20" />
           </div>
           <div className="relative z-10 max-w-[860px] mx-auto px-4 m-auto">
-            <h1 className="text-[30px] font-[700] leading-[50px] md:text-[72px] font-bold mb-0 text-white capitalize">
+            <h1 className="text-[30px] font-[700] leading-[50px] md:leading-[80px] md:text-[72px] font-bold mb-0 text-white capitalize">
               {slug}
             </h1>
           </div>
@@ -102,12 +101,12 @@ const ServiceInformation = () => {
         </div>
       </section>
       <section className="py-20 px-4 relative bg-[#fff] overflow-hidden">
-        <div className="max-w-[1400px] md:px-[16px] mx-auto grid md:grid-cols-2 gap-12 items-center pt-10">
+        <div className="max-w-[1400px] md:px-[16px] mx-auto grid md:grid-cols-2 gap-12 items-center sm:pt-10">
           <div data-aos="fade-right" className="">
             <h3 className="text-[16px] md:text-[24px] gradient-text mb-2 capitalize">
               {slug}
             </h3>
-            <h2 className="text-[24px] md:text-[44px] font-bold mb-4 pb-0">
+            <h2 className="text-[22px] sm:text-[24px] md:text-[44px] font-bold mb-4 pb-0">
               Our Process & Approch
             </h2>
             <p className="text-gray-600 md:mb-6 text-[16px] md:text-[24px]">
@@ -272,7 +271,7 @@ const ServiceInformation = () => {
         </div>
       </section>
       <section>
-        <div className="max-w-[1400px] mx-auto px-2">
+        <div className="max-w-[1400px] mx-auto px-4">
           <div className="max-w-[900px]">
             <h4 className="text-[24px] md:text-[44px] leading:[40px] md:leading-[60px]">Our Project</h4>
             <p className='text-[14px] md:text-[16px] mt-4 md:mt-0'>I have worked on many projects over the course of being a Web Developer, here are a few of my live, real-world projectsI have worked on many projects over the course of being a Web Developer, here are a few of my live, real-world projects</p>
@@ -280,7 +279,7 @@ const ServiceInformation = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             <div data-aos="zoom-in" className="max-w-[300px] mx-auto rounded-[8px] border border-solid border-[#1E96D3] p-2">
               <Image src={Thumb} alt="" className="mb-4" />
-              <h4 className="text-[#1E96D3] text-[24px]">TWINDER</h4>
+              <h4 className="text-[#1E96D3] text-[16px] sm:text-[24px]">TWINDER</h4>
               <p className="text-[16px]">A live Geolocation app for finding tweets and twitter users around you.</p>
               <div className="flex gap-4">
                 <button className="bg-[#1E96D3] rounded-[8px] border border-solid border-[#1E96D3] text-[#fff] p-2 m-0">View Live</button>
@@ -289,7 +288,7 @@ const ServiceInformation = () => {
             </div>
             <div data-aos="zoom-in" className="max-w-[300px] mx-auto rounded-[8px] border border-solid border-[#1E96D3] p-2">
               <Image data-aos="zoom-in" src={Thumb} alt="" className="mb-4" />
-              <h4 className="text-[#1E96D3] text-[24px]">TWINDER</h4>
+              <h4 className="text-[#1E96D3] text-[16px] sm:text-[24px]">TWINDER</h4>
               <p className="text-[16px]">A live Geolocation app for finding tweets and twitter users around you.</p>
               <div className="flex gap-4">
                 <button className="bg-[#1E96D3] rounded-[8px] border border-solid border-[#1E96D3] text-[#fff] p-2 m-0">View Live</button>
@@ -298,7 +297,7 @@ const ServiceInformation = () => {
             </div>
             <div data-aos="zoom-in" className="max-w-[300px] mx-auto rounded-[8px] border border-solid border-[#1E96D3] p-2">
               <Image src={Thumb} alt="" className="mb-4" />
-              <h4 className="text-[#1E96D3] text-[24px]">TWINDER</h4>
+              <h4 className="text-[#1E96D3] text-[16px] sm:text-[24px]">TWINDER</h4>
               <p className="text-[16px]">A live Geolocation app for finding tweets and twitter users around you.</p>
               <div className="flex gap-4">
                 <button className="bg-[#1E96D3] rounded-[8px] border border-solid border-[#1E96D3] text-[#fff] p-2 m-0">View Live</button>
@@ -307,7 +306,7 @@ const ServiceInformation = () => {
             </div>
             <div data-aos="zoom-in" className="max-w-[300px] mx-auto rounded-[8px] border border-solid border-[#1E96D3] p-2">
               <Image src={Thumb} alt="" className="mb-4" />
-              <h4 className="text-[#1E96D3] text-[24px]">TWINDER</h4>
+              <h4 className="text-[#1E96D3] text-[16px] sm:text-[24px]">TWINDER</h4>
               <p className="text-[16px]">A live Geolocation app for finding tweets and twitter users around you.</p>
               <div className="flex gap-4">
                 <button className="bg-[#1E96D3] rounded-[8px] border border-solid border-[#1E96D3] text-[#fff] p-2 m-0">View Live</button>
@@ -352,5 +351,4 @@ const ServiceInformation = () => {
     </div>
   )
 }
-
 export default ServiceInformation
