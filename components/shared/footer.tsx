@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Logo from '../assets/img/logo.png'
+import Link from "next/link";
 
 export const Footer = () =>
 {
@@ -17,10 +18,10 @@ export const Footer = () =>
                     <div className="container mx-auto px-6 py-4 border-b border-t border-[#FFFFFF] ">
                         <nav className="flex flex-wrap flex-col md:flex-row md:justify-between md:items-center text-sm gap-2">
                             <div className="flex flex-col md:flex-row md:space-x-6 gap-2">
-                                <a href="/" className="hover:text-gray-300 text-[16px] text-[#fff]">Home</a>
-                                <a href="/about" className="hover:text-gray-300 text-[16px] text-[#fff]">About Us</a>
-                                <a href="/services" className="hover:text-gray-300 text-[16px] text-[#fff]">Services</a>
-                                <a href="/contactus" className="hover:text-gray-300 text-[16px] text-[#fff]">Contact Us</a>
+                            <Link href="/" className="hover:text-gray-300 text-[16px] text-[#fff]">Home</Link>
+                                <Link  href="/about" className="hover:text-gray-300 text-[16px] text-[#fff]">About Us</Link>
+                                <Link  href="/services" className="hover:text-gray-300 text-[16px] text-[#fff]">Services</Link>
+                                <Link  href="/contactus" className="hover:text-gray-300 text-[16px] text-[#fff]">Contact Us</Link>
                             </div>
                             <div className="flex flex-col md:flex-row md:space-x-6 gap-2">
                                 <a href="#" className="hover:text-gray-300 text-[16px] text-[#fff]">Terms & Conditions</a>
