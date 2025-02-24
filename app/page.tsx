@@ -25,7 +25,6 @@ import PythonIcon from "../components/assets/image/python.webp";
 import MongoDBIcon from "../components/assets/image/devicon_mongodb.webp";
 import VueIcon from "../components/assets/image/vuejs.webp";
 
-
 export default function Index ()
 {
   const swiperRef: any = useRef( null );
@@ -85,6 +84,7 @@ export default function Index ()
 
   return (
     <>
+
       <div className="mt-[90px]">
         <div>
           <section className="relative h-[400px] sm:h-[500px] md:h-[700px] flex items-center justify-center text-center text-white p-0 overflow-hidden">
