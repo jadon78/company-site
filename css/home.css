@@ -115,7 +115,7 @@ button {
 }
 
 .serviceimg {
-  background-image: url('../components/assets/img/services-bg.png');
+  background-image: url('../components/assets/image/services-bg.webp');
   background-size: 44%;
   background-repeat: no-repeat;
   background-position: center;
@@ -1247,4 +1247,5 @@ height: 12px;
         line-height: 24px;
 
   }
+  
   }

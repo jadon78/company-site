@@ -2,7 +2,7 @@
 import React, { useEffect } from 'react'
 import { useParams } from 'next/navigation';
 import Image from "next/image";
-import Mobileapp from '../../../components/assets/img/mobile-app.png'
+import Mobileapp from '../../../components/assets/image/mobile-app.webp'
 import WaveCanvas from '@/app/waveflow/page';
 import '../../../css/home.css';
 import Rectanglecurve1 from '../../../components/assets/img/curvecard.png';

@@ -5,8 +5,8 @@ import Image from "next/image";
 import "../../css/home.css";
 import { EnquiryCredentials } from "@/lib/actions/auth/enquiry";
 import { CardContent } from "@/components/ui/card";
-import aboutimg from "../../components/assets/img/aboutimag.png";
-import Portfolio from "../../components/assets/img/portfolio.png";
+import aboutimg from "../../components/assets/image/aboutimag.webp";
+import Portfolio from "../../components/assets/image/portfolio.webp";
 import Shape from "../../components/assets/img/shape1.png";
 import Gloab1 from "../../components/assets/img/gloab.png";
 import Marketing from "../../components/assets/img/marketing-strg-mckp.png";
@@ -263,7 +263,7 @@ const AboutPage = () => {
                   <Image
                     src={aboutimg}
                     alt="Team meeting"
-                    className="w-full max-w-[450px] h-auto mx-auto"
+                    className="p-4 sm:p-0 w-full max-w-[450px] h-auto mx-auto"
                   />
                 </div>
               </div>

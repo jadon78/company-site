@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from "react";
 import { useRouter } from 'next/navigation';
 import Image from "next/image";
-import FAQ from '../../components/assets/img/faq.png'
+import FAQ from '../../components/assets/image/faq.webp'
 
 import '../../css/home.css'
 import AOS from "aos";
@@ -345,7 +345,7 @@ function Services() {
             <h5 className="text-center m-0 p-0 text-[30px] md:text-[44px]">Perfect IT Solutions</h5>
           </div>
           <div className="px-2">
-            <div className="max-w-[1400px] mx-auto py-[60px]">
+            <div className="max-w-[1400px] mx-auto py-[30px] sm:py-[60px]">
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 z-[9] relative">
                 {services.map((service, index) => (
                   <div key={index} onClick={() => redirectServiceInfo(service.name)} className="rounded-[20px] bg-[#fff] p-[20px] services-card relative">

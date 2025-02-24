@@ -4,9 +4,9 @@ import CountUp from "react-countup";
 import Image from "next/image";
 import "../css/home.css";
 import { CardContent } from "@/components/ui/card";
-import BImg from "../components/assets/img/b-img.png";
-import Image1 from "../components/assets/img/img-1.png";
-import Painting from "../components/assets/img/painting-icon.png";
+import BImg from "../components/assets/image/b-img.webp";
+import Image1 from "../components/assets/image/img-1.webp";
+import Painting from "../components/assets/image/painting-icon.webp";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation, EffectCreative } from "swiper/modules";
 import "swiper/css";
@@ -15,15 +15,15 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import ReactIcon from "../components/assets/img/react.png";
-import AngularIcon from "../components/assets/img/angular.png";
-import ReactNative from "../components/assets/img/android.png";
-import IOSIcon from "../components/assets/img/ios.png";
-import NodeJSIcon from "../components/assets/img/nodejs.png";
-import DevOpsIcon from "../components/assets/img/devops.png";
-import PythonIcon from "../components/assets/img/python.png";
-import MongoDBIcon from "../components/assets/img/devicon_mongodb.png";
-import VueIcon from "../components/assets/img/vuejs.png";
+import ReactIcon from "../components/assets/image/react.webp";
+import AngularIcon from "../components/assets/image/angular.webp";
+import ReactNative from "../components/assets/image/android.webp";
+import IOSIcon from "../components/assets/image/ios.webp";
+import NodeJSIcon from "../components/assets/image/nodejs.webp";
+import DevOpsIcon from "../components/assets/image/devops.webp";
+import PythonIcon from "../components/assets/image/python.webp";
+import MongoDBIcon from "../components/assets/image/devicon_mongodb.webp";
+import VueIcon from "../components/assets/image/vuejs.webp";
 
 
 export default function Index ()
