@@ -87,7 +87,7 @@ export default function Index ()
     <>
       <div className="mt-[90px]">
         <div>
-          <section className="relative h-[500px] md:h-[700px] flex items-center justify-center text-center text-white p-0 overflow-hidden">
+          <section className="relative h-[400px] sm:h-[500px] md:h-[700px] flex items-center justify-center text-center text-white p-0 overflow-hidden">
             <svg className="absolute bottom-[0] md:bottom-[-100px] w-full left-0 z-[1] "
               version="1"
               xmlns="http://www.w3.org/2000/svg"
@@ -156,7 +156,7 @@ export default function Index ()
                 <div className="absolute inset-0 bg-black/60" /> 
               </div>
               <div className="relative z-10 max-w-[860px] mx-auto px-4 m-auto">
-                <h1 className="text-[36px] md:text-[44px] md:text-[56px] lg:text-[72px]  font-[700] leading-[40px]  md:leading-[72px]  lg:leading-[95px] md:text-[72px] font-bold mb-0 text-white">
+                <h1 className="text-[30px] sm:text-[36px] md:text-[44px] md:text-[56px] lg:text-[72px]  font-[700] leading-[40px]  md:leading-[72px]  lg:leading-[95px] md:text-[72px] font-bold mb-0 text-white">
                   DISCOVER A WORLD OF OPPORTUNITIES
                 </h1>
                 <p className=" text-[16px] md:text-[22px] mb-8 text-white text-center">
@@ -172,7 +172,7 @@ export default function Index ()
               /> */}
             </div>
           </section>
-          <div className=" max-w-[1100px] mx-auto text-center mt-[-80px] md:mt-[-130px] p-0 w-[95%] lg:w-full">
+          <div className=" max-w-[1100px] mx-auto text-center mt-[-20px] sm:mt-[-80px] md:mt-[-130px] p-0 w-[95%] lg:w-full">
             <div data-aos="fade-up" className="custom-counter relative  z-[8]  grid grid-cols-4 md:grid-cols-4 bg-[#fff] text-[#000] rounded-[16px] md:p-8   shadow-[0px_4px_17px_0px_#00000040]">
               <div className="border-r-[1px] border-r-[#ddd] border-solid">
                 <div className=" text-[16px] md:text-[36px] lg:text-[44px]   font-[500]  leading-[50px] md: leading-[70px]">
@@ -216,7 +216,7 @@ export default function Index ()
                   />
                   Your browser does not support the video tag.
                 </video>
-            <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center pt-10">
+            <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center sm:pt-10">
               <div data-aos="fade-right" className="rounded-lg overflow-hidden text-center">
                 
                 <Image
@@ -229,7 +229,7 @@ export default function Index ()
                 <h3 className="text-[24px]  gradient-text mb-2">
                   Our Mission & Vision
                 </h3>
-                <h2 className="text-[24px] md:text-[36px] lg:text-[44px]  font-bold mb-4 pb-0">
+                <h2 className=" text-[22px] sm:text-[24px] md:text-[36px] lg:text-[44px]  font-bold mb-4 pb-0">
                   Achieve excellence and deliver innovative IT solutions.
                 </h2>
                 <p className="text-gray-600 sm:mb-6 text-[16px] lg:text-[24px] ">
@@ -388,10 +388,10 @@ export default function Index ()
                 >
                   <SwiperSlide>
                     <div className="bg-[#fff]">
-                      <CardContent className="p-6 flex gap-4 align-items-center ">
-                        <Image alt="bg" src={ BImg } className="max-w-[80px] md:max-w-[100%] ml-[0px] md:ml-[-50px] " />
+                      <CardContent className="p-[10px] sm:p-6 flex gap-4 align-items-center ">
+                        <Image alt="bg" src={ BImg } className="max-w-[50px] sm:max-w-[80px] md:max-w-[100%] ml-[0px] md:ml-[-50px] " />
                         <div>
-                          <h3 className="text-[16px] md:text-[30px] font-[400] mb-2">
+                          <h3 className="text-[16px] sm:text-[16px] md:text-[30px] font-[400] mb-2">
                             Information Technology
                           </h3>
                           <p className="text-gray-600 text-[14px] md:text-[16px] font-[400]">
@@ -404,10 +404,10 @@ export default function Index ()
                   </SwiperSlide>
                   <SwiperSlide>
                     <div className="bg-[#fff] ">
-                      <CardContent className="p-6 flex gap-4 align-items-center ">
-                        <Image alt="bg" src={ BImg } className="max-w-[80px] md:max-w-[100%] ml-[0px] md:ml-[-50px]" />
+                      <CardContent className="p-[10px] sm:p-6 flex gap-4 align-items-center ">
+                        <Image alt="bg" src={ BImg } className="max-w-[50px] sm:max-w-[80px] md:max-w-[100%] ml-[0px] md:ml-[-50px]" />
                         <div>
-                          <h3 className="text-[16px] md:text-[30px]  font-[400] md:mb-2">
+                          <h3 className="text-[16px] sm:text-[16px] md:text-[30px]  font-[400] md:mb-2">
                             Information Technology
                           </h3>
                           <p className="text-gray-600 text-[14px] md:text-[16px] font-[400]">
@@ -420,10 +420,10 @@ export default function Index ()
                   </SwiperSlide>
                   <SwiperSlide>
                     <div className="bg-[#fff] ">
-                      <CardContent className="p-6 flex gap-4 align-items-center ">
-                        <Image alt="bg" src={ BImg } className="max-w-[80px] md:max-w-[100%] ml-[0px] md:ml-[-50px]" />
+                      <CardContent className="p-[10px] sm:p-6 flex gap-4 align-items-center ">
+                        <Image alt="bg" src={ BImg } className="max-w-[50px] sm:max-w-[80px] md:max-w-[100%] ml-[0px] md:ml-[-50px]" />
                         <div>
-                          <h3 className="text-[16px] md:text-[30px]  font-[400] md:mb-2">
+                          <h3 className="text-[16px] sm:text-[16px] md:text-[30px]  font-[400] md:mb-2">
                             Information Technology
                           </h3>
                           <p className="text-gray-600 text-[14px] md:text-[16px] font-[400]">
@@ -436,10 +436,10 @@ export default function Index ()
                   </SwiperSlide>
                   <SwiperSlide>
                     <div className="bg-[#fff] ">
-                      <CardContent className="p-6 flex gap-4 align-items-center ">
-                        <Image alt="bg" src={ BImg } className="max-w-[80px] md:max-w-[100%] ml-[0px] md:ml-[-50px]" />
+                      <CardContent className="p-[10px] sm:p-6 flex gap-4 align-items-center ">
+                        <Image alt="bg" src={ BImg } className="max-w-[50px] sm:max-w-[80px] md:max-w-[100%] ml-[0px] md:ml-[-50px]" />
                         <div>
-                          <h3 className="text-[16px] md:text-[30px]  font-[400] md:mb-2">
+                          <h3 className="text-[16px] sm:text-[16px] md:text-[30px]  font-[400] md:mb-2">
                             Information Technology
                           </h3>
                           <p className="text-gray-600 text-[14px] md:text-[16px] font-[400]">
@@ -452,10 +452,10 @@ export default function Index ()
                   </SwiperSlide>
                   <SwiperSlide>
                     <div className="bg-[#fff] ">
-                      <CardContent className="p-6 flex gap-4 align-items-center ">
-                        <Image alt="bg" src={ BImg } className="max-w-[80px] md:max-w-[100%] ml-[0px] md:ml-[-50px]" />
+                      <CardContent className="p-[10px] sm:p-6 flex gap-4 align-items-center ">
+                        <Image alt="bg" src={ BImg } className="max-w-[50px] sm:max-w-[80px] md:max-w-[100%] ml-[0px] md:ml-[-50px]" />
                         <div>
-                          <h3 className="text-[16px] md:text-[30px]  font-[400] md:mb-2">
+                          <h3 className="text-[16px] sm:text-[16px] md:text-[30px]  font-[400] md:mb-2">
                             Information Technology
                           </h3>
                           <p className="text-gray-600 text-[14px] md:text-[16px] font-[400]">
@@ -468,10 +468,10 @@ export default function Index ()
                   </SwiperSlide>
                   <SwiperSlide>
                     <div className="bg-[#fff] ">
-                      <CardContent className="p-6 flex gap-4 align-items-center ">
-                        <Image alt="bg" src={ BImg } className="max-w-[80px] md:max-w-[100%] ml-[0px] md:ml-[-50px]" />
+                      <CardContent className="p-[10px] sm:p-6 flex gap-4 align-items-center ">
+                        <Image alt="bg" src={ BImg } className="max-w-[50px] sm:max-w-[80px] md:max-w-[100%] ml-[0px] md:ml-[-50px]" />
                         <div>
-                          <h3 className="text-[16px] md:text-[30px]  font-[400] md:mb-2">
+                          <h3 className="text-[16px] sm:text-[16px] md:text-[30px]  font-[400] md:mb-2">
                             Information Technology
                           </h3>
                           <p className="text-gray-600 text-[14px] md:text-[16px] font-[400]">
@@ -484,10 +484,10 @@ export default function Index ()
                   </SwiperSlide>
                   <SwiperSlide>
                   <div className="bg-[#fff] ">
-                  <CardContent className="p-6 flex gap-4 align-items-center ">
-                    <Image alt="bg" src={BImg} className="max-w-[80px] md:max-w-[100%] ml-[0px] md:ml-[-50px]" />
+                  <CardContent className="p-[10px] sm:p-6 flex gap-4 align-items-center ">
+                    <Image alt="bg" src={BImg} className="max-w-[50px] sm:max-w-[80px] md:max-w-[100%] ml-[0px] md:ml-[-50px]" />
                     <div>
-                      <h3 className="text-[16px] md:text-[30px]  font-[400] md:mb-2">
+                      <h3 className="text-[16px] sm:text-[16px] md:text-[30px]  font-[400] md:mb-2">
                         Information Technology
                       </h3>
                       <p className="text-gray-600 text-[14px] md:text-[16px] font-[400]">
@@ -500,10 +500,10 @@ export default function Index ()
                   </SwiperSlide>
                   <SwiperSlide>
                   <div className="bg-[#fff] ">
-                  <CardContent className="p-6 flex gap-4 align-items-center ">
-                    <Image alt="bg" src={BImg} className="max-w-[80px] md:max-w-[100%] ml-[0px] md:ml-[-50px]" />
+                  <CardContent className="p-[10px] sm:p-6 flex gap-4 align-items-center ">
+                    <Image alt="bg" src={BImg} className="max-w-[50px] sm:max-w-[80px] md:max-w-[100%] ml-[0px] md:ml-[-50px]" />
                     <div>
-                      <h3 className="text-[16px] md:text-[30px]  font-[400] md:mb-2">
+                      <h3 className="text-[16px] sm:text-[16px] md:text-[30px]  font-[400] md:mb-2">
                         Information Technology
                       </h3>
                       <p className="text-gray-600 text-[14px] md:text-[16px] font-[400]">
@@ -516,10 +516,10 @@ export default function Index ()
                   </SwiperSlide>
                   <SwiperSlide>
                   <div className="bg-[#fff] ">
-                  <CardContent className="p-6 flex gap-4 align-items-center ">
-                    <Image alt="bg" src={BImg} className="max-w-[80px] md:max-w-[100%] ml-[0px] md:ml-[-50px]" />
+                  <CardContent className="p-[10px] sm:p-6 flex gap-4 align-items-center ">
+                    <Image alt="bg" src={BImg} className="max-w-[50px] sm:max-w-[80px] md:max-w-[100%] ml-[0px] md:ml-[-50px]" />
                     <div>
-                      <h3 className="text-[16px] md:text-[30px]  font-[400] md:mb-2">
+                      <h3 className="text-[16px] sm:text-[16px] md:text-[30px]  font-[400] md:mb-2">
                         Information Technology
                       </h3>
                       <p className="text-gray-600 text-[14px] md:text-[16px] font-[400]">
@@ -604,7 +604,7 @@ export default function Index ()
 
                     <div data-aos="fade-left" className="flex gap-[20px] md:gap-[41px] flex-wrap justify-center">
                       {techStacksData.map((tech, index) => (
-                      <div className="flex flex-col justify-between py-4 items-center w-[150px] md:w-[170px] h-40 bg-[#F4F2ED] hover:bg-[#1E96D3] hover:text-[#fff]  rounded-[10px] text-center ">
+                      <div className="flex flex-col justify-between py-4 items-center w-[130px] sm:w-[150px] md:w-[170px] h-40 bg-[#F4F2ED] hover:bg-[#1E96D3] hover:text-[#fff]  rounded-[10px] text-center ">
                         <Image alt={tech.name} src={tech.icon} className="mx-auto"/>
                         {tech.name}
                       </div>
@@ -624,7 +624,7 @@ export default function Index ()
             <div className="bg-circle-img sm:mt-5 overflow-hidden py-5">
               <div className="serviceimg">
                 <div className="flex flex-col w-full gap-4 md:gap-[58px]">
-                  <div className="flex flex-col md:flex-row gap-4 justify-between w-full max-w-[900px] mx-auto items-center">
+                  <div className="flex flex-col md:flex-row gap-4 justify-between w-full max-w-[1100px] mx-auto items-center">
                     <div
                       data-aos="fade-up-right"  className="service-card shadow-[0px_4px_4px_0px_#00000040]  max-w-[300px] p-0  rounded-[24px] text-center text-white  md:mx-0 md:mr-auto"
                       style={ {
@@ -672,7 +672,7 @@ export default function Index ()
                       </div>
                     </div>
                   </div>
-                  <div className="flex  flex-col md:flex-row gap-4 justify-between w-full max-w-[1000px] mx-auto items-center">
+                  <div className="flex  flex-col md:flex-row gap-4 justify-between w-full max-w-[1300px] mx-auto items-center">
                     <div data-aos="fade-up-right"
                       className="service-card shadow-[0px_4px_4px_0px_#00000040]  max-w-[300px] p-0  rounded-[24px] text-center text-white  md:mx-0"
                       style={ {
@@ -742,10 +742,10 @@ export default function Index ()
                   Your browser does not support the video tag.
                 </video>
 
-                <div className="max-w-7xl mx-auto relative z-10 flex min-h-full flex-col items-center justify-center text-white text-center px-4">
+                <div className="max-w-7xl mx-auto relative z-10 flex min-h-full flex-col items-center justify-center text-white text-center p-4">
                   <div className="md:flex justify-between w-full items-center md:px-4">
                     <div data-aos="fade-right" className="md:w-[45%] text-left">
-                      <h4 className="text-[24px] sm:text-[44px] lg:text-[75px] sm:pb-[50px] lg:leading-[112px] leading-[62px]">
+                      <h4 className="text-[24px] font-[500] sm:text-[44px] lg:text-[75px] sm:pb-[50px] lg:leading-[112px] leading-[40px]">
                         Technologies{ " " }
                       </h4>
                       <p className="text-[#000] text-[18px]">
@@ -755,7 +755,7 @@ export default function Index ()
                         landscapes with comprehensive and adaptable services.
                       </p>
                     </div>
-                    <div data-aos="fade-left"  className="md:w-[50%] overflow-hidden">
+                    <div data-aos="fade-left"  className="md:w-[50%]">
                       <div className="ani-slider-container">
                         <span className="slide-box-1"></span>
                         <span className="slide-box-2"></span>
@@ -789,12 +789,7 @@ export default function Index ()
                               <p className="text-[16px] md:text-[18px] font-normal md:leading-7 text-left">
                                 we propel tech advancement through bespoke
                                 solutions, ensuring seamless integration and
-                                innovation for businesses. Our expertise drives
-                                digital transformation, providing customized
-                                strategies to navigate the evolving landscape of
-                                technology. We are committed to delivering
-                                excellence, empowering our clients to thrive in the
-                                ever-changing world of technology.
+                                innovation for businesses.
                               </p>
                               <span onClick={ handleNextSlide }>
                                 <svg
@@ -821,12 +816,7 @@ export default function Index ()
                               <p className="text-[16px] md:text-[18px] font-normal md:leading-7 text-left">
                                 we propel tech advancement through bespoke
                                 solutions, ensuring seamless integration and
-                                innovation for businesses. Our expertise drives
-                                digital transformation, providing customized
-                                strategies to navigate the evolving landscape of
-                                technology. We are committed to delivering
-                                excellence, empowering our clients to thrive in the
-                                ever-changing world of technology.
+                                innovation for businesses.
                               </p>
                               <span onClick={ handleNextSlide }>
                                 <svg
@@ -852,12 +842,7 @@ export default function Index ()
                               <p className="text-[16px] md:text-[18px] font-normal md:leading-7 text-left">
                                 we propel tech advancement through bespoke
                                 solutions, ensuring seamless integration and
-                                innovation for businesses. Our expertise drives
-                                digital transformation, providing customized
-                                strategies to navigate the evolving landscape of
-                                technology. We are committed to delivering
-                                excellence, empowering our clients to thrive in the
-                                ever-changing world of technology.
+                                innovation for businesses.
                               </p>
                               <span onClick={ handleNextSlide }>
                                 <svg
@@ -883,12 +868,7 @@ export default function Index ()
                               <p className="text-[16px] md:text-[18px] font-normal md:leading-7 text-left">
                                 we propel tech advancement through bespoke
                                 solutions, ensuring seamless integration and
-                                innovation for businesses. Our expertise drives
-                                digital transformation, providing customized
-                                strategies to navigate the evolving landscape of
-                                technology. We are committed to delivering
-                                excellence, empowering our clients to thrive in the
-                                ever-changing world of technology.
+                                innovation for businesses.
                               </p>
                               <span onClick={ handleNextSlide }>
                                 <svg
@@ -914,12 +894,7 @@ export default function Index ()
                               <p className="text-[16px] md:text-[18px] font-normal md:leading-7 text-left">
                                 we propel tech advancement through bespoke
                                 solutions, ensuring seamless integration and
-                                innovation for businesses. Our expertise drives
-                                digital transformation, providing customized
-                                strategies to navigate the evolving landscape of
-                                technology. We are committed to delivering
-                                excellence, empowering our clients to thrive in the
-                                ever-changing world of technology.
+                                innovation for businesses.
                               </p>
                               <span onClick={ handleNextSlide }>
                                 <svg
@@ -945,12 +920,7 @@ export default function Index ()
                               <p className="text-[16px] md:text-[18px] font-normal md:leading-7 text-left">
                                 we propel tech advancement through bespoke
                                 solutions, ensuring seamless integration and
-                                innovation for businesses. Our expertise drives
-                                digital transformation, providing customized
-                                strategies to navigate the evolving landscape of
-                                technology. We are committed to delivering
-                                excellence, empowering our clients to thrive in the
-                                ever-changing world of technology.
+                                innovation for businesses.
                               </p>
                               <span onClick={ handleNextSlide }>
                                 <svg
@@ -976,12 +946,7 @@ export default function Index ()
                               <p className="text-[16px] md:text-[18px] font-normal md:leading-7 text-left">
                                 we propel tech advancement through bespoke
                                 solutions, ensuring seamless integration and
-                                innovation for businesses. Our expertise drives
-                                digital transformation, providing customized
-                                strategies to navigate the evolving landscape of
-                                technology. We are committed to delivering
-                                excellence, empowering our clients to thrive in the
-                                ever-changing world of technology.
+                                innovation for businesses.
                               </p>
                               <span onClick={ handleNextSlide }>
                                 <svg
@@ -1007,12 +972,7 @@ export default function Index ()
                               <p className="text-[16px] md:text-[18px] font-normal md:leading-7 text-left">
                                 we propel tech advancement through bespoke
                                 solutions, ensuring seamless integration and
-                                innovation for businesses. Our expertise drives
-                                digital transformation, providing customized
-                                strategies to navigate the evolving landscape of
-                                technology. We are committed to delivering
-                                excellence, empowering our clients to thrive in the
-                                ever-changing world of technology.
+                                innovation for businesses.
                               </p>
                               <span onClick={ handleNextSlide }>
                                 <svg
@@ -1057,14 +1017,14 @@ export default function Index ()
                 </video> */}
           <section className="px-4 relative why-choose-us relative">
             <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center pt-10">
-              <div className="rounded-lg overflow-hidden">
+              <div className="rounded-lg overflow-hidden hidden md:block">
                 {/* <Image
                   src={Gloab1}
                   alt="gloab"
                   className="max-w-[450px] h-auto"
                 /> */}
                 <video
-                  className="absolute top-0 left-[-35%] w-full h-full z-[9]  object-contain aspect-[1] opacity-[10%]  md:opacity-[40%] "
+                  className=" absolute top-0 left-[-35%] w-full h-full z-[9]  object-contain aspect-[1] opacity-[10%]  md:opacity-[40%] "
                   autoPlay
                   loop
                   muted
@@ -1081,7 +1041,7 @@ export default function Index ()
                 <h3 className="text-[16px] lg:text-[24px]  gradient-text mb-2">
                   Why Choose Us
                 </h3>
-                <h2 className="text-[30px] lg:text-[44px]  font-bold mb-4 pb-0">
+                <h2 className="text-[22px] sm:text-[30px] lg:text-[44px]  font-bold mb-4 pb-0">
                   We prioritize our clients’ satisfaction above all else.
                 </h2>
                 <p className="text-gray-600 sm:mb-6 text-[16px] lg:text-[24px] ">

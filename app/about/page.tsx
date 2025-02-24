@@ -164,7 +164,7 @@ const AboutPage = () => {
     <>
       <div className="mt-[90px]">
         <div>
-          <section className="relative h-[500px] md:h-[700px] flex items-center justify-center text-center text-white p-0 overflow-hidden">
+          <section className="relative h-[400px] sm:h-[500px] md:h-[700px] flex items-center justify-center text-center text-white p-0 overflow-hidden">
 
           <svg className="absolute bottom-[0] md:bottom-[-100px] w-full left-0 "
             version="1"
@@ -219,12 +219,12 @@ const AboutPage = () => {
             </div>
           </section>
           <section className="py-20 px-4 relative bg-[#fff] overflow-hidden">
-            <div className="max-w-[1400px] md:px-[16px] mx-auto grid md:grid-cols-2 gap-12 items-center pt-10">
+            <div className="max-w-[1400px] md:px-[16px] mx-auto grid md:grid-cols-2 gap-12 items-center sm:pt-10">
               <div data-aos="fade-right" className="">
                 <h3 className="text-[16px] md:text-[24px] gradient-text mb-2">
                   About Us
                 </h3>
-                <h2 className="text-[30px] md:text-[44px] font-bold mb-4 pb-0">
+                <h2 className="text-[22px]  sm:text-[30px] md:text-[44px] font-bold mb-4 pb-0">
                   Empowering Businesses with Advanced IT Solutions
                 </h2>
                 <p className="text-gray-600 sm:mb-6 text-[16px] md:text-[24px]">
@@ -345,7 +345,7 @@ const AboutPage = () => {
               Your browser does not support the video tag.
             </video>
             <h2 className="text-[16px] md:text-[24px] text-center gradient-text">Our Standards</h2>
-            <h3 className="text-[30px] md:text-[44px] text-center max-w-[640px] mx-auto">
+            <h3 className="text-[22px] sm:text-[30px] md:text-[44px] text-center max-w-[640px] mx-auto">
               Additional Services that will Grow Your Business
             </h3>
             <div className="max-w-[1400px] px-[16px] mx-auto mt-10">
@@ -426,7 +426,7 @@ const AboutPage = () => {
               <div className="flex-col flex lg:flex-row flex gap-[60px] items-center justify-between overflow-hidden py-12 lg:pr-10">
                 <div data-aos="fade-right" className="markeing-section-first max-w-[510px]">
                   <h4 className="text-[16px] md:text-[24px] gradient-text">Increase</h4>
-                  <h5 className="text-[30px] md:text-[44px]">We are Specialized in Smart Development, and Smart SEO</h5>
+                  <h5 className="text-[22px] sm:text-[30px] md:text-[44px]">We are Specialized in Smart Development, and Smart SEO</h5>
                   <p className="text-[16px]">In the digital era, we help businesses thrive by delivering tailored IT services and solutions. From seamless software development to robust IT infrastructure, our expertise ensures innovative, scalable, and reliable outcomes for your business. Let’s transform challenges into opportunities with technology</p>
                   <button className=" mt-4 text-[16px] md:text-[34px] overflow-hidden leading-[25px] text-left bg-[#1e96d3] w-[60px] h-[60px] md:w-[100px] md:h-[100px] transition-all hover:w-[180px] md:hover:w-[310px] duration-1000 flex items-center gap-5 justify-end p-4 rounded-[100px] group">
                     <div className="flex items-center gap-4">
@@ -477,7 +477,7 @@ const AboutPage = () => {
           </section>
           <section className="px-4 bg-[#050B20] rounded-[16px] overflow-hidden">
             <div data-aos="zoom-in" className="max-w-[1400px] sm:px-[16px] mx-auto">
-              <h4 className="text-[30px] md:text-[40px] font-bold text-[#fff] leading-[60px] pt-[40px] ">What our customers say</h4>
+              <h4 className=" text-[21px] sm:text-[30px] md:text-[40px] font-bold text-[#fff]  leading-[30px] sm:leading-[60px] sm:pt-[40px] ">What our customers say</h4>
               <div className="">
                 <Swiper
                   centeredSlides={true}

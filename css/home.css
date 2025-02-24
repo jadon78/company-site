@@ -420,16 +420,7 @@ button {
   margin-bottom: 0px;
 }
 
-@media (max-width:768px) {
-  .custom-counter {
-    padding: 10px !important;
-  }
-  .firstslider-technology .swiper-pagination-bullet {
-    width: 14px;
-    height: 14px;
-  }
-  
-}
+
 
 .bg-about-background {
   background-image: url('../components/assets/img/about.gif');
@@ -516,7 +507,6 @@ position: absolute;
   0% {
     transform: translateY(0px);
   }
-
   100% {
     transform: translateY(40px);
   }
@@ -634,7 +624,6 @@ position: absolute;
 }
 
 @media (max-width:1200px) {
-
   .markeing-section.box,
   .markeing-section.box:after {
     width: 500px;
@@ -651,6 +640,10 @@ position: absolute;
 }
 
 @media (max-width:620px) {
+  .markeing-section {
+    width: 300px !important;
+    height: 300px !important;
+  }
   .markeing-section.box,
   .markeing-section.box:after {
     width: 300px;
@@ -695,11 +688,10 @@ position: absolute;
   .marketing-section {
     background-size: cover;
     /* background-position: left top; */
-
   }
 }
 
-@media (max-width:520px) {
+@media (max-width:620px) {
   .hexagon svg {
     width: 24px !important;
   }
@@ -1158,6 +1150,10 @@ position: relative;
   }
 }
 @media (max-width:991px) {
+  
+.why-choose-us:after {
+  display: none;
+}
   .slide-box-5 {
     top: -2%;
   }
@@ -1177,6 +1173,19 @@ position: relative;
 width: 12px;
 height: 12px;
 }
+.swiper,
+  .swiper.mySwiper.customslider{
+  margin: 40px auto;
+}
+.client-testimonial{
+  padding-top: 40px !important;
+}
+.mySwiper.customslider .swiper-slide{
+  padding: 16px !important;
+}
+  .mySwiper.client-testimonial .swiper-slide{
+  padding: 20px !important;
+}
   }
   @media (max-width:1024px) {
     .scrolldown-btn {
@@ -1190,4 +1199,52 @@ height: 12px;
       background-image: none !important;
     }
   
+  }
+  @media (max-width:768px) {
+    .mySwiper.client-testimonial .swiper-slide{
+      padding: 10px !important;
+    }
+    .custom-counter {
+      padding: 10px !important;
+    }
+    .firstslider-technology .swiper-pagination-bullet {
+      width: 14px;
+      height: 14px;
+    }
+     .why-choose-us:before {
+      opacity: 15%;
+     }
+     .serviceimg{
+      background-image: none;
+     }
+     .services-page:after{
+      bottom: 0;
+      display: none;
+     }
+  }
+  @media (max-width:400px) {
+    .markeing-section {
+      width: 240px !important;
+      height: 240px !important;
+    }
+    .markeing-section.box,
+    .markeing-section.box:after {
+      width: 240px;
+      height: 240px;
+    }
+    .hexagon {
+      width: 45px;
+      height: 70px;
+      background-size: 40px;
+  }
+  .markeing-section p{
+    font-size: 12px;
+    padding-top: 6px !important;
+  }
+    .markeing-section h5{}
+      .markeing-section h4{
+        font-size: 18px !important;
+        line-height: 24px;
+
+  }
   }
