@@ -240,7 +240,7 @@ const ServiceInformation = () => {
                     Velit officia consequat duis enim.</p>
                 </div>
               </div>
-              <div data-aos="zoom-in" className="our-technology max-w-[540px] mx-auto lg:mx-0 px-0  card-box relative text-center py-4 z-[999] top-[10px] ">
+              <div data-aos="zoom-in" className="our-technology max-w-[540px] mx-auto lg:mx-0 px-0  card-box relative text-center py-4 z-[999] sm:top-[10px] ">
                 <Image src={Rectanglecurve1} alt="" className="max-h-[340px] absolute text-transparent scale-[110%] lg:scale-[134%]   " />
                 <div className="relative z-[99]  px-4 md:px-8">
                   <div className="bg-[#0ECFDB] rounded-[23px] inline-block px-4 py-3">
