@@ -164,7 +164,7 @@ const AboutPage = () => {
     <>
       <div className="mt-[90px]">
         <div>
-          <section className="relative h-[400px] sm:h-[500px] md:h-[700px] flex items-center justify-center text-center text-white p-0 overflow-hidden">
+          <section className="relative h-[300px] sm:h-[500px] md:h-[700px] flex items-center justify-center text-center text-white p-0 overflow-hidden">
 
           <svg className="absolute bottom-[0] md:bottom-[-100px] w-full left-0 "
             version="1"
@@ -348,7 +348,7 @@ const AboutPage = () => {
             <h3 className="text-[22px] sm:text-[30px] md:text-[44px] text-center max-w-[640px] mx-auto">
               Additional Services that will Grow Your Business
             </h3>
-            <div className="max-w-[1400px] px-[16px] mx-auto mt-10">
+            <div className="max-w-[1400px] sm:px-[16px] mx-auto sm:mt-10">
               <div className="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[50px] p-6 justify-center">
                 {cards.map((card, index) => (
                   <div data-aos="zoom-in"
@@ -388,7 +388,7 @@ const AboutPage = () => {
             </div>
           </section>
           <div className="overflow-hidden">
-            <div className="marketing-section min-h-[540px] px-4">
+            <div className="marketing-section min-h-[400px] sm:min-h-[540px] px-4">
               <div className=" max-w-[1400px] px-[16px] mx-auto grid grid-cols-1 md:grid-cols-2 items-center h-[100%]">
                 <div data-aos="fade-right" className="pt-10 md:pt-0">
                   <h4 className="text-[24px]  lg:text-[30px] lg:text-[56px] font-medium text-[#fff] lg:leading-[80px]">Important Features for Digital Marketing</h4>
@@ -415,7 +415,7 @@ const AboutPage = () => {
                     </div>
                   </button>
                 </div>
-                <div data-aos="fade-left">
+                <div data-aos="fade-left" className="ml-auto">
                   <Image className="marketingimag" src={Marketing} alt="Marketing" />
                 </div>
               </div>
@@ -427,7 +427,7 @@ const AboutPage = () => {
                 <div data-aos="fade-right" className="markeing-section-first max-w-[510px]">
                   <h4 className="text-[16px] md:text-[24px] gradient-text">Increase</h4>
                   <h5 className="text-[22px] sm:text-[30px] md:text-[44px]">We are Specialized in Smart Development, and Smart SEO</h5>
-                  <p className="text-[16px]">In the digital era, we help businesses thrive by delivering tailored IT services and solutions. From seamless software development to robust IT infrastructure, our expertise ensures innovative, scalable, and reliable outcomes for your business. Let’s transform challenges into opportunities with technology</p>
+                  <p className="text-[14px] sm:text-[16px]">In the digital era, we help businesses thrive by delivering tailored IT services and solutions. From seamless software development to robust IT infrastructure, our expertise ensures innovative, scalable, and reliable outcomes for your business. Let’s transform challenges into opportunities with technology</p>
                   <button className=" mt-4 text-[16px] md:text-[34px] overflow-hidden leading-[25px] text-left bg-[#1e96d3] w-[60px] h-[60px] md:w-[100px] md:h-[100px] transition-all hover:w-[180px] md:hover:w-[310px] duration-1000 flex items-center gap-5 justify-end p-4 rounded-[100px] group">
                     <div className="flex items-center gap-4">
                       <span className="whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-500 text-[#fff]">

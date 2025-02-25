@@ -172,32 +172,32 @@ export default function Index ()
               /> */}
             </div>
           </section>
-          <div className=" max-w-[1100px] mx-auto text-center mt-[-20px] sm:mt-[-80px] md:mt-[-130px] p-0 w-[95%] lg:w-full">
-            <div data-aos="fade-up" className="custom-counter relative  z-[8]  grid grid-cols-4 md:grid-cols-4 bg-[#fff] text-[#000] rounded-[16px] md:p-8   shadow-[0px_4px_17px_0px_#00000040]">
-              <div className="border-r-[1px] border-r-[#ddd] border-solid">
-                <div className=" text-[16px] md:text-[36px] lg:text-[44px]   font-[500]  leading-[50px] md:leading-[70px]">
+          <div className=" max-w-[1100px] mx-auto text-center mt-[-20px] sm:mt-[-80px] md:mt-[-130px] p-0 w-[97%] lg:w-full">
+            <div data-aos="fade-up" className="custom-counter relative  z-[8] justify-between flex sm:grid grid-cols-4 md:grid-cols-4 bg-[#fff] text-[#000] rounded-[16px] md:p-8   shadow-[0px_4px_17px_0px_#00000040]">
+              <div className=" w-[25%] sm:w-auto px-[3px] border-r-[1px] border-r-[#ddd] border-solid">
+                <div className=" text-[16px] md:text-[36px] lg:text-[44px]  font-[500] leading-[24px] sm:leading-[50px] md:leading-[70px]">
                   <CountUp end={ 500 } duration={ 2 } />+
                 </div>
-                <div className=" text-[12px] md:text-[16px] lg:text-[24px]  font-[500]">Projects</div>
+                <div className=" text-[11px] md:text-[16px] lg:text-[24px]  font-[500]">Projects</div>
               </div>
-              <div className="border-r-[1px] border-r-[#ddd] border-solid">
-                <div className=" text-[16px] md:text-[36px] lg:text-[44px]  font-[500]  leading-[50px] md:leading-[70px]">
+              <div className="w-[25%] sm:w-auto px-[3px] min-w-[80px] border-r-[1px] border-r-[#ddd] border-solid">
+                <div className=" text-[16px] md:text-[36px] lg:text-[44px]  font-[500] leading-[24px] sm:leading-[50px] md:leading-[70px]">
                   <CountUp end={ 40 } duration={ 2 } />+
                 </div>
-                <div className=" text-[12px] md:text-[16px] lg:text-[24px]  font-[500]">Our Client</div>
+                <div className=" text-[11px] md:text-[16px] lg:text-[24px]  font-[500]">Our Client</div>
               </div>
-              <div className="border-r-[1px] border-r-[#ddd] border-solid">
-                <div className=" text-[16px] md:text-[36px] lg:text-[44px]  font-[500]  leading-[50px] md:leading-[70px]">
+              <div className="w-[25%] sm:w-auto px-[3px] min-w-[90px] border-r-[1px] border-r-[#ddd] border-solid">
+                <div className=" text-[16px] md:text-[36px] lg:text-[44px]  font-[500] leading-[24px] sm:leading-[50px] md:leading-[70px]">
                   <CountUp end={ 40 } duration={ 2 } />+
                 </div>
-                <div className=" text-[12px] md:text-[16px] lg:text-[24px]  font-[500]">Happy Customers</div>
+                <div className=" text-[11px] md:text-[16px] lg:text-[24px]  font-[500]">Happy Client</div>
               </div>
-              <div>
-                <div className=" text-[16px] md:text-[36px] lg:text-[44px]  font-[500]  leading-[50px] md:leading-[70px]">
+              <div className="w-[25%] sm:w-auto px-[3px]">
+                <div className=" text-[16px] md:text-[36px] lg:text-[44px]  font-[500] leading-[24px] sm:leading-[50px] md:leading-[70px]">
                   <CountUp end={ 5 } duration={ 2 } />
                   yr+
                 </div>
-                <div className=" text-[12px] md:text-[16px] lg:text-[24px]  font-[500]">Years Experience</div>
+                <div className=" text-[11px] md:text-[16px] lg:text-[24px]  font-[500]">Experience</div>
               </div>
             </div>
           </div>

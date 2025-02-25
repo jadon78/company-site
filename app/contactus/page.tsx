@@ -11,7 +11,7 @@ import "aos/dist/aos.css";
 const ContactUs = () => {
     return (<>
         <div className="mt-[90px]">
-            <section className="relative h-[400px] sm:h-[500px] md:h-[700px] flex items-center justify-center text-center text-white p-0 overflow-hidden ">
+            <section className="relative h-[300px] sm:h-[500px] md:h-[700px] flex items-center justify-center text-center text-white p-0 overflow-hidden ">
                 <svg className="absolute bottom-[0] md:bottom-[-100px] w-full left-0 z-[1] "
                     version="1"
                     xmlns="http://www.w3.org/2000/svg"
