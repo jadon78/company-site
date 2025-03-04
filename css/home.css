@@ -1352,6 +1352,10 @@ height: 12px;
       /* background-position: center; */
   }
   }
+  .myprojects-slider .swiper-slide{
+box-shadow: none;
+border-radius: 8px;
+  }
   @media (max-width:1200px) { 
     .marketing-section {
       background-size: cover;

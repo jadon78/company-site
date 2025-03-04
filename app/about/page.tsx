@@ -311,7 +311,7 @@ const AboutPage = () => {
                       </defs>
                     </svg>
 
-                    <h4 className="text-[#fff] text-[20px] lg:text-[54px] md:leading-[80px] font-semibold">6400</h4>
+                    <h4 className="text-[#fff] text-[20px] lg:text-[54px] lg:leading-[80px] font-semibold">6400</h4>
                     <p className="text-[#fff] text-[16px] lg:text-[21px] p-0  text-center">Projects Completed</p>
                   </div>
                   <span className="h-[1px] md:h-[auto] w-[100%] md:w-[1px]  bg-[#fff]"></span>
@@ -327,7 +327,7 @@ const AboutPage = () => {
                       </defs>
                     </svg>
 
-                    <h4 className="text-[#fff] text-[20px] lg:text-[54px] md:leading-[80px] font-semibold">6400</h4>
+                    <h4 className="text-[#fff] text-[20px] lg:text-[54px] lg:leading-[80px] font-semibold">6400</h4>
                     <p className="text-[#fff] text-[16px] lg:text-[21px] p-0  text-center">Projects Completed</p>
                   </div>
                   <span className="h-[1px] md:h-[auto] w-[100%] md:w-[1px]  bg-[#fff]"></span>
@@ -343,7 +343,7 @@ const AboutPage = () => {
                       </defs>
                     </svg>
 
-                    <h4 className="text-[#fff] text-[20px] lg:text-[54px] md:leading-[80px] font-semibold">6400</h4>
+                    <h4 className="text-[#fff] text-[20px] lg:text-[54px] lg:leading-[80px] font-semibold">6400</h4>
                     <p className="text-[#fff] text-[16px] lg:text-[21px] p-0  text-center">Projects Completed</p>
                   </div>
 
@@ -413,7 +413,7 @@ const AboutPage = () => {
             <div className="marketing-section  md::min-h-[40px] px-4 py-2">
               <div className=" max-w-[1400px] sm:px-[16px] mx-auto grid grid-cols-1 md:grid-cols-2 items-center h-[100%]">
                 <div data-aos="fade-right" className="pt-10 md:pt-0">
-                  <h4 className="text-[24px]  md:text-[30px] lg:text-[56px] font-medium text-[#fff] lg:leading-[80px]">Important Features for Digital Marketing</h4>
+                  <h4 className="text-[24px]  md:text-[30px] lg:text-[56px] font-medium text-[#fff] leading-[50px] lg:leading-[80px]">Important Features for Digital Marketing</h4>
                   <button className="mt-[30px] text-[16px] lg:text-[34px] overflow-hidden leading-[25px] text-left bg-[#D9E2FF40] w-[60px] h-[60px] lg:w-[100px] lg:h-[100px] transition-all hover:w-[180px] lg:hover:w-[310px] duration-1000 flex items-center gap-5 justify-end p-4 rounded-[100px] group">
                     <div className="flex items-center gap-4">
                       <span className="whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-500 text-[#fff]">
@@ -639,8 +639,8 @@ const AboutPage = () => {
 
           </section>
           <section>
-            <div className="max-w-[1400px] px-4 mx-auto">
-              <div className="md:flex justify-between items-center">
+            <div className="max-w-[1400px]  mx-auto">
+              <div className="md:flex justify-between items-center px-4">
                 <div>
                   <h5 className="text-[16px] lg:text-[20px] font-semibold">Recent Projects</h5>
                   <h6 className="text-[24px] lg:text-[64px] font-bold">My Portfolio</h6>
@@ -653,7 +653,7 @@ const AboutPage = () => {
                 </div>
               </div>
               <div>
-                <div className="mt-[40px] grid grid-cols-1 md:grid-cols-3 gap-8">
+                {/* <div className="mt-[40px] grid grid-cols-1 md:grid-cols-3 gap-8">
                   <div data-aos="zoom-in" className="rounded-[16px] overflow-hidden shadow-[0_0_32px_#00000075]">
                     <div className="bg-[#1E96D3] p-2"> <Image src={Portfolio} alt="" /></div>
                     <div className="mt-[20px] lg:px-[16px] px-[10px] py-4">
@@ -687,7 +687,42 @@ const AboutPage = () => {
                       </a>
                     </div>
                   </div>
-                </div>
+                </div> */}
+                <div className="mt-[40px]">
+      <Swiper
+        spaceBetween={20}
+        slidesPerView={1}
+        breakpoints={{
+          768: { slidesPerView: 2 },
+          1024: { slidesPerView: 3 },
+        }}
+        pagination={{ clickable: true }}
+        modules={[Pagination]}
+        className="portfolio-swiper px-4 !py-12"
+      >
+        {[...Array(3)].map((_, index) => (
+          <SwiperSlide key={index}>
+            <div data-aos="zoom-in" className="rounded-[16px] overflow-hidden shadow-[0_0_32px_#00000075]">
+              <div className="bg-[#1E96D3] p-2">
+                <Image src={Portfolio} alt="" />
+              </div>
+              <div className="mt-[20px] lg:px-[16px] px-[10px] py-4">
+                <h4 className="lg:text-[32px] text-[20px] font-bold leading-[140%]">Ahuse</h4>
+                <p className="text-[14px] text-[#1C1E53] lg:text-[16px] font-normal">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.
+                </p>
+                <a className="text-[14px] !text-[#000] lg:text-[18px] font-[400] flex gap-2 items-center">
+                  View In Dribbble
+                  <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4.30436 2H17.6377V15.3333M17.6377 2L1.6377 18L17.6377 2Z" stroke="black" strokeWidth="2.66667" strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </div>
               </div>
             </div>
           </section>
