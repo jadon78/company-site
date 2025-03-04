@@ -207,7 +207,7 @@ const AboutPage = () => {
                 <div className="absolute inset-0 bg-black/20" />
               </div>
               <div className="relative z-10 max-w-[860px] mx-auto px-4 m-auto">
-                <h1 className="text-4xl mb-[80px]  font-[700] leading-[95px] md:text-[72px] font-bold  text-white">
+                <h1 className="text-4xl mb-[20px] sm:mb-[180px]  font-[700] leading-[95px] md:text-[72px] font-bold  text-white">
                   About Us
                 </h1>
               </div>
@@ -219,7 +219,7 @@ const AboutPage = () => {
             </div>
           </section>
           <section className="py-20 px-4 relative bg-[#fff] overflow-hidden">
-            <div className="max-w-[1400px] md:px-[16px] mx-auto grid md:grid-cols-2 gap-12 items-center sm:pt-10">
+            <div className="max-w-[1400px] md:px-[16px] mx-auto grid lg:grid-cols-2 gap-12 items-center sm:pt-10">
               <div data-aos="fade-right" className="">
                 <h3 className="text-[16px] md:text-[24px] gradient-text mb-2">
                   About Us
@@ -292,7 +292,7 @@ const AboutPage = () => {
             </div>
           </section>
           <div className="max-w-[1400px] px-[16px] mx-auto text-center p-0  mt-10 overflow-hidden px-2">
-            <div data-aos="flip-left" className="our-projects-section relative projects-card  z-[99] bg-[#3A3FD4] mt-10 text-[#fff] rounded-[16px] p-8 shadow-[0px_4px_17px_0px_#00000040] overflow-hidden">
+            <div data-aos="flip-left" className="our-projects-section relative projects-card  z-[1] bg-[#3A3FD4] mt-10 text-[#fff] rounded-[16px] p-8 shadow-[0px_4px_17px_0px_#00000040] overflow-hidden">
               <div className="flex items-center  flex-col md:flex-row justify-between lg:p-8 gap-4">
                 <div className="">
                   <h4 className=" text-[20px] lg:text-[38px] font-bold text-left text-[#fff] leading-[28px] lg:leading-[60px] max-w-[300px]">Let’s Start Your Project with
@@ -311,7 +311,7 @@ const AboutPage = () => {
                       </defs>
                     </svg>
 
-                    <h4 className="text-[#fff] text-[20px] lg:text-[54px] md:leading-[80px] font-semibold">6400</h4>
+                    <h4 className="text-[#fff] text-[20px] lg:text-[54px] lg:leading-[80px] font-semibold">6400</h4>
                     <p className="text-[#fff] text-[16px] lg:text-[21px] p-0  text-center">Projects Completed</p>
                   </div>
                   <span className="h-[1px] md:h-[auto] w-[100%] md:w-[1px]  bg-[#fff]"></span>
@@ -327,7 +327,7 @@ const AboutPage = () => {
                       </defs>
                     </svg>
 
-                    <h4 className="text-[#fff] text-[20px] lg:text-[54px] md:leading-[80px] font-semibold">6400</h4>
+                    <h4 className="text-[#fff] text-[20px] lg:text-[54px] lg:leading-[80px] font-semibold">6400</h4>
                     <p className="text-[#fff] text-[16px] lg:text-[21px] p-0  text-center">Projects Completed</p>
                   </div>
                   <span className="h-[1px] md:h-[auto] w-[100%] md:w-[1px]  bg-[#fff]"></span>
@@ -343,7 +343,7 @@ const AboutPage = () => {
                       </defs>
                     </svg>
 
-                    <h4 className="text-[#fff] text-[20px] lg:text-[54px] md:leading-[80px] font-semibold">6400</h4>
+                    <h4 className="text-[#fff] text-[20px] lg:text-[54px] lg:leading-[80px] font-semibold">6400</h4>
                     <p className="text-[#fff] text-[16px] lg:text-[21px] p-0  text-center">Projects Completed</p>
                   </div>
 
@@ -411,7 +411,7 @@ const AboutPage = () => {
           </section>
           <div className="overflow-hidden">
             <div className="marketing-section  md::min-h-[40px] px-4">
-              <div className=" max-w-[1400px] sm:px-[16px] mx-auto grid grid-cols-1 md:grid-cols-2 items-center h-[100%]">
+              <div className=" max-w-[1400px] py-2 sm:px-[16px] mx-auto grid grid-cols-1 md:grid-cols-2 items-center h-[100%]">
                 <div data-aos="fade-right" className="pt-10 md:pt-0">
                   <h4 className="text-[24px]  md:text-[30px] lg:text-[56px] font-medium text-[#fff] lg:leading-[80px]">Important Features for Digital Marketing</h4>
                   <button className="mt-[30px] text-[16px] lg:text-[34px] overflow-hidden leading-[25px] text-left bg-[#D9E2FF40] w-[60px] h-[60px] lg:w-[100px] lg:h-[100px] transition-all hover:w-[180px] lg:hover:w-[310px] duration-1000 flex items-center gap-5 justify-end p-4 rounded-[100px] group">
@@ -446,7 +446,7 @@ const AboutPage = () => {
           <section className="lg:px-4 overflow-hidden py-2">
             <div className="max-w-[1400px] px-4 mx-auto lg:py-[20px] md:py-[60px] lg:py-[0px]">
               <div className="flex-col flex lg:flex-row flex gap-[60px] items-center justify-between overflow-hidden py-12 lg:pr-10">
-                <div data-aos="fade-right" className="markeing-section-first max-w-[510px]">
+                <div data-aos="fade-right" className="mr-auto markeing-section-first max-w-[510px]">
                   <h4 className="text-[16px] md:text-[24px] gradient-text">Increase</h4>
                   <h5 className="text-[22px] sm:text-[24px] lg:text-[44px]">We are Specialized in Smart Development, and Smart SEO</h5>
                   <p className="text-[14px] sm:text-[16px]">In the digital era, we help businesses thrive by delivering tailored IT services and solutions. From seamless software development to robust IT infrastructure, our expertise ensures innovative, scalable, and reliable outcomes for your business. Let’s transform challenges into opportunities with technology</p>

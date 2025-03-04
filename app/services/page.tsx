@@ -317,7 +317,7 @@ function Services() {
               <div className="absolute inset-0 bg-black/40" />
             </div>
             <div className="relative z-10 max-w-[860px] mx-auto px-4 m-auto">
-              <h1 className="text-4xl  font-[700] leading-[95px] md:text-[72px] font-bold  text-white mb-[180px]">
+              <h1 className="text-4xl  font-[700] leading-[95px] md:text-[72px] font-bold  text-white mb-[20px] sm:mb-[180px]">
                 Services
               </h1>
             </div>

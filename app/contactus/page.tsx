@@ -79,7 +79,7 @@ const ContactUs = () => {
                         <div className="absolute inset-0 bg-black/60" />
                     </div>
                     <div className="relative z-10 max-w-[860px] mx-auto px-4 m-auto">
-                        <h1 className="text-4xl mb-[80px]  font-[700] leading-[95px] md:text-[72px] font-bold text-white">
+                        <h1 className="text-4xl mb-[20px] sm:mb-[80px]  font-[700] leading-[95px] md:text-[72px] font-bold text-white">
                             Contact Us
                         </h1>
                     </div>
