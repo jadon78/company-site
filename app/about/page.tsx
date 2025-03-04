@@ -207,7 +207,7 @@ const AboutPage = () => {
                 <div className="absolute inset-0 bg-black/20" />
               </div>
               <div className="relative z-10 max-w-[860px] mx-auto px-4 m-auto">
-                <h1 className="text-4xl mb-[80px]  font-[700] leading-[95px] md:text-[72px] font-bold mb-0 text-white">
+                <h1 className="text-4xl mb-[80px]  font-[700] leading-[95px] md:text-[72px] font-bold  text-white">
                   About Us
                 </h1>
               </div>

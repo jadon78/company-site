@@ -14,7 +14,7 @@ export const Footer = () =>
 
             </div>
             <footer className=" bg-[#202222] text-white footer-section pt-10 overflow-hidden">
-                <div className="relative z-[99]">
+                <div className="relative z-[1]">
                     <div className="container mx-auto px-6 py-4 border-b border-t border-[#FFFFFF] ">
                     <div className=" sm:hidden mb-4">
                                      <Image src={Logo} alt="logo" className="w-[60px]" />
