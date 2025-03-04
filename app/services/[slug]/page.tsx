@@ -7,6 +7,7 @@ import WaveCanvas from '@/app/waveflow/page';
 import '../../../css/home.css';
 import Rectanglecurve1 from '../../../components/assets/img/curvecard.png';
 import Thumb from '../../../components/assets/img/thumb.png';
+import { Swiper, SwiperSlide } from "swiper/react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import TechnologySlider from '../swiper';
@@ -114,8 +115,8 @@ const ServiceInformation = () => {
               Upon conducting a detailed analysis on the target audience and the brand values, targeted users based on specific keywords and interests of users on google. Upon analysis, implemented intent based marketing through google ads so as to increase visibility and generate quality leads, that would eventually yield a high conversion rate.
             </p>
             <ul className="about-us-point flex  lg:flex-col flex-col md:gap-8 gap-4">
-              <li className="relative flex items-center text-[16px] md:text-[24px] gap-2">Marketing Strategy</li>
-              <li className="relative flex items-center text-[16px] md:text-[24px] gap-2">Technology Process</li>
+              <li className="relative flex items-center text-[16px] md:text-[24px] gap-2 text-[#000]">Marketing Strategy</li>
+              <li className="relative flex items-center text-[16px] md:text-[24px] gap-2 text-[#000]">Technology Process</li>
             </ul>
             <button className="mt-[30px] text-[16px] lg:text-[34px] overflow-hidden leading-[25px] text-left bg-[#96DCFF] w-[60px] h-[60px] lg:w-[100px] lg:h-[100px] transition-all hover:w-[230px] lg:hover:w-[340px] duration-1000 flex items-center gap-5 justify-end p-4 rounded-[100px] group">
                 <div className="flex items-center gap-[50px]">
@@ -328,7 +329,7 @@ const ServiceInformation = () => {
             <h4 className="text-[24px] md:text-[44px] leading:[40px] md:leading-[60px]">Our Project</h4>
             <p className='text-[14px] md:text-[16px] mt-4 md:mt-0'>I have worked on many projects over the course of being a Web Developer, here are a few of my live, real-world projectsI have worked on many projects over the course of being a Web Developer, here are a few of my live, real-world projects</p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             <div data-aos="zoom-in" className="max-w-[300px] mx-auto rounded-[8px] border border-solid border-[#1E96D3] p-2">
               <Image src={Thumb} alt="" className="mb-4" />
               <h4 className="text-[#1E96D3] text-[16px] sm:text-[24px]">TWINDER</h4>
@@ -365,13 +366,38 @@ const ServiceInformation = () => {
                 <button className="border rounded-[8px] border-solid border-[#1E96D3] text-[#1E96D3] p-2 m-0">Github Repo</button>
               </div>
             </div>
+          </div> */}
+            <Swiper
+      slidesPerView={1}
+      spaceBetween={20}
+      breakpoints={{
+        640: { slidesPerView: 1 },
+        991: { slidesPerView: 2 },
+        1024: { slidesPerView: 4 }
+      }}
+      pagination={{ clickable: true }}
+      className="mySwiper myprojects-slider   m-0"
+    >
+      {[...Array(4)].map((_, index) => (
+        <SwiperSlide key={index}>
+          <div data-aos="zoom-in" className=" mx-auto rounded-[8px] border border-solid border-[#1E96D3] p-2">
+            <Image src={Thumb} alt="" className="mb-4" />
+            <h4 className="text-[#1E96D3] text-[16px] sm:text-[24px]">TWINDER</h4>
+            <p className="text-[16px] font-normal text-[#000]">A live Geolocation app for finding tweets and twitter users around you.</p>
+            <div className="flex gap-4">
+              <button className="text-[16px] font-normal bg-[#1E96D3] rounded-[8px] border border-solid border-[#1E96D3] text-[#fff] p-2 m-0">View Live</button>
+              <button className="text-[16px] font-normal border rounded-[8px] border-solid border-[#1E96D3] text-[#1E96D3] p-2 m-0">Github Repo</button>
+            </div>
           </div>
+        </SwiperSlide>
+      ))}
+    </Swiper>
         </div>
       </section>
       <section className="bg-[#1E96D3] connect-section overflow-hidden px-2">
         <div className="max-w-[1400px] mx-auto lg:flex items-center py-[40px] px-[16px] relative z-[99]">
           <div className="w-full lg:w-[60%]">
-            <h4 className="text-[24px] md:text-[44px] font-semibold leading-[50px] lg:leading-[68px] text-[#fff] mb-4 md:mb-2">Are you looking for seamless data flows and better visibility for your business?</h4>
+            <h4 className="text-[24px] md:text-[44px] font-semibold leading-[40px] md:leading-[50px] lg:leading-[68px] text-[#fff] mb-4 md:mb-2">Are you looking for seamless data flows and better visibility for your business?</h4>
             <p className="text-[#fff] text-[16px] lg:text-[22px]">We have the technical and functional expertise you need.</p>
           </div>
           <div className="w-full lg:w-[40%]">
