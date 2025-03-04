@@ -219,7 +219,7 @@ const AboutPage = () => {
             </div>
           </section>
           <section className="py-20 px-4 relative bg-[#fff] overflow-hidden">
-            <div className="max-w-[1400px] md:px-[16px] mx-auto grid md:grid-cols-2 gap-12 items-center sm:pt-10">
+            <div className="max-w-[1400px] md:px-[16px] mx-auto grid lg:grid-cols-2 gap-12 items-center sm:pt-10">
               <div data-aos="fade-right" className="">
                 <h3 className="text-[16px] md:text-[24px] gradient-text mb-2">
                   About Us
@@ -410,7 +410,7 @@ const AboutPage = () => {
             </div>
           </section>
           <div className="overflow-hidden">
-            <div className="marketing-section  md::min-h-[40px] px-4">
+            <div className="marketing-section  md::min-h-[40px] px-4 py-2">
               <div className=" max-w-[1400px] sm:px-[16px] mx-auto grid grid-cols-1 md:grid-cols-2 items-center h-[100%]">
                 <div data-aos="fade-right" className="pt-10 md:pt-0">
                   <h4 className="text-[24px]  md:text-[30px] lg:text-[56px] font-medium text-[#fff] lg:leading-[80px]">Important Features for Digital Marketing</h4>
@@ -446,7 +446,7 @@ const AboutPage = () => {
           <section className="lg:px-4 overflow-hidden py-2">
             <div className="max-w-[1400px] px-4 mx-auto lg:py-[20px] md:py-[60px] lg:py-[0px]">
               <div className="flex-col flex lg:flex-row flex gap-[60px] items-center justify-between overflow-hidden py-12 lg:pr-10">
-                <div data-aos="fade-right" className="markeing-section-first max-w-[510px]">
+                <div data-aos="fade-right" className="mr-auto markeing-section-first max-w-[510px]">
                   <h4 className="text-[16px] md:text-[24px] gradient-text">Increase</h4>
                   <h5 className="text-[22px] sm:text-[24px] lg:text-[44px]">We are Specialized in Smart Development, and Smart SEO</h5>
                   <p className="text-[14px] sm:text-[16px]">In the digital era, we help businesses thrive by delivering tailored IT services and solutions. From seamless software development to robust IT infrastructure, our expertise ensures innovative, scalable, and reliable outcomes for your business. Let’s transform challenges into opportunities with technology</p>
