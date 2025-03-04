@@ -81,14 +81,18 @@ export default function Index ()
       easing: "ease-in-out",
     } );
   }, [] );
-
+  const slides = Array(9).fill({
+    title: "Information Technology",
+    description: "Leverage our expertise to enhance your business operations and promote the seamless flow of information.",
+    image: BImg,
+  });
   return (
     <>
 
       <div className="mt-[90px]">
         <div>
           <section className="relative h-[400px] sm:h-[500px] md:h-[700px] flex items-center justify-center text-center text-white p-0 overflow-hidden">
-            <svg className="absolute bottom-[0] md:bottom-[-100px] w-full left-0 z-[1] "
+            <svg className="absolute bottom-[0] lg:bottom-[-100px] w-full left-0 z-[1] "
               version="1"
               xmlns="http://www.w3.org/2000/svg"
               xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -156,10 +160,10 @@ export default function Index ()
                 <div className="absolute inset-0 bg-black/60" /> 
               </div>
               <div className="relative z-10 max-w-[860px] mx-auto px-4 m-auto">
-                <h1 className="text-[30px] sm:text-[36px] md:text-[44px] md:text-[56px] lg:text-[72px]  font-[700] leading-[40px]  md:leading-[72px]  lg:leading-[95px] md:text-[72px] font-bold mb-0 text-white">
+                <h1 className="text-[30px] sm:text-[36px] md:text-[44px]  lg:text-[72px]  font-[700] leading-[40px]  md:leading-[72px]  lg:leading-[95px] lg:text-[72px] font-bold mb-[16px]  text-white">
                   DISCOVER A WORLD OF OPPORTUNITIES
                 </h1>
-                <p className=" text-[16px] md:text-[22px] mb-8 text-white text-center">
+                <p className=" text-[16px] lg:text-[22px] mb-8 text-white text-center">
                   We empower a diverse IT service ecosystem where strong
                   individuals are united by a clear common purpose. To deliver
                   excellence and high level of customer satisfaction.
@@ -232,12 +236,12 @@ export default function Index ()
                 <h2 className=" text-[22px] sm:text-[24px] md:text-[36px] lg:text-[44px]  font-bold mb-4 pb-0">
                   Achieve excellence and deliver innovative IT solutions.
                 </h2>
-                <p className="text-gray-600 sm:mb-6 text-[16px] lg:text-[24px] ">
+                <p className="text-[#000] sm:mb-6 text-[16px] lg:text-[24px] ">
                   Empower businesses with cutting-edge technology and digital
                   transformation strategies.
                 </p>
                 <div className="space-y-3">
-                  <div className="flex items-center gap-2 text-[14px] md:text-[20px]">
+                  <div className="flex items-center gap-2 text-[14px] md:text-[20px] text-[#000]">
                     <svg
                       width="20"
                       height="20"
@@ -275,7 +279,7 @@ export default function Index ()
 
                     <span>Requirement Analysis</span>
                   </div>
-                  <div className="flex items-center gap-2 text-[14px] md:text-[20px]">
+                  <div className="flex items-center gap-2 text-[14px] md:text-[20px] text-[#000]">
                     <svg
                       width="20"
                       height="20"
@@ -313,7 +317,7 @@ export default function Index ()
 
                     <span>Solution Design</span>
                   </div>
-                  <div className="flex items-center gap-2 text-[14px] md:text-[20px]">
+                  <div className="flex items-center gap-2 text-[14px] md:text-[20px] text-[#000]">
                     <svg
                       width="20"
                       height="20"
@@ -356,181 +360,43 @@ export default function Index ()
             </div>
           </section>
           <section className="py-4 bg-[#fff] overflow-hidden">
-            <div className=" mx-auto px-2" data-aos="fade-up">
+            <div className=" mx-auto" data-aos="fade-up">
 
-              <div>
-                <Swiper
-                  centeredSlides={ true }
-                  navigation={ false }
-                  modules={ [ Pagination, Navigation ] }
-                  loop={true}
-                  spaceBetween={70}
-                  pagination={{ clickable: true }}
-                  className="mySwiper firstslider-technology"
-                  breakpoints={ {
-                    640: {
-                      slidesPerView: 1, 
-                      spaceBetween: 40, 
-                    },
-                    768: {
-                      slidesPerView: 2, 
-                      spaceBetween: 30, 
-                    },
-                    1024: {
-                      slidesPerView: 3, 
-                      spaceBetween: 50, 
-                    },
-                    1440: {
-                      slidesPerView: 3,
-                      spaceBetween: 70, 
-                    },
-                  } }
-                >
-                  <SwiperSlide>
-                    <div className="bg-[#fff]">
-                      <CardContent className="p-[10px] sm:p-6 flex gap-4 align-items-center ">
-                        <Image alt="bg" src={ BImg } className="max-w-[50px] sm:max-w-[80px] md:max-w-[100%] ml-[0px] md:ml-[-50px] " />
-                        <div>
-                          <h3 className="text-[16px] sm:text-[16px] md:text-[30px] font-[400] mb-2">
-                            Information Technology
-                          </h3>
-                          <p className="text-gray-600 text-[14px] md:text-[16px] font-[400]">
-                            Leverage our expertise to enhance your business
-                            operations and promote the seamless flow of information.
-                          </p>
-                        </div>
-                      </CardContent>
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <div className="bg-[#fff] ">
-                      <CardContent className="p-[10px] sm:p-6 flex gap-4 align-items-center ">
-                        <Image alt="bg" src={ BImg } className="max-w-[50px] sm:max-w-[80px] md:max-w-[100%] ml-[0px] md:ml-[-50px]" />
-                        <div>
-                          <h3 className="text-[16px] sm:text-[16px] md:text-[30px]  font-[400] md:mb-2">
-                            Information Technology
-                          </h3>
-                          <p className="text-gray-600 text-[14px] md:text-[16px] font-[400]">
-                            Leverage our expertise to enhance your business
-                            operations and promote the seamless flow of information.
-                          </p>
-                        </div>
-                      </CardContent>
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <div className="bg-[#fff] ">
-                      <CardContent className="p-[10px] sm:p-6 flex gap-4 align-items-center ">
-                        <Image alt="bg" src={ BImg } className="max-w-[50px] sm:max-w-[80px] md:max-w-[100%] ml-[0px] md:ml-[-50px]" />
-                        <div>
-                          <h3 className="text-[16px] sm:text-[16px] md:text-[30px]  font-[400] md:mb-2">
-                            Information Technology
-                          </h3>
-                          <p className="text-gray-600 text-[14px] md:text-[16px] font-[400]">
-                            Leverage our expertise to enhance your business
-                            operations and promote the seamless flow of information.
-                          </p>
-                        </div>
-                      </CardContent>
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <div className="bg-[#fff] ">
-                      <CardContent className="p-[10px] sm:p-6 flex gap-4 align-items-center ">
-                        <Image alt="bg" src={ BImg } className="max-w-[50px] sm:max-w-[80px] md:max-w-[100%] ml-[0px] md:ml-[-50px]" />
-                        <div>
-                          <h3 className="text-[16px] sm:text-[16px] md:text-[30px]  font-[400] md:mb-2">
-                            Information Technology
-                          </h3>
-                          <p className="text-gray-600 text-[14px] md:text-[16px] font-[400]">
-                            Leverage our expertise to enhance your business
-                            operations and promote the seamless flow of information.
-                          </p>
-                        </div>
-                      </CardContent>
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <div className="bg-[#fff] ">
-                      <CardContent className="p-[10px] sm:p-6 flex gap-4 align-items-center ">
-                        <Image alt="bg" src={ BImg } className="max-w-[50px] sm:max-w-[80px] md:max-w-[100%] ml-[0px] md:ml-[-50px]" />
-                        <div>
-                          <h3 className="text-[16px] sm:text-[16px] md:text-[30px]  font-[400] md:mb-2">
-                            Information Technology
-                          </h3>
-                          <p className="text-gray-600 text-[14px] md:text-[16px] font-[400]">
-                            Leverage our expertise to enhance your business
-                            operations and promote the seamless flow of information.
-                          </p>
-                        </div>
-                      </CardContent>
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <div className="bg-[#fff] ">
-                      <CardContent className="p-[10px] sm:p-6 flex gap-4 align-items-center ">
-                        <Image alt="bg" src={ BImg } className="max-w-[50px] sm:max-w-[80px] md:max-w-[100%] ml-[0px] md:ml-[-50px]" />
-                        <div>
-                          <h3 className="text-[16px] sm:text-[16px] md:text-[30px]  font-[400] md:mb-2">
-                            Information Technology
-                          </h3>
-                          <p className="text-gray-600 text-[14px] md:text-[16px] font-[400]">
-                            Leverage our expertise to enhance your business
-                            operations and promote the seamless flow of information.
-                          </p>
-                        </div>
-                      </CardContent>
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                  <div className="bg-[#fff] ">
-                  <CardContent className="p-[10px] sm:p-6 flex gap-4 align-items-center ">
-                    <Image alt="bg" src={BImg} className="max-w-[50px] sm:max-w-[80px] md:max-w-[100%] ml-[0px] md:ml-[-50px]" />
-                    <div>
-                      <h3 className="text-[16px] sm:text-[16px] md:text-[30px]  font-[400] md:mb-2">
-                        Information Technology
-                      </h3>
-                      <p className="text-gray-600 text-[14px] md:text-[16px] font-[400]">
-                        Leverage our expertise to enhance your business
-                        operations and promote the seamless flow of information.
-                      </p>
-                    </div>
-                  </CardContent>
-                </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                  <div className="bg-[#fff] ">
-                  <CardContent className="p-[10px] sm:p-6 flex gap-4 align-items-center ">
-                    <Image alt="bg" src={BImg} className="max-w-[50px] sm:max-w-[80px] md:max-w-[100%] ml-[0px] md:ml-[-50px]" />
-                    <div>
-                      <h3 className="text-[16px] sm:text-[16px] md:text-[30px]  font-[400] md:mb-2">
-                        Information Technology
-                      </h3>
-                      <p className="text-gray-600 text-[14px] md:text-[16px] font-[400]">
-                        Leverage our expertise to enhance your business
-                        operations and promote the seamless flow of information.
-                      </p>
-                    </div>
-                  </CardContent>
-                </div>
-                  </SwiperSlide>
-                  <SwiperSlide>
-                  <div className="bg-[#fff] ">
-                  <CardContent className="p-[10px] sm:p-6 flex gap-4 align-items-center ">
-                    <Image alt="bg" src={BImg} className="max-w-[50px] sm:max-w-[80px] md:max-w-[100%] ml-[0px] md:ml-[-50px]" />
-                    <div>
-                      <h3 className="text-[16px] sm:text-[16px] md:text-[30px]  font-[400] md:mb-2">
-                        Information Technology
-                      </h3>
-                      <p className="text-gray-600 text-[14px] md:text-[16px] font-[400]">
-                        Leverage our expertise to enhance your business
-                        operations and promote the seamless flow of information.
-                      </p>
-                    </div>
-                  </CardContent>
-                  </div>
-                  </SwiperSlide>
-                </Swiper>
+              <div >
+              <Swiper 
+  centeredSlides={true}
+  navigation={false}
+  modules={[Pagination, Navigation]}
+  loop={true}
+  spaceBetween={70}
+  pagination={{ clickable: true }}
+  className="mySwiper firstslider-technology !px-[16px] !lg:px-[0px]"
+  breakpoints={{
+    640: { slidesPerView: 1, spaceBetween: 60 },
+    768: { slidesPerView: 2, spaceBetween: 30 },
+    1024: { slidesPerView: 3, spaceBetween: 50 },
+    1440: { slidesPerView: 3, spaceBetween: 70 },
+  }}
+>
+  {slides.map((slide, index) => (
+    <SwiperSlide key={index}>
+      <div className="bg-[#fff]">
+        <CardContent className="p-[10px] sm:p-6 flex gap-4 align-items-center">
+          <Image alt="bg" src={slide.image} className="max-w-[50px] lg:max-w-[80px] lg:max-w-[100%] ml-[0px] md:ml-[-50px]" />
+          <div>
+            <h3 className="text-[16px] sm:text-[16px] md:text-[20px] lg:text-[30px] font-[400] md:mb-2">
+              {slide.title}
+            </h3>
+            <p className="text-gray-600 text-[14px] md:text-[16px] font-[400]">
+              {slide.description}
+            </p>
+          </div>
+        </CardContent>
+      </div>
+    </SwiperSlide>
+  ))}
+</Swiper>;
+               
               </div>
             </div>
           </section>
@@ -538,7 +404,7 @@ export default function Index ()
             <div className="bg-[#E9E9E9B2] py-16 ">
               <div className="max-w-[1600px] mx-auto">
                 <div className="w-[95%] mx-auto p-2 md:px-4 lg:px-8">
-                  <div className="grid grid-cols-1 gap-12 md:grid-cols-2 align-items-center ">
+                  <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 align-items-center ">
                     <div data-aos="fade-right" className="text-left">
                       <h2 className="text-[16px] md:text-[24px]  text-[#000]">
                         Technology Stack
@@ -604,7 +470,7 @@ export default function Index ()
 
                     <div data-aos="fade-left" className="flex gap-[20px] md:gap-[41px] flex-wrap justify-center">
                       {techStacksData.map((tech, index) => (
-                      <div className="flex flex-col justify-between py-4 items-center w-[130px] sm:w-[150px] md:w-[170px] h-40 bg-[#F4F2ED] hover:bg-[#1E96D3] hover:text-[#fff]  rounded-[10px] text-center ">
+                      <div className="px-2 flex flex-col justify-between py-4 items-center w-[130px] sm:w-[150px] md:w-[170px] h-40 bg-[#F4F2ED] hover:bg-[#1E96D3] hover:text-[#fff]  rounded-[10px] text-center ">
                         <Image alt={tech.name} src={tech.icon} className="mx-auto"/>
                         {tech.name}
                       </div>
@@ -616,12 +482,12 @@ export default function Index ()
             </div>
           </div>
           <section className="services-page px-2">
-            <h2 className="text-[16px] sm:text-[24px]  text-center gradient-text">Services</h2>
-            <h3 className="text-[24px] sm:text-[36px] lg:text-[44px]  text-center font-[500]">
+            <h2 className="px-2 text-[16px] pb-[16px] sm:text-[24px]  text-center gradient-text">Services</h2>
+            <h3 className="px-2 text-[24px] sm:text-[36px] lg:text-[44px]  text-center font-[500]">
               Additional Services that will 
               Grow Your Business
             </h3>
-            <div className="bg-circle-img sm:mt-5 overflow-hidden py-5">
+            <div className="bg-circle-img  overflow-hidden py-5 sm:mt-[40px]">
               <div className="serviceimg">
                 <div className="flex flex-col w-full gap-4 md:gap-[58px]">
                   <div className="flex flex-col md:flex-row gap-4 justify-between w-full max-w-[1100px] mx-auto items-center">
@@ -742,9 +608,9 @@ export default function Index ()
                   Your browser does not support the video tag.
                 </video>
 
-                <div className="max-w-7xl mx-auto relative z-10 flex min-h-full flex-col items-center justify-center text-white text-center p-4">
+                <div className="max-w-[1400px] mx-auto relative z-10 flex min-h-full flex-col items-center justify-center text-white text-center p-4">
                   <div className="md:flex justify-between w-full items-center md:px-4">
-                    <div data-aos="fade-right" className="md:w-[45%] text-left">
+                    <div data-aos="fade-right" className="md:w-[40%] text-left">
                       <h4 className="text-[24px] font-[500] sm:text-[44px] lg:text-[75px] sm:pb-[50px] lg:leading-[112px] leading-[40px]">
                         Technologies{ " " }
                       </h4>
@@ -755,7 +621,7 @@ export default function Index ()
                         landscapes with comprehensive and adaptable services.
                       </p>
                     </div>
-                    <div data-aos="fade-left"  className="md:w-[50%]">
+                    <div data-aos="fade-left"  className="md:w-[55%]">
                       <div className="ani-slider-container">
                         <span className="slide-box-1"></span>
                         <span className="slide-box-2"></span>
@@ -1037,14 +903,14 @@ export default function Index ()
                   Your browser does not support the video tag.
                 </video>
               </div>
-              <div data-aos="zoom-in" className="">
+              <div data-aos="zoom-in" className="z-[99]">
                 <h3 className="text-[16px] lg:text-[24px]  gradient-text mb-2">
                   Why Choose Us
                 </h3>
                 <h2 className="text-[22px] sm:text-[30px] lg:text-[44px]  font-bold mb-4 pb-0">
                   We prioritize our clients’ satisfaction above all else.
                 </h2>
-                <p className="text-gray-600 sm:mb-6 text-[16px] lg:text-[24px] ">
+                <p className="text-[#000] sm:mb-6 text-[16px] lg:text-[24px] ">
                   Engitech is the partner of choice for many of the world’s
                   leading enterprises, SMEs and technology challengers. We help
                   businesses custom software development.
@@ -1070,8 +936,30 @@ export default function Index ()
                   Secure the future of your company with company name{ " " }
                 </h4>
               </div>
-              <div>
-                <button className="text-[16px] md:text-[34px] overflow-hidden leading-[25px] text-left bg-[#D9E2FF40] w-[60px] h-[60px] md:w-[100px] md:h-[100px] transition-all hover:w-[180px] md:hover:w-[310px] duration-1000 flex items-center gap-5 justify-end p-4 rounded-[100px] group">
+              <div className="min-w-[320px]">
+              <button className=" mt-[30px] text-[16px] lg:text-[34px] overflow-hidden leading-[25px] text-left bg-[#1e96d3] w-[60px] h-[60px] lg:w-[100px] lg:h-[100px] transition-all hover:w-[230px] lg:hover:w-[340px] duration-1000 flex items-center gap-5 justify-end p-4 rounded-[100px] group">
+                <div className="flex items-center gap-[50px]">
+                  <span className="whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-500 text-[#fff]">
+                    Get in touch
+                  </span>
+                  <div>
+                    <svg
+                      width="41"
+                      height="14"
+                      viewBox="0 0 41 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="w-[24px] w-[24px] md:w-[41px] md:h-[41px]"
+                    >
+                      <path
+                        d="M0.813208 7.028C0.820658 7.50463 1.01691 7.95884 1.35888 8.29093C1.70086 8.62302 2.16062 8.80587 2.63726 8.79934L33.228 8.79934V12.458C33.228 13.2336 34.1641 13.6219 34.7111 13.073L40.1692 7.61493C40.5093 7.27484 40.5093 6.72494 40.1692 6.38484L34.7111 0.926731C34.1641 0.377897 33.228 0.768013 33.228 1.54178V5.20043L2.63726 5.20043C2.39652 5.19714 2.15755 5.24218 1.93453 5.3329C1.7115 5.42362 1.50895 5.55818 1.33886 5.72859C1.16878 5.899 1.03462 6.10182 0.944325 6.32501C0.854034 6.54821 0.809448 6.78726 0.813208 7.028Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </button>
+                {/* <button className="text-[16px] md:text-[34px] overflow-hidden leading-[25px] text-left bg-[#D9E2FF40] w-[60px] h-[60px] md:w-[100px] md:h-[100px] transition-all hover:w-[180px] md:hover:w-[310px] duration-1000 flex items-center gap-5 justify-end p-4 rounded-[100px] group">
                   <div className="flex items-center gap-4">
                     <span className="whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-500 text-[#fff]">
                       Get in touch
@@ -1090,7 +978,7 @@ export default function Index ()
                       </svg>
                     </div>
                   </div>
-                </button>
+                </button> */}
               </div>
             </div>
           </section>

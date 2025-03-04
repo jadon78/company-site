@@ -76,7 +76,7 @@ export const Navbar = () => {
                     className={`ml-[16px] leading-[42px]  ${item.submenu ? " " : ""}`}
                   >
                     <Link
-                      className="web-menu p-[10px_4px] xl:p-[10px_8px] text-[15px] xl:text-[18px] montserrat text-[#000] hover:text-[#1E96D3]"
+                      className="web-menu p-[10px_4px] xl:p-[10px_8px] text-[16px] xl:text-[18px] text-[#fff] lg:text-[#000] hover:text-[#1E96D3]"
                       href={item.path}
                       onClick={() => setIsOpen(!isOpen)}
                     >
@@ -104,7 +104,7 @@ export const Navbar = () => {
                     <Link
                       href="/contactus"
                       onClick={() => setIsOpen(!isOpen)}
-                      className=" contactus-btn relative flex gap-2 items-center bg-[#1E96D3] hover:bg-[#1E96D3] text-[18px] text-white hover:text-white rounded-[50px] p-[8px_12px] font-[600] overflow-hidden"
+                      className=" contactus-btn relative flex gap-2 items-center bg-[#1E96D3] hover:bg-[#1E96D3] text-[16px] lg:text-[18px] text-white hover:text-white rounded-[50px] p-[8px_12px] font-[600] overflow-hidden"
                     >
                       <span className="relative z-10">Contact us</span>
                       <svg
