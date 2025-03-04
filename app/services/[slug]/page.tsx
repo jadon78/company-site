@@ -94,7 +94,7 @@ const ServiceInformation = () => {
             <div className="absolute inset-0 bg-black/20" />
           </div>
           <div className="relative z-10 max-w-[860px] mx-auto px-4 m-auto">
-            <h1 className="text-[30px] font-[700] leading-[50px] md:leading-[80px] md:text-[72px] font-bold mb-0 text-white capitalize">
+            <h1 className="mb-[80px] text-[30px] font-[700] leading-[50px] md:leading-[80px] md:text-[72px] font-bold  text-white capitalize">
               {slug}
             </h1>
           </div>
@@ -117,7 +117,29 @@ const ServiceInformation = () => {
               <li className="relative flex items-center text-[16px] md:text-[24px] gap-2">Marketing Strategy</li>
               <li className="relative flex items-center text-[16px] md:text-[24px] gap-2">Technology Process</li>
             </ul>
-            <button className=" mt-4 text-[16px] md:text-[34px] overflow-hidden leading-[25px] text-left bg-[#1e96d3] w-[60px] h-[60px] md:w-[85px] md:h-[85px] transition-all hover:w-[180px] md:hover:w-[310px] duration-1000 flex items-center gap-5 justify-end p-4 rounded-[100px] group">
+            <button className="mt-[30px] text-[16px] lg:text-[34px] overflow-hidden leading-[25px] text-left bg-[#96DCFF] w-[60px] h-[60px] lg:w-[100px] lg:h-[100px] transition-all hover:w-[230px] lg:hover:w-[340px] duration-1000 flex items-center gap-5 justify-end p-4 rounded-[100px] group">
+                <div className="flex items-center gap-[50px]">
+                  <span className="whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-500 text-[#fff]">
+                    Get in touch
+                  </span>
+                  <div>
+                    <svg
+                      width="41"
+                      height="14"
+                      viewBox="0 0 41 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="w-[24px] w-[24px] md:w-[41px] md:h-[41px]"
+                    >
+                      <path
+                        d="M0.813208 7.028C0.820658 7.50463 1.01691 7.95884 1.35888 8.29093C1.70086 8.62302 2.16062 8.80587 2.63726 8.79934L33.228 8.79934V12.458C33.228 13.2336 34.1641 13.6219 34.7111 13.073L40.1692 7.61493C40.5093 7.27484 40.5093 6.72494 40.1692 6.38484L34.7111 0.926731C34.1641 0.377897 33.228 0.768013 33.228 1.54178V5.20043L2.63726 5.20043C2.39652 5.19714 2.15755 5.24218 1.93453 5.3329C1.7115 5.42362 1.50895 5.55818 1.33886 5.72859C1.16878 5.899 1.03462 6.10182 0.944325 6.32501C0.854034 6.54821 0.809448 6.78726 0.813208 7.028Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </button>
+            {/* <button className=" mt-4 text-[16px] md:text-[34px] overflow-hidden leading-[25px] text-left bg-[#1e96d3] w-[60px] h-[60px] md:w-[85px] md:h-[85px] transition-all hover:w-[180px] md:hover:w-[310px] duration-1000 flex items-center gap-5 justify-end p-4 rounded-[100px] group">
               <div className="flex items-center gap-4">
                 <span className="whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-500 text-[#fff]">
                   Get in touch
@@ -136,7 +158,7 @@ const ServiceInformation = () => {
                   </svg>
                 </div>
               </div>
-            </button>
+            </button> */}
 
           </div>
           <div data-aos="fade-left" className="aboutimg-box relative text-center h-[100%] flex items-center justify-center overflow-hidden">
@@ -165,10 +187,10 @@ const ServiceInformation = () => {
           />
           Your browser does not support the video tag.
         </video>
-        <div className="mx-auto px-2 relative z-[99] py-4">
+        <div className="mx-auto px- relative z-[99] py-4">
           <div>
             <h4 className="text-center mb-4 p-0 gradient-text text:[16px] md:text-[24px]">Work Process</h4>
-            <h4 className="text-center pb-4 p-0 text-[24px] md:text-[44px]">Our Mobile App Development Process</h4>
+            <h4 className="text-center pb-4 p-0 text-[24px] md:text-[44px] leading-[60px]">Our Mobile App Development Process</h4>
           </div>
           <div className=" mt-[40px] lg:mt-[80px]">
             {/* <div className="bg-[#fff] rounded-[16px] p-4">
@@ -179,8 +201,8 @@ const ServiceInformation = () => {
                   </div>
                   <p className="text-[14px]">We understand your goals and outline the project scope and features.</p>
               </div> */}
-            <div className="workprocess ">
-              <div className=" max-w-[1400px] mx-auto grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[20px] md:gap-[100px_50px]">
+            <div className="workprocess px-4 ">
+              <div className=" max-w-[1400px] mx-auto grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[20px] lg:gap-[100px_50px]">
                 {steps.map((step, index) => (
                   <div data-aos="zoom-in" key={index} className="relative bg-[#fff] rounded-[16px] p-4 bisiness-domainsname">
 
@@ -192,11 +214,11 @@ const ServiceInformation = () => {
                     </div>
 
                     <div className="z-[99] relative ">
-                      <div className=" flex gap-4 items-center">
+                      <div className=" flex gap-4 items-center pb-[20px]">
                         <span className="text-[50px] font-medium text-transparent text-border-bg">
                           {step.id}
                         </span>
-                        <h5 className="text-[20px] font-medium">{step.title}</h5>
+                        <h5 className="text-[20px] font-medium pb-0">{step.title}</h5>
                       </div>
                       <p className="text-[14px]">{step.description}</p>
                     </div>
@@ -349,32 +371,33 @@ const ServiceInformation = () => {
       <section className="bg-[#1E96D3] connect-section overflow-hidden px-2">
         <div className="max-w-[1400px] mx-auto lg:flex items-center py-[40px] px-[16px] relative z-[99]">
           <div className="w-full lg:w-[60%]">
-            <h4 className="text-[24px] md:text-[44px] font-semibold lg:leading-[68px] text-[#fff] mb-4 md:mb-2">Are you looking for seamless data flows and better visibility for your business?</h4>
+            <h4 className="text-[24px] md:text-[44px] font-semibold leading-[50px] lg:leading-[68px] text-[#fff] mb-4 md:mb-2">Are you looking for seamless data flows and better visibility for your business?</h4>
             <p className="text-[#fff] text-[16px] lg:text-[22px]">We have the technical and functional expertise you need.</p>
           </div>
           <div className="w-full lg:w-[40%]">
-            <button className="mt-[30px] text-[16px] lg:text-[34px] overflow-hidden leading-[25px] text-left bg-[#D9E2FF40] w-[60px] h-[60px] lg:w-[100px] lg:h-[100px] transition-all hover:w-[180px] lg:hover:w-[310px] duration-1000 flex items-center gap-5 justify-end p-4 rounded-[100px] group">
-              <div className="flex items-center gap-4">
-                <span className="whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-500 text-[#fff]">
-                  Get in touch
-                </span>
-                <div>
-                  <svg
-                    width="41"
-                    height="14"
-                    viewBox="0 0 41 14"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="w-[24px] w-[24px] md:w-[41px] md:h-[41px]"
-                  >
-                    <path
-                      d="M0.813208 7.028C0.820658 7.50463 1.01691 7.95884 1.35888 8.29093C1.70086 8.62302 2.16062 8.80587 2.63726 8.79934L33.228 8.79934V12.458C33.228 13.2336 34.1641 13.6219 34.7111 13.073L40.1692 7.61493C40.5093 7.27484 40.5093 6.72494 40.1692 6.38484L34.7111 0.926731C34.1641 0.377897 33.228 0.768013 33.228 1.54178V5.20043L2.63726 5.20043C2.39652 5.19714 2.15755 5.24218 1.93453 5.3329C1.7115 5.42362 1.50895 5.55818 1.33886 5.72859C1.16878 5.899 1.03462 6.10182 0.944325 6.32501C0.854034 6.54821 0.809448 6.78726 0.813208 7.028Z"
-                      fill="white"
-                    />
-                  </svg>
+           
+                <button className="mt-[30px] text-[16px] lg:text-[34px] overflow-hidden leading-[25px] text-left bg-[#96DCFF] w-[60px] h-[60px] lg:w-[100px] lg:h-[100px] transition-all hover:w-[230px] lg:hover:w-[340px] duration-1000 flex items-center gap-5 justify-end p-4 rounded-[100px] group">
+                <div className="flex items-center gap-[50px]">
+                  <span className="whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-500 text-[#fff]">
+                    Get in touch
+                  </span>
+                  <div>
+                    <svg
+                      width="41"
+                      height="14"
+                      viewBox="0 0 41 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="w-[24px] w-[24px] md:w-[41px] md:h-[41px]"
+                    >
+                      <path
+                        d="M0.813208 7.028C0.820658 7.50463 1.01691 7.95884 1.35888 8.29093C1.70086 8.62302 2.16062 8.80587 2.63726 8.79934L33.228 8.79934V12.458C33.228 13.2336 34.1641 13.6219 34.7111 13.073L40.1692 7.61493C40.5093 7.27484 40.5093 6.72494 40.1692 6.38484L34.7111 0.926731C34.1641 0.377897 33.228 0.768013 33.228 1.54178V5.20043L2.63726 5.20043C2.39652 5.19714 2.15755 5.24218 1.93453 5.3329C1.7115 5.42362 1.50895 5.55818 1.33886 5.72859C1.16878 5.899 1.03462 6.10182 0.944325 6.32501C0.854034 6.54821 0.809448 6.78726 0.813208 7.028Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </div>
                 </div>
-              </div>
-            </button>
+              </button>
           </div>
         </div>
       </section>

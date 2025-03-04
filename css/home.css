@@ -773,6 +773,15 @@ position: absolute;
     transform: rotate(360deg);
   }
 }
+@keyframes rev-right-rotate-bg {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(-360deg);
+  }
+}
 
 .contactus-form textarea,
 .contactus-form input {
@@ -853,7 +862,9 @@ position: absolute;
   position: absolute;
 width: calc(100% + 16px);
 height: calc(100% + 16px);
-border: 1px dashed #000;
+border: 2px dashed #696DF3;
+border-radius: 50%;
+
 border-radius: 50%;
 animation: right-rotate-bg infinite 30s linear;
 }
@@ -868,7 +879,11 @@ animation: right-rotate-bg infinite 30s linear;
   content: "";
   top: -7px;
 }
-  .work-Process{
+  .work-Process:hover{
+  animation: right-rotate-bg infinite 2s linear;
+
+  }
+    .work-Process{
   animation: right-rotate-bg infinite 11s linear;
 }
 .work-2{
@@ -921,12 +936,21 @@ animation: right-rotate-bg infinite 30s linear;
 position: relative;
 }
 .bisiness-domains:hover:after{
+  width: 120px;
   clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
 }
 .bisiness-domainsname:hover:after{
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);}
   .bisiness-domains:hover:before{
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);}
+    .bisiness-domains:hover:before{
+      opacity: 1;
+    }
+      .bisiness-domains:before{
+      opacity: 0;
+    clip-path: none !important;
+    transition: 0.4s !important;
+    }
     .bisiness-domainsname:after,
     .bisiness-domains::before{
     content: "";
@@ -937,7 +961,7 @@ position: relative;
     right: 0;
     top: 0;
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-    transition: 0.6s;
+    transition: 0.8s;
     z-index: 0;
     border-radius: 16px;
   }
@@ -952,18 +976,27 @@ position: relative;
       right: 0;
       top: 0;
     }
+    .bisiness-domains:hover:after{
+      width: 120px;
+  height: 140px;
+      clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
+    }
       .bisiness-domains:after{
   content: "";
-  width: 120px;
-  height: 140px;
+  width: 0px;
+  height: 0px;
   background-image: url('../components/assets/img/round-shappe.png');
   background-size: cover;
   background-repeat: no-repeat;
   position: absolute;
   clip-path: polygon(100% 0, 100% 0, 100% 0, 100% 0);
-  transition: 0.6s;
+  transition: 0.8s;
 }
   .bisiness-domains:hover{
+}
+.bisiness-domains:hover .services-border:after {
+  border-color: #fff;
+  animation: rev-right-rotate-bg infinite 10s linear !important;
 }
 
   .business-section:after{
@@ -1196,6 +1229,16 @@ position: relative;
   border: none;
 }
 @media (max-width:1024px) {
+.bisiness-domains .services-border svg{
+  width: 30px;
+  height: 30px;
+}
+.why-choose-us:before {
+  width: 50px;
+  height: 50px;
+}
+}
+@media (max-width:1024px) {
   .servicedeatils-slider {
     max-width: 540px;
   }
@@ -1260,7 +1303,7 @@ height: 12px;
   padding: 20px !important;
 }
   }
-  @media (max-width:1024px) {
+  @media (max-width:1023px) {
     .scrolldown-btn {
       display: none;
     }
@@ -1268,10 +1311,19 @@ height: 12px;
     .bisiness-domainsname:before{
     content: none;
     }
+    
+   svg.process-icon{
+    width: 40px;
+    }
+    .workflow-section{
+    background-position: center 60px;
+  }
+  }
+  @media (max-width:767px) {
+
     .workflow-section{
       background-image: none !important;
     }
-  
   }
   @media (max-width:768px) {
     .mySwiper.client-testimonial .swiper-slide{
@@ -1294,8 +1346,19 @@ height: 12px;
       bottom: 0;
       display: none;
      }
+     .marketing-section {
+      background-size: 100%;
+      background-position: left top !important;
+      /* background-position: center; */
   }
-  @media (max-width:400px) {
+  }
+  @media (max-width:1200px) { 
+    .marketing-section {
+      background-size: cover;
+      background-position: center;
+  }
+  }
+  @media (max-width:400px) { 
     .markeing-section {
       width: 240px !important;
       height: 240px !important;

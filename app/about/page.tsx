@@ -207,7 +207,7 @@ const AboutPage = () => {
                 <div className="absolute inset-0 bg-black/20" />
               </div>
               <div className="relative z-10 max-w-[860px] mx-auto px-4 m-auto">
-                <h1 className="text-4xl  font-[700] leading-[95px] md:text-[72px] font-bold mb-0 text-white">
+                <h1 className="text-4xl mb-[80px]  font-[700] leading-[95px] md:text-[72px] font-bold mb-0 text-white">
                   About Us
                 </h1>
               </div>
@@ -224,19 +224,41 @@ const AboutPage = () => {
                 <h3 className="text-[16px] md:text-[24px] gradient-text mb-2">
                   About Us
                 </h3>
-                <h2 className="text-[22px]  sm:text-[30px] md:text-[44px] font-bold mb-4 pb-0">
+                <h2 className="text-[22px]  sm:text-[30px] lg:text-[44px] font-bold mb-4 pb-0">
                   Empowering Businesses with Advanced IT Solutions
                 </h2>
-                <p className="text-gray-600 sm:mb-6 text-[16px] md:text-[24px]">
+                <p className="text-[#000] sm:mb-6 text-[16px] md:text-[24px]">
                   In the digital era, we help businesses thrive by delivering tailored IT services and solutions.
                   From seamless software development to robust IT infrastructure, our expertise ensures innovative,
                   scalable, and reliable outcomes for your business. Let’s transform challenges into opportunities with technology
                 </p>
                 <ul className="about-us-point flex  lg:flex-row flex-col md:gap-8 gap-4">
-                  <li className="relative flex items-center text-[16px] md:text-[24px] gap-2">Marketing Strategy</li>
-                  <li className="relative flex items-center text-[16px] md:text-[24px] gap-2">Technology Process</li>
+                  <li className="relative flex items-center text-[16px] md:text-[24px] gap-2 text-[#000]">Marketing Strategy</li>
+                  <li className="relative flex items-center text-[16px] md:text-[24px] gap-2 text-[#000]">Technology Process</li>
                 </ul>
-                <button className=" mt-4 text-[16px] md:text-[34px] overflow-hidden leading-[25px] text-left bg-[#1e96d3] w-[60px] h-[60px] md:w-[100px] md:h-[100px] transition-all hover:w-[180px] md:hover:w-[310px] duration-1000 flex items-center gap-5 justify-end p-4 rounded-[100px] group">
+                <button className="mt-[30px] text-[16px] lg:text-[34px] overflow-hidden leading-[25px] text-left bg-[#1e96d3] w-[60px] h-[60px] lg:w-[100px] lg:h-[100px] transition-all hover:w-[230px] lg:hover:w-[340px] duration-1000 flex items-center gap-5 justify-end p-4 rounded-[100px] group">
+                <div className="flex items-center gap-[50px]">
+                  <span className="whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-500 text-[#fff]">
+                    Get in touch
+                  </span>
+                  <div>
+                    <svg
+                      width="41"
+                      height="14"
+                      viewBox="0 0 41 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="w-[24px] w-[24px] md:w-[41px] md:h-[41px]"
+                    >
+                      <path
+                        d="M0.813208 7.028C0.820658 7.50463 1.01691 7.95884 1.35888 8.29093C1.70086 8.62302 2.16062 8.80587 2.63726 8.79934L33.228 8.79934V12.458C33.228 13.2336 34.1641 13.6219 34.7111 13.073L40.1692 7.61493C40.5093 7.27484 40.5093 6.72494 40.1692 6.38484L34.7111 0.926731C34.1641 0.377897 33.228 0.768013 33.228 1.54178V5.20043L2.63726 5.20043C2.39652 5.19714 2.15755 5.24218 1.93453 5.3329C1.7115 5.42362 1.50895 5.55818 1.33886 5.72859C1.16878 5.899 1.03462 6.10182 0.944325 6.32501C0.854034 6.54821 0.809448 6.78726 0.813208 7.028Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </button>
+                {/* <button className=" mt-4 text-[16px] md:text-[34px] overflow-hidden leading-[25px] text-left bg-[#1e96d3] w-[60px] h-[60px] md:w-[100px] md:h-[100px] transition-all hover:w-[180px] md:hover:w-[310px] duration-1000 flex items-center gap-5 justify-end p-4 rounded-[100px] group">
                   <div className="flex items-center gap-4">
                     <span className="whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-500 text-[#fff]">
                       Get in touch
@@ -255,7 +277,7 @@ const AboutPage = () => {
                       </svg>
                     </div>
                   </div>
-                </button>
+                </button> */}
 
               </div>
               <div data-aos="fade-left" className="aboutimg-box relative text-center h-[100%] flex items-center justify-center overflow-hidden">
@@ -269,14 +291,14 @@ const AboutPage = () => {
               </div>
             </div>
           </section>
-          <div className="max-w-[1400px] px-[16px] mx-auto text-center p-0  mt-10 overflow-hidden">
+          <div className="max-w-[1400px] px-[16px] mx-auto text-center p-0  mt-10 overflow-hidden px-2">
             <div data-aos="flip-left" className="our-projects-section relative projects-card  z-[99] bg-[#3A3FD4] mt-10 text-[#fff] rounded-[16px] p-8 shadow-[0px_4px_17px_0px_#00000040] overflow-hidden">
               <div className="flex items-center  flex-col md:flex-row justify-between lg:p-8 gap-4">
                 <div className="">
-                  <h4 className=" text-[20px] lg:text-[38px] font-bold text-left text-[#fff] leading-[28px] md:leading-[60px] max-w-[300px]">Let’s Start Your Project with
+                  <h4 className=" text-[20px] lg:text-[38px] font-bold text-left text-[#fff] leading-[28px] lg:leading-[60px] max-w-[300px]">Let’s Start Your Project with
                     qutiiz</h4>
                 </div>
-                <div className="flex flex-col md:flex-row md:gap-10 gap-4">
+                <div className="flex flex-col md:flex-row lg:gap-10 gap-4">
                   <div className="flex flex-col gap-2 text-[#fff] items-center justify-center">
                     <svg width="58" height="63" viewBox="0 0 58 63" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g clip-path="url(#clip0_800_3579)">
@@ -344,8 +366,8 @@ const AboutPage = () => {
               />
               Your browser does not support the video tag.
             </video>
-            <h2 className="text-[16px] md:text-[24px] text-center gradient-text">Our Standards</h2>
-            <h3 className="text-[22px] sm:text-[30px] md:text-[44px] text-center max-w-[640px] mx-auto">
+            <h2 className="px-4 text-[16px] md:text-[24px] text-center gradient-text">Our Standards</h2>
+            <h3 className="px-4 text-[22px] sm:text-[30px] lg:text-[44px] text-center max-w-[640px] mx-auto">
               Additional Services that will Grow Your Business
             </h3>
             <div className="max-w-[1400px] sm:px-[16px] mx-auto sm:mt-10">
@@ -388,10 +410,10 @@ const AboutPage = () => {
             </div>
           </section>
           <div className="overflow-hidden">
-            <div className="marketing-section min-h-[400px] sm:min-h-[540px] px-4">
-              <div className=" max-w-[1400px] px-[16px] mx-auto grid grid-cols-1 md:grid-cols-2 items-center h-[100%]">
+            <div className="marketing-section  md::min-h-[40px] px-4">
+              <div className=" max-w-[1400px] sm:px-[16px] mx-auto grid grid-cols-1 md:grid-cols-2 items-center h-[100%]">
                 <div data-aos="fade-right" className="pt-10 md:pt-0">
-                  <h4 className="text-[24px]  lg:text-[30px] lg:text-[56px] font-medium text-[#fff] lg:leading-[80px]">Important Features for Digital Marketing</h4>
+                  <h4 className="text-[24px]  md:text-[30px] lg:text-[56px] font-medium text-[#fff] lg:leading-[80px]">Important Features for Digital Marketing</h4>
                   <button className="mt-[30px] text-[16px] lg:text-[34px] overflow-hidden leading-[25px] text-left bg-[#D9E2FF40] w-[60px] h-[60px] lg:w-[100px] lg:h-[100px] transition-all hover:w-[180px] lg:hover:w-[310px] duration-1000 flex items-center gap-5 justify-end p-4 rounded-[100px] group">
                     <div className="flex items-center gap-4">
                       <span className="whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-500 text-[#fff]">
@@ -415,39 +437,41 @@ const AboutPage = () => {
                     </div>
                   </button>
                 </div>
-                <div data-aos="fade-left" className="ml-auto">
-                  <Image className="marketingimag" src={Marketing} alt="Marketing" />
+                <div data-aos="fade-left" className="ml-auto mx-auto">
+                  <Image className="marketingimag lg:w-full w-[70%] mx-auto" src={Marketing} alt="Marketing" />
                 </div>
               </div>
             </div>
           </div>
           <section className="lg:px-4 overflow-hidden py-2">
-            <div className="max-w-[1400px] px-[16px] mx-auto lg:py-[20px] md:py-[60px] lg:py-[0px]">
+            <div className="max-w-[1400px] px-4 mx-auto lg:py-[20px] md:py-[60px] lg:py-[0px]">
               <div className="flex-col flex lg:flex-row flex gap-[60px] items-center justify-between overflow-hidden py-12 lg:pr-10">
                 <div data-aos="fade-right" className="markeing-section-first max-w-[510px]">
                   <h4 className="text-[16px] md:text-[24px] gradient-text">Increase</h4>
-                  <h5 className="text-[22px] sm:text-[30px] md:text-[44px]">We are Specialized in Smart Development, and Smart SEO</h5>
+                  <h5 className="text-[22px] sm:text-[24px] lg:text-[44px]">We are Specialized in Smart Development, and Smart SEO</h5>
                   <p className="text-[14px] sm:text-[16px]">In the digital era, we help businesses thrive by delivering tailored IT services and solutions. From seamless software development to robust IT infrastructure, our expertise ensures innovative, scalable, and reliable outcomes for your business. Let’s transform challenges into opportunities with technology</p>
-                  <button className=" mt-4 text-[16px] md:text-[34px] overflow-hidden leading-[25px] text-left bg-[#1e96d3] w-[60px] h-[60px] md:w-[100px] md:h-[100px] transition-all hover:w-[180px] md:hover:w-[310px] duration-1000 flex items-center gap-5 justify-end p-4 rounded-[100px] group">
-                    <div className="flex items-center gap-4">
-                      <span className="whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-500 text-[#fff]">
-                        Get in touch
-                      </span>
-                      <div>
-                        <svg
-                          viewBox="0 0 41 14"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                          className="w-[24px] w-[24px] md:w-[41px] md:h-[41px]"
-                        >
-                          <path
-                            d="M0.813208 7.028C0.820658 7.50463 1.01691 7.95884 1.35888 8.29093C1.70086 8.62302 2.16062 8.80587 2.63726 8.79934L33.228 8.79934V12.458C33.228 13.2336 34.1641 13.6219 34.7111 13.073L40.1692 7.61493C40.5093 7.27484 40.5093 6.72494 40.1692 6.38484L34.7111 0.926731C34.1641 0.377897 33.228 0.768013 33.228 1.54178V5.20043L2.63726 5.20043C2.39652 5.19714 2.15755 5.24218 1.93453 5.3329C1.7115 5.42362 1.50895 5.55818 1.33886 5.72859C1.16878 5.899 1.03462 6.10182 0.944325 6.32501C0.854034 6.54821 0.809448 6.78726 0.813208 7.028Z"
-                            fill="white"
-                          />
-                        </svg>
-                      </div>
-                    </div>
-                  </button>
+                  <button className="mt-[30px] text-[16px] lg:text-[34px] overflow-hidden leading-[25px] text-left bg-[#1e96d3] w-[60px] h-[60px] lg:w-[100px] lg:h-[100px] transition-all hover:w-[230px] lg:hover:w-[340px] duration-1000 flex items-center gap-5 justify-end p-4 rounded-[100px] group">
+                <div className="flex items-center gap-[50px]">
+                  <span className="whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-500 text-[#fff]">
+                    Get in touch
+                  </span>
+                  <div>
+                    <svg
+                      width="41"
+                      height="14"
+                      viewBox="0 0 41 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="w-[24px] w-[24px] md:w-[41px] md:h-[41px]"
+                    >
+                      <path
+                        d="M0.813208 7.028C0.820658 7.50463 1.01691 7.95884 1.35888 8.29093C1.70086 8.62302 2.16062 8.80587 2.63726 8.79934L33.228 8.79934V12.458C33.228 13.2336 34.1641 13.6219 34.7111 13.073L40.1692 7.61493C40.5093 7.27484 40.5093 6.72494 40.1692 6.38484L34.7111 0.926731C34.1641 0.377897 33.228 0.768013 33.228 1.54178V5.20043L2.63726 5.20043C2.39652 5.19714 2.15755 5.24218 1.93453 5.3329C1.7115 5.42362 1.50895 5.55818 1.33886 5.72859C1.16878 5.899 1.03462 6.10182 0.944325 6.32501C0.854034 6.54821 0.809448 6.78726 0.813208 7.028Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </button>
                 </div>
                 <div data-aos="fade-left" className="markeing-section   relative w-[100%] h-[100%] mt-[50px] md:mt-[0px] ">
                   <div >
@@ -632,10 +656,10 @@ const AboutPage = () => {
                 <div className="mt-[40px] grid grid-cols-1 md:grid-cols-3 gap-8">
                   <div data-aos="zoom-in" className="rounded-[16px] overflow-hidden shadow-[0_0_32px_#00000075]">
                     <div className="bg-[#1E96D3] p-2"> <Image src={Portfolio} alt="" /></div>
-                    <div className="mt-4 px-4 py-4">
-                      <h4 className="text-[32px] font-bold leading-[140%]">Ahuse</h4>
-                      <p className="text-[16px] font-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
-                      <a className="text-[18px] font-[400] flex gap-2 items-center">View In Dribbble <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <div className="mt-[20px] lg:px-[16px] px-[10px] py-4">
+                      <h4 className="lg:text-[32px] text-[20px] font-bold leading-[140%]">Ahuse</h4>
+                      <p className="text-[14px] lg:text-[16px] font-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+                      <a className="text-[14px] lg:text-[18px] font-[400] flex gap-2 items-center">View In Dribbble <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M4.30436 2H17.6377V15.3333M17.6377 2L1.6377 18L17.6377 2Z" stroke="black" stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round" />
                       </svg>
                       </a>
@@ -643,10 +667,10 @@ const AboutPage = () => {
                   </div>
                   <div data-aos="zoom-in" className="rounded-[16px] overflow-hidden shadow-[0_0_32px_#00000075]">
                     <div className="bg-[#1E96D3] p-2"> <Image src={Portfolio} alt="" /></div>
-                    <div className="mt-4 px-4 py-4">
-                      <h4 className="text-[32px] font-bold leading-[140%]">Ahuse</h4>
-                      <p className="text-[16px] font-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
-                      <a className="text-[18px] font-[400] flex gap-2 items-center">View In Dribbble <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <div className="mt-[20px] lg:px-[16px] px-[10px] py-4">
+                      <h4 className="lg:text-[32px] text-[20px] font-bold leading-[140%]">Ahuse</h4>
+                      <p className="text-[14px] lg:text-[16px] font-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+                      <a className="text-[14px] lg:text-[18px] font-[400] flex gap-2 items-center">View In Dribbble <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M4.30436 2H17.6377V15.3333M17.6377 2L1.6377 18L17.6377 2Z" stroke="black" stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round" />
                       </svg>
                       </a>
@@ -654,10 +678,10 @@ const AboutPage = () => {
                   </div>
                   <div data-aos="zoom-in" className="rounded-[16px] overflow-hidden shadow-[0_0_32px_#00000075]">
                     <div className="bg-[#1E96D3] p-2"> <Image src={Portfolio} alt="" /></div>
-                    <div className="mt-4 px-4 py-4">
-                      <h4 className="text-[32px] font-bold leading-[140%]">Ahuse</h4>
-                      <p className="text-[16px] font-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
-                      <a className="text-[18px] font-[400] flex gap-2 items-center">View In Dribbble <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <div className="mt-[20px] lg:px-[16px] px-[10px] py-4">
+                      <h4 className="lg:text-[32px] text-[20px] font-bold leading-[140%]">Ahuse</h4>
+                      <p className="text-[14px] lg:text-[16px] font-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+                      <a className="text-[14px] lg:text-[18px] font-[400] flex gap-2 items-center">View In Dribbble <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M4.30436 2H17.6377V15.3333M17.6377 2L1.6377 18L17.6377 2Z" stroke="black" stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round" />
                       </svg>
                       </a>
