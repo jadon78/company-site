@@ -3956,6 +3956,17 @@ header .main-menu ul {
 }
 
 /* Hide the button on desktop */
+.web-menu{
+  color: #000;
+}
+@media (max-width: 991px) {
+  .web-menu{
+    color: #fff;
+  }
+  .no-scroll-body{
+    overflow: hidden;
+  }
+}
 @media (max-width: 767px) {
   .no-scroll-body{
     overflow: hidden;
