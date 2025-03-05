@@ -295,7 +295,7 @@ const AboutPage = () => {
             <div data-aos="flip-left" className="our-projects-section relative projects-card  z-[99] bg-[#3A3FD4] mt-10 text-[#fff] rounded-[16px] p-8 shadow-[0px_4px_17px_0px_#00000040] overflow-hidden">
               <div className="flex items-center  flex-col md:flex-row justify-between lg:p-8 gap-4">
                 <div className="">
-                  <h4 className=" text-[20px] lg:text-[38px] font-bold text-left text-[#fff] leading-[28px] lg:leading-[60px] max-w-[300px]">Let’s Start Your Project with
+                  <h4 className=" text-[20px] lg:text-[38px] font-bold text-left text-[#fff] leading-[28px] lg:leading-[60px] lg:max-w-[300px]">Let’s Start Your Project with
                     qutiiz</h4>
                 </div>
                 <div className="flex flex-col md:flex-row lg:gap-10 gap-4">
@@ -366,10 +366,12 @@ const AboutPage = () => {
               />
               Your browser does not support the video tag.
             </video>
-            <h2 className="px-4 text-[16px] md:text-[24px] text-center gradient-text">Our Standards</h2>
+         <div className="pt-[20px] lg:pt-[0px]">
+         <h2 className="px-4 text-[16px] md:text-[24px] text-center gradient-text">Our Standards</h2>
             <h3 className="px-4 text-[22px] sm:text-[30px] lg:text-[44px] text-center max-w-[640px] mx-auto">
               Additional Services that will Grow Your Business
             </h3>
+         </div>
             <div className="max-w-[1400px] sm:px-[16px] mx-auto sm:mt-10">
               <div className="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[50px] p-6 justify-center">
                 {cards.map((card, index) => (

@@ -392,7 +392,7 @@ function Services() {
               </div>
             </div>
             <div>
-              <div className="px-2 grid grid-cols-1 md:grid-cols-2 lg:mt-[80px] gap-[60px_20px] md:gap-[40px_20px] lg:gap-[40px_20px]">
+              <div className=" px-2 grid grid-cols-1 md:grid-cols-2 mt-[80px] gap-[60px_20px] md:gap-[40px_20px] lg:gap-[40px_20px]">
                 <div data-aos="zoom-in" className="bisiness-domains relative rounded-[8px] bg-[#fff] p-4 relative w-full md:w-[90%]">
                   <span className="-translate-x-2/4 md:-translate-x-0 absolute left-[50%] md:left-[inherit] md:right-[-50px] -translate-y-2/4 top-0 md:top-2/4 w-[100px] h-[100px] flex items-center justify-center p-0 ">
                     <span className="services-border shadow-[0px_4px_4px_0px_#00000057] block w-[60px] h-[60px] lg:w-[85px] lg:h-[85px] bg-[#fff] rounded-[50%] flex items-center justify-center">
@@ -516,7 +516,7 @@ function Services() {
           </div>
         </section>
         <section>
-          <div className="max-w-[1400px] mx-auto">
+          <div className="max-w-[1400px] mx-auto my-[20px] lg:my-[0]">
             <div>
               <h4 className="text-center m-0 p-0 gradient-text text-[16px] md:text-[24px]">Work Process</h4>
               <h5 className="text-center m-0 p-0 text-[24px] md:text-[44px]">Workflow Journey</h5>
@@ -599,7 +599,7 @@ function Services() {
         <section className="bg-[#1E96D3] connect-section overflow-hidden px-2">
           <div className="max-w-[1400px] mx-auto lg:flex items-center py-[40px] px-[16px] relative z-[99] gap-[20px]">
             <div data-aos="fade-right" className="w-full lg:max-w-[970px] w-full">
-              <h4 className="text-[24px] lg:text-[44px] font-semibold leading-[50px] lg:leading-[68px] text-[#fff] mb-[14px] md:mb-2">Are you looking for seamless data flows and better visibility for your business?</h4>
+              <h4 className="text-[24px] lg:text-[44px] font-semibold leading-[30px] lg:leading-[68px] text-[#fff] mb-[14px] md:mb-2">Are you looking for seamless data flows and better visibility for your business?</h4>
               <p className="text-[#fff] text-[18px] lg:text-[22px]">We have the technical and functional expertise you need.</p>
             </div>
             <div data-aos="fade-left" className="w-full lg:max-w-[350px]">
