@@ -103,7 +103,7 @@ const ServiceInformation = () => {
         </div>
       </section>
       <section className="py-20 px-4 relative bg-[#fff] overflow-hidden">
-        <div className="max-w-[1400px] md:px-[16px] mx-auto grid md:grid-cols-2 gap-12 items-center sm:pt-10">
+        <div className="max-w-[1400px] md:px-[16px] mx-auto grid lg:grid-cols-2 gap-12 items-center sm:pt-10">
           <div data-aos="fade-right" className="">
             <h3 className="text-[16px] md:text-[24px] gradient-text mb-2 capitalize">
               {slug}
@@ -367,12 +367,13 @@ const ServiceInformation = () => {
               </div>
             </div>
           </div> */}
-            <Swiper
+          <div className=''>
+          <Swiper
       slidesPerView={1}
       spaceBetween={20}
       breakpoints={{
-        640: { slidesPerView: 1 },
-        991: { slidesPerView: 2 },
+        500: { slidesPerView: 2 },
+        991: { slidesPerView: 3 },
         1024: { slidesPerView: 4 }
       }}
       pagination={{ clickable: true }}
@@ -381,7 +382,7 @@ const ServiceInformation = () => {
       {[...Array(4)].map((_, index) => (
         <SwiperSlide key={index}>
           <div data-aos="zoom-in" className=" mx-auto rounded-[8px] border border-solid border-[#1E96D3] p-2">
-            <Image src={Thumb} alt="" className="mb-4" />
+            <Image src={Thumb} alt="" className="mb-4 w-full" />
             <h4 className="text-[#1E96D3] text-[16px] sm:text-[24px]">TWINDER</h4>
             <p className="text-[16px] font-normal text-[#000]">A live Geolocation app for finding tweets and twitter users around you.</p>
             <div className="flex gap-4">
@@ -392,12 +393,13 @@ const ServiceInformation = () => {
         </SwiperSlide>
       ))}
     </Swiper>
+          </div>
         </div>
       </section>
       <section className="bg-[#1E96D3] connect-section overflow-hidden px-2">
         <div className="max-w-[1400px] mx-auto lg:flex items-center py-[40px] px-[16px] relative z-[99]">
           <div className="w-full lg:w-[60%]">
-            <h4 className="text-[24px] md:text-[44px] font-semibold leading-[40px] md:leading-[50px] lg:leading-[68px] text-[#fff] mb-4 md:mb-2">Are you looking for seamless data flows and better visibility for your business?</h4>
+            <h4 className="text-[24px] md:text-[44px] font-semibold leading-[30px] md:leading-[50px] lg:leading-[68px] text-[#fff] mb-4 md:mb-2">Are you looking for seamless data flows and better visibility for your business?</h4>
             <p className="text-[#fff] text-[16px] lg:text-[22px]">We have the technical and functional expertise you need.</p>
           </div>
           <div className="w-full lg:w-[40%]">

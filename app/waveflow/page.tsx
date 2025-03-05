@@ -77,7 +77,7 @@ const WaveCanvas: React.FC = () => {
     };
   }, []);
 
-  return <canvas ref={canvasRef} className="absolute bottom-0 left-0 w-full h-[90px] sm:h-[180px] md:h-[280px] z-[1]"></canvas>;
+  return <canvas ref={canvasRef} className="absolute bottom-[-1px] left-0 w-full h-[90px] sm:h-[180px] md:h-[280px] z-[1]"></canvas>;
 };
 
 export default WaveCanvas;
