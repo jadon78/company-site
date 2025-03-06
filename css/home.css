@@ -286,7 +286,7 @@ button {
   height: 100%;
   position: absolute;
   top: 50%;
-  z-index: 9;
+  z-index: 0;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -1244,7 +1244,7 @@ position: relative;
   }
 }
   @media (min-width:991px) {
-
+    
   .servicedeatils-slider .swiper {
     padding-top: 40px;
     margin: 0;
@@ -1266,7 +1266,10 @@ position: relative;
     }
 }
   @media (max-width:991px) {
-  
+    .servicedeatils-slider:after{
+      height: 20px;
+      background: #1d91cc;
+      }
 .why-choose-us:after {
   display: none;
 }

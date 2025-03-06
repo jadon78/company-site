@@ -14,9 +14,9 @@ export const Footer = () =>
 
             </div>
             <footer className=" bg-[#202222] text-white footer-section pt-10 overflow-hidden">
-                <div className="relative z-[1]">
-                    <div className="container mx-auto px-6 py-4 border-b border-t border-[#FFFFFF] ">
-                    <div className=" sm:hidden mb-4">
+                <div className="relative z-[1] max-w-[1400px] mx-auto  items-center py-[40px] px-[16px]">
+                    <div className="container1 mx-auto px-6 py-4 border-b border-t border-[#FFFFFF] ">
+                    <div className=" md:hidden mb-4">
                                      <Image src={Logo} alt="logo" className="w-[60px]" />
                                       </div> 
                         <nav className="flex flex-wrap flex-col md:flex-row md:justify-between md:items-center text-sm gap-2">
@@ -33,10 +33,10 @@ export const Footer = () =>
                         </nav>
                     </div>
 
-                    <div className="container mx-auto px-6 py-8">
+                    <div className="container1 mx-auto px-6 py-8">
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                             <div>
-                                    <div className="hidden sm:block mb-4">
+                                    <div className="hidden md:block mb-4">
                                      <Image src={Logo} alt="logo" className="w-[60px]" />
                                       </div>  
 
@@ -97,7 +97,7 @@ export const Footer = () =>
                             </div>
                         </div>
                     </div>
-                    <div className="container px-0 ">
+                    <div className="container1 px-0 ">
 
                     <div className=" border-t border-[#FFFFFF] mt-12">
                         <div className="container mx-auto px-6 py-4 text-center text-[14px] text-gray-400">
