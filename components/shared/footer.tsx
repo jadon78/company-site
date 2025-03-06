@@ -99,7 +99,7 @@ export const Footer = () =>
                     </div>
                     <div className="container1 px-0 ">
 
-                    <div className=" border-t border-[#FFFFFF] mt-12">
+                    <div className=" border-t border-[#FFFFFF] md:mt-12">
                         <div className="container mx-auto px-6 py-4 text-center text-[14px] text-gray-400">
                             Copyright © 2022 works . All rights reserved.
                         </div>
