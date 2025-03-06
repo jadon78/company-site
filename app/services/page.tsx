@@ -365,7 +365,7 @@ function Services() {
                       <div className="my-4">
                         <h5 className="text-[20px]">{service.title}</h5>
                         <p className="text-[16px]">{service.description}</p>
-                        <a className="flex items-center gap-2 text-[16px]">
+                        <a className="flex items-center gap-2 text-[16px] hover:!text-[#fff] ">
                           Read More
                           <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M14.4512 8L14.1077 7.6405L9.85767 3.3905L9.13817 4.11L12.5292 7.5L2.49817 7.5V8.5L12.5297 8.5L9.13867 11.8905L9.85767 12.6095L14.1077 8.3595L14.4512 8Z" fill="black" />
@@ -645,7 +645,8 @@ function Services() {
                         <div className="flex gap-4">
                           <div>
                             <span className="w-[24px] h-[24px] lg:w-[40px] lg:h-[40px] rounded-[50%] bg-[#131313] text-[#fff] flex items-center justify-center text-[14px] lg:text-[18px]">{index + 1}</span>
-                          </div>                          <span className="font-medium text-[16px] lg:text-[24px] text-[#000] leading-[32px]">{item.title}</span>
+                          </div>                         
+                           <span className="font-medium text-[16px] lg:text-[24px] text-[#000] leading-[32px]">{item.title}</span>
                         </div>
                         <span className={`transition-[0.4s] w-[14px] ${openIndex === index ? "rotate-90" : "rotate-0"}`}><svg className="w-[10px]" width="14" height="28" viewBox="0 0 16 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M15.1846 14L2.02668 0.875L0.184571 2.7125L11.5004 14L0.184571 25.2875L2.02668 27.125L15.1846 14Z" fill="#0C0807" />

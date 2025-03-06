@@ -373,11 +373,11 @@ const AboutPage = () => {
             </h3>
          </div>
             <div className="max-w-[1400px] sm:px-[16px] mx-auto sm:mt-10">
-              <div className="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[50px] p-6 justify-center">
+              <div className="grid  grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[30px] md:gap-[50px] p-6 justify-center">
                 {cards.map((card, index) => (
                   <div data-aos="zoom-in"
                     key={index}
-                    className="our-standards-card relative overflow-hidden bg-white shadow-lg rounded-2xl p-6  hover:scale-105 transform transition duration-300 text-center"
+                    className="max-w-[300px] mx-auto sm:max-w-[100%] our-standards-card relative overflow-hidden bg-white shadow-lg rounded-2xl p-6  hover:scale-105 transform transition duration-300 text-center"
                   >
                     <div className="shap-design">
                       <span className="shap-3">
@@ -412,10 +412,10 @@ const AboutPage = () => {
             </div>
           </section>
           <div className="overflow-hidden">
-            <div className="marketing-section  md::min-h-[40px] px-4 py-2">
+            <div className="marketing-section md:min-h-[40px] px-4 py-4">
               <div className=" max-w-[1400px] sm:px-[16px] mx-auto grid grid-cols-1 md:grid-cols-2 items-center h-[100%]">
                 <div data-aos="fade-right" className="pt-10 md:pt-0">
-                  <h4 className="text-[24px]  md:text-[30px] lg:text-[56px] font-medium text-[#fff] leading-[50px] lg:leading-[80px]">Important Features for Digital Marketing</h4>
+                  <h4 className="text-[24px]  md:text-[30px] lg:text-[56px] font-medium text-[#fff] leading-[40px] md:leading-[50px] lg:leading-[80px]">Important Features for Digital Marketing</h4>
                   <button className="mt-[30px] text-[16px] lg:text-[34px] overflow-hidden leading-[25px] text-left bg-[#D9E2FF40] w-[50px] h-[50px] md:w-[60px] md:h-[60px] lg:w-[100px] lg:h-[100px] transition-all hover:w-[180px] lg:hover:w-[350px] duration-1000 flex items-center gap-5 justify-end p-[0.8rem] lg:p-[1.5rem_1.8rem] rounded-[100px] group">
                     <div className="flex items-center gap-4">
                       <span className="whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-500 text-[#fff]">

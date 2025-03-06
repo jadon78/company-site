@@ -395,7 +395,7 @@ export default function Index ()
       </div>
     </SwiperSlide>
   ))}
-</Swiper>;
+</Swiper>
                
               </div>
             </div>
