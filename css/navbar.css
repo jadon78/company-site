@@ -613,10 +613,6 @@ header .collapse:not(.show) {
   margin-left: 16px;
 }
 
-iframe {
-  display: none;
-}
-
 .navbar-expand-lg .navbar-nav .nav-link {
   font-size: 18px;
   padding: 10px 8px;

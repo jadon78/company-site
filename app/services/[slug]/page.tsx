@@ -95,7 +95,7 @@ const ServiceInformation = () => {
             <div className="absolute inset-0 bg-black/20" />
           </div>
           <div className="relative z-10 max-w-[860px] mx-auto px-4 m-auto">
-            <h1 className="mb-[80px] text-[30px] font-[700] leading-[50px] md:leading-[80px] md:text-[72px] font-bold  text-white capitalize">
+            <h1 className="mb-[50px] lg:mb-[80px] text-[30px] font-[700] leading-[50px] md:leading-[80px] md:text-[72px] font-bold  text-white capitalize">
               {slug}
             </h1>
           </div>

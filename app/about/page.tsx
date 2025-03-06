@@ -291,7 +291,7 @@ const AboutPage = () => {
               </div>
             </div>
           </section>
-          <div className="max-w-[1400px] px-[16px] mx-auto text-center p-0  mt-10 overflow-hidden px-2">
+          <div className="max-w-[1400px] px-[16px] mx-auto text-center p-0  sm:mt-10 overflow-hidden px-2">
             <div data-aos="flip-left" className="our-projects-section relative projects-card  z-[99] bg-[#3A3FD4] mt-10 text-[#fff] rounded-[16px] p-8 shadow-[0px_4px_17px_0px_#00000040] overflow-hidden">
               <div className="flex items-center  flex-col md:flex-row justify-between lg:p-8 gap-4">
                 <div className="">
@@ -372,7 +372,7 @@ const AboutPage = () => {
               Additional Services that will Grow Your Business
             </h3>
          </div>
-            <div className="max-w-[1400px] sm:px-[16px] mx-auto sm:mt-10">
+            <div className="max-w-[1400px] sm:px-[16px] mx-auto lg:mt-10">
               <div className="grid  grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[30px] md:gap-[50px] p-6 justify-center">
                 {cards.map((card, index) => (
                   <div data-aos="zoom-in"
@@ -544,12 +544,12 @@ const AboutPage = () => {
                           </svg>
                         </span>
                       </div>
-                      <p className="text-[16px] font-[400]">“Amazing design, easy to customize and a design quality superlative account on its cloud platform for the optimized performance. And we didn’t on our original designs.”</p>
-                      <div className="flex items-center gap-2 mt-[40px]">
+                      <p className="text-[16px] font-[400] text-[#050B20]">“Amazing design, easy to customize and a design quality superlative account on its cloud platform for the optimized performance. And we didn’t on our original designs.”</p>
+                      <div className="flex items-center gap-[15px] mt-[40px]">
                         <div><span><img src="" alt="" className="w-[60px] h-[60px] rounded-[50%]" /></span></div>
                         <div>
-                          <p className="text-[16px] text-[#050B20] mb-0 pb-0">Leslie Alexander</p>
-                          <span className="text-[14px] text-[#050B20]">Facebook</span>
+                          <p className="text-[16px] text-[#050B20] mb-0 pb-0 font-medium">Leslie Alexander</p>
+                          <span className="text-[14px] text-[#050B20] font-normal">Facebook</span>
                         </div>
                       </div>
                     </div>
@@ -564,12 +564,12 @@ const AboutPage = () => {
                           </svg>
                         </span>
                       </div>
-                      <p className="text-[16px] font-[400]">“Amazing design, easy to customize and a design quality superlative account on its cloud platform for the optimized performance. And we didn’t on our original designs.”</p>
+                      <p className="text-[16px] font-[400] text-[#050B20]">“Amazing design, easy to customize and a design quality superlative account on its cloud platform for the optimized performance. And we didn’t on our original designs.”</p>
                       <div className="flex items-center gap-2 mt-[40px]">
                         <div><span><img src="" alt="" className="w-[60px] h-[60px] rounded-[50%]" /></span></div>
                         <div>
-                          <p className="text-[16px] text-[#050B20] mb-0 pb-0">Leslie Alexander</p>
-                          <span className="text-[14px] text-[#050B20]">Facebook</span>
+                          <p className="text-[16px] text-[#050B20] mb-0 pb-0 font-medium">Leslie Alexander</p>
+                          <span className="text-[14px] text-[#050B20] font-normal">Facebook</span>
                         </div>
                       </div>
                     </div>
@@ -584,12 +584,12 @@ const AboutPage = () => {
                           </svg>
                         </span>
                       </div>
-                      <p className="text-[16px] font-[400]">“Amazing design, easy to customize and a design quality superlative account on its cloud platform for the optimized performance. And we didn’t on our original designs.”</p>
+                      <p className="text-[16px] font-[400] text-[#050B20]">“Amazing design, easy to customize and a design quality superlative account on its cloud platform for the optimized performance. And we didn’t on our original designs.”</p>
                       <div className="flex items-center gap-2 mt-[40px]">
                         <div><span><img src="" alt="" className="w-[60px] h-[60px] rounded-[50%]" /></span></div>
                         <div>
-                          <p className="text-[16px] text-[#050B20] mb-0 pb-0">Leslie Alexander</p>
-                          <span className="text-[14px] text-[#050B20]">Facebook</span>
+                          <p className="text-[16px] text-[#050B20] mb-0 pb-0 font-medium">Leslie Alexander</p>
+                          <span className="text-[14px] text-[#050B20] font-normal">Facebook</span>
                         </div>
                       </div>
                     </div>
@@ -604,12 +604,12 @@ const AboutPage = () => {
                           </svg>
                         </span>
                       </div>
-                      <p className="text-[16px] font-[400]">“Amazing design, easy to customize and a design quality superlative account on its cloud platform for the optimized performance. And we didn’t on our original designs.”</p>
+                      <p className="text-[16px] font-[400] text-[#050B20]">“Amazing design, easy to customize and a design quality superlative account on its cloud platform for the optimized performance. And we didn’t on our original designs.”</p>
                       <div className="flex items-center gap-2 mt-[40px]">
                         <div><span><img src="" alt="" className="w-[60px] h-[60px] rounded-[50%]" /></span></div>
                         <div>
-                          <p className="text-[16px] text-[#050B20] mb-0 pb-0">Leslie Alexander</p>
-                          <span className="text-[14px] text-[#050B20]">Facebook</span>
+                          <p className="text-[16px] text-[#050B20] mb-0 pb-0 font-medium">Leslie Alexander</p>
+                          <span className="text-[14px] text-[#050B20] font-normal">Facebook</span>
                         </div>
                       </div>
                     </div>
@@ -624,12 +624,12 @@ const AboutPage = () => {
                           </svg>
                         </span>
                       </div>
-                      <p className="text-[16px] font-[400]">“Amazing design, easy to customize and a design quality superlative account on its cloud platform for the optimized performance. And we didn’t on our original designs.”</p>
+                      <p className="text-[16px] font-[400] text-[#050B20]">“Amazing design, easy to customize and a design quality superlative account on its cloud platform for the optimized performance. And we didn’t on our original designs.”</p>
                       <div className="flex items-center gap-2 mt-[40px]">
                         <div><span><img src="" alt="" className="w-[60px] h-[60px] rounded-[50%]" /></span></div>
                         <div>
-                          <p className="text-[16px] text-[#050B20] mb-0 pb-0">Leslie Alexander</p>
-                          <span className="text-[14px] text-[#050B20]">Facebook</span>
+                          <p className="text-[16px] text-[#050B20] mb-0 pb-0 font-medium">Leslie Alexander</p>
+                          <span className="text-[14px] text-[#050B20] font-normal">Facebook</span>
                         </div>
                       </div>
                     </div>
@@ -641,10 +641,10 @@ const AboutPage = () => {
 
           </section>
           <section>
-            <div className="max-w-[1400px]  mx-auto">
+            <div className="max-w-[1400px]  mx-auto mt-[20px] md:mt-[0]">
               <div className="md:flex justify-between items-center px-4">
                 <div>
-                  <h5 className="text-[16px] lg:text-[20px] font-semibold">Recent Projects</h5>
+                  <h5 className="text-[16px] lg:text-[20px] font-semibold pb-[0px] sm:pb-[15px]">Recent Projects</h5>
                   <h6 className="text-[24px] lg:text-[64px] font-bold">My Portfolio</h6>
                 </div>
                 <div>
@@ -690,7 +690,7 @@ const AboutPage = () => {
                     </div>
                   </div>
                 </div> */}
-                <div className="mt-[40px]">
+                <div className="">
       <Swiper
         spaceBetween={20}
         slidesPerView={1}
@@ -700,7 +700,7 @@ const AboutPage = () => {
         }}
         pagination={{ clickable: true }}
         modules={[Pagination]}
-        className="portfolio-swiper px-4 !py-12"
+        className="portfolio-swiper px-4 !py-12 mt-0"
       >
         {[...Array(3)].map((_, index) => (
           <SwiperSlide key={index}>
