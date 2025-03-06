@@ -103,7 +103,7 @@ const ServiceInformation = () => {
         </div>
       </section>
       <section className="py-20 px-4 relative bg-[#fff] overflow-hidden">
-        <div className="max-w-[1400px] md:px-[16px] mx-auto grid lg:grid-cols-2 gap-12 items-center sm:pt-10">
+        <div className="max-w-[1400px] md:px-[16px] mx-auto grid lg:grid-cols-2 gap-12 items-center sm:pt-10 mb-[20px] md:mb-[0]">
           <div data-aos="fade-right" className="">
             <h3 className="text-[16px] md:text-[24px] gradient-text mb-2 capitalize">
               {slug}
@@ -118,7 +118,7 @@ const ServiceInformation = () => {
               <li className="relative flex items-center text-[16px] md:text-[24px] gap-2 text-[#000]">Marketing Strategy</li>
               <li className="relative flex items-center text-[16px] md:text-[24px] gap-2 text-[#000]">Technology Process</li>
             </ul>
-            <button className="mt-[30px] text-[16px] lg:text-[34px] overflow-hidden leading-[25px] text-left bg-[#96DCFF] w-[60px] h-[60px] lg:w-[100px] lg:h-[100px] transition-all hover:w-[230px] lg:hover:w-[340px] duration-1000 flex items-center gap-5 justify-end p-4 rounded-[100px] group">
+            <button className="mt-[30px] text-[16px] lg:text-[34px] overflow-hidden leading-[25px] text-left bg-[#96DCFF] w-[50px] h-[50px]  md:w-[60px] md:h-[60px] lg:w-[100px] lg:h-[100px] transition-all hover:w-[230px] lg:hover:w-[350px] duration-1000 flex items-center gap-5 justify-end p-[0.8rem] lg:p-[1.5rem_1.8rem] rounded-[100px] group">
                 <div className="flex items-center gap-[50px]">
                   <span className="whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-500 text-[#fff]">
                     Get in touch
@@ -167,7 +167,7 @@ const ServiceInformation = () => {
               <Image
                 src={Mobileapp}
                 alt="Team meeting"
-                className="w-[70%] lg:w-[100%] max-w-[450px] h-auto mx-auto scale-150"
+                className="w-[70%] md:w-[100%] lg:w-[100%] max-w-[450px] h-auto mx-auto lg:max-w-[100%]"
               />
             </div>
           </div>
@@ -190,8 +190,8 @@ const ServiceInformation = () => {
         </video>
         <div className="mx-auto px- relative z-[99] py-4">
           <div>
-            <h4 className="text-center mb-4 p-0 gradient-text text:[16px] md:text-[24px]">Work Process</h4>
-            <h4 className="text-center pb-4 p-0 text-[24px] md:text-[44px] leading-[60px]">Our Mobile App Development Process</h4>
+            <h4 className="text-center mb-[8px] md:mb-[16px] p-0 gradient-text text:[18px] md:text-[24px]">Work Process</h4>
+            <h4 className="text-center pb-4 p-0 text-[24px] md:text-[44px] leading-[30px] md:leading-[60px]">Our Mobile App Development Process</h4>
           </div>
           <div className=" mt-[40px] lg:mt-[80px]">
             {/* <div className="bg-[#fff] rounded-[16px] p-4">
@@ -244,7 +244,7 @@ const ServiceInformation = () => {
           Your browser does not support the video tag.
         </video>
         <div className='relative z-[99] py-4'>
-          <div className="text-center max-w-[580px] mx-auto  lg:mt-[80px]">
+          <div className="text-center max-w-[580px] mx-auto mt-[40px] lg:mt-[80px]">
             <h5 className="text-[24px] md:text-[44px] ">Technologies We Use</h5>
             <p className="text-[14px] text-center">Amet minim mollit non deserunt ullamco est sit aliqua dolor Velit officia est
               do amet sint Velit officia consequat duis enim.</p>
@@ -254,7 +254,7 @@ const ServiceInformation = () => {
           <div className="max-w-[1400px] mx-auto py-10 boxshadowdesign">
             <div className="grid gap-16 sm:gap-28 px-4 lg:gap-0 grid-cols-1 lg:grid-cols-3  mx-auto w-full  overflow-hidden mb-[-40px] justify-center pt-[80px] relative shadowbottom">
               <div data-aos="zoom-in" className="our-technology max-w-[540px] mx-auto lg:mx-0  px-0  card-box relative text-center py-4">
-                <Image src={Rectanglecurve1} alt="" className="max-h-[340px] absolute text-transparent scale-[110%]  " />
+                <Image src={Rectanglecurve1} alt="" className="max-h-[360px] absolute text-transparent scale-[110%] " />
                 <div className="relative z-[99]  px-4 md:px-8">
                   <div className="bg-[#0ECFDB] rounded-[23px] mt-[-10] inline-block px-4 py-3">
                     <svg width="39" height="65" viewBox="0 0 39 65" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -269,7 +269,7 @@ const ServiceInformation = () => {
                 </div>
               </div>
               <div data-aos="zoom-in" className="our-technology max-w-[540px] mx-auto lg:mx-0 px-0  card-box relative text-center py-4 z-[999] sm:top-[10px] ">
-                <Image src={Rectanglecurve1} alt="" className="max-h-[340px] absolute text-transparent scale-[110%] lg:scale-[134%] mt-[-40px] rectanglecurve1  " />
+                <Image src={Rectanglecurve1} alt="" className="max-h-[360px] absolute text-transparent scale-[110%] lg:scale-[134%] mt-[-40px] rectanglecurve1  " />
                 <div className="relative z-[99]  px-4 md:px-8 mt-[-60px] lg:scale-[115%]">
                   <div className="bg-[#1E96D3] rounded-[23px] mt-[-10] inline-block px-8 py-4">
                   <svg width="41" height="68" viewBox="0 0 41 68" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -301,7 +301,7 @@ const ServiceInformation = () => {
                 </div>
               </div>
               <div data-aos="zoom-in" className="our-technology max-w-[540px] mx-auto lg:mx-0 px-0  card-box relative text-center py-4">
-                <Image src={Rectanglecurve1} alt="" className="max-h-[340px] absolute text-transparent scale-[110%]   " />
+                <Image src={Rectanglecurve1} alt="" className="max-h-[360px] absolute text-transparent scale-[110%]   " />
                 <div className="relative z-[99]   md:px-8 px-4">
                   <div className="bg-[#0EDB91] rounded-[23px] mt-[-10] inline-block px-4 py-3">
                   <svg width="55" height="64" viewBox="0 0 55 64" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -327,7 +327,7 @@ const ServiceInformation = () => {
         <div className="max-w-[1400px] mx-auto px-4">
           <div className="max-w-[900px]">
             <h4 className="text-[24px] md:text-[44px] leading:[40px] md:leading-[60px]">Our Project</h4>
-            <p className='text-[14px] md:text-[16px] mt-4 md:mt-0'>I have worked on many projects over the course of being a Web Developer, here are a few of my live, real-world projectsI have worked on many projects over the course of being a Web Developer, here are a few of my live, real-world projects</p>
+            <p className='text-[14px] md:text-[16px] mt-4 md:mt-0 text-[#000] mb-2'>I have worked on many projects over the course of being a Web Developer, here are a few of my live, real-world projectsI have worked on many projects over the course of being a Web Developer, here are a few of my live, real-world projects</p>
           </div>
           {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             <div data-aos="zoom-in" className="max-w-[300px] mx-auto rounded-[8px] border border-solid border-[#1E96D3] p-2">
@@ -372,9 +372,9 @@ const ServiceInformation = () => {
       slidesPerView={1}
       spaceBetween={20}
       breakpoints={{
-        500: { slidesPerView: 2 },
+        550: { slidesPerView: 2 },
         991: { slidesPerView: 3 },
-        1024: { slidesPerView: 4 }
+        1100: { slidesPerView: 4 }
       }}
       pagination={{ clickable: true }}
       className="mySwiper myprojects-slider   m-0"
@@ -404,7 +404,7 @@ const ServiceInformation = () => {
           </div>
           <div className="w-full lg:w-[40%]">
            
-                <button className="mt-[30px] text-[16px] lg:text-[34px] overflow-hidden leading-[25px] text-left bg-[#96DCFF] w-[60px] h-[60px] lg:w-[100px] lg:h-[100px] transition-all hover:w-[230px] lg:hover:w-[340px] duration-1000 flex items-center gap-5 justify-end p-4 rounded-[100px] group">
+                <button className="mt-[30px] text-[16px] lg:text-[34px] overflow-hidden leading-[25px] text-left bg-[#96DCFF] w-[50px] h-[50px] md:w-[60px] md:h-[60px] lg:w-[100px] lg:h-[100px] transition-all hover:w-[230px] lg:hover:w-[350px] duration-1000 flex items-center gap-5 justify-end p-[0.8rem] lg:p-[1.5rem_1.8rem] rounded-[100px] group">
                 <div className="flex items-center gap-[50px]">
                   <span className="whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-500 text-[#fff]">
                     Get in touch

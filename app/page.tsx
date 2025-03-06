@@ -937,7 +937,7 @@ export default function Index ()
                 </h4>
               </div>
               <div className="min-w-[320px]">
-              <button className=" mt-[30px] text-[16px] lg:text-[34px] overflow-hidden leading-[25px] text-left bg-[#1e96d3] w-[60px] h-[60px] lg:w-[100px] lg:h-[100px] transition-all hover:w-[230px] lg:hover:w-[340px] duration-1000 flex items-center gap-5 justify-end p-4 rounded-[100px] group">
+              <button className=" mt-[30px] text-[16px] lg:text-[34px] overflow-hidden leading-[25px] text-left bg-[#1e96d3] w-[50px] h-[50px] md:w-[60px] md:h-[60px] lg:w-[100px] lg:h-[100px] transition-all hover:w-[230px] lg:hover:w-[350px] duration-1000 flex items-center gap-5 justify-end p-[0.8rem] lg:p-[1.5rem_1.8rem] rounded-[100px] group">
                 <div className="flex items-center gap-[50px]">
                   <span className="whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-500 text-[#fff]">
                     Get in touch

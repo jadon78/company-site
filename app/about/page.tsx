@@ -236,7 +236,7 @@ const AboutPage = () => {
                   <li className="relative flex items-center text-[16px] md:text-[24px] gap-2 text-[#000]">Marketing Strategy</li>
                   <li className="relative flex items-center text-[16px] md:text-[24px] gap-2 text-[#000]">Technology Process</li>
                 </ul>
-                <button className="mt-[30px] text-[16px] lg:text-[34px] overflow-hidden leading-[25px] text-left bg-[#1e96d3] w-[60px] h-[60px] lg:w-[100px] lg:h-[100px] transition-all hover:w-[230px] lg:hover:w-[340px] duration-1000 flex items-center gap-5 justify-end p-4 rounded-[100px] group">
+                <button className="mt-[30px] text-[16px] lg:text-[34px] overflow-hidden leading-[25px] text-left bg-[#1e96d3] w-[50px] h-[50px] md:w-[60px] md:h-[60px] lg:w-[100px] lg:h-[100px] transition-all hover:w-[230px] lg:hover:w-[350px] duration-1000 flex items-center gap-5 justify-end p-[0.8rem] lg:p-[1.5rem_1.8rem] rounded-[100px] group">
                 <div className="flex items-center gap-[50px]">
                   <span className="whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-500 text-[#fff]">
                     Get in touch
@@ -416,7 +416,7 @@ const AboutPage = () => {
               <div className=" max-w-[1400px] sm:px-[16px] mx-auto grid grid-cols-1 md:grid-cols-2 items-center h-[100%]">
                 <div data-aos="fade-right" className="pt-10 md:pt-0">
                   <h4 className="text-[24px]  md:text-[30px] lg:text-[56px] font-medium text-[#fff] leading-[50px] lg:leading-[80px]">Important Features for Digital Marketing</h4>
-                  <button className="mt-[30px] text-[16px] lg:text-[34px] overflow-hidden leading-[25px] text-left bg-[#D9E2FF40] w-[60px] h-[60px] lg:w-[100px] lg:h-[100px] transition-all hover:w-[180px] lg:hover:w-[310px] duration-1000 flex items-center gap-5 justify-end p-4 rounded-[100px] group">
+                  <button className="mt-[30px] text-[16px] lg:text-[34px] overflow-hidden leading-[25px] text-left bg-[#D9E2FF40] w-[50px] h-[50px] md:w-[60px] md:h-[60px] lg:w-[100px] lg:h-[100px] transition-all hover:w-[180px] lg:hover:w-[350px] duration-1000 flex items-center gap-5 justify-end p-[0.8rem] lg:p-[1.5rem_1.8rem] rounded-[100px] group">
                     <div className="flex items-center gap-4">
                       <span className="whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-500 text-[#fff]">
                         Get in touch
@@ -452,7 +452,7 @@ const AboutPage = () => {
                   <h4 className="text-[16px] md:text-[24px] gradient-text">Increase</h4>
                   <h5 className="text-[22px] sm:text-[24px] lg:text-[44px]">We are Specialized in Smart Development, and Smart SEO</h5>
                   <p className="text-[14px] sm:text-[16px]">In the digital era, we help businesses thrive by delivering tailored IT services and solutions. From seamless software development to robust IT infrastructure, our expertise ensures innovative, scalable, and reliable outcomes for your business. Let’s transform challenges into opportunities with technology</p>
-                  <button className="mt-[30px] text-[16px] lg:text-[34px] overflow-hidden leading-[25px] text-left bg-[#1e96d3] w-[60px] h-[60px] lg:w-[100px] lg:h-[100px] transition-all hover:w-[230px] lg:hover:w-[340px] duration-1000 flex items-center gap-5 justify-end p-4 rounded-[100px] group">
+                  <button className="mt-[30px] text-[16px] lg:text-[34px] overflow-hidden leading-[25px] text-left bg-[#1e96d3] w-[50px] h-[50px] md:w-[60px] md:h-[60px] lg:w-[100px] lg:h-[100px] transition-all hover:w-[230px] lg:hover:w-[350px] duration-1000 flex items-center gap-5 justify-end p-[0.8rem] lg:p-[1.5rem_1.8rem] rounded-[100px] group">
                 <div className="flex items-center gap-[50px]">
                   <span className="whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-500 text-[#fff]">
                     Get in touch
