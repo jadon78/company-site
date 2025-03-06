@@ -15,6 +15,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useRouter } from 'next/navigation';
 import ReactIcon from "../components/assets/image/react.webp";
 import AngularIcon from "../components/assets/image/angular.webp";
 import ReactNative from "../components/assets/image/android.webp";
@@ -86,6 +87,11 @@ export default function Index ()
     description: "Leverage our expertise to enhance your business operations and promote the seamless flow of information.",
     image: BImg,
   });
+  const router = useRouter();
+
+  const redirectServiceInfo = (slug: any) => {
+    router.push(`/services/${slug}`)
+  }
   return (
     <>
 
@@ -481,7 +487,7 @@ export default function Index ()
               </div>
             </div>
           </div>
-          <section className="services-page px-2">
+          <section className="services-page px-4">
             <h2 className="px-2 text-[16px] pb-[16px] sm:text-[24px]  text-center gradient-text">Services</h2>
             <h3 className="px-2 text-[24px] sm:text-[36px] lg:text-[44px]  text-center font-[500]">
               Additional Services that will 
@@ -492,7 +498,7 @@ export default function Index ()
                 <div className="flex flex-col w-full gap-4 md:gap-[58px]">
                   <div className="flex flex-col md:flex-row gap-4 justify-between w-full max-w-[1100px] mx-auto items-center">
                     <div
-                      data-aos="fade-up-right"  className="service-card shadow-[0px_4px_4px_0px_#00000040]  max-w-[300px] p-0  rounded-[24px] text-center text-white  md:mx-0 md:mr-auto"
+                      data-aos="fade-up-right"  className="cursor-pointer service-card shadow-[0px_4px_4px_0px_#00000040]  max-w-[300px] p-0  rounded-[24px] text-center text-white  md:mx-0 md:mr-auto"
                       style={ {
                         background:
                           "linear-gradient(270deg, #083ca7 0%, #862ff1 100%)",
@@ -511,21 +517,19 @@ export default function Index ()
                           Lorem ipsum dolor sit amet, contop ctetur adipisic.
                           Google first page marketing.
                         </p>
-                        <a href="#" className="relative">Read More</a>
+                        <a onClick={() => redirectServiceInfo("Web-Development")} className="!text-[#000] relative">Read More</a>
                       </div>
                     </div>
                     <div data-aos="fade-up-left"
-                      className="service-card shadow-[0px_4px_4px_0px_#00000040]  max-w-[300px] p-0  rounded-[24px] text-center text-white  md:mx-0"
+                      className="cursor-pointer service-card shadow-[0px_4px_4px_0px_#00000040]  max-w-[300px] p-0  rounded-[24px] text-center text-white  md:mx-0"
                       style={ {
-                        background:
-                          " linear-gradient(90deg, #297679 0%, #3FA6C1 100%)",
-                      } }
+                        background:" linear-gradient(90deg, #297679 0%, #3FA6C1 100%)",} }
                     >
                       <div className="square p-4">
                         <div>
                           <Image
                             alt=""
-                            src={ Painting }
+                            src={ Painting}
                             className="mx-auto mb-4"
                           />
                         </div>
@@ -534,13 +538,13 @@ export default function Index ()
                           Lorem ipsum dolor sit amet, contop ctetur adipisic.
                           Google first page marketing.
                         </p>
-                        <a href="#" className="relative">Read More</a>
+                        <a onClick={() => redirectServiceInfo("Web-Development")} className="!text-[#000] relative">Read More</a>
                       </div>
                     </div>
                   </div>
                   <div className="flex  flex-col md:flex-row gap-4 justify-between w-full max-w-[1300px] mx-auto items-center">
                     <div data-aos="fade-up-right"
-                      className="service-card shadow-[0px_4px_4px_0px_#00000040]  max-w-[300px] p-0  rounded-[24px] text-center text-white  md:mx-0"
+                      className="cursor-pointer service-card shadow-[0px_4px_4px_0px_#00000040]  max-w-[300px] p-0  rounded-[24px] text-center text-white  md:mx-0"
                       style={ {
                         background:
                           "linear-gradient(90deg, #FCB731 0%, #F67526 100%)",
@@ -559,11 +563,11 @@ export default function Index ()
                           Lorem ipsum dolor sit amet, contop ctetur adipisic.
                           Google first page marketing.
                         </p>
-                        <a href="#" className="relative">Read More</a>
+                        <a onClick={() => redirectServiceInfo("Web-Development")} className="!text-[#000] relative">Read More</a>
                       </div>
                     </div>
                     <div data-aos="fade-up-left"
-                      className="service-card shadow-[0px_4px_4px_0px_#00000040]  max-w-[300px] p-0  rounded-[24px] text-center text-white  md:mx-0"
+                      className="cursor-pointer service-card shadow-[0px_4px_4px_0px_#00000040]  max-w-[300px] p-0  rounded-[24px] text-center text-white  md:mx-0"
                       style={ {
                         background:
                           "linear-gradient(90deg, #FE6F7B 0%, #FA5B9D 100%)",
@@ -582,7 +586,7 @@ export default function Index ()
                           Lorem ipsum dolor sit amet, contop ctetur adipisic.
                           Google first page marketing.
                         </p>
-                        <a href="#" className="relative">Read More</a>
+                        <a onClick={() => redirectServiceInfo("Web-Development")} className="!text-[#000] relative">Read More</a>
                       </div>
                     </div>{ " " }
                   </div>
@@ -937,7 +941,7 @@ export default function Index ()
                 </h4>
               </div>
               <div className="min-w-[320px]">
-              <button className=" mt-[30px] text-[16px] lg:text-[34px] overflow-hidden leading-[25px] text-left bg-[#1e96d3] w-[50px] h-[50px] md:w-[60px] md:h-[60px] lg:w-[100px] lg:h-[100px] transition-all hover:w-[230px] lg:hover:w-[350px] duration-1000 flex items-center gap-5 justify-end p-[0.8rem] lg:p-[1.5rem_1.8rem] rounded-[100px] group">
+              <button className="mt-[0] sm:mt-[30px] text-[16px] lg:text-[34px] overflow-hidden leading-[25px] text-left bg-[#1e96d3] w-[50px] h-[50px] md:w-[60px] md:h-[60px] lg:w-[100px] lg:h-[100px] transition-all hover:w-[230px] lg:hover:w-[350px] duration-1000 flex items-center gap-5 justify-end p-[0.8rem] lg:p-[1.5rem_1.8rem] rounded-[100px] group">
                 <div className="flex items-center gap-[50px]">
                   <span className="whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-500 text-[#fff]">
                     Get in touch
