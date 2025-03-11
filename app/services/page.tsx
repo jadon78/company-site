@@ -260,7 +260,8 @@ function Services() {
   return (
     <>
       <div className="mt-[90px]">
-        <section className="relative h-[300px] sm:h-[500px] md:h-[700px] flex items-center justify-center text-center text-white p-0 overflow-hidden">
+        <section className="relative min-h-[300px] h-[60vh]  flex items-center justify-center text-center text-white p-0 overflow-hidden">
+        {/* <section className="relative h-[300px] sm:h-[500px] md:h-[700px] flex items-center justify-center text-center text-white p-0 overflow-hidden"> */}
 
           <svg className="absolute bottom-[0] md:bottom-[-100px] w-full left-0 "
             version="1"
@@ -524,7 +525,7 @@ function Services() {
             <div className="mt-[40px] workflow-section px-4">
               <div className="grid grid-cols-1  md:grid-cols-4 gap-4">
                 <div data-aos="zoom-in" className="text-center">
-                  <div className="relative  mb-4 mx-auto w-[80px] h-[80px] lg:w-[140px] lg:h-[140px] flex items-center justify-center rounded-[50%] bg-[linear-gradient(45deg,#FCB731,#F67526)]">
+                  <div className="relative work-process-color  mb-4 mx-auto w-[80px] h-[80px] lg:w-[140px] lg:h-[140px] flex items-center justify-center rounded-[50%] bg-[linear-gradient(45deg,#FCB731,#F67526)]">
                     <span className=" cursor-pointer work-Process absolute w-[80px] h-[80px] lg:w-[140px] lg:h-[140px] flex items-center justify-center rounded-[50%] bg-[transparent]"></span>
                     <svg className="process-icon" width="81" height="88" viewBox="0 0 81 88" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g clip-path="url(#clip0_1415_3420)">
@@ -541,7 +542,7 @@ function Services() {
                   <p className="text-[16px] lg:text-[18px] font-[400] text-center">Lorem ipsum dolor sit amet, csectetur adipis icing.</p>
                 </div>
                 <div data-aos="zoom-in" className="text-center md:mt-[80px]">
-                  <div className="relative  mb-4 mx-auto w-[80px] h-[80px] lg:w-[140px] lg:h-[140px] flex items-center justify-center rounded-[50%] bg-[linear-gradient(45deg,#FE6F7B,#FA5B9D)]">
+                  <div className="relative work-process-color  mb-4 mx-auto w-[80px] h-[80px] lg:w-[140px] lg:h-[140px] flex items-center justify-center rounded-[50%] bg-[linear-gradient(45deg,#FE6F7B,#FA5B9D)]">
                     <span className="work-2 cursor-pointer work-Process absolute w-[80px] h-[80px] lg:w-[140px] lg:h-[140px] flex items-center justify-center rounded-[50%] bg-[transparent]"></span>
                     <svg className="process-icon" width="75" height="57" viewBox="0 0 75 57" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g clip-path="url(#clip0_1415_3429)">
@@ -558,7 +559,7 @@ function Services() {
                   <p className="text-[16px] lg:text-[18px] font-[400] text-center">Lorem ipsum dolor sit amet, csectetur adipis icing.</p>
                 </div>
                 <div data-aos="zoom-in" className="text-center">
-                  <div className="relative  mb-4 mx-auto w-[80px] h-[80px] lg:w-[140px] lg:h-[140px] flex items-center justify-center rounded-[50%] bg-[linear-gradient(45deg,#FCB731,#F67526)]">
+                  <div className="relative work-process-color  mb-4 mx-auto w-[80px] h-[80px] lg:w-[140px] lg:h-[140px] flex items-center justify-center rounded-[50%] bg-[linear-gradient(45deg,#FCB731,#F67526)]">
                     <span className="work-3 cursor-pointer work-Process absolute w-[80px] h-[80px] lg:w-[140px] lg:h-[140px] flex items-center justify-center rounded-[50%] bg-[transparent]"></span>
                     <svg className="process-icon" width="59" height="76" viewBox="0 0 59 76" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g clip-path="url(#clip0_1415_3426)">
@@ -576,7 +577,7 @@ function Services() {
                   <p className="text-[16px] lg:text-[18px] font-[400] text-center">Lorem ipsum dolor sit amet, csectetur adipis icing.</p>
                 </div>
                 <div data-aos="zoom-in" className="text-center  md:mt-[80px]">
-                  <div className="relative  mb-4 mx-auto w-[80px] h-[80px] lg:w-[140px] lg:h-[140px] flex items-center justify-center rounded-[50%] bg-[linear-gradient(45deg,#FE6F7B,#FA5B9D)]">
+                  <div className="relative work-process-color  mb-4 mx-auto w-[80px] h-[80px] lg:w-[140px] lg:h-[140px] flex items-center justify-center rounded-[50%] bg-[linear-gradient(45deg,#FE6F7B,#FA5B9D)]">
                     <span className=" work-4 cursor-pointer work-Process absolute w-[80px] h-[80px] lg:w-[140px] lg:h-[140px] flex items-center justify-center rounded-[50%] bg-[transparent]"></span>
                     <svg className="process-icon" width="55" height="74" viewBox="0 0 55 74" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g clip-path="url(#clip0_1415_3423)">

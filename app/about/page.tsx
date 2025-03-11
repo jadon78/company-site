@@ -164,7 +164,8 @@ const AboutPage = () => {
     <>
       <div className="mt-[90px]">
         <div>
-          <section className="relative h-[300px] sm:h-[500px] md:h-[700px] flex items-center justify-center text-center text-white p-0 overflow-hidden">
+          {/* <section className="relative h-[300px] sm:h-[500px] md:h-[700px] flex items-center justify-center text-center text-white p-0 overflow-hidden"> */}
+          <section className="relative min-h-[300px] h-[60vh]  flex items-center justify-center text-center text-white p-0 overflow-hidden">
 
             <svg className="absolute bottom-[0] md:bottom-[-100px] w-full left-0 "
               version="1"
@@ -404,8 +405,8 @@ const AboutPage = () => {
                       </span>
 
                     </div>
-                    <h2 className="text-[20px] sm:text-[28px] text-center font-medium pb-0">{card.title}</h2>
-                    <p className="text-[16px] text-center text-gray-600">{card.content}</p>
+                    <h2 className="text-[20px] sm:text-[28px] text-center font-medium md:pb-[20px]">{card.title}</h2>
+                    <p className="text-[16px] text-center text-[#000]">{card.content}</p>
                   </div>
                 ))}
               </div>
@@ -451,7 +452,7 @@ const AboutPage = () => {
                 <div data-aos="fade-right" className="mr-auto markeing-section-first max-w-[510px]">
                   <h4 className="text-[16px] md:text-[24px] gradient-text">Increase</h4>
                   <h5 className="text-[22px] sm:text-[24px] md:text-[35px] lg:text-[30px]   xl:text-[44px]">We are Specialized in Smart Development, and Smart SEO</h5>
-                  <p className="text-[14px] sm:text-[16px]">In the digital era, we help businesses thrive by delivering tailored IT services and solutions. From seamless software development to robust IT infrastructure, our expertise ensures innovative, scalable, and reliable outcomes for your business. Let’s transform challenges into opportunities with technology</p>
+                  <p className="text-[14px] sm:text-[16px] text-[#000]">In the digital era, we help businesses thrive by delivering tailored IT services and solutions. From seamless software development to robust IT infrastructure, our expertise ensures innovative, scalable, and reliable outcomes for your business. Let’s transform challenges into opportunities with technology</p>
                   <button className="mt-[30px] text-[16px] lg:text-[34px] overflow-hidden leading-[25px] text-left bg-[#1e96d3] w-[50px] h-[50px] md:w-[60px] md:h-[60px] lg:w-[100px] lg:h-[100px] transition-all hover:w-[230px] lg:hover:w-[350px] duration-1000 flex items-center gap-5 justify-end p-[0.8rem] lg:p-[1.5rem_1.8rem] rounded-[100px] group">
                     <div className="flex items-center gap-[50px]">
                       <span className="whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-500 text-[#fff]">
@@ -700,7 +701,7 @@ const AboutPage = () => {
                     }}
                     pagination={{ clickable: true }}
                     modules={[Pagination]}
-                    className="portfolio-swiper px-4 !py-12 mt-0"
+                    className="portfolio-swiper px-4 !py-12 mt-0 !mb-0"
                   >
                     {[...Array(3)].map((_, index) => (
                       <SwiperSlide key={index}>
@@ -708,7 +709,7 @@ const AboutPage = () => {
                           <div className="bg-[#1E96D3] p-2">
                             <Image src={Portfolio} alt="" />
                           </div>
-                          <div className="mt-[20px] lg:px-[16px] px-[10px] py-4">
+                          <div className="mt-[20px] lg:px-[16px] px-[10px] pt-4 pb-8">
                             <h4 className="lg:text-[32px] text-[20px] font-bold leading-[140%]">Ahuse</h4>
                             <p className="text-[14px] text-[#1C1E53] lg:text-[16px] font-normal">
                               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.

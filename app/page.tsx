@@ -25,6 +25,8 @@ import DevOpsIcon from "../components/assets/image/devops.webp";
 import PythonIcon from "../components/assets/image/python.webp";
 import MongoDBIcon from "../components/assets/image/devicon_mongodb.webp";
 import VueIcon from "../components/assets/image/vuejs.webp";
+// import TechImg from "../../components/assets/image/tech.png";
+
 
 export default function Index() {
   const swiperRef: any = useRef(null);
@@ -230,7 +232,7 @@ export default function Index() {
                 <Image
                   src={Image1}
                   alt="Team meeting"
-                  className="max-w-[450px] h-auto mx-auto w-full rounded-[50%] border-[5px] md:border-[0px] border-solid border-[#1e96d3]"
+                  className="max-w-[450px] h-auto mx-auto w-full rounded-[50%] "
                 />
               </div>
               <div data-aos="fade-left" className="">
@@ -416,14 +418,14 @@ export default function Index() {
                       <h2 className="text-[24px] md:text-[36px] lg:text-[44px] font-bold text-left  sm:mb-0 lg:mb-6">
                         Empower Your Business with Cutting-Edge Technologies
                       </h2>
-                      <p className="text-left text-gray-600 sm:mb-4 lg:mb-8">
+                      <p className="text-left text-[#000] sm:mb-4 lg:mb-8">
                         Leverage our expertise in the latest technologies to
                         build innovative, scalable, and efficient solutions
                         tailored to your business needs. Stay ahead in the
                         competitive landscape with our future-ready development
                         services.
                       </p>
-                      <ul className="lg:mt-8 sm:mb-4 text-left text-gray-600">
+                      <ul className="lg:mt-8 sm:mb-4 text-left text-[#000]">
                         <li className="mb-2 flex gap-2 align-items-center">
                           <svg
                             width="20"
@@ -474,7 +476,7 @@ export default function Index() {
 
                     <div data-aos="fade-left" className="flex gap-[20px] md:gap-[41px] flex-wrap justify-center">
                       {techStacksData.map((tech, index) => (
-                        <div className="px-2 flex flex-col justify-between py-4 items-center w-[130px] sm:w-[150px] md:w-[170px] h-40 bg-[#F4F2ED] hover:bg-[#1E96D3] hover:text-[#fff]  rounded-[10px] text-center ">
+                        <div className="px-2 text-[#000] flex flex-col justify-between py-4 items-center w-[130px] sm:w-[150px] md:w-[170px] h-40 bg-[#F4F2ED] hover:bg-[#1E96D3] hover:text-[#fff]  rounded-[10px] text-center ">
                           <Image alt={tech.name} src={tech.icon} className="mx-auto" />
                           {tech.name}
                         </div>
@@ -486,11 +488,13 @@ export default function Index() {
             </div>
           </div>
           <section className="services-page px-4">
-            <h2 className="px-2 text-[20px] pb-[16px] sm:text-[24px]  text-center gradient-text">Services</h2>
+           <div className="mt-[20px] lg:mt-[0px]">
+           <h2 className="px-2 text-[20px] pb-[16px] sm:text-[24px]  text-center gradient-text">Services</h2>
             <h3 className="px-2 text-[24px] sm:text-[36px] lg:text-[44px]  text-center font-[500]">
               Additional Services that will
               Grow Your Business
             </h3>
+           </div>
             <div className="bg-circle-img  overflow-hidden py-5 sm:mt-[40px]">
               <div className="serviceimg">
                 <div className="flex flex-col w-full gap-4 md:gap-[58px]">
@@ -651,11 +655,12 @@ export default function Index() {
                         >
 
                           <SwiperSlide className="p-4 bg-gray-200  bg-[#fff] border-r p-4 text-left shadow-[0px_4px_7.5px_0px_#945DFF40] rounded-[26px] z-[99] ">
-                            <div className="">
-                              <h4 className="text-[20px] sm:text-[24px] md:text-[36px] lg:text-[44px] leading-[50px] lg:leading-[100px]">
+                            <div >
+                              <div className=" flex gap-8 items-center"><h4 className="text-[20px] sm:text-[24px] md:text-[36px] lg:text-[44px] leading-[50px] lg:leading-[100px]">
                                 Technology
                               </h4>
-                              <p className="text-[16px] md:text-[18px] font-normal md:leading-7 text-left">
+                              <span><Image src={VueIcon} alt="tech" className="w-[40px]" /></span></div>
+                              <p className="text-[16px] md:text-[18px] font-normal md:leading-7 text-left text-[#000]">
                                 we propel tech advancement through bespoke
                                 solutions, ensuring seamless integration and
                                 innovation for businesses.
@@ -679,10 +684,146 @@ export default function Index() {
                           </SwiperSlide>
                           <SwiperSlide className="p-4 bg-gray-200  bg-[#fff] border-r p-4 text-left shadow-[0px_4px_7.5px_0px_#945DFF40] rounded-[26px] z-[99] ">
                             <div className="">
-                              <h4 className="text-[20px] sm:text-[24px] md:text-[36px] lg:text-[44px] leading-[50px] lg:leading-[100px]">
+                            <div className=" flex gap-8 items-center"><h4 className="text-[20px] sm:text-[24px] md:text-[36px] lg:text-[44px] leading-[50px] lg:leading-[100px]">
                                 Technology
                               </h4>
-                              <p className="text-[16px] md:text-[18px] font-normal md:leading-7 text-left">
+                              <span><Image src={VueIcon} alt="tech" className="w-[40px]" /></span></div>
+                              <p className="text-[16px] md:text-[18px] font-normal md:leading-7 text-left text-[#000]">
+                                we propel tech advancement through bespoke
+                                solutions, ensuring seamless integration and
+                                innovation for businesses.
+                              </p>
+                              <span onClick={handleNextSlide}>
+                                <svg
+                                  className="ml-auto"
+                                  width="41"
+                                  height="13"
+                                  viewBox="0 0 41 13"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M0.943579 6.64421C0.951029 7.12084 1.14728 7.57505 1.48925 7.90714C1.83123 8.23923 2.29099 8.42208 2.76763 8.41555L33.3583 8.41555V12.0742C33.3583 12.8498 34.2945 13.2381 34.8415 12.6893L40.2996 7.23115C40.6397 6.89105 40.6397 6.34115 40.2996 6.00105L34.8415 0.542942C34.2945 -0.0058918 33.3583 0.384224 33.3583 1.15799V4.81664L2.76763 4.81664C2.52689 4.81335 2.28792 4.85839 2.0649 4.94911C1.84188 5.03984 1.63932 5.17439 1.46924 5.3448C1.29915 5.51521 1.16499 5.71803 1.0747 5.94123C0.984405 6.16442 0.939819 6.40347 0.943579 6.64421Z"
+                                    fill="black"
+                                  />
+                                </svg>
+                              </span>
+                            </div>
+                          </SwiperSlide>      <SwiperSlide className="p-4 bg-gray-200  bg-[#fff] border-r p-4 text-left shadow-[0px_4px_7.5px_0px_#945DFF40] rounded-[26px] z-[99] ">
+                            <div className="">
+                              <div className=" flex gap-8 items-center"><h4 className="text-[20px] sm:text-[24px] md:text-[36px] lg:text-[44px] leading-[50px] lg:leading-[100px]">
+                                Technology
+                              </h4>
+                              <span><Image src={VueIcon} alt="tech" className="w-[40px]" /></span></div>
+                              <p className="text-[16px] md:text-[18px] font-normal md:leading-7 text-left text-[#000]">
+                                we propel tech advancement through bespoke
+                                solutions, ensuring seamless integration and
+                                innovation for businesses.
+                              </p>
+                              <span onClick={handleNextSlide}>
+                                <svg
+                                  className="ml-auto"
+                                  width="41"
+                                  height="13"
+                                  viewBox="0 0 41 13"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M0.943579 6.64421C0.951029 7.12084 1.14728 7.57505 1.48925 7.90714C1.83123 8.23923 2.29099 8.42208 2.76763 8.41555L33.3583 8.41555V12.0742C33.3583 12.8498 34.2945 13.2381 34.8415 12.6893L40.2996 7.23115C40.6397 6.89105 40.6397 6.34115 40.2996 6.00105L34.8415 0.542942C34.2945 -0.0058918 33.3583 0.384224 33.3583 1.15799V4.81664L2.76763 4.81664C2.52689 4.81335 2.28792 4.85839 2.0649 4.94911C1.84188 5.03984 1.63932 5.17439 1.46924 5.3448C1.29915 5.51521 1.16499 5.71803 1.0747 5.94123C0.984405 6.16442 0.939819 6.40347 0.943579 6.64421Z"
+                                    fill="black"
+                                  />
+                                </svg>
+                              </span>
+                            </div>
+                          </SwiperSlide>      <SwiperSlide className="p-4 bg-gray-200  bg-[#fff] border-r p-4 text-left shadow-[0px_4px_7.5px_0px_#945DFF40] rounded-[26px] z-[99] ">
+                            <div className="">
+                              <div className=" flex gap-8 items-center"><h4 className="text-[20px] sm:text-[24px] md:text-[36px] lg:text-[44px] leading-[50px] lg:leading-[100px]">
+                                Technology
+                              </h4>
+                              <span><Image src={VueIcon} alt="tech" className="w-[40px]" /></span></div>
+                              <p className="text-[16px] md:text-[18px] font-normal md:leading-7 text-left text-[#000]">
+                                we propel tech advancement through bespoke
+                                solutions, ensuring seamless integration and
+                                innovation for businesses.
+                              </p>
+                              <span onClick={handleNextSlide}>
+                                <svg
+                                  className="ml-auto"
+                                  width="41"
+                                  height="13"
+                                  viewBox="0 0 41 13"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M0.943579 6.64421C0.951029 7.12084 1.14728 7.57505 1.48925 7.90714C1.83123 8.23923 2.29099 8.42208 2.76763 8.41555L33.3583 8.41555V12.0742C33.3583 12.8498 34.2945 13.2381 34.8415 12.6893L40.2996 7.23115C40.6397 6.89105 40.6397 6.34115 40.2996 6.00105L34.8415 0.542942C34.2945 -0.0058918 33.3583 0.384224 33.3583 1.15799V4.81664L2.76763 4.81664C2.52689 4.81335 2.28792 4.85839 2.0649 4.94911C1.84188 5.03984 1.63932 5.17439 1.46924 5.3448C1.29915 5.51521 1.16499 5.71803 1.0747 5.94123C0.984405 6.16442 0.939819 6.40347 0.943579 6.64421Z"
+                                    fill="black"
+                                  />
+                                </svg>
+                              </span>
+                            </div>
+                          </SwiperSlide>      <SwiperSlide className="p-4 bg-gray-200  bg-[#fff] border-r p-4 text-left shadow-[0px_4px_7.5px_0px_#945DFF40] rounded-[26px] z-[99] ">
+                            <div className="">
+                              <div className=" flex gap-8 items-center"><h4 className="text-[20px] sm:text-[24px] md:text-[36px] lg:text-[44px] leading-[50px] lg:leading-[100px]">
+                                Technology
+                              </h4>
+                              <span><Image src={VueIcon} alt="tech" className="w-[40px]" /></span></div>
+                              <p className="text-[16px] md:text-[18px] font-normal md:leading-7 text-left text-[#000]">
+                                we propel tech advancement through bespoke
+                                solutions, ensuring seamless integration and
+                                innovation for businesses.
+                              </p>
+                              <span onClick={handleNextSlide}>
+                                <svg
+                                  className="ml-auto"
+                                  width="41"
+                                  height="13"
+                                  viewBox="0 0 41 13"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M0.943579 6.64421C0.951029 7.12084 1.14728 7.57505 1.48925 7.90714C1.83123 8.23923 2.29099 8.42208 2.76763 8.41555L33.3583 8.41555V12.0742C33.3583 12.8498 34.2945 13.2381 34.8415 12.6893L40.2996 7.23115C40.6397 6.89105 40.6397 6.34115 40.2996 6.00105L34.8415 0.542942C34.2945 -0.0058918 33.3583 0.384224 33.3583 1.15799V4.81664L2.76763 4.81664C2.52689 4.81335 2.28792 4.85839 2.0649 4.94911C1.84188 5.03984 1.63932 5.17439 1.46924 5.3448C1.29915 5.51521 1.16499 5.71803 1.0747 5.94123C0.984405 6.16442 0.939819 6.40347 0.943579 6.64421Z"
+                                    fill="black"
+                                  />
+                                </svg>
+                              </span>
+                            </div>
+                          </SwiperSlide>      <SwiperSlide className="p-4 bg-gray-200  bg-[#fff] border-r p-4 text-left shadow-[0px_4px_7.5px_0px_#945DFF40] rounded-[26px] z-[99] ">
+                            <div className="">
+                              <div className=" flex gap-8 items-center"><h4 className="text-[20px] sm:text-[24px] md:text-[36px] lg:text-[44px] leading-[50px] lg:leading-[100px]">
+                                Technology
+                              </h4>
+                              <span><Image src={VueIcon} alt="tech" className="w-[40px]" /></span></div>
+                              <p className="text-[16px] md:text-[18px] font-normal md:leading-7 text-left text-[#000]">
+                                we propel tech advancement through bespoke
+                                solutions, ensuring seamless integration and
+                                innovation for businesses.
+                              </p>
+                              <span onClick={handleNextSlide}>
+                                <svg
+                                  className="ml-auto"
+                                  width="41"
+                                  height="13"
+                                  viewBox="0 0 41 13"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M0.943579 6.64421C0.951029 7.12084 1.14728 7.57505 1.48925 7.90714C1.83123 8.23923 2.29099 8.42208 2.76763 8.41555L33.3583 8.41555V12.0742C33.3583 12.8498 34.2945 13.2381 34.8415 12.6893L40.2996 7.23115C40.6397 6.89105 40.6397 6.34115 40.2996 6.00105L34.8415 0.542942C34.2945 -0.0058918 33.3583 0.384224 33.3583 1.15799V4.81664L2.76763 4.81664C2.52689 4.81335 2.28792 4.85839 2.0649 4.94911C1.84188 5.03984 1.63932 5.17439 1.46924 5.3448C1.29915 5.51521 1.16499 5.71803 1.0747 5.94123C0.984405 6.16442 0.939819 6.40347 0.943579 6.64421Z"
+                                    fill="black"
+                                  />
+                                </svg>
+                              </span>
+                            </div>
+                          </SwiperSlide>      <SwiperSlide className="p-4 bg-gray-200  bg-[#fff] border-r p-4 text-left shadow-[0px_4px_7.5px_0px_#945DFF40] rounded-[26px] z-[99] ">
+                            <div className="">
+                              <div className=" flex gap-8 items-center"><h4 className="text-[20px] sm:text-[24px] md:text-[36px] lg:text-[44px] leading-[50px] lg:leading-[100px]">
+                                Technology
+                              </h4>
+                              <span><Image src={VueIcon} alt="tech" className="w-[40px]" /></span></div>
+                              <p className="text-[16px] md:text-[18px] font-normal md:leading-7 text-left text-[#000]">
                                 we propel tech advancement through bespoke
                                 solutions, ensuring seamless integration and
                                 innovation for businesses.
@@ -708,137 +849,7 @@ export default function Index() {
                               <h4 className="text-[20px] sm:text-[24px] md:text-[36px] lg:text-[44px] leading-[50px] lg:leading-[100px]">
                                 Technology
                               </h4>
-                              <p className="text-[16px] md:text-[18px] font-normal md:leading-7 text-left">
-                                we propel tech advancement through bespoke
-                                solutions, ensuring seamless integration and
-                                innovation for businesses.
-                              </p>
-                              <span onClick={handleNextSlide}>
-                                <svg
-                                  className="ml-auto"
-                                  width="41"
-                                  height="13"
-                                  viewBox="0 0 41 13"
-                                  fill="none"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                >
-                                  <path
-                                    d="M0.943579 6.64421C0.951029 7.12084 1.14728 7.57505 1.48925 7.90714C1.83123 8.23923 2.29099 8.42208 2.76763 8.41555L33.3583 8.41555V12.0742C33.3583 12.8498 34.2945 13.2381 34.8415 12.6893L40.2996 7.23115C40.6397 6.89105 40.6397 6.34115 40.2996 6.00105L34.8415 0.542942C34.2945 -0.0058918 33.3583 0.384224 33.3583 1.15799V4.81664L2.76763 4.81664C2.52689 4.81335 2.28792 4.85839 2.0649 4.94911C1.84188 5.03984 1.63932 5.17439 1.46924 5.3448C1.29915 5.51521 1.16499 5.71803 1.0747 5.94123C0.984405 6.16442 0.939819 6.40347 0.943579 6.64421Z"
-                                    fill="black"
-                                  />
-                                </svg>
-                              </span>
-                            </div>
-                          </SwiperSlide>      <SwiperSlide className="p-4 bg-gray-200  bg-[#fff] border-r p-4 text-left shadow-[0px_4px_7.5px_0px_#945DFF40] rounded-[26px] z-[99] ">
-                            <div className="">
-                              <h4 className="text-[20px] sm:text-[24px] md:text-[36px] lg:text-[44px] leading-[50px] lg:leading-[100px]">
-                                Technology
-                              </h4>
-                              <p className="text-[16px] md:text-[18px] font-normal md:leading-7 text-left">
-                                we propel tech advancement through bespoke
-                                solutions, ensuring seamless integration and
-                                innovation for businesses.
-                              </p>
-                              <span onClick={handleNextSlide}>
-                                <svg
-                                  className="ml-auto"
-                                  width="41"
-                                  height="13"
-                                  viewBox="0 0 41 13"
-                                  fill="none"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                >
-                                  <path
-                                    d="M0.943579 6.64421C0.951029 7.12084 1.14728 7.57505 1.48925 7.90714C1.83123 8.23923 2.29099 8.42208 2.76763 8.41555L33.3583 8.41555V12.0742C33.3583 12.8498 34.2945 13.2381 34.8415 12.6893L40.2996 7.23115C40.6397 6.89105 40.6397 6.34115 40.2996 6.00105L34.8415 0.542942C34.2945 -0.0058918 33.3583 0.384224 33.3583 1.15799V4.81664L2.76763 4.81664C2.52689 4.81335 2.28792 4.85839 2.0649 4.94911C1.84188 5.03984 1.63932 5.17439 1.46924 5.3448C1.29915 5.51521 1.16499 5.71803 1.0747 5.94123C0.984405 6.16442 0.939819 6.40347 0.943579 6.64421Z"
-                                    fill="black"
-                                  />
-                                </svg>
-                              </span>
-                            </div>
-                          </SwiperSlide>      <SwiperSlide className="p-4 bg-gray-200  bg-[#fff] border-r p-4 text-left shadow-[0px_4px_7.5px_0px_#945DFF40] rounded-[26px] z-[99] ">
-                            <div className="">
-                              <h4 className="text-[20px] sm:text-[24px] md:text-[36px] lg:text-[44px] leading-[50px] lg:leading-[100px]">
-                                Technology
-                              </h4>
-                              <p className="text-[16px] md:text-[18px] font-normal md:leading-7 text-left">
-                                we propel tech advancement through bespoke
-                                solutions, ensuring seamless integration and
-                                innovation for businesses.
-                              </p>
-                              <span onClick={handleNextSlide}>
-                                <svg
-                                  className="ml-auto"
-                                  width="41"
-                                  height="13"
-                                  viewBox="0 0 41 13"
-                                  fill="none"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                >
-                                  <path
-                                    d="M0.943579 6.64421C0.951029 7.12084 1.14728 7.57505 1.48925 7.90714C1.83123 8.23923 2.29099 8.42208 2.76763 8.41555L33.3583 8.41555V12.0742C33.3583 12.8498 34.2945 13.2381 34.8415 12.6893L40.2996 7.23115C40.6397 6.89105 40.6397 6.34115 40.2996 6.00105L34.8415 0.542942C34.2945 -0.0058918 33.3583 0.384224 33.3583 1.15799V4.81664L2.76763 4.81664C2.52689 4.81335 2.28792 4.85839 2.0649 4.94911C1.84188 5.03984 1.63932 5.17439 1.46924 5.3448C1.29915 5.51521 1.16499 5.71803 1.0747 5.94123C0.984405 6.16442 0.939819 6.40347 0.943579 6.64421Z"
-                                    fill="black"
-                                  />
-                                </svg>
-                              </span>
-                            </div>
-                          </SwiperSlide>      <SwiperSlide className="p-4 bg-gray-200  bg-[#fff] border-r p-4 text-left shadow-[0px_4px_7.5px_0px_#945DFF40] rounded-[26px] z-[99] ">
-                            <div className="">
-                              <h4 className="text-[20px] sm:text-[24px] md:text-[36px] lg:text-[44px] leading-[50px] lg:leading-[100px]">
-                                Technology
-                              </h4>
-                              <p className="text-[16px] md:text-[18px] font-normal md:leading-7 text-left">
-                                we propel tech advancement through bespoke
-                                solutions, ensuring seamless integration and
-                                innovation for businesses.
-                              </p>
-                              <span onClick={handleNextSlide}>
-                                <svg
-                                  className="ml-auto"
-                                  width="41"
-                                  height="13"
-                                  viewBox="0 0 41 13"
-                                  fill="none"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                >
-                                  <path
-                                    d="M0.943579 6.64421C0.951029 7.12084 1.14728 7.57505 1.48925 7.90714C1.83123 8.23923 2.29099 8.42208 2.76763 8.41555L33.3583 8.41555V12.0742C33.3583 12.8498 34.2945 13.2381 34.8415 12.6893L40.2996 7.23115C40.6397 6.89105 40.6397 6.34115 40.2996 6.00105L34.8415 0.542942C34.2945 -0.0058918 33.3583 0.384224 33.3583 1.15799V4.81664L2.76763 4.81664C2.52689 4.81335 2.28792 4.85839 2.0649 4.94911C1.84188 5.03984 1.63932 5.17439 1.46924 5.3448C1.29915 5.51521 1.16499 5.71803 1.0747 5.94123C0.984405 6.16442 0.939819 6.40347 0.943579 6.64421Z"
-                                    fill="black"
-                                  />
-                                </svg>
-                              </span>
-                            </div>
-                          </SwiperSlide>      <SwiperSlide className="p-4 bg-gray-200  bg-[#fff] border-r p-4 text-left shadow-[0px_4px_7.5px_0px_#945DFF40] rounded-[26px] z-[99] ">
-                            <div className="">
-                              <h4 className="text-[20px] sm:text-[24px] md:text-[36px] lg:text-[44px] leading-[50px] lg:leading-[100px]">
-                                Technology
-                              </h4>
-                              <p className="text-[16px] md:text-[18px] font-normal md:leading-7 text-left">
-                                we propel tech advancement through bespoke
-                                solutions, ensuring seamless integration and
-                                innovation for businesses.
-                              </p>
-                              <span onClick={handleNextSlide}>
-                                <svg
-                                  className="ml-auto"
-                                  width="41"
-                                  height="13"
-                                  viewBox="0 0 41 13"
-                                  fill="none"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                >
-                                  <path
-                                    d="M0.943579 6.64421C0.951029 7.12084 1.14728 7.57505 1.48925 7.90714C1.83123 8.23923 2.29099 8.42208 2.76763 8.41555L33.3583 8.41555V12.0742C33.3583 12.8498 34.2945 13.2381 34.8415 12.6893L40.2996 7.23115C40.6397 6.89105 40.6397 6.34115 40.2996 6.00105L34.8415 0.542942C34.2945 -0.0058918 33.3583 0.384224 33.3583 1.15799V4.81664L2.76763 4.81664C2.52689 4.81335 2.28792 4.85839 2.0649 4.94911C1.84188 5.03984 1.63932 5.17439 1.46924 5.3448C1.29915 5.51521 1.16499 5.71803 1.0747 5.94123C0.984405 6.16442 0.939819 6.40347 0.943579 6.64421Z"
-                                    fill="black"
-                                  />
-                                </svg>
-                              </span>
-                            </div>
-                          </SwiperSlide>      <SwiperSlide className="p-4 bg-gray-200  bg-[#fff] border-r p-4 text-left shadow-[0px_4px_7.5px_0px_#945DFF40] rounded-[26px] z-[99] ">
-                            <div className="">
-                              <h4 className="text-[20px] sm:text-[24px] md:text-[36px] lg:text-[44px] leading-[50px] lg:leading-[100px]">
-                                Technology
-                              </h4>
-                              <p className="text-[16px] md:text-[18px] font-normal md:leading-7 text-left">
+                              <p className="text-[16px] md:text-[18px] font-normal md:leading-7 text-left text-[#000]">
                                 we propel tech advancement through bespoke
                                 solutions, ensuring seamless integration and
                                 innovation for businesses.
@@ -939,7 +950,7 @@ export default function Index() {
                   Secure the future of your company with company name{" "}
                 </h4>
               </div>
-              <div className="min-w-[320px]">
+              <div className="sm:min-w-[320px]">
                 <button className="mt-[0] sm:mt-[30px] text-[16px] lg:text-[34px] overflow-hidden leading-[25px] text-left bg-[#1e96d3] w-[50px] h-[50px] md:w-[60px] md:h-[60px] lg:w-[100px] lg:h-[100px] transition-all hover:w-[230px] lg:hover:w-[350px] duration-1000 flex items-center gap-5 justify-end p-[0.8rem] lg:p-[1.5rem_1.8rem] rounded-[100px] group">
                   <div className="flex items-center gap-[50px]">
                     <span className="whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-500 text-[#fff]">
