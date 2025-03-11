@@ -166,42 +166,42 @@ const AboutPage = () => {
         <div>
           <section className="relative h-[300px] sm:h-[500px] md:h-[700px] flex items-center justify-center text-center text-white p-0 overflow-hidden">
 
-          <svg className="absolute bottom-[0] md:bottom-[-100px] w-full left-0 "
-            version="1"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlnsXlink="http://www.w3.org/1999/xlink"
-            viewBox="0 0 1600 900"
-            preserveAspectRatio="xMidYMax slice"
-          >
-            <defs>
-              <linearGradient id="bg">
-                <stop offset="50%" stopColor="rgba(255, 255, 255, 1)" />
-              </linearGradient>
-              <path
-                id="wave"
-                fill="url(#bg)"
-                d="M-363.852,502.589c0,0,236.988-41.997,505.475,0s371.981,38.998,575.971,0s293.985-39.278,505.474,5.859s493.475,48.368,716.963-4.995v560.106H-363.852V502.589z"
-              />
-            </defs>
-            <g>
-       
-              <use xlinkHref="#wave" opacity="1">
-                <animateTransform
-                  attributeName="transform"
-                  attributeType="XML"
-                  type="translate"
-                  dur="8s"
-                  calcMode="spline"
-                  values="-270 230;243 220;-270 230"
-                  keyTimes="0; .6; 1"
-                  keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
-                  repeatCount="indefinite"
+            <svg className="absolute bottom-[0] md:bottom-[-100px] w-full left-0 "
+              version="1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlnsXlink="http://www.w3.org/1999/xlink"
+              viewBox="0 0 1600 900"
+              preserveAspectRatio="xMidYMax slice"
+            >
+              <defs>
+                <linearGradient id="bg">
+                  <stop offset="50%" stopColor="rgba(255, 255, 255, 1)" />
+                </linearGradient>
+                <path
+                  id="wave"
+                  fill="url(#bg)"
+                  d="M-363.852,502.589c0,0,236.988-41.997,505.475,0s371.981,38.998,575.971,0s293.985-39.278,505.474,5.859s493.475,48.368,716.963-4.995v560.106H-363.852V502.589z"
                 />
-              </use>
-            
-            </g>
-          </svg>
-          <WaveCanvas/>
+              </defs>
+              <g>
+
+                <use xlinkHref="#wave" opacity="1">
+                  <animateTransform
+                    attributeName="transform"
+                    attributeType="XML"
+                    type="translate"
+                    dur="8s"
+                    calcMode="spline"
+                    values="-270 230;243 220;-270 230"
+                    keyTimes="0; .6; 1"
+                    keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+                    repeatCount="indefinite"
+                  />
+                </use>
+
+              </g>
+            </svg>
+            <WaveCanvas />
             <div className="bg-about-background bg-cover bg-center w-full h-full flex ">
               <div className="absolute inset-0 bg-cover bg-center">
                 <div className="absolute inset-0 bg-black/20" />
@@ -218,13 +218,13 @@ const AboutPage = () => {
               /> */}
             </div>
           </section>
-          <section className="py-20 px-4 relative bg-[#fff] overflow-hidden">
+          <section className="py-20 px-4 relative bg-[#fff] overflow-hidden p-[30px]">
             <div className="max-w-[1400px] md:px-[16px] mx-auto grid lg:grid-cols-2 gap-12 items-center sm:pt-10">
               <div data-aos="fade-right" className="">
                 <h3 className="text-[16px] md:text-[24px] gradient-text mb-2">
                   About Us
                 </h3>
-                <h2 className="text-[22px]  sm:text-[30px] lg:text-[44px] font-bold mb-4 pb-0">
+                <h2 className="text-[22px]  sm:text-[30px]  lg:text-[37px] font-bold mb-4 pb-0">
                   Empowering Businesses with Advanced IT Solutions
                 </h2>
                 <p className="text-[#000] sm:mb-6 text-[16px] md:text-[24px]">
@@ -233,31 +233,31 @@ const AboutPage = () => {
                   scalable, and reliable outcomes for your business. Let’s transform challenges into opportunities with technology
                 </p>
                 <ul className="about-us-point flex  lg:flex-row flex-col md:gap-8 gap-4">
-                  <li className="relative flex items-center text-[16px] md:text-[24px] gap-2 text-[#000]">Marketing Strategy</li>
-                  <li className="relative flex items-center text-[16px] md:text-[24px] gap-2 text-[#000]">Technology Process</li>
+                  <li className="relative flex items-center text-[16px] md:text-[20px] lg:text-[24px] gap-2 text-[#000]">Marketing Strategy</li>
+                  <li className="relative flex items-center text-[16px] md:text-[20px] lg:text-[24px] gap-2 text-[#000]">Technology Process</li>
                 </ul>
                 <button className="mt-[30px] text-[16px] lg:text-[34px] overflow-hidden leading-[25px] text-left bg-[#1e96d3] w-[50px] h-[50px] md:w-[60px] md:h-[60px] lg:w-[100px] lg:h-[100px] transition-all hover:w-[230px] lg:hover:w-[350px] duration-1000 flex items-center gap-5 justify-end p-[0.8rem] lg:p-[1.5rem_1.8rem] rounded-[100px] group">
-                <div className="flex items-center gap-[50px]">
-                  <span className="whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-500 text-[#fff]">
-                    Get in touch
-                  </span>
-                  <div>
-                    <svg
-                      width="41"
-                      height="14"
-                      viewBox="0 0 41 14"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="w-[24px] w-[24px] md:w-[41px] md:h-[41px]"
-                    >
-                      <path
-                        d="M0.813208 7.028C0.820658 7.50463 1.01691 7.95884 1.35888 8.29093C1.70086 8.62302 2.16062 8.80587 2.63726 8.79934L33.228 8.79934V12.458C33.228 13.2336 34.1641 13.6219 34.7111 13.073L40.1692 7.61493C40.5093 7.27484 40.5093 6.72494 40.1692 6.38484L34.7111 0.926731C34.1641 0.377897 33.228 0.768013 33.228 1.54178V5.20043L2.63726 5.20043C2.39652 5.19714 2.15755 5.24218 1.93453 5.3329C1.7115 5.42362 1.50895 5.55818 1.33886 5.72859C1.16878 5.899 1.03462 6.10182 0.944325 6.32501C0.854034 6.54821 0.809448 6.78726 0.813208 7.028Z"
-                        fill="white"
-                      />
-                    </svg>
+                  <div className="flex items-center gap-[50px]">
+                    <span className="whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-500 text-[#fff]">
+                      Get in touch
+                    </span>
+                    <div>
+                      <svg
+                        width="41"
+                        height="14"
+                        viewBox="0 0 41 14"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="w-[24px] w-[24px] md:w-[41px] md:h-[41px]"
+                      >
+                        <path
+                          d="M0.813208 7.028C0.820658 7.50463 1.01691 7.95884 1.35888 8.29093C1.70086 8.62302 2.16062 8.80587 2.63726 8.79934L33.228 8.79934V12.458C33.228 13.2336 34.1641 13.6219 34.7111 13.073L40.1692 7.61493C40.5093 7.27484 40.5093 6.72494 40.1692 6.38484L34.7111 0.926731C34.1641 0.377897 33.228 0.768013 33.228 1.54178V5.20043L2.63726 5.20043C2.39652 5.19714 2.15755 5.24218 1.93453 5.3329C1.7115 5.42362 1.50895 5.55818 1.33886 5.72859C1.16878 5.899 1.03462 6.10182 0.944325 6.32501C0.854034 6.54821 0.809448 6.78726 0.813208 7.028Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </div>
                   </div>
-                </div>
-              </button>
+                </button>
                 {/* <button className=" mt-4 text-[16px] md:text-[34px] overflow-hidden leading-[25px] text-left bg-[#1e96d3] w-[60px] h-[60px] md:w-[100px] md:h-[100px] transition-all hover:w-[180px] md:hover:w-[310px] duration-1000 flex items-center gap-5 justify-end p-4 rounded-[100px] group">
                   <div className="flex items-center gap-4">
                     <span className="whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-500 text-[#fff]">
@@ -295,7 +295,7 @@ const AboutPage = () => {
             <div data-aos="flip-left" className="our-projects-section relative projects-card  z-[99] bg-[#3A3FD4] mt-10 text-[#fff] rounded-[16px] p-8 shadow-[0px_4px_17px_0px_#00000040] overflow-hidden">
               <div className="flex items-center  flex-col md:flex-row justify-between lg:p-8 gap-4">
                 <div className="">
-                  <h4 className=" text-[20px] lg:text-[38px] font-bold text-left text-[#fff] leading-[28px] lg:leading-[60px] lg:max-w-[300px]">Let’s Start Your Project with
+                  <h4 className=" text-[20px] lg:text-[26px] xl:text-[38px]  font-bold text-left text-[#fff] leading-[28px] lg:leading-[50px] xl:leading-[50px] lg:max-w-[300px]">Let’s Start Your Project with
                     qutiiz</h4>
                 </div>
                 <div className="flex flex-col md:flex-row lg:gap-10 gap-4">
@@ -366,12 +366,12 @@ const AboutPage = () => {
               />
               Your browser does not support the video tag.
             </video>
-         <div className="pt-[20px] lg:pt-[0px]">
-         <h2 className="px-4 text-[16px] md:text-[24px] text-center gradient-text">Our Standards</h2>
-            <h3 className="px-4 text-[22px] sm:text-[30px] lg:text-[44px] text-center max-w-[640px] mx-auto">
-              Additional Services that will Grow Your Business
-            </h3>
-         </div>
+            <div className="pt-[20px] lg:pt-[0px]">
+              <h2 className="px-4 text-[16px] md:text-[24px] text-center gradient-text">Our Standards</h2>
+              <h3 className="px-4 text-[22px] sm:text-[30px] lg:text-[44px] text-center max-w-[640px] mx-auto">
+                Additional Services that will Grow Your Business
+              </h3>
+            </div>
             <div className="max-w-[1400px] sm:px-[16px] mx-auto lg:mt-10">
               <div className="grid  grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[30px] md:gap-[50px] p-6 justify-center">
                 {cards.map((card, index) => (
@@ -450,30 +450,30 @@ const AboutPage = () => {
               <div className="flex-col flex lg:flex-row flex gap-[60px] items-center justify-between overflow-hidden py-12 lg:pr-10">
                 <div data-aos="fade-right" className="mr-auto markeing-section-first max-w-[510px]">
                   <h4 className="text-[16px] md:text-[24px] gradient-text">Increase</h4>
-                  <h5 className="text-[22px] sm:text-[24px] lg:text-[44px]">We are Specialized in Smart Development, and Smart SEO</h5>
+                  <h5 className="text-[22px] sm:text-[24px] md:text-[35px] lg:text-[30px]   xl:text-[44px]">We are Specialized in Smart Development, and Smart SEO</h5>
                   <p className="text-[14px] sm:text-[16px]">In the digital era, we help businesses thrive by delivering tailored IT services and solutions. From seamless software development to robust IT infrastructure, our expertise ensures innovative, scalable, and reliable outcomes for your business. Let’s transform challenges into opportunities with technology</p>
                   <button className="mt-[30px] text-[16px] lg:text-[34px] overflow-hidden leading-[25px] text-left bg-[#1e96d3] w-[50px] h-[50px] md:w-[60px] md:h-[60px] lg:w-[100px] lg:h-[100px] transition-all hover:w-[230px] lg:hover:w-[350px] duration-1000 flex items-center gap-5 justify-end p-[0.8rem] lg:p-[1.5rem_1.8rem] rounded-[100px] group">
-                <div className="flex items-center gap-[50px]">
-                  <span className="whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-500 text-[#fff]">
-                    Get in touch
-                  </span>
-                  <div>
-                    <svg
-                      width="41"
-                      height="14"
-                      viewBox="0 0 41 14"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="w-[24px] w-[24px] md:w-[41px] md:h-[41px]"
-                    >
-                      <path
-                        d="M0.813208 7.028C0.820658 7.50463 1.01691 7.95884 1.35888 8.29093C1.70086 8.62302 2.16062 8.80587 2.63726 8.79934L33.228 8.79934V12.458C33.228 13.2336 34.1641 13.6219 34.7111 13.073L40.1692 7.61493C40.5093 7.27484 40.5093 6.72494 40.1692 6.38484L34.7111 0.926731C34.1641 0.377897 33.228 0.768013 33.228 1.54178V5.20043L2.63726 5.20043C2.39652 5.19714 2.15755 5.24218 1.93453 5.3329C1.7115 5.42362 1.50895 5.55818 1.33886 5.72859C1.16878 5.899 1.03462 6.10182 0.944325 6.32501C0.854034 6.54821 0.809448 6.78726 0.813208 7.028Z"
-                        fill="white"
-                      />
-                    </svg>
-                  </div>
-                </div>
-              </button>
+                    <div className="flex items-center gap-[50px]">
+                      <span className="whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-500 text-[#fff]">
+                        Get in touch
+                      </span>
+                      <div>
+                        <svg
+                          width="41"
+                          height="14"
+                          viewBox="0 0 41 14"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="w-[24px] w-[24px] md:w-[41px] md:h-[41px]"
+                        >
+                          <path
+                            d="M0.813208 7.028C0.820658 7.50463 1.01691 7.95884 1.35888 8.29093C1.70086 8.62302 2.16062 8.80587 2.63726 8.79934L33.228 8.79934V12.458C33.228 13.2336 34.1641 13.6219 34.7111 13.073L40.1692 7.61493C40.5093 7.27484 40.5093 6.72494 40.1692 6.38484L34.7111 0.926731C34.1641 0.377897 33.228 0.768013 33.228 1.54178V5.20043L2.63726 5.20043C2.39652 5.19714 2.15755 5.24218 1.93453 5.3329C1.7115 5.42362 1.50895 5.55818 1.33886 5.72859C1.16878 5.899 1.03462 6.10182 0.944325 6.32501C0.854034 6.54821 0.809448 6.78726 0.813208 7.028Z"
+                            fill="white"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </button>
                 </div>
                 <div data-aos="fade-left" className="markeing-section   relative w-[100%] h-[100%] mt-[50px] md:mt-[0px] ">
                   <div >
@@ -691,40 +691,40 @@ const AboutPage = () => {
                   </div>
                 </div> */}
                 <div className="">
-      <Swiper
-        spaceBetween={20}
-        slidesPerView={1}
-        breakpoints={{
-          768: { slidesPerView: 2 },
-          1024: { slidesPerView: 3 },
-        }}
-        pagination={{ clickable: true }}
-        modules={[Pagination]}
-        className="portfolio-swiper px-4 !py-12 mt-0"
-      >
-        {[...Array(3)].map((_, index) => (
-          <SwiperSlide key={index}>
-            <div data-aos="zoom-in" className="rounded-[16px] overflow-hidden shadow-[0_0_32px_#00000075]">
-              <div className="bg-[#1E96D3] p-2">
-                <Image src={Portfolio} alt="" />
-              </div>
-              <div className="mt-[20px] lg:px-[16px] px-[10px] py-4">
-                <h4 className="lg:text-[32px] text-[20px] font-bold leading-[140%]">Ahuse</h4>
-                <p className="text-[14px] text-[#1C1E53] lg:text-[16px] font-normal">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.
-                </p>
-                <a className="text-[14px] !text-[#000] lg:text-[18px] font-[400] flex gap-2 items-center">
-                  View In Dribbble
-                  <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M4.30436 2H17.6377V15.3333M17.6377 2L1.6377 18L17.6377 2Z" stroke="black" strokeWidth="2.66667" strokeLinecap="round" strokeLinejoin="round" />
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
-    </div>
+                  <Swiper
+                    spaceBetween={20}
+                    slidesPerView={1}
+                    breakpoints={{
+                      768: { slidesPerView: 2 },
+                      1024: { slidesPerView: 3 },
+                    }}
+                    pagination={{ clickable: true }}
+                    modules={[Pagination]}
+                    className="portfolio-swiper px-4 !py-12 mt-0"
+                  >
+                    {[...Array(3)].map((_, index) => (
+                      <SwiperSlide key={index}>
+                        <div data-aos="zoom-in" className="rounded-[16px] overflow-hidden shadow-[0_0_32px_#00000075]">
+                          <div className="bg-[#1E96D3] p-2">
+                            <Image src={Portfolio} alt="" />
+                          </div>
+                          <div className="mt-[20px] lg:px-[16px] px-[10px] py-4">
+                            <h4 className="lg:text-[32px] text-[20px] font-bold leading-[140%]">Ahuse</h4>
+                            <p className="text-[14px] text-[#1C1E53] lg:text-[16px] font-normal">
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.
+                            </p>
+                            <a className="text-[14px] !text-[#000] lg:text-[18px] font-[400] flex gap-2 items-center">
+                              View In Dribbble
+                              <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.30436 2H17.6377V15.3333M17.6377 2L1.6377 18L17.6377 2Z" stroke="black" strokeWidth="2.66667" strokeLinecap="round" strokeLinejoin="round" />
+                              </svg>
+                            </a>
+                          </div>
+                        </div>
+                      </SwiperSlide>
+                    ))}
+                  </Swiper>
+                </div>
               </div>
             </div>
           </section>

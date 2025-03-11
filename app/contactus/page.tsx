@@ -88,7 +88,7 @@ const ContactUs = () => {
             <div>
                 <div className="mx-auto max-w-[1200px] p-2 md:p-6 lg:p-8 my-6">
                     <div className="rounded-xl overflow-hidden shadow-[1px_4px_17px_2px_#00000038] flex flex-col md:flex-row p-2">
-                        <div className="bg-[#1E96D3] text-white md:w-[45%] relative p-[16px] md:p-[40px] rounded-[16px] flex flex-col justify-between md:min-h-[600px] ">
+                        <div className="bg-[#1E96D3] text-white md:w-[45%] overflow-hidden relative p-[16px] md:p-[40px] rounded-[16px] flex flex-col justify-between md:min-h-[600px] ">
                             <Image src={Square} alt="" className="absolute top-[-130px] left-[-50px] w-[280px]" />
                             <Image src={Contact} alt="" className="z-[0] absolute right-[-0px] bottom-[-0px] w-[280px] opacity-[35%] w-[40%]" />
                             <div className="space-y-0">
