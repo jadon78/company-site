@@ -102,13 +102,13 @@ const ServiceInformation = () => {
 
         </div>
       </section>
-      <section className="py-20 px-4 relative bg-[#fff] overflow-hidden">
+      <section className="py-20 px-4 relative bg-[#fff] overflow-hidden p-[30px]">
         <div className="max-w-[1400px] md:px-[16px] mx-auto grid lg:grid-cols-2 gap-12 items-center sm:pt-10 mb-[20px] md:mb-[0]">
           <div data-aos="fade-right" className="">
             <h3 className="text-[16px] md:text-[24px] gradient-text mb-2 capitalize">
               {slug}
             </h3>
-            <h2 className="text-[22px] sm:text-[24px] md:text-[44px] font-bold mb-4 pb-0">
+            <h2 className="text-[22px] sm:text-[24px] lg:text-[35px] xl:md:text-[44px] font-bold mb-4 pb-0">
               Our Process & Approch
             </h2>
             <p className="text-gray-600 md:mb-6 text-[16px] md:text-[24px]">
@@ -399,7 +399,7 @@ const ServiceInformation = () => {
       <section className="bg-[#1E96D3] connect-section overflow-hidden px-2">
         <div className="max-w-[1400px] mx-auto lg:flex items-center py-[40px] px-[16px] relative z-[99]">
           <div className="w-full lg:w-[60%]">
-            <h4 className="text-[24px] md:text-[44px] font-semibold leading-[30px] md:leading-[50px] lg:leading-[68px] text-[#fff] mb-4 md:mb-2">Are you looking for seamless data flows and better visibility for your business?</h4>
+            <h4 className="text-[24px] lg:text-[35px] xl:text-[44px] font-semibold leading-[30px] md:leading-[50px] lg:leading-[68px] text-[#fff] mb-4 md:mb-2">Are you looking for seamless data flows and better visibility for your business?</h4>
             <p className="text-[#fff] text-[16px] lg:text-[22px]">We have the technical and functional expertise you need.</p>
           </div>
           <div className="w-full lg:w-[40%]">

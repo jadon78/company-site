@@ -184,7 +184,7 @@ p {
   box-sizing: border-box;
   font-size: 17px;
   line-height: 1.5;
-  color: grey;
+  color: #000;
 }
 
 a {
@@ -3875,9 +3875,7 @@ header .main-menu ul {
     font-size: 40px !important;
   }
 }
-.gitexpage-elicit-pdf .downbox {
-  min-width: 190px;
-}
+
 .my-collage-images .row {
   display: grid;
   grid-template-columns: auto auto auto auto;

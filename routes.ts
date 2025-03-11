@@ -6,7 +6,6 @@ export const routes = {
     "/services",
     "/blog",
     "/careers",
-    "/life-at-elicit",
     "/android-app-development-services",
     "/web-development-services",
     "/iot-software-development-services",

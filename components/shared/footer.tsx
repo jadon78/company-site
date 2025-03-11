@@ -8,7 +8,7 @@ export const Footer = () =>
         <>
             <div className="bg-[#E5E7EB] p-[12px] lg:p-[35px]">
                 <div className="bg-[#fff] flex p-1 max-w-[1000px] mx-auto rounded-[50px] overflow-hidden">
-                    <input className="bg-[#fff] border-0 px-2 outline-0 w-full" />
+                    <input className="bg-[#fff] border-0 px-2 outline-0 w-full" placeholder="Search" />
                     <button className="bg-[#1E96D3] text-white max-w-[250px] rounded-[50px] w-full text-center p-[10px]">Subscribe</button>
                 </div>
 
@@ -16,8 +16,8 @@ export const Footer = () =>
             <footer className=" bg-[#202222] text-white footer-section pt-10 overflow-hidden">
                 <div className="relative z-[1] max-w-[1400px] mx-auto  items-center py-[40px] px-[16px]">
                     <div className="container1 mx-auto px-6 py-4 border-b border-t border-[#FFFFFF] ">
-                    <div className=" md:hidden mb-4">
-                                     <Image src={Logo} alt="logo" className="w-[60px]" />
+                    <div className=" md:hidden mb-4 max-w-[60px] overflow-hidden h-[42px]">
+                                     <Image src={Logo} alt="logo" className="max-w-[60px] w-full" />
                                       </div> 
                         <nav className="flex flex-wrap flex-col md:flex-row md:justify-between md:items-center text-sm gap-2">
                             <div className="flex flex-col md:flex-row md:space-x-6 gap-2">
@@ -36,8 +36,8 @@ export const Footer = () =>
                     <div className="container1 mx-auto px-6 py-8">
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                             <div>
-                                    <div className="hidden md:block mb-4">
-                                     <Image src={Logo} alt="logo" className="w-[60px]" />
+                                    <div className="hidden md:block mb-4 max-w-[60px] overflow-hidden h-[42px]">
+                                              <Image src={Logo} alt="logo" className="max-w-[60px] w-full" />
                                       </div>  
 
                                 <p className="text-gray-400 text-[14px]">
@@ -100,7 +100,7 @@ export const Footer = () =>
                     <div className="container1 px-0 ">
 
                     <div className=" border-t border-[#FFFFFF] md:mt-12">
-                        <div className="container mx-auto px-6 py-4 text-center text-[14px] text-gray-400">
+                        <div className="container mx-auto px-6 pt-4 text-center text-[14px] text-gray-400">
                             Copyright © 2022 works . All rights reserved.
                         </div>
                     </div>

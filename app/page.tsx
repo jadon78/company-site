@@ -25,10 +25,11 @@ import DevOpsIcon from "../components/assets/image/devops.webp";
 import PythonIcon from "../components/assets/image/python.webp";
 import MongoDBIcon from "../components/assets/image/devicon_mongodb.webp";
 import VueIcon from "../components/assets/image/vuejs.webp";
+// import TechImg from "../../components/assets/image/tech.png";
 
-export default function Index ()
-{
-  const swiperRef: any = useRef( null );
+
+export default function Index() {
+  const swiperRef: any = useRef(null);
 
   const techStacksData = [
     {
@@ -74,14 +75,13 @@ export default function Index ()
       swiperRef.current.slidePrev();
     }
   };
-  useEffect( () =>
-  {
-    AOS.init( {
+  useEffect(() => {
+    AOS.init({
       duration: 800, // Animation duration in ms
       once: true,    // Whether animation should happen only once
       easing: "ease-in-out",
-    } );
-  }, [] );
+    });
+  }, []);
   const slides = Array(9).fill({
     title: "Information Technology",
     description: "Leverage our expertise to enhance your business operations and promote the seamless flow of information.",
@@ -163,7 +163,7 @@ export default function Index ()
 
             <div className="bg-gif-background bg-cover bg-center w-full h-full flex ">
               <div className="absolute inset-0 bg-cover bg-center">
-                <div className="absolute inset-0 bg-black/60" /> 
+                <div className="absolute inset-0 bg-black/60" />
               </div>
               <div className="relative z-10 max-w-[860px] mx-auto px-4 m-auto">
                 <h1 className="text-[30px] sm:text-[36px] md:text-[44px]  lg:text-[72px]  font-[700] leading-[40px]  md:leading-[72px]  lg:leading-[95px] lg:text-[72px] font-bold mb-[16px]  text-white">
@@ -186,63 +186,63 @@ export default function Index ()
             <div data-aos="fade-up" className="custom-counter relative  z-[8] justify-between flex sm:grid grid-cols-4 md:grid-cols-4 bg-[#fff] text-[#000] rounded-[16px] md:p-8   shadow-[0px_4px_17px_0px_#00000040]">
               <div className=" w-[25%] sm:w-auto px-[3px] border-r-[1px] border-r-[#ddd] border-solid">
                 <div className=" text-[16px] md:text-[36px] lg:text-[44px]  font-[500] leading-[24px] sm:leading-[50px] md:leading-[70px]">
-                  <CountUp end={ 500 } duration={ 2 } />+
+                  <CountUp end={500} duration={2} />+
                 </div>
                 <div className=" text-[11px] md:text-[16px] lg:text-[24px]  font-[500]">Projects</div>
               </div>
               <div className="w-[25%] sm:w-auto px-[3px] min-w-[80px] border-r-[1px] border-r-[#ddd] border-solid">
                 <div className=" text-[16px] md:text-[36px] lg:text-[44px]  font-[500] leading-[24px] sm:leading-[50px] md:leading-[70px]">
-                  <CountUp end={ 40 } duration={ 2 } />+
+                  <CountUp end={40} duration={2} />+
                 </div>
                 <div className=" text-[11px] md:text-[16px] lg:text-[24px]  font-[500]">Our Client</div>
               </div>
               <div className="w-[25%] sm:w-auto px-[3px] min-w-[90px] border-r-[1px] border-r-[#ddd] border-solid">
                 <div className=" text-[16px] md:text-[36px] lg:text-[44px]  font-[500] leading-[24px] sm:leading-[50px] md:leading-[70px]">
-                  <CountUp end={ 40 } duration={ 2 } />+
+                  <CountUp end={40} duration={2} />+
                 </div>
                 <div className=" text-[11px] md:text-[16px] lg:text-[24px]  font-[500]">Happy Client</div>
               </div>
               <div className="w-[25%] sm:w-auto px-[3px]">
                 <div className=" text-[16px] md:text-[36px] lg:text-[44px]  font-[500] leading-[24px] sm:leading-[50px] md:leading-[70px]">
-                  <CountUp end={ 5 } duration={ 2 } />
+                  <CountUp end={5} duration={2} />
                   yr+
                 </div>
                 <div className=" text-[11px] md:text-[16px] lg:text-[24px]  font-[500]">Experience</div>
               </div>
             </div>
           </div>
-          <section className="py-20 px-4 relative overflow-hidden ">
+          <section className="py-20 px-4  relative overflow-hidden ">
             <video className="absolute w-full object-cover z-[-1] h-full top-0 sm:rotate-[70deg]  opacity-[8%] grayscale-[1] left-[0] sm:left-[-40%]"
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
-                >
-                  <source
+              autoPlay
+              loop
+              muted
+              playsInline
+            >
+              <source
                 src="/videos/dotswave.mp4"
-                    // src="/videos/dots.webm"
-                    // src="https://youtu.be/vwSlYG7hFk0?si=Th4STFWzm5yzMFUF"
-                    type="video/mp4"
-                  />
-                  Your browser does not support the video tag.
-                </video>
+                // src="/videos/dots.webm"
+                // src="https://youtu.be/vwSlYG7hFk0?si=Th4STFWzm5yzMFUF"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
             <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center sm:pt-10">
               <div data-aos="fade-right" className="rounded-lg overflow-hidden text-center">
-                
+
                 <Image
-                  src={ Image1 }
+                  src={Image1}
                   alt="Team meeting"
-                  className="max-w-[450px] h-auto mx-auto w-full rounded-[50%] border-[5px] md:border-[0px] border-solid border-[#1e96d3]"
+                  className="max-w-[450px] h-auto mx-auto w-full rounded-[50%] "
                 />
               </div>
-              <div data-aos="fade-left"  className="">
+              <div data-aos="fade-left" className="">
                 <h3 className="text-[24px]  gradient-text mb-2">
                   Our Mission & Vision
                 </h3>
-                <h2 className=" text-[22px] sm:text-[24px] md:text-[36px] lg:text-[44px]  font-bold mb-4 pb-0">
+                <h2 className=" text-[22px] sm:text-[24px] md:text-[36px] lg:text-[44px]  font-bold lg:mb-2 pb-0">
                   Achieve excellence and deliver innovative IT solutions.
                 </h2>
-                <p className="text-[#000] sm:mb-6 text-[16px] lg:text-[24px] ">
+                <p className="text-[#000] sm:mb-2 text-[16px] lg:text-[24px] ">
                   Empower businesses with cutting-edge technology and digital
                   transformation strategies.
                 </p>
@@ -369,40 +369,40 @@ export default function Index ()
             <div className=" mx-auto" data-aos="fade-up">
 
               <div >
-              <Swiper 
-  centeredSlides={true}
-  navigation={false}
-  modules={[Pagination, Navigation]}
-  loop={true}
-  spaceBetween={70}
-  pagination={{ clickable: true }}
-  className="mySwiper firstslider-technology !px-[16px] !lg:px-[0px]"
-  breakpoints={{
-    640: { slidesPerView: 1, spaceBetween: 60 },
-    768: { slidesPerView: 2, spaceBetween: 30 },
-    1024: { slidesPerView: 3, spaceBetween: 50 },
-    1440: { slidesPerView: 3, spaceBetween: 70 },
-  }}
->
-  {slides.map((slide, index) => (
-    <SwiperSlide key={index}>
-      <div className="bg-[#fff]">
-        <CardContent className="p-[10px] sm:p-6 flex gap-4 align-items-center">
-          <Image alt="bg" src={slide.image} className="max-w-[50px] lg:max-w-[80px] lg:max-w-[100%] ml-[0px] md:ml-[-50px]" />
-          <div>
-            <h3 className="text-[16px] sm:text-[16px] md:text-[20px] lg:text-[30px] font-[400] md:mb-2">
-              {slide.title}
-            </h3>
-            <p className="text-gray-600 text-[14px] md:text-[16px] font-[400]">
-              {slide.description}
-            </p>
-          </div>
-        </CardContent>
-      </div>
-    </SwiperSlide>
-  ))}
-</Swiper>
-               
+                <Swiper
+                  centeredSlides={true}
+                  navigation={false}
+                  modules={[Pagination, Navigation]}
+                  loop={true}
+                  spaceBetween={70}
+                  pagination={{ clickable: true }}
+                  className="mySwiper firstslider-technology !px-[16px] !lg:px-[0px]"
+                  breakpoints={{
+                    640: { slidesPerView: 1, spaceBetween: 60 },
+                    768: { slidesPerView: 2, spaceBetween: 30 },
+                    1024: { slidesPerView: 3, spaceBetween: 50 },
+                    1440: { slidesPerView: 3, spaceBetween: 70 },
+                  }}
+                >
+                  {slides.map((slide, index) => (
+                    <SwiperSlide key={index}>
+                      <div className="bg-[#fff]">
+                        <CardContent className="p-[10px] sm:p-6 flex gap-4 align-items-center">
+                          <Image alt="bg" src={slide.image} className="max-w-[50px] lg:max-w-[80px] lg:max-w-[100%] ml-[0px] md:ml-[-50px]" />
+                          <div>
+                            <h3 className="text-[16px] sm:text-[16px] md:text-[20px] lg:text-[30px] font-[400] md:mb-2">
+                              {slide.title}
+                            </h3>
+                            <p className="text-gray-600 text-[14px] md:text-[16px] font-[400]">
+                              {slide.description}
+                            </p>
+                          </div>
+                        </CardContent>
+                      </div>
+                    </SwiperSlide>
+                  ))}
+                </Swiper>
+
               </div>
             </div>
           </section>
@@ -415,17 +415,17 @@ export default function Index ()
                       <h2 className="text-[16px] md:text-[24px]  text-[#000]">
                         Technology Stack
                       </h2>
-                      <h2 className="text-[24px] md:text-[36px] lg:text-[44px]  font-bold text-left md:mb-6">
+                      <h2 className="text-[24px] md:text-[36px] lg:text-[44px] font-bold text-left  sm:mb-0 lg:mb-6">
                         Empower Your Business with Cutting-Edge Technologies
                       </h2>
-                      <p className="text-left text-gray-600 sm:mb-8">
+                      <p className="text-left text-[#000] sm:mb-4 lg:mb-8">
                         Leverage our expertise in the latest technologies to
                         build innovative, scalable, and efficient solutions
                         tailored to your business needs. Stay ahead in the
                         competitive landscape with our future-ready development
                         services.
                       </p>
-                      <ul className="mt-8 text-left text-gray-600">
+                      <ul className="lg:mt-8 sm:mb-4 text-left text-[#000]">
                         <li className="mb-2 flex gap-2 align-items-center">
                           <svg
                             width="20"
@@ -476,10 +476,10 @@ export default function Index ()
 
                     <div data-aos="fade-left" className="flex gap-[20px] md:gap-[41px] flex-wrap justify-center">
                       {techStacksData.map((tech, index) => (
-                      <div className="px-2 flex flex-col justify-between py-4 items-center w-[130px] sm:w-[150px] md:w-[170px] h-40 bg-[#F4F2ED] hover:bg-[#1E96D3] hover:text-[#fff]  rounded-[10px] text-center ">
-                        <Image alt={tech.name} src={tech.icon} className="mx-auto"/>
-                        {tech.name}
-                      </div>
+                        <div className="px-2 text-[#000] flex flex-col justify-between py-4 items-center w-[130px] sm:w-[150px] md:w-[170px] h-40 bg-[#F4F2ED] hover:bg-[#1E96D3] hover:text-[#fff]  rounded-[10px] text-center ">
+                          <Image alt={tech.name} src={tech.icon} className="mx-auto" />
+                          {tech.name}
+                        </div>
                       ))}
                     </div>
                   </div>
@@ -488,27 +488,29 @@ export default function Index ()
             </div>
           </div>
           <section className="services-page px-4">
-            <h2 className="px-2 text-[16px] pb-[16px] sm:text-[24px]  text-center gradient-text">Services</h2>
+           <div className="mt-[20px] lg:mt-[0px]">
+           <h2 className="px-2 text-[20px] pb-[16px] sm:text-[24px]  text-center gradient-text">Services</h2>
             <h3 className="px-2 text-[24px] sm:text-[36px] lg:text-[44px]  text-center font-[500]">
-              Additional Services that will 
+              Additional Services that will
               Grow Your Business
             </h3>
+           </div>
             <div className="bg-circle-img  overflow-hidden py-5 sm:mt-[40px]">
               <div className="serviceimg">
                 <div className="flex flex-col w-full gap-4 md:gap-[58px]">
                   <div className="flex flex-col md:flex-row gap-4 justify-between w-full max-w-[1100px] mx-auto items-center">
                     <div
-                      data-aos="fade-up-right"  className="cursor-pointer service-card shadow-[0px_4px_4px_0px_#00000040]  max-w-[300px] p-0  rounded-[24px] text-center text-white  md:mx-0 md:mr-auto"
-                      style={ {
+                      data-aos="fade-up-right" className="cursor-pointer service-card shadow-[0px_4px_4px_0px_#00000040]  max-w-[300px] p-0  rounded-[24px] text-center text-white  md:mx-0 md:mr-auto"
+                      style={{
                         background:
                           "linear-gradient(270deg, #083ca7 0%, #862ff1 100%)",
-                      } }
+                      }}
                     >
                       <div className="square p-4">
                         <div>
                           <Image
                             alt=""
-                            src={ Painting }
+                            src={Painting}
                             className="mx-auto mb-4"
                           />
                         </div>
@@ -522,14 +524,15 @@ export default function Index ()
                     </div>
                     <div data-aos="fade-up-left"
                       className="cursor-pointer service-card shadow-[0px_4px_4px_0px_#00000040]  max-w-[300px] p-0  rounded-[24px] text-center text-white  md:mx-0"
-                      style={ {
-                        background:" linear-gradient(90deg, #297679 0%, #3FA6C1 100%)",} }
+                      style={{
+                        background: " linear-gradient(90deg, #297679 0%, #3FA6C1 100%)",
+                      }}
                     >
                       <div className="square p-4">
                         <div>
                           <Image
                             alt=""
-                            src={ Painting}
+                            src={Painting}
                             className="mx-auto mb-4"
                           />
                         </div>
@@ -545,16 +548,16 @@ export default function Index ()
                   <div className="flex  flex-col md:flex-row gap-4 justify-between w-full max-w-[1300px] mx-auto items-center">
                     <div data-aos="fade-up-right"
                       className="cursor-pointer service-card shadow-[0px_4px_4px_0px_#00000040]  max-w-[300px] p-0  rounded-[24px] text-center text-white  md:mx-0"
-                      style={ {
+                      style={{
                         background:
                           "linear-gradient(90deg, #FCB731 0%, #F67526 100%)",
-                      } }
+                      }}
                     >
                       <div className="square p-4">
                         <div>
                           <Image
                             alt=""
-                            src={ Painting }
+                            src={Painting}
                             className="mx-auto mb-4"
                           />
                         </div>
@@ -568,16 +571,16 @@ export default function Index ()
                     </div>
                     <div data-aos="fade-up-left"
                       className="cursor-pointer service-card shadow-[0px_4px_4px_0px_#00000040]  max-w-[300px] p-0  rounded-[24px] text-center text-white  md:mx-0"
-                      style={ {
+                      style={{
                         background:
                           "linear-gradient(90deg, #FE6F7B 0%, #FA5B9D 100%)",
-                      } }
+                      }}
                     >
                       <div className="square p-4">
                         <div>
                           <Image
                             alt=""
-                            src={ Painting }
+                            src={Painting}
                             className="mx-auto mb-4"
                           />
                         </div>
@@ -588,7 +591,7 @@ export default function Index ()
                         </p>
                         <a onClick={() => redirectServiceInfo("Web-Development")} className="!text-[#000] relative">Read More</a>
                       </div>
-                    </div>{ " " }
+                    </div>{" "}
                   </div>
                 </div>
               </div>
@@ -596,7 +599,7 @@ export default function Index ()
           </section>
           <section className="pt-20 pb-0">
             <div>
-              <div className="relative sm:py-20 w-full overflow-hidden">
+              <div className="relative lg:py-20 sm:py-10 w-full overflow-hidden">
                 <video
                   className="absolute top-0 left-0 w-full h-full object-cover opacity-[11%] bg-[#d9e2ff]"
                   autoPlay
@@ -615,8 +618,8 @@ export default function Index ()
                 <div className="max-w-[1400px] mx-auto relative z-10 flex min-h-full flex-col items-center justify-center text-white text-center p-4">
                   <div className="md:flex justify-between w-full items-center md:px-4">
                     <div data-aos="fade-right" className="md:w-[40%] text-left">
-                      <h4 className="text-[24px] font-[500] sm:text-[44px] lg:text-[75px] sm:pb-[50px] lg:leading-[112px] leading-[40px]">
-                        Technologies{ " " }
+                      <h4 className="text-[24px] font-[500] sm:text-[44px] lg:text-[75px] lg:pb-[50px] sm:pb-[25px] lg:leading-[112px] leading-[40px]">
+                        Technologies{" "}
                       </h4>
                       <p className="text-[#000] text-[18px]">
                         As a versatile service provider, we cater to diverse
@@ -625,7 +628,7 @@ export default function Index ()
                         landscapes with comprehensive and adaptable services.
                       </p>
                     </div>
-                    <div data-aos="fade-left"  className="md:w-[55%]">
+                    <div data-aos="fade-left" className="md:w-[55%]">
                       <div className="ani-slider-container">
                         <span className="slide-box-1"></span>
                         <span className="slide-box-2"></span>
@@ -634,34 +637,35 @@ export default function Index ()
                         <span className="slide-box-5"></span>
 
                         <Swiper
-                          grabCursor={ true }
-                          effect={ "creative" }
-                          creativeEffect={ {
+                          grabCursor={true}
+                          effect={"creative"}
+                          creativeEffect={{
                             prev: {
                               shadow: true,
-                              translate: [ 0, 0, -400 ],
+                              translate: [0, 0, -400],
                             },
                             next: {
-                              translate: [ "100%", 0, 0 ],
+                              translate: ["100%", 0, 0],
                             },
-                          } }
-                          loop={ true } // Enable infinite loop
-                          modules={ [ EffectCreative ] }
+                          }}
+                          loop={true} // Enable infinite loop
+                          modules={[EffectCreative]}
                           className="mySwiper customslider"
-                          onSwiper={ ( swiper ) => ( swiperRef.current = swiper ) } // Save Swiper instance
+                          onSwiper={(swiper) => (swiperRef.current = swiper)} // Save Swiper instance
                         >
 
                           <SwiperSlide className="p-4 bg-gray-200  bg-[#fff] border-r p-4 text-left shadow-[0px_4px_7.5px_0px_#945DFF40] rounded-[26px] z-[99] ">
-                            <div className="">
-                              <h4 className="text-[20px] sm:text-[24px] md:text-[36px] lg:text-[44px] leading-[50px] lg:leading-[100px]">
+                            <div >
+                              <div className=" flex gap-8 items-center"><h4 className="text-[20px] sm:text-[24px] md:text-[36px] lg:text-[44px] leading-[50px] lg:leading-[100px]">
                                 Technology
                               </h4>
-                              <p className="text-[16px] md:text-[18px] font-normal md:leading-7 text-left">
+                              <span><Image src={VueIcon} alt="tech" className="w-[40px]" /></span></div>
+                              <p className="text-[16px] md:text-[18px] font-normal md:leading-7 text-left text-[#000]">
                                 we propel tech advancement through bespoke
                                 solutions, ensuring seamless integration and
                                 innovation for businesses.
                               </p>
-                              <span onClick={ handleNextSlide }>
+                              <span onClick={handleNextSlide}>
                                 <svg
                                   className="ml-auto"
                                   width="41"
@@ -680,15 +684,151 @@ export default function Index ()
                           </SwiperSlide>
                           <SwiperSlide className="p-4 bg-gray-200  bg-[#fff] border-r p-4 text-left shadow-[0px_4px_7.5px_0px_#945DFF40] rounded-[26px] z-[99] ">
                             <div className="">
-                              <h4 className="text-[20px] sm:text-[24px] md:text-[36px] lg:text-[44px] leading-[50px] lg:leading-[100px]">
+                            <div className=" flex gap-8 items-center"><h4 className="text-[20px] sm:text-[24px] md:text-[36px] lg:text-[44px] leading-[50px] lg:leading-[100px]">
                                 Technology
                               </h4>
-                              <p className="text-[16px] md:text-[18px] font-normal md:leading-7 text-left">
+                              <span><Image src={VueIcon} alt="tech" className="w-[40px]" /></span></div>
+                              <p className="text-[16px] md:text-[18px] font-normal md:leading-7 text-left text-[#000]">
                                 we propel tech advancement through bespoke
                                 solutions, ensuring seamless integration and
                                 innovation for businesses.
                               </p>
-                              <span onClick={ handleNextSlide }>
+                              <span onClick={handleNextSlide}>
+                                <svg
+                                  className="ml-auto"
+                                  width="41"
+                                  height="13"
+                                  viewBox="0 0 41 13"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M0.943579 6.64421C0.951029 7.12084 1.14728 7.57505 1.48925 7.90714C1.83123 8.23923 2.29099 8.42208 2.76763 8.41555L33.3583 8.41555V12.0742C33.3583 12.8498 34.2945 13.2381 34.8415 12.6893L40.2996 7.23115C40.6397 6.89105 40.6397 6.34115 40.2996 6.00105L34.8415 0.542942C34.2945 -0.0058918 33.3583 0.384224 33.3583 1.15799V4.81664L2.76763 4.81664C2.52689 4.81335 2.28792 4.85839 2.0649 4.94911C1.84188 5.03984 1.63932 5.17439 1.46924 5.3448C1.29915 5.51521 1.16499 5.71803 1.0747 5.94123C0.984405 6.16442 0.939819 6.40347 0.943579 6.64421Z"
+                                    fill="black"
+                                  />
+                                </svg>
+                              </span>
+                            </div>
+                          </SwiperSlide>      <SwiperSlide className="p-4 bg-gray-200  bg-[#fff] border-r p-4 text-left shadow-[0px_4px_7.5px_0px_#945DFF40] rounded-[26px] z-[99] ">
+                            <div className="">
+                              <div className=" flex gap-8 items-center"><h4 className="text-[20px] sm:text-[24px] md:text-[36px] lg:text-[44px] leading-[50px] lg:leading-[100px]">
+                                Technology
+                              </h4>
+                              <span><Image src={VueIcon} alt="tech" className="w-[40px]" /></span></div>
+                              <p className="text-[16px] md:text-[18px] font-normal md:leading-7 text-left text-[#000]">
+                                we propel tech advancement through bespoke
+                                solutions, ensuring seamless integration and
+                                innovation for businesses.
+                              </p>
+                              <span onClick={handleNextSlide}>
+                                <svg
+                                  className="ml-auto"
+                                  width="41"
+                                  height="13"
+                                  viewBox="0 0 41 13"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M0.943579 6.64421C0.951029 7.12084 1.14728 7.57505 1.48925 7.90714C1.83123 8.23923 2.29099 8.42208 2.76763 8.41555L33.3583 8.41555V12.0742C33.3583 12.8498 34.2945 13.2381 34.8415 12.6893L40.2996 7.23115C40.6397 6.89105 40.6397 6.34115 40.2996 6.00105L34.8415 0.542942C34.2945 -0.0058918 33.3583 0.384224 33.3583 1.15799V4.81664L2.76763 4.81664C2.52689 4.81335 2.28792 4.85839 2.0649 4.94911C1.84188 5.03984 1.63932 5.17439 1.46924 5.3448C1.29915 5.51521 1.16499 5.71803 1.0747 5.94123C0.984405 6.16442 0.939819 6.40347 0.943579 6.64421Z"
+                                    fill="black"
+                                  />
+                                </svg>
+                              </span>
+                            </div>
+                          </SwiperSlide>      <SwiperSlide className="p-4 bg-gray-200  bg-[#fff] border-r p-4 text-left shadow-[0px_4px_7.5px_0px_#945DFF40] rounded-[26px] z-[99] ">
+                            <div className="">
+                              <div className=" flex gap-8 items-center"><h4 className="text-[20px] sm:text-[24px] md:text-[36px] lg:text-[44px] leading-[50px] lg:leading-[100px]">
+                                Technology
+                              </h4>
+                              <span><Image src={VueIcon} alt="tech" className="w-[40px]" /></span></div>
+                              <p className="text-[16px] md:text-[18px] font-normal md:leading-7 text-left text-[#000]">
+                                we propel tech advancement through bespoke
+                                solutions, ensuring seamless integration and
+                                innovation for businesses.
+                              </p>
+                              <span onClick={handleNextSlide}>
+                                <svg
+                                  className="ml-auto"
+                                  width="41"
+                                  height="13"
+                                  viewBox="0 0 41 13"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M0.943579 6.64421C0.951029 7.12084 1.14728 7.57505 1.48925 7.90714C1.83123 8.23923 2.29099 8.42208 2.76763 8.41555L33.3583 8.41555V12.0742C33.3583 12.8498 34.2945 13.2381 34.8415 12.6893L40.2996 7.23115C40.6397 6.89105 40.6397 6.34115 40.2996 6.00105L34.8415 0.542942C34.2945 -0.0058918 33.3583 0.384224 33.3583 1.15799V4.81664L2.76763 4.81664C2.52689 4.81335 2.28792 4.85839 2.0649 4.94911C1.84188 5.03984 1.63932 5.17439 1.46924 5.3448C1.29915 5.51521 1.16499 5.71803 1.0747 5.94123C0.984405 6.16442 0.939819 6.40347 0.943579 6.64421Z"
+                                    fill="black"
+                                  />
+                                </svg>
+                              </span>
+                            </div>
+                          </SwiperSlide>      <SwiperSlide className="p-4 bg-gray-200  bg-[#fff] border-r p-4 text-left shadow-[0px_4px_7.5px_0px_#945DFF40] rounded-[26px] z-[99] ">
+                            <div className="">
+                              <div className=" flex gap-8 items-center"><h4 className="text-[20px] sm:text-[24px] md:text-[36px] lg:text-[44px] leading-[50px] lg:leading-[100px]">
+                                Technology
+                              </h4>
+                              <span><Image src={VueIcon} alt="tech" className="w-[40px]" /></span></div>
+                              <p className="text-[16px] md:text-[18px] font-normal md:leading-7 text-left text-[#000]">
+                                we propel tech advancement through bespoke
+                                solutions, ensuring seamless integration and
+                                innovation for businesses.
+                              </p>
+                              <span onClick={handleNextSlide}>
+                                <svg
+                                  className="ml-auto"
+                                  width="41"
+                                  height="13"
+                                  viewBox="0 0 41 13"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M0.943579 6.64421C0.951029 7.12084 1.14728 7.57505 1.48925 7.90714C1.83123 8.23923 2.29099 8.42208 2.76763 8.41555L33.3583 8.41555V12.0742C33.3583 12.8498 34.2945 13.2381 34.8415 12.6893L40.2996 7.23115C40.6397 6.89105 40.6397 6.34115 40.2996 6.00105L34.8415 0.542942C34.2945 -0.0058918 33.3583 0.384224 33.3583 1.15799V4.81664L2.76763 4.81664C2.52689 4.81335 2.28792 4.85839 2.0649 4.94911C1.84188 5.03984 1.63932 5.17439 1.46924 5.3448C1.29915 5.51521 1.16499 5.71803 1.0747 5.94123C0.984405 6.16442 0.939819 6.40347 0.943579 6.64421Z"
+                                    fill="black"
+                                  />
+                                </svg>
+                              </span>
+                            </div>
+                          </SwiperSlide>      <SwiperSlide className="p-4 bg-gray-200  bg-[#fff] border-r p-4 text-left shadow-[0px_4px_7.5px_0px_#945DFF40] rounded-[26px] z-[99] ">
+                            <div className="">
+                              <div className=" flex gap-8 items-center"><h4 className="text-[20px] sm:text-[24px] md:text-[36px] lg:text-[44px] leading-[50px] lg:leading-[100px]">
+                                Technology
+                              </h4>
+                              <span><Image src={VueIcon} alt="tech" className="w-[40px]" /></span></div>
+                              <p className="text-[16px] md:text-[18px] font-normal md:leading-7 text-left text-[#000]">
+                                we propel tech advancement through bespoke
+                                solutions, ensuring seamless integration and
+                                innovation for businesses.
+                              </p>
+                              <span onClick={handleNextSlide}>
+                                <svg
+                                  className="ml-auto"
+                                  width="41"
+                                  height="13"
+                                  viewBox="0 0 41 13"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M0.943579 6.64421C0.951029 7.12084 1.14728 7.57505 1.48925 7.90714C1.83123 8.23923 2.29099 8.42208 2.76763 8.41555L33.3583 8.41555V12.0742C33.3583 12.8498 34.2945 13.2381 34.8415 12.6893L40.2996 7.23115C40.6397 6.89105 40.6397 6.34115 40.2996 6.00105L34.8415 0.542942C34.2945 -0.0058918 33.3583 0.384224 33.3583 1.15799V4.81664L2.76763 4.81664C2.52689 4.81335 2.28792 4.85839 2.0649 4.94911C1.84188 5.03984 1.63932 5.17439 1.46924 5.3448C1.29915 5.51521 1.16499 5.71803 1.0747 5.94123C0.984405 6.16442 0.939819 6.40347 0.943579 6.64421Z"
+                                    fill="black"
+                                  />
+                                </svg>
+                              </span>
+                            </div>
+                          </SwiperSlide>      <SwiperSlide className="p-4 bg-gray-200  bg-[#fff] border-r p-4 text-left shadow-[0px_4px_7.5px_0px_#945DFF40] rounded-[26px] z-[99] ">
+                            <div className="">
+                              <div className=" flex gap-8 items-center"><h4 className="text-[20px] sm:text-[24px] md:text-[36px] lg:text-[44px] leading-[50px] lg:leading-[100px]">
+                                Technology
+                              </h4>
+                              <span><Image src={VueIcon} alt="tech" className="w-[40px]" /></span></div>
+                              <p className="text-[16px] md:text-[18px] font-normal md:leading-7 text-left text-[#000]">
+                                we propel tech advancement through bespoke
+                                solutions, ensuring seamless integration and
+                                innovation for businesses.
+                              </p>
+                              <span onClick={handleNextSlide}>
                                 <svg
                                   className="ml-auto"
                                   width="41"
@@ -709,142 +849,12 @@ export default function Index ()
                               <h4 className="text-[20px] sm:text-[24px] md:text-[36px] lg:text-[44px] leading-[50px] lg:leading-[100px]">
                                 Technology
                               </h4>
-                              <p className="text-[16px] md:text-[18px] font-normal md:leading-7 text-left">
+                              <p className="text-[16px] md:text-[18px] font-normal md:leading-7 text-left text-[#000]">
                                 we propel tech advancement through bespoke
                                 solutions, ensuring seamless integration and
                                 innovation for businesses.
                               </p>
-                              <span onClick={ handleNextSlide }>
-                                <svg
-                                  className="ml-auto"
-                                  width="41"
-                                  height="13"
-                                  viewBox="0 0 41 13"
-                                  fill="none"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                >
-                                  <path
-                                    d="M0.943579 6.64421C0.951029 7.12084 1.14728 7.57505 1.48925 7.90714C1.83123 8.23923 2.29099 8.42208 2.76763 8.41555L33.3583 8.41555V12.0742C33.3583 12.8498 34.2945 13.2381 34.8415 12.6893L40.2996 7.23115C40.6397 6.89105 40.6397 6.34115 40.2996 6.00105L34.8415 0.542942C34.2945 -0.0058918 33.3583 0.384224 33.3583 1.15799V4.81664L2.76763 4.81664C2.52689 4.81335 2.28792 4.85839 2.0649 4.94911C1.84188 5.03984 1.63932 5.17439 1.46924 5.3448C1.29915 5.51521 1.16499 5.71803 1.0747 5.94123C0.984405 6.16442 0.939819 6.40347 0.943579 6.64421Z"
-                                    fill="black"
-                                  />
-                                </svg>
-                              </span>
-                            </div>
-                          </SwiperSlide>      <SwiperSlide className="p-4 bg-gray-200  bg-[#fff] border-r p-4 text-left shadow-[0px_4px_7.5px_0px_#945DFF40] rounded-[26px] z-[99] ">
-                            <div className="">
-                              <h4 className="text-[20px] sm:text-[24px] md:text-[36px] lg:text-[44px] leading-[50px] lg:leading-[100px]">
-                                Technology
-                              </h4>
-                              <p className="text-[16px] md:text-[18px] font-normal md:leading-7 text-left">
-                                we propel tech advancement through bespoke
-                                solutions, ensuring seamless integration and
-                                innovation for businesses.
-                              </p>
-                              <span onClick={ handleNextSlide }>
-                                <svg
-                                  className="ml-auto"
-                                  width="41"
-                                  height="13"
-                                  viewBox="0 0 41 13"
-                                  fill="none"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                >
-                                  <path
-                                    d="M0.943579 6.64421C0.951029 7.12084 1.14728 7.57505 1.48925 7.90714C1.83123 8.23923 2.29099 8.42208 2.76763 8.41555L33.3583 8.41555V12.0742C33.3583 12.8498 34.2945 13.2381 34.8415 12.6893L40.2996 7.23115C40.6397 6.89105 40.6397 6.34115 40.2996 6.00105L34.8415 0.542942C34.2945 -0.0058918 33.3583 0.384224 33.3583 1.15799V4.81664L2.76763 4.81664C2.52689 4.81335 2.28792 4.85839 2.0649 4.94911C1.84188 5.03984 1.63932 5.17439 1.46924 5.3448C1.29915 5.51521 1.16499 5.71803 1.0747 5.94123C0.984405 6.16442 0.939819 6.40347 0.943579 6.64421Z"
-                                    fill="black"
-                                  />
-                                </svg>
-                              </span>
-                            </div>
-                          </SwiperSlide>      <SwiperSlide className="p-4 bg-gray-200  bg-[#fff] border-r p-4 text-left shadow-[0px_4px_7.5px_0px_#945DFF40] rounded-[26px] z-[99] ">
-                            <div className="">
-                              <h4 className="text-[20px] sm:text-[24px] md:text-[36px] lg:text-[44px] leading-[50px] lg:leading-[100px]">
-                                Technology
-                              </h4>
-                              <p className="text-[16px] md:text-[18px] font-normal md:leading-7 text-left">
-                                we propel tech advancement through bespoke
-                                solutions, ensuring seamless integration and
-                                innovation for businesses.
-                              </p>
-                              <span onClick={ handleNextSlide }>
-                                <svg
-                                  className="ml-auto"
-                                  width="41"
-                                  height="13"
-                                  viewBox="0 0 41 13"
-                                  fill="none"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                >
-                                  <path
-                                    d="M0.943579 6.64421C0.951029 7.12084 1.14728 7.57505 1.48925 7.90714C1.83123 8.23923 2.29099 8.42208 2.76763 8.41555L33.3583 8.41555V12.0742C33.3583 12.8498 34.2945 13.2381 34.8415 12.6893L40.2996 7.23115C40.6397 6.89105 40.6397 6.34115 40.2996 6.00105L34.8415 0.542942C34.2945 -0.0058918 33.3583 0.384224 33.3583 1.15799V4.81664L2.76763 4.81664C2.52689 4.81335 2.28792 4.85839 2.0649 4.94911C1.84188 5.03984 1.63932 5.17439 1.46924 5.3448C1.29915 5.51521 1.16499 5.71803 1.0747 5.94123C0.984405 6.16442 0.939819 6.40347 0.943579 6.64421Z"
-                                    fill="black"
-                                  />
-                                </svg>
-                              </span>
-                            </div>
-                          </SwiperSlide>      <SwiperSlide className="p-4 bg-gray-200  bg-[#fff] border-r p-4 text-left shadow-[0px_4px_7.5px_0px_#945DFF40] rounded-[26px] z-[99] ">
-                            <div className="">
-                              <h4 className="text-[20px] sm:text-[24px] md:text-[36px] lg:text-[44px] leading-[50px] lg:leading-[100px]">
-                                Technology
-                              </h4>
-                              <p className="text-[16px] md:text-[18px] font-normal md:leading-7 text-left">
-                                we propel tech advancement through bespoke
-                                solutions, ensuring seamless integration and
-                                innovation for businesses.
-                              </p>
-                              <span onClick={ handleNextSlide }>
-                                <svg
-                                  className="ml-auto"
-                                  width="41"
-                                  height="13"
-                                  viewBox="0 0 41 13"
-                                  fill="none"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                >
-                                  <path
-                                    d="M0.943579 6.64421C0.951029 7.12084 1.14728 7.57505 1.48925 7.90714C1.83123 8.23923 2.29099 8.42208 2.76763 8.41555L33.3583 8.41555V12.0742C33.3583 12.8498 34.2945 13.2381 34.8415 12.6893L40.2996 7.23115C40.6397 6.89105 40.6397 6.34115 40.2996 6.00105L34.8415 0.542942C34.2945 -0.0058918 33.3583 0.384224 33.3583 1.15799V4.81664L2.76763 4.81664C2.52689 4.81335 2.28792 4.85839 2.0649 4.94911C1.84188 5.03984 1.63932 5.17439 1.46924 5.3448C1.29915 5.51521 1.16499 5.71803 1.0747 5.94123C0.984405 6.16442 0.939819 6.40347 0.943579 6.64421Z"
-                                    fill="black"
-                                  />
-                                </svg>
-                              </span>
-                            </div>
-                          </SwiperSlide>      <SwiperSlide className="p-4 bg-gray-200  bg-[#fff] border-r p-4 text-left shadow-[0px_4px_7.5px_0px_#945DFF40] rounded-[26px] z-[99] ">
-                            <div className="">
-                              <h4 className="text-[20px] sm:text-[24px] md:text-[36px] lg:text-[44px] leading-[50px] lg:leading-[100px]">
-                                Technology
-                              </h4>
-                              <p className="text-[16px] md:text-[18px] font-normal md:leading-7 text-left">
-                                we propel tech advancement through bespoke
-                                solutions, ensuring seamless integration and
-                                innovation for businesses.
-                              </p>
-                              <span onClick={ handleNextSlide }>
-                                <svg
-                                  className="ml-auto"
-                                  width="41"
-                                  height="13"
-                                  viewBox="0 0 41 13"
-                                  fill="none"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                >
-                                  <path
-                                    d="M0.943579 6.64421C0.951029 7.12084 1.14728 7.57505 1.48925 7.90714C1.83123 8.23923 2.29099 8.42208 2.76763 8.41555L33.3583 8.41555V12.0742C33.3583 12.8498 34.2945 13.2381 34.8415 12.6893L40.2996 7.23115C40.6397 6.89105 40.6397 6.34115 40.2996 6.00105L34.8415 0.542942C34.2945 -0.0058918 33.3583 0.384224 33.3583 1.15799V4.81664L2.76763 4.81664C2.52689 4.81335 2.28792 4.85839 2.0649 4.94911C1.84188 5.03984 1.63932 5.17439 1.46924 5.3448C1.29915 5.51521 1.16499 5.71803 1.0747 5.94123C0.984405 6.16442 0.939819 6.40347 0.943579 6.64421Z"
-                                    fill="black"
-                                  />
-                                </svg>
-                              </span>
-                            </div>
-                          </SwiperSlide>      <SwiperSlide className="p-4 bg-gray-200  bg-[#fff] border-r p-4 text-left shadow-[0px_4px_7.5px_0px_#945DFF40] rounded-[26px] z-[99] ">
-                            <div className="">
-                              <h4 className="text-[20px] sm:text-[24px] md:text-[36px] lg:text-[44px] leading-[50px] lg:leading-[100px]">
-                                Technology
-                              </h4>
-                              <p className="text-[16px] md:text-[18px] font-normal md:leading-7 text-left">
-                                we propel tech advancement through bespoke
-                                solutions, ensuring seamless integration and
-                                innovation for businesses.
-                              </p>
-                              <span onClick={ handleNextSlide }>
+                              <span onClick={handleNextSlide}>
                                 <svg
                                   className="ml-auto"
                                   width="41"
@@ -894,7 +904,7 @@ export default function Index ()
                   className="max-w-[450px] h-auto"
                 /> */}
                 <video
-                  className=" absolute top-0 left-[-35%] w-full h-full z-[9]  object-contain aspect-[1] opacity-[10%]  md:opacity-[40%] "
+                  className=" absolute top-0 left-[-35%] w-[97%] h-full z-[9]  object-contain aspect-[1] opacity-[10%]  md:opacity-[40%] "
                   autoPlay
                   loop
                   muted
@@ -908,7 +918,7 @@ export default function Index ()
                 </video>
               </div>
               <div data-aos="zoom-in" className="z-[99]">
-                <h3 className="text-[16px] lg:text-[24px]  gradient-text mb-2">
+                <h3 className="text-[20px] lg:text-[24px]  gradient-text mb-2">
                   Why Choose Us
                 </h3>
                 <h2 className="text-[22px] sm:text-[30px] lg:text-[44px]  font-bold mb-4 pb-0">
@@ -937,32 +947,32 @@ export default function Index ()
             <div className="max-w-7xl mx-auto  flex flex-col md:flex-row gap-12 md:items-center  relative z-[9] md:h-[400px] p-4">
               <div className="max-w-[700px]">
                 <h4 className="text-[24px] md:text-[36px] lg:text-[44px]  font-normal leading-[40px] md:leading-[62px] text-left text-[#fff]">
-                  Secure the future of your company with company name{ " " }
+                  Secure the future of your company with company name{" "}
                 </h4>
               </div>
-              <div className="min-w-[320px]">
-              <button className="mt-[0] sm:mt-[30px] text-[16px] lg:text-[34px] overflow-hidden leading-[25px] text-left bg-[#1e96d3] w-[50px] h-[50px] md:w-[60px] md:h-[60px] lg:w-[100px] lg:h-[100px] transition-all hover:w-[230px] lg:hover:w-[350px] duration-1000 flex items-center gap-5 justify-end p-[0.8rem] lg:p-[1.5rem_1.8rem] rounded-[100px] group">
-                <div className="flex items-center gap-[50px]">
-                  <span className="whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-500 text-[#fff]">
-                    Get in touch
-                  </span>
-                  <div>
-                    <svg
-                      width="41"
-                      height="14"
-                      viewBox="0 0 41 14"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="w-[24px] w-[24px] md:w-[41px] md:h-[41px]"
-                    >
-                      <path
-                        d="M0.813208 7.028C0.820658 7.50463 1.01691 7.95884 1.35888 8.29093C1.70086 8.62302 2.16062 8.80587 2.63726 8.79934L33.228 8.79934V12.458C33.228 13.2336 34.1641 13.6219 34.7111 13.073L40.1692 7.61493C40.5093 7.27484 40.5093 6.72494 40.1692 6.38484L34.7111 0.926731C34.1641 0.377897 33.228 0.768013 33.228 1.54178V5.20043L2.63726 5.20043C2.39652 5.19714 2.15755 5.24218 1.93453 5.3329C1.7115 5.42362 1.50895 5.55818 1.33886 5.72859C1.16878 5.899 1.03462 6.10182 0.944325 6.32501C0.854034 6.54821 0.809448 6.78726 0.813208 7.028Z"
-                        fill="white"
-                      />
-                    </svg>
+              <div className="sm:min-w-[320px]">
+                <button className="mt-[0] sm:mt-[30px] text-[16px] lg:text-[34px] overflow-hidden leading-[25px] text-left bg-[#1e96d3] w-[50px] h-[50px] md:w-[60px] md:h-[60px] lg:w-[100px] lg:h-[100px] transition-all hover:w-[230px] lg:hover:w-[350px] duration-1000 flex items-center gap-5 justify-end p-[0.8rem] lg:p-[1.5rem_1.8rem] rounded-[100px] group">
+                  <div className="flex items-center gap-[50px]">
+                    <span className="whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-500 text-[#fff]">
+                      Get in touch
+                    </span>
+                    <div>
+                      <svg
+                        width="41"
+                        height="14"
+                        viewBox="0 0 41 14"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="w-[24px] w-[24px] md:w-[41px] md:h-[41px]"
+                      >
+                        <path
+                          d="M0.813208 7.028C0.820658 7.50463 1.01691 7.95884 1.35888 8.29093C1.70086 8.62302 2.16062 8.80587 2.63726 8.79934L33.228 8.79934V12.458C33.228 13.2336 34.1641 13.6219 34.7111 13.073L40.1692 7.61493C40.5093 7.27484 40.5093 6.72494 40.1692 6.38484L34.7111 0.926731C34.1641 0.377897 33.228 0.768013 33.228 1.54178V5.20043L2.63726 5.20043C2.39652 5.19714 2.15755 5.24218 1.93453 5.3329C1.7115 5.42362 1.50895 5.55818 1.33886 5.72859C1.16878 5.899 1.03462 6.10182 0.944325 6.32501C0.854034 6.54821 0.809448 6.78726 0.813208 7.028Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </div>
                   </div>
-                </div>
-              </button>
+                </button>
                 {/* <button className="text-[16px] md:text-[34px] overflow-hidden leading-[25px] text-left bg-[#D9E2FF40] w-[60px] h-[60px] md:w-[100px] md:h-[100px] transition-all hover:w-[180px] md:hover:w-[310px] duration-1000 flex items-center gap-5 justify-end p-4 rounded-[100px] group">
                   <div className="flex items-center gap-4">
                     <span className="whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-500 text-[#fff]">

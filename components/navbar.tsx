@@ -23,14 +23,16 @@ export const Navbar = () => {
   return (
     <>
       <header>
-        <nav className="elicit-container border-gray-200  ">
+        <nav className="nasksoft-container border-gray-200  ">
           <div className="max-w-screen-xl flex items-center justify-between mx-auto  p-[0px_0px]">
             <div className="mt-[15px]">
               <Link
                 className="inline-block text-xl leading-[inherit] whitespace-nowrap py-[0.3125rem]"
                 href="/"
               >
-                <Image src={logo} alt="logo" className="w-[100px]" />
+                <div className="max-w-[100px] overflow-hidden h-[70px]">
+                <Image src={logo} alt="logo" className="w-full" />
+                </div>
               </Link>
             </div>
             <button
@@ -85,7 +87,7 @@ export const Navbar = () => {
                     {item.submenu && (
                       <ul className=" submenu-items">
                         {item.submenu.map((subItem: any, subIndex: number) => (
-                          <li key={subIndex} className="leading-[32px]">
+                          <li key={subIndex} className="leading-[32px] ">
                             <Link
                               className="nav-link  text-[#fff]"
                               href={subItem.path}
@@ -100,15 +102,15 @@ export const Navbar = () => {
                 ))}
                 <li className="ml-[16px]">
                  
-                  <div className="p-[10px_8px] pr-[0px]">
+                  {/* <div className="p-[10px_8px] pr-[0px]">
                     <Link
                       href="/contactus"
                       onClick={() => setIsOpen(!isOpen)}
-                      className=" contactus-btn relative flex gap-2 items-center bg-[#1E96D3] hover:bg-[#1E96D3] text-[16px] lg:text-[18px] text-white hover:text-white rounded-[50px] p-[8px_12px] font-[600] overflow-hidden"
+                      className=" contactus-btn min-w-[160px] justify-center relative flex gap-2 items-center bg-[#1E96D3] hover:bg-[#1E96D3] text-[16px] lg:text-[18px] text-white hover:text-white rounded-[50px] p-[8px_12px] font-[600] overflow-hidden"
                     >
-                      <span className="relative z-10">Contact us</span>
+                      <span className="relative z-10  font-normal">Contact us</span>
                       <svg
-                        className="absolute left-2 top-1/2 -translate-y-1/2 transform transition-transform duration-300 ease-in-out hover:translate-x-[120%]"
+                        className=" left-2 top-1/2 -translate-y-1/2 transform transition-transform duration-300 ease-in-out hover:translate-x-[120%]"
                         width="30"
                         height="24"
                         viewBox="0 0 30 24"
@@ -121,7 +123,32 @@ export const Navbar = () => {
                         />
                       </svg>
                     </Link>
-                  </div>
+                  </div> */}
+<Link className="mt-[10px] md:mt-[0px] inline-block"
+                      href="/contactus"
+                      onClick={() => setIsOpen(!isOpen)}>
+<button className="!outline-0 group relative flex items-center justify-center gap-2 bg-[#1E96D3] text-white font-semibold text-lg py-[8px] px-[30px] pr-[40px] rounded-full overflow-hidden transition-all duration-300">
+                        <span className="relative z-10 text[#fff] transition-all duration-300 group-hover:translate-x-[-16px] text-[16px] lg:text-[18px] font-normal">
+    Contact Us
+  </span>
+  
+   <svg
+   className="absolute right-2 opacity-0 translate-x-[-16px] group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300"
+   width="30"
+   height="24"
+   viewBox="0 0 30 24"
+   fill="none"
+   xmlns="http://www.w3.org/2000/svg"
+   >
+                        <path
+                          d="M16.9 23.8446L12.2531 19.4989L7.47879 23.7378C7.37258 23.8515 7.22154 23.9211 7.05398 23.9211C6.73538 23.9211 6.47813 23.6682 6.47813 23.355V14.0998L0.67955 8.67984C0.448267 8.46406 0.441187 8.10675 0.65831 7.87938C0.731471 7.80281 0.823512 7.75177 0.920273 7.72392L28.7686 0.0209084C29.0754 -0.0626182 29.3916 0.111396 29.479 0.41302C29.5238 0.566152 29.4978 0.723925 29.4223 0.851535L17.811 23.6868C17.6694 23.9652 17.3248 24.0789 17.0416 23.9397C16.9873 23.9142 16.9401 23.8817 16.9 23.8446ZM11.4177 18.7193L7.62983 15.1787V22.0836L11.4177 18.7193ZM7.14366 13.1624L25.1554 2.19724L2.20413 8.54527L7.14366 13.1624ZM27.506 2.09515L8.00271 13.9652L17.1289 22.4989L27.506 2.09515Z"
+                          fill="white"
+                          />
+                      </svg>
+</button>
+                          </Link>
+
+
 
                 </li>
               </ul>
