@@ -213,7 +213,7 @@ const ContactUs = () => {
                                     <textarea id="message" placeholder="Write your message.." className="h-auto border-0 border-solid border-b rounded-[0px] w-full max-w-full border-color-[#8D8D8D]" />
                                 </div>
                                 <div className="text-right">
-                                    <Button type="submit" className="ml-auto bg-[#1E96D3] hover:bg-[#1E96D3] text-white px-8 py-4 ">
+                                    <Button type="submit" className="ml-auto bg-[#1E96D3] hover:bg-[#1E96D3] text-white px-[10px] py-[5px] lg:px-[3rem] lg:py-[1.5rem] ">
                                         Send Message
                                     </Button>
                                 </div>

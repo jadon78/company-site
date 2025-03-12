@@ -296,7 +296,7 @@ const AboutPage = () => {
             <div data-aos="flip-left" className="our-projects-section relative projects-card  z-[99] bg-[#3A3FD4] mt-10 text-[#fff] rounded-[16px] p-8 shadow-[0px_4px_17px_0px_#00000040] overflow-hidden">
               <div className="flex items-center  flex-col md:flex-row justify-between lg:p-8 gap-4">
                 <div className="">
-                  <h4 className=" text-[20px] lg:text-[26px] xl:text-[38px]  font-bold text-left text-[#fff] leading-[28px] lg:leading-[50px] xl:leading-[50px] lg:max-w-[300px]">Let’s Start Your Project with
+                  <h4 className="mb-[20px] md:mb-[0px] text-[20px] lg:text-[26px] xl:text-[38px]  font-bold text-left text-[#fff] leading-[28px] lg:leading-[50px] xl:leading-[50px] lg:max-w-[300px]">Let’s Start Your Project with
                     qutiiz</h4>
                 </div>
                 <div className="flex flex-col md:flex-row lg:gap-10 gap-4">
@@ -701,11 +701,11 @@ const AboutPage = () => {
                     }}
                     pagination={{ clickable: true }}
                     modules={[Pagination]}
-                    className="portfolio-swiper px-4 !py-12 mt-0 !mb-0"
+                    className="portfolio-swiper px-4 !py-8 mt-0 !mb-0"
                   >
                     {[...Array(3)].map((_, index) => (
-                      <SwiperSlide key={index}>
-                        <div data-aos="zoom-in" className="rounded-[16px] overflow-hidden shadow-[0_0_32px_#00000075]">
+                      <SwiperSlide key={index} className="rounded-[16px] shadow-none">
+                        <div data-aos="zoom-in" className="rounded-[16px] overflow-hidden shadow-[0_0_10px_#00000075]">
                           <div className="bg-[#1E96D3] p-2">
                             <Image src={Portfolio} alt="" />
                           </div>
